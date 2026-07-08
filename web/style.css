@@ -1,0 +1,134 @@
+:root{
+  --ink:#1a1a1a; --muted:#606064; --line:#e4e4e6; --accent:#333333;
+  --accent-soft:#f3f3f4; --good:#2f6f4f; --bad:#a23b3b; --bg:#ffffff;
+  --maxw:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--ink); background:var(--bg);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+a{color:var(--ink); text-decoration:underline; text-decoration-color:#bcbcbf; text-underline-offset:2px}
+a:hover{text-decoration-color:var(--ink)}
+h1,h2,h3{line-height:1.25; letter-spacing:-.01em}
+h2{font-size:1.5rem; margin:0 0 .5em; padding-top:.3em}
+h3{font-size:1.12rem; margin:2em 0 .4em}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.9em}
+
+/* HERO */
+.hero{
+  background:var(--bg);
+  padding:56px 0 40px; text-align:center;
+}
+.hero h1{font-size:2.4rem; margin:0 0 .3em}
+.subtitle{font-size:1.02rem; font-weight:600; letter-spacing:.02em; color:var(--muted); margin:.1em 0 1em}
+.tagline{font-size:1.12rem; color:var(--muted); max-width:720px; margin:0 auto 1.4em}
+.tagline strong{color:var(--ink)}
+.cta{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:1.6em}
+.btn{display:inline-flex; align-items:center; gap:7px; padding:9px 18px; border:1px solid #ccc;
+  border-radius:6px; color:var(--ink); background:#fff; font-weight:600; font-size:.92rem}
+.btn:hover{background:var(--accent-soft); text-decoration:none}
+.btn.primary{background:var(--accent); color:#fff; border-color:var(--accent)}
+.btn.primary:hover{background:#1a1a1a}
+.gh-icon{flex:0 0 auto}
+
+/* AUTHORS */
+.authors{display:flex; gap:26px; justify-content:center; flex-wrap:wrap;
+  margin:.4em 0 .2em; font-size:1.02rem}
+.authors sup{color:var(--muted); font-weight:400}
+.hero-logo{height:56px; width:auto; margin:.4em .4em .2em; display:inline-block}
+.eqcontrib{color:var(--muted); font-size:.85rem; margin:.2em 0 .8em}
+.upstream{color:var(--muted); font-size:.9rem; margin:.2em 0 0}
+
+/* SECTIONS */
+main{padding:8px 0 40px}
+section{padding:32px 0; border-bottom:1px solid var(--line)}
+section:last-child{border-bottom:0}
+p{margin:0 0 1em}
+
+.pillars{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:1.2em}
+.pillar{background:#fff; border:1px solid var(--line); border-radius:8px;
+  padding:16px 18px; font-size:.94rem; color:var(--muted)}
+.pillar .k{display:block; font-weight:700; color:var(--ink); margin-bottom:6px;
+  font-size:.78rem; text-transform:uppercase; letter-spacing:.07em}
+
+/* FIGURES */
+figure{margin:1.6em 0}
+figure img{width:100%; height:auto; border:1px solid var(--line); border-radius:8px; background:#fff}
+figcaption{color:var(--muted); font-size:.86rem; margin-top:.6em; text-align:center}
+.diagram svg{width:100%; height:auto; border:1px solid var(--line);
+  border-radius:8px; background:#fff; padding:8px}
+
+/* paired recovery media: video + trace, shown as one joined panel.
+   A fixed, responsive aspect-ratio on the whole row caps its height so the
+   video and the trace panel always match; the step log scrolls internally
+   instead of stretching the row to fit every step. */
+.media-grid{
+  display:grid; grid-template-columns:3fr 4fr; aspect-ratio:12/5;
+  border:1px solid var(--line); border-radius:8px; overflow:hidden; background:#fff;
+  margin:24px 0 32px;
+}
+.media-grid figure{margin:0; display:flex; flex-direction:column; min-height:0}
+.media-grid video{
+  width:100%; flex:1; min-height:0; object-fit:contain; display:block; background:#fff;
+  border:none;
+}
+
+/* recovery trace: real text instead of a screenshot, so it reads at any size */
+.trace-panel{padding:22px 24px; font-size:.86rem; line-height:1.55}
+.trace-cols{display:grid; grid-template-columns:1fr 1fr; gap:28px; flex:1; min-height:0}
+.trace-summary{overflow:hidden}
+.trace-log{overflow-y:auto; padding-right:8px}
+.trace-panel p{margin:0 0 .7em}
+.trace-detected{color:#2b6cb0}
+.trace-log p{font-size:.82rem; margin-bottom:.85em}
+.t-propose{color:var(--good)}
+.t-select{color:#7c3fa0}
+.t-exec{color:#b5651d}
+.t-success{color:var(--ink); font-weight:700}
+.media-grid figcaption{padding-bottom:.8em}
+
+/* plots: one per row, full content width */
+.plots figure{margin:1.8em auto}
+.plots img{width:100%; height:auto; padding:8px}
+.plots figcaption{font-size:.85rem}
+
+/* TABLES */
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse; width:100%; font-size:.92rem; margin:.5em 0 1em}
+th,td{padding:8px 12px; text-align:right; border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+thead th{color:var(--muted); font-weight:600; border-bottom:2px solid var(--line)}
+td.good{color:var(--good); font-weight:600}
+td.bad{color:var(--bad); font-weight:600}
+.pullquote{border-left:3px solid var(--accent); margin:1.4em 0; padding:.3em 0 .3em 1em;
+  font-size:1.08rem; font-style:italic}
+.bullets{padding-left:1.2em; margin:0 0 1em}
+.bullets li{margin-bottom:.5em}
+.note{color:var(--muted); font-size:.92rem}
+
+/* CODE BLOCKS */
+pre{background:#f5f5f6; color:#1a1a1a; border:1px solid var(--line);
+  padding:16px 18px; border-radius:8px;
+  overflow-x:auto; font-size:.86rem; line-height:1.55}
+pre code{color:inherit}
+
+/* FOOTER */
+footer{background:#fafafa; border-top:1px solid var(--line); padding:28px 0; margin-top:0}
+.footer-inner{display:flex; align-items:center; gap:22px; flex-wrap:wrap}
+.footer-inner .logo{height:44px; width:auto; flex:0 0 auto}
+.footer-inner p{margin:.15em 0; font-size:.88rem; color:var(--muted)}
+.footer-inner strong{color:var(--ink)}
+
+@media (max-width:680px){
+  .hero h1{font-size:2rem}
+  .pillars,.media-grid{grid-template-columns:1fr}
+  .media-grid{aspect-ratio:unset}
+  .media-grid video{aspect-ratio:1/1; flex:none}
+  .trace-panel{flex:none}
+  .trace-cols{grid-template-columns:1fr; height:auto}
+  .trace-log{overflow-y:visible; max-height:none}
+}

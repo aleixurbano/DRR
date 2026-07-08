@@ -1,0 +1,937 @@
+task,episode,step,subgoal,evaluation_active,predicted_success,oracle_success,predicted_label,confidence,entropy,score_status
+boilWater,boilWater-1,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-1,00:25,put pot inside sink,True,True,True,A,0.9999997617630155,5.5851788203125485e-06,available
+boilWater,boilWater-1,00:28,toggle on faucet,True,True,True,A,0.9999832985809044,0.00028914085924474514,available
+boilWater,boilWater-1,00:31,toggle off faucet,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+boilWater,boilWater-1,00:34,pick up pot,True,True,True,A,0.9998415637531547,0.002228626148483538,available
+boilWater,boilWater-1,00:44,put pot on fourth stove burner,True,False,False,B,0.9999938558271397,0.00011523421005071947,available
+boilWater,boilWater-1,00:47,toggle on fourth stove burner,False,True,,A,0.9999997897565931,4.96681778329076e-06,available
+boilWater,boilWater-10,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-10,00:25,toggle on faucet,True,True,False,A,0.9999724643068726,0.00045684503515017855,available
+boilWater,boilWater-10,00:28,toggle off faucet,False,True,,A,0.9999038976006969,0.001421132848569472,available
+boilWater,boilWater-10,00:31,put pot inside sink,False,True,,A,0.9999997617630155,5.5851788203125485e-06,available
+boilWater,boilWater-10,00:34,pick up pot,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+boilWater,boilWater-10,00:53,put pot on fourth stove burner,False,True,,A,0.9999996533672291,7.938855270846538e-06,available
+boilWater,boilWater-10,00:56,toggle on fourth stove burner,False,True,,A,0.9999994956527948,1.127809826024321e-05,available
+boilWater,boilWater-2,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-2,00:25,put pot inside sink,True,True,True,A,0.9999997617630155,5.5851788203125485e-06,available
+boilWater,boilWater-2,00:28,toggle on faucet,True,True,True,A,0.9999832985809044,0.00028914085924474514,available
+boilWater,boilWater-2,00:31,toggle off faucet,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+boilWater,boilWater-2,00:34,pick up pot,True,True,True,A,0.9998415637531547,0.002228626148483538,available
+boilWater,boilWater-2,00:53,put pot on fourth stove burner,True,True,True,A,0.9999980052698924,4.064874699476472e-05,available
+boilWater,boilWater-2,00:56,toggle on fourth stove burner,True,True,True,A,0.9999987901339381,2.5527466612479186e-05,available
+boilWater,boilWater-3,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-3,00:25,toggle on faucet,True,True,True,A,0.9999724643068726,0.00045684503515017855,available
+boilWater,boilWater-3,00:28,put pot inside sink,True,True,True,A,0.9999987901339381,2.5527466612479186e-05,available
+boilWater,boilWater-3,00:31,toggle off faucet,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+boilWater,boilWater-3,00:34,pick up pot,True,True,True,A,0.9998415637531547,0.002228626148483538,available
+boilWater,boilWater-3,00:53,put pot on fourth stove burner,True,True,True,A,0.9999980052698924,4.064874699476472e-05,available
+boilWater,boilWater-3,00:56,toggle on fourth stove burner,True,True,True,A,0.9999987901339381,2.5527466612479186e-05,available
+boilWater,boilWater-4,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-4,00:25,put pot inside sink,True,True,True,A,0.9999997617630155,5.5851788203125485e-06,available
+boilWater,boilWater-4,00:26,toggle on faucet,True,False,False,B,0.9999852610186964,0.0002578244023919092,available
+boilWater,boilWater-4,00:29,toggle off faucet,False,True,,A,0.9999885212296566,0.0002049346093407361,available
+boilWater,boilWater-4,00:32,pick up pot,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+boilWater,boilWater-4,00:51,put pot on fourth stove burner,False,True,,A,0.9999996533672291,7.938855270846538e-06,available
+boilWater,boilWater-4,00:54,toggle on fourth stove burner,False,True,,A,0.9999994956527948,1.127809826024321e-05,available
+boilWater,boilWater-5,00:24,pick up pot,True,False,True,B,0.9999962733608835,7.258146119082659e-05,available
+boilWater,boilWater-5,00:39,put pot in sink,True,False,True,B,0.9999251537850291,0.0011337968225144793,available
+boilWater,boilWater-5,00:42,toggle on faucet,True,True,True,A,0.9999852610222102,0.00025782434599506466,available
+boilWater,boilWater-5,00:45,toggle off faucet,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-5,00:48,pick up pot,True,False,True,B,0.9999417087093173,0.0009040403919877627,available
+boilWater,boilWater-5,01:02,put pot on fourth stove burner,True,False,True,B,0.9999970976877992,5.7573337778860017e-05,available
+boilWater,boilWater-5,01:05,toggle on fourth stove burner,True,True,True,A,0.9999996072136301,8.925067298424608e-06,available
+boilWater,boilWater-6,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-6,00:25,put pot in sink,True,True,False,A,0.9999997300421382,6.280153187162631e-06,available
+boilWater,boilWater-6,00:28,pick up pot,False,True,,A,0.9999724643101547,0.0004568449854295502,available
+boilWater,boilWater-6,00:42,put pot on fourth stove burner,False,True,,A,0.9999999317439576,1.723271425266314e-06,available
+boilWater,boilWater-6,00:45,toggle on fourth stove burner,False,True,,A,0.9999980052698924,4.064874699476472e-05,available
+boilWater,boilWater-7,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-7,00:25,put pot in sink,True,True,True,A,0.999998629043345,2.867915148081539e-05,available
+boilWater,boilWater-7,00:28,toggle on faucet,True,True,True,A,0.9999546021388404,0.0007204494583810701,available
+boilWater,boilWater-7,00:31,toggle off faucet,True,True,False,A,0.9999832985848862,0.0002891407960567083,available
+boilWater,boilWater-7,00:41,put pot on fourth stove burner,False,False,,B,0.9999832985848862,0.0002891407960567083,available
+boilWater,boilWater-7,00:44,toggle on fourth stove burner,False,True,,A,0.9999996533672291,7.938855270846538e-06,available
+boilWater,boilWater-8,00:20,pick up bowl,True,True,False,A,0.9999957771647316,8.148403454488396e-05,available
+boilWater,boilWater-8,00:33,put bowl in sink,False,True,,A,0.9999977396747258,4.56534431713181e-05,available
+boilWater,boilWater-8,00:36,toggle on faucet,False,True,,A,0.9999945777819207,0.00010267174112224464,available
+boilWater,boilWater-8,00:39,toggle off faucet,False,True,,A,0.9999785550551182,0.00036352789553793454,available
+boilWater,boilWater-8,00:42,pick up bowl,False,True,,A,0.9999832985848862,0.0002891407960567083,available
+boilWater,boilWater-8,00:54,put bowl on fourth stove burner,False,False,,B,0.999997438718515,5.127018562230698e-05,available
+boilWater,boilWater-8,00:57,toggle on fourth stove burner,False,True,,A,0.9999993524053851,1.4247794040839634e-05,available
+boilWater,boilWater-9,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-9,00:25,put pot in sink,True,True,True,A,0.999998629043345,2.867915148081539e-05,available
+boilWater,boilWater-9,00:28,toggle on faucet,True,True,True,A,0.9999546021388404,0.0007204494583810701,available
+boilWater,boilWater-9,00:31,toggle off faucet,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+boilWater,boilWater-9,00:34,pick up pot,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+boilWater,boilWater-9,00:46,put pot on stove burner,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+boilWater,boilWater-9,00:49,toggle on stove burner,True,True,True,A,0.9990889485983343,0.010515553507042589,available
+cookEgg,cookEgg-1,00:07,open fridge,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+cookEgg,cookEgg-1,00:10,pick up egg,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+cookEgg,cookEgg-1,00:13,close fridge,True,False,True,B,0.8519527982093668,0.6049317739891357,available
+cookEgg,cookEgg-1,00:33,toggle on first stove burner,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+cookEgg,cookEgg-1,00:42,put egg on countertop,True,False,False,B,0.999998629043345,2.867915148081539e-05,available
+cookEgg,cookEgg-1,00:45,pick up pan,False,True,,A,0.9999921107349486,0.00014511803680413704,available
+cookEgg,cookEgg-1,00:58,put pan on first stove burner,False,True,,A,0.9999991684720095,1.7994620173877958e-05,available
+cookEgg,cookEgg-1,01:02,pick up egg,False,False,,B,0.9999785550576745,0.00036352785589286314,available
+cookEgg,cookEgg-1,01:06,crack egg,False,False,,B,0.9998415637531547,0.002228626148483538,available
+cookEgg,cookEgg-1,01:07,put cracked egg in pan,False,False,,B,0.999989870011893,0.00018268112324772617,available
+cookEgg,cookEgg-10,00:07,open fridge,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+cookEgg,cookEgg-10,00:10,pick up egg,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+cookEgg,cookEgg-10,00:13,close fridge,True,False,True,B,0.8519527982093668,0.6049317739891357,available
+cookEgg,cookEgg-10,00:33,toggle on stove burner,True,True,True,A,0.9998415637531547,0.002228626148483538,available
+cookEgg,cookEgg-10,00:44,put egg on first countertop,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+cookEgg,cookEgg-10,00:47,pick up pan,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+cookEgg,cookEgg-10,01:00,put pan on stove burner,True,False,True,B,0.9999910602998368,0.0001628279733764315,available
+cookEgg,cookEgg-10,01:12,pick up egg,True,True,True,A,0.9994472212857038,0.006778894821134688,available
+cookEgg,cookEgg-10,01:22,crack egg,True,False,True,B,0.9992903296589789,0.008447026073181966,available
+cookEgg,cookEgg-10,01:25,put cracked egg in pan,True,True,True,A,0.9996646499458114,0.004354351991977225,available
+cookEgg,cookEgg-2,00:07,open fridge,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+cookEgg,cookEgg-2,00:10,pick up egg,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+cookEgg,cookEgg-2,00:13,close fridge,True,False,True,B,0.8519527982093668,0.6049317739891357,available
+cookEgg,cookEgg-2,00:33,toggle on first stove burner,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+cookEgg,cookEgg-2,00:44,put egg on first countertop,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+cookEgg,cookEgg-2,00:47,pick up pan,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+cookEgg,cookEgg-2,00:58,put pan on first stove burner,True,False,True,B,0.9999921107340083,0.00014511805274578548,available
+cookEgg,cookEgg-2,01:10,pick up egg,True,False,True,B,0.999925153802872,0.001133796577967522,available
+cookEgg,cookEgg-2,01:14,crack egg,True,False,True,B,0.9999977396747258,4.56534431713181e-05,available
+cookEgg,cookEgg-2,01:17,put cracked egg in pan,True,False,True,B,0.9999999123575084,2.1811139213309656e-06,available
+cookEgg,cookEgg-3,00:07,open fridge,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+cookEgg,cookEgg-3,00:10,pick up egg,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+cookEgg,cookEgg-3,00:13,close fridge,True,False,True,B,0.8519527982093668,0.6049317739891357,available
+cookEgg,cookEgg-3,00:33,toggle on first stove burner,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+cookEgg,cookEgg-3,00:44,put egg on first countertop,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+cookEgg,cookEgg-3,00:47,pick up pan,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+cookEgg,cookEgg-3,01:00,put pan on first stove burner,True,True,True,A,0.999989870011893,0.00018268112324772617,available
+cookEgg,cookEgg-3,01:12,pick up egg,True,True,True,A,0.9994472212857038,0.006778894821134688,available
+cookEgg,cookEgg-3,01:22,crack egg,True,False,True,B,0.9999417087232138,0.0009040401965186355,available
+cookEgg,cookEgg-3,01:25,put cracked egg in pan,True,False,True,B,0.9975273770403428,0.024975103962319358,available
+cookEgg,cookEgg-4,00:05,open fridge,True,False,False,B,0.9999938558256749,0.00011523423541002103,available
+cookEgg,cookEgg-4,00:15,pick up egg,False,False,,B,0.999995214903439,9.147052833019699e-05,available
+cookEgg,cookEgg-4,00:18,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+cookEgg,cookEgg-4,00:42,toggle on first stove burner,False,True,,A,0.9999996940976409,7.061180939971169e-06,available
+cookEgg,cookEgg-4,00:51,put egg on countertop,False,False,,B,0.999998629043345,2.867915148081539e-05,available
+cookEgg,cookEgg-4,00:54,pick up pan,False,True,,A,0.9999921107349486,0.00014511803680413704,available
+cookEgg,cookEgg-4,01:07,put pan on first stove burner,False,True,,A,0.9999991684720095,1.7994620173877958e-05,available
+cookEgg,cookEgg-4,01:34,pick up egg,False,False,,B,0.999995214903439,9.147052833019699e-05,available
+cookEgg,cookEgg-4,01:56,crack egg,False,False,,B,0.9998415637531547,0.002228626148483538,available
+cookEgg,cookEgg-4,01:57,put cracked egg in pan,False,False,,B,0.999989870011893,0.00018268112324772617,available
+cookEgg,cookEgg-5,00:07,open fridge,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+cookEgg,cookEgg-5,00:10,pick up egg,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+cookEgg,cookEgg-5,00:13,close fridge,True,False,True,B,0.8519527982093668,0.6049317739891357,available
+cookEgg,cookEgg-5,00:33,toggle on first stove burner,True,True,True,A,0.9999980052698924,4.064874699476472e-05,available
+cookEgg,cookEgg-5,00:58,put egg on second countertop,True,True,True,A,0.999999057755336,2.0220654636653533e-05,available
+cookEgg,cookEgg-5,01:01,pick up pan,True,False,True,B,0.9999485577702917,0.0008070949013392628,available
+cookEgg,cookEgg-5,01:26,put pan on first stove burner,True,False,True,B,0.9999930377407441,0.00012932189823899109,available
+cookEgg,cookEgg-5,01:51,pick up egg,True,False,True,B,0.9999970976877992,5.7573337778860017e-05,available
+cookEgg,cookEgg-5,01:55,crack egg,True,False,True,B,0.9999996533672291,7.938855270846538e-06,available
+cookEgg,cookEgg-5,01:58,put cracked egg in pan,True,False,True,B,0.9999997300421382,6.280153187162631e-06,available
+cookEgg,cookEgg-6,00:07,open fridge,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+cookEgg,cookEgg-6,00:10,pick up egg,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+cookEgg,cookEgg-6,00:13,close fridge,True,False,True,B,0.8519527982093668,0.6049317739891357,available
+cookEgg,cookEgg-6,00:33,toggle on first stove burner,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+cookEgg,cookEgg-6,00:44,put egg on first countertop,True,True,True,A,0.9999977396747258,4.56534431713181e-05,available
+cookEgg,cookEgg-6,00:47,pick up pan,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+cookEgg,cookEgg-6,01:00,put pan on first stove burner,True,True,True,A,0.9999991684720095,1.7994620173877958e-05,available
+cookEgg,cookEgg-6,01:10,pick up egg,True,True,False,A,0.9999724643101547,0.0004568449854295502,available
+cookEgg,cookEgg-6,01:20,put cracked egg in pan,False,False,,B,0.9999993524053851,1.4247794040839634e-05,available
+cookEgg,cookEgg-7,00:14,pick up egg,True,False,False,B,0.999995214903439,9.147052833019699e-05,available
+cookEgg,cookEgg-7,00:38,toggle on first stove burner,False,True,,A,0.9999996940976409,7.061180939971169e-06,available
+cookEgg,cookEgg-7,00:47,put egg on countertop,False,False,,B,0.999998629043345,2.867915148081539e-05,available
+cookEgg,cookEgg-7,00:50,pick up pan,False,True,,A,0.9999921107349486,0.00014511803680413704,available
+cookEgg,cookEgg-7,01:03,put pan on first stove burner,False,True,,A,0.9999991684720095,1.7994620173877958e-05,available
+cookEgg,cookEgg-7,01:30,pick up egg,False,False,,B,0.999995214903439,9.147052833019699e-05,available
+cookEgg,cookEgg-7,01:52,crack egg,False,False,,B,0.9998415637531547,0.002228626148483538,available
+cookEgg,cookEgg-7,01:53,put cracked egg in pan,False,False,,B,0.999989870011893,0.00018268112324772617,available
+cookEgg,cookEgg-8,00:07,open fridge,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+cookEgg,cookEgg-8,00:10,pick up egg,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+cookEgg,cookEgg-8,00:13,close fridge,True,False,True,B,0.8519527982093668,0.6049317739891357,available
+cookEgg,cookEgg-8,00:33,toggle on first stove burner,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+cookEgg,cookEgg-8,00:44,put egg on first countertop,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+cookEgg,cookEgg-8,00:47,pick up pan,True,True,False,A,0.8175744850834649,0.6853545158674582,available
+cookEgg,cookEgg-8,01:00,put pan on first stove burner,False,True,,A,0.9999977396747258,4.56534431713181e-05,available
+cookEgg,cookEgg-8,01:12,pick up egg,False,True,,A,0.9994472212857038,0.006778894821134688,available
+cookEgg,cookEgg-8,01:22,crack egg,False,False,,B,0.9996646499458114,0.004354351991977225,available
+cookEgg,cookEgg-8,01:25,put cracked egg in pan,False,True,,A,0.9999251537939506,0.0011337967002374957,available
+cookEgg,cookEgg-9,00:07,open fridge,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+cookEgg,cookEgg-9,00:10,pick up egg,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+cookEgg,cookEgg-9,00:13,close fridge,True,False,True,B,0.8519527982093668,0.6049317739891357,available
+cookEgg,cookEgg-9,00:33,toggle on first stove burner,True,True,False,A,0.9999970976877992,5.7573337778860017e-05,available
+cookEgg,cookEgg-9,00:44,pick up pan,False,False,,B,0.9999921107349486,0.00014511803680413704,available
+cookEgg,cookEgg-9,00:53,put pan on first stove burner,False,False,,B,0.999964643734043,0.0005738443623561031,available
+cookEgg,cookEgg-9,00:59,pick up egg,False,True,,A,0.9999646437424718,0.0005738442377127494,available
+cookEgg,cookEgg-9,01:08,crack egg,False,False,,B,0.9996646499458114,0.004354351991977225,available
+cookEgg,cookEgg-9,01:11,put cracked egg in pan,False,True,,A,0.9999992661791399,1.601253126401421e-05,available
+heatPotato,heatPotato-1,00:19,pick up potato,True,True,True,A,0.9999984465026854,3.2217581156089804e-05,available
+heatPotato,heatPotato-1,00:39,put potato on plate,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+heatPotato,heatPotato-1,00:42,pick up plate,True,True,True,A,0.9933071485896835,0.05796691765844321,available
+heatPotato,heatPotato-1,01:10,put plate on countertop,True,False,False,B,0.9999952149045797,9.147050816911523e-05,available
+heatPotato,heatPotato-1,01:13,open microwave,False,True,,A,0.9999038975892415,0.001421133001438565,available
+heatPotato,heatPotato-1,01:14,pick up plate,False,False,,B,0.9999938558271397,0.00011523421005071947,available
+heatPotato,heatPotato-1,01:15,put plate in microwave,False,False,,B,0.9999251537404226,0.0011337974338712568,available
+heatPotato,heatPotato-1,01:18,close microwave,False,True,,A,0.9999832985848862,0.0002891407960567083,available
+heatPotato,heatPotato-1,01:21,toggle on microwave,False,True,,A,0.9997965729390125,0.002788120250251277,available
+heatPotato,heatPotato-10,00:19,pick up potato,True,True,True,A,0.9999984465026854,3.2217581156089804e-05,available
+heatPotato,heatPotato-10,00:39,put potato on plate,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+heatPotato,heatPotato-10,00:42,pick up plate,True,True,True,A,0.9933071485896835,0.05796691765844321,available
+heatPotato,heatPotato-10,01:21,put plate on first countertop,True,True,True,A,0.9998415637531547,0.002228626148483538,available
+heatPotato,heatPotato-10,01:31,toggle on microwave,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+heatPotato,heatPotato-10,01:34,open microwave,True,False,True,B,0.9999546021388404,0.0007204494583810701,available
+heatPotato,heatPotato-10,01:46,pick up plate,True,True,True,A,0.9933071485896835,0.05796691765844321,available
+heatPotato,heatPotato-10,01:58,put plate in microwave,True,False,True,B,0.9997965729390125,0.002788120250251277,available
+heatPotato,heatPotato-10,02:01,close microwave,True,True,True,A,0.9770226322225539,0.15784612071777132,available
+heatPotato,heatPotato-2,00:19,pick up potato,True,True,True,A,0.9999984465026854,3.2217581156089804e-05,available
+heatPotato,heatPotato-2,00:39,put potato on plate,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+heatPotato,heatPotato-2,00:42,pick up plate,True,True,True,A,0.9933071485896835,0.05796691765844321,available
+heatPotato,heatPotato-2,01:21,put plate on first countertop,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+heatPotato,heatPotato-2,01:31,open microwave,True,True,True,A,0.9999724643068726,0.00045684503515017855,available
+heatPotato,heatPotato-2,01:43,pick up plate,True,True,True,A,0.9933071485896835,0.05796691765844321,available
+heatPotato,heatPotato-2,01:55,put plate in microwave,True,False,True,B,0.9997388096733121,0.0034856156068474534,available
+heatPotato,heatPotato-2,01:58,close microwave,True,True,True,A,0.999925153802872,0.001133796577967522,available
+heatPotato,heatPotato-2,02:01,toggle on microwave,True,True,True,A,0.9933071477971733,0.05796692337519579,available
+heatPotato,heatPotato-3,00:19,pick up potato,True,True,True,A,0.9999984465026854,3.2217581156089804e-05,available
+heatPotato,heatPotato-3,00:37,put potato on plate,True,False,True,B,0.999998790133794,2.552746944721236e-05,available
+heatPotato,heatPotato-3,00:40,pick up plate,True,True,True,A,0.9999945777825671,0.000102671729815891,available
+heatPotato,heatPotato-3,01:19,put plate on first countertop,True,True,True,A,0.999925153802872,0.001133796577967522,available
+heatPotato,heatPotato-3,01:29,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+heatPotato,heatPotato-3,01:41,pick up plate,True,True,True,A,0.9999945777825671,0.000102671729815891,available
+heatPotato,heatPotato-3,01:53,put plate in microwave,True,True,True,A,0.9999962733608835,7.258146119082659e-05,available
+heatPotato,heatPotato-3,01:56,close microwave,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+heatPotato,heatPotato-3,01:59,toggle on microwave,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+heatPotato,heatPotato-4,00:19,pick up potato,True,True,True,A,0.9999984465026854,3.2217581156089804e-05,available
+heatPotato,heatPotato-4,00:39,put potato on plate,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+heatPotato,heatPotato-4,01:07,open microwave,True,False,False,B,0.9999832985749317,0.000289140954026305,available
+heatPotato,heatPotato-4,01:37,pick up plate,False,True,,A,0.9933071485896835,0.05796691765844321,available
+heatPotato,heatPotato-4,02:07,put plate in microwave,False,False,,B,0.9998766053723329,0.001780219083816374,available
+heatPotato,heatPotato-4,02:10,close microwave,False,True,,A,0.9990889485983343,0.010515553507042589,available
+heatPotato,heatPotato-4,02:13,toggle on microwave,False,True,,A,0.9994472214174237,0.0067788933958978954,available
+heatPotato,heatPotato-5,00:19,pick up potato,True,True,True,A,0.9999984465026854,3.2217581156089804e-05,available
+heatPotato,heatPotato-5,00:39,put potato on plate,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+heatPotato,heatPotato-5,00:42,pick up plate,True,True,False,A,0.9933071485896835,0.05796691765844321,available
+heatPotato,heatPotato-5,01:12,put plate in microwave,False,False,,B,0.9998766053723329,0.001780219083816374,available
+heatPotato,heatPotato-6,00:23,pick up potato,True,False,True,B,0.9999646437466879,0.0005738441753672238,available
+heatPotato,heatPotato-6,00:28,put potato on plate,True,False,True,B,0.9999945777819207,0.00010267174112224464,available
+heatPotato,heatPotato-6,00:31,pick up plate,True,True,True,A,0.9999945777825671,0.000102671729815891,available
+heatPotato,heatPotato-6,01:10,put plate on first countertop,True,True,True,A,0.999925153802872,0.001133796577967522,available
+heatPotato,heatPotato-6,01:20,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+heatPotato,heatPotato-6,01:32,pick up plate,True,True,True,A,0.9999945777825671,0.000102671729815891,available
+heatPotato,heatPotato-6,01:44,put plate in microwave,True,True,True,A,0.9999962733608835,7.258146119082659e-05,available
+heatPotato,heatPotato-6,01:47,close microwave,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+heatPotato,heatPotato-6,01:50,toggle on microwave,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+heatPotato,heatPotato-7,00:19,pick up potato,True,True,False,A,0.9999984465026854,3.2217581156089804e-05,available
+heatPotato,heatPotato-7,00:39,put potato on plate,False,True,,A,0.9990889485983343,0.010515553507042589,available
+heatPotato,heatPotato-7,00:42,pick up plate,False,True,,A,0.7310585903489892,0.8399415210762481,available
+heatPotato,heatPotato-7,01:21,put plate on first countertop,False,False,,B,0.8519527944504226,0.6049317834794028,available
+heatPotato,heatPotato-7,01:31,open microwave,False,True,,A,0.9999038975892415,0.001421133001438565,available
+heatPotato,heatPotato-7,01:43,pick up plate,False,True,,A,0.7310585903489892,0.8399415210762481,available
+heatPotato,heatPotato-7,01:55,put plate in microwave,False,False,,B,0.7772998560157665,0.7650673279768215,available
+heatPotato,heatPotato-7,01:58,close microwave,False,True,,A,0.9999832985848862,0.0002891407960567083,available
+heatPotato,heatPotato-7,02:01,toggle on microwave,False,True,,A,0.9997965729390125,0.002788120250251277,available
+heatPotato,heatPotato-8,00:19,pick up potato,True,True,True,A,0.9999984465026854,3.2217581156089804e-05,available
+heatPotato,heatPotato-8,00:34,put potato on pan,True,True,False,A,0.9999974387182097,5.127019129340547e-05,available
+heatPotato,heatPotato-8,00:37,pick up pan,False,True,,A,0.9997965729390125,0.002788120250251277,available
+heatPotato,heatPotato-8,01:11,put pan on first countertop,False,True,,A,0.999989870011893,0.00018268112324772617,available
+heatPotato,heatPotato-8,01:21,open microwave,False,True,,A,0.9999038975892415,0.001421133001438565,available
+heatPotato,heatPotato-8,01:33,pick up pan,False,True,,A,0.9997965729390125,0.002788120250251277,available
+heatPotato,heatPotato-8,01:45,put pan in microwave,False,False,,B,0.9998415637531547,0.002228626148483538,available
+heatPotato,heatPotato-8,01:48,close microwave,False,True,,A,0.9992903296589789,0.008447026073181966,available
+heatPotato,heatPotato-8,01:51,toggle on microwave,False,True,,A,0.9525741311981335,0.27535992835627615,available
+heatPotato,heatPotato-9,00:19,pick up potato,True,True,True,A,0.9999984465026854,3.2217581156089804e-05,available
+heatPotato,heatPotato-9,00:39,put potato on plate,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+heatPotato,heatPotato-9,00:42,pick up plate,True,True,True,A,0.9933071485896835,0.05796691765844321,available
+heatPotato,heatPotato-9,01:21,put plate on first countertop,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+heatPotato,heatPotato-9,01:31,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+heatPotato,heatPotato-9,01:43,pick up plate,True,True,True,A,0.9933071485896835,0.05796691765844321,available
+heatPotato,heatPotato-9,01:55,put plate in microwave,True,True,True,A,0.9914225133270261,0.07120788606386416,available
+heatPotato,heatPotato-9,01:58,toggle on microwave,True,False,True,B,0.9999251537850291,0.0011337968225144793,available
+heatPotato,heatPotato-9,02:01,close microwave,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+makeCoffee,makeCoffee-1,00:17,pick up mug,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+makeCoffee,makeCoffee-1,00:22,put mug on sink,True,False,False,B,0.9998415638098114,0.0022286254332715225,available
+makeCoffee,makeCoffee-1,00:25,toggle on faucet,False,True,,A,0.9999921107405916,0.00014511794114781688,available
+makeCoffee,makeCoffee-1,00:28,toggle off faucet,False,True,,A,0.9999984465026854,3.2217581156089804e-05,available
+makeCoffee,makeCoffee-1,00:29,pick up mug,False,False,,B,0.9999885212364987,0.00020493449705893607,available
+makeCoffee,makeCoffee-1,00:30,pour liquid from mug into sink,False,False,,B,0.9990889487068412,0.010515552411246626,available
+makeCoffee,makeCoffee-1,00:40,put mug in coffee machine,False,False,,B,0.9999921107340083,0.00014511805274578548,available
+makeCoffee,makeCoffee-1,00:43,toggle on coffee machine,False,True,,A,0.9999921107349486,0.00014511803680413704,available
+makeCoffee,makeCoffee-1,00:46,toggle off coffee machine,False,True,,A,0.9999546021388404,0.0007204494583810701,available
+makeCoffee,makeCoffee-1,00:47,pick up mug,False,False,,B,0.9999885212364987,0.00020493449705893607,available
+makeCoffee,makeCoffee-1,00:48,put mug on countertop,False,False,,B,0.9999952149045797,9.147050816911523e-05,available
+makeCoffee,makeCoffee-10,00:17,pick up mug,True,True,True,A,0.9998766053723329,0.001780219083816374,available
+makeCoffee,makeCoffee-10,00:26,put mug on sink,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+makeCoffee,makeCoffee-10,00:29,toggle on faucet,True,True,True,A,0.9999832985828951,0.00028914082765096535,available
+makeCoffee,makeCoffee-10,00:32,toggle off faucet,True,True,True,A,0.999964643734043,0.0005738443623561031,available
+makeCoffee,makeCoffee-10,00:35,pick up mug,True,True,True,A,0.9999417087162654,0.0009040402942546933,available
+makeCoffee,makeCoffee-10,00:36,pour liquid from mug into sink,True,False,True,B,0.9770226323061845,0.15784612026532108,available
+makeCoffee,makeCoffee-10,00:48,toggle on coffee machine,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+makeCoffee,makeCoffee-10,00:51,toggle off coffee machine,True,True,True,A,0.9999945777825671,0.000102671729815891,available
+makeCoffee,makeCoffee-10,00:54,put mug in coffee machine,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+makeCoffee,makeCoffee-10,00:57,pick up mug,True,True,True,A,0.9999546021388404,0.0007204494583810701,available
+makeCoffee,makeCoffee-10,01:00,put mug on second countertop,True,True,True,A,0.999998629043345,2.867915148081539e-05,available
+makeCoffee,makeCoffee-2,00:17,pick up mug,True,True,True,A,0.9998766053723329,0.001780219083816374,available
+makeCoffee,makeCoffee-2,00:26,put mug on sink,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+makeCoffee,makeCoffee-2,00:29,toggle on faucet,True,True,True,A,0.9999832985828951,0.00028914082765096535,available
+makeCoffee,makeCoffee-2,00:32,toggle off faucet,True,True,True,A,0.999964643734043,0.0005738443623561031,available
+makeCoffee,makeCoffee-2,00:35,pick up mug,True,True,True,A,0.9999417087162654,0.0009040402942546933,available
+makeCoffee,makeCoffee-2,00:36,pour liquid from mug into sink,True,False,True,B,0.9770226323061845,0.15784612026532108,available
+makeCoffee,makeCoffee-2,00:46,put mug in coffee machine,True,False,False,B,0.9999980052698924,4.064874699476472e-05,available
+makeCoffee,makeCoffee-2,00:49,toggle on coffee machine,False,True,,A,0.9999938558278723,0.00011523419737095476,available
+makeCoffee,makeCoffee-2,00:52,toggle off coffee machine,False,True,,A,0.9999756997603736,0.0004075477617912567,available
+makeCoffee,makeCoffee-2,00:53,pick up mug,False,False,,B,0.9999962733599949,7.258147721319305e-05,available
+makeCoffee,makeCoffee-2,00:54,put mug on countertop,False,False,,B,0.999997438718515,5.127018562230698e-05,available
+makeCoffee,makeCoffee-3,00:17,pick up mug,True,True,True,A,0.9998766053723329,0.001780219083816374,available
+makeCoffee,makeCoffee-3,00:26,put mug in sink,True,True,True,A,0.9999977396747258,4.56534431713181e-05,available
+makeCoffee,makeCoffee-3,00:29,toggle on faucet,True,True,True,A,0.9999832985828951,0.00028914082765096535,available
+makeCoffee,makeCoffee-3,00:32,toggle off faucet,True,True,True,A,0.999964643734043,0.0005738443623561031,available
+makeCoffee,makeCoffee-3,00:35,pick up mug,True,True,True,A,0.9999417087162654,0.0009040402942546933,available
+makeCoffee,makeCoffee-3,00:36,pour liquid from mug into sink,True,False,True,B,0.9770226323061845,0.15784612026532108,available
+makeCoffee,makeCoffee-3,00:48,put mug in coffee machine,True,False,True,B,0.9996646499470504,0.0043543519776762015,available
+makeCoffee,makeCoffee-3,00:51,toggle on coffee machine,True,False,True,B,0.9525741301883566,0.27535993272667686,available
+makeCoffee,makeCoffee-3,00:54,toggle off coffee machine,True,True,True,A,0.9914225143407717,0.07120787911686809,available
+makeCoffee,makeCoffee-3,00:57,pick up mug,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+makeCoffee,makeCoffee-3,01:16,put mug on countertop,True,True,True,A,0.9999982396568656,3.618984826916553e-05,available
+makeCoffee,makeCoffee-4,00:17,pick up mug,True,True,False,A,0.9999724643101547,0.0004568449854295502,available
+makeCoffee,makeCoffee-4,00:30,put mug in coffee machine,False,True,,A,0.9992903296589789,0.008447026073181966,available
+makeCoffee,makeCoffee-4,00:33,toggle on coffee machine,False,True,,A,0.9999251537939506,0.0011337967002374957,available
+makeCoffee,makeCoffee-4,00:36,toggle off coffee machine,False,True,,A,0.9999251537939506,0.0011337967002374957,available
+makeCoffee,makeCoffee-4,00:39,pick up mug,False,True,,A,0.9999417087162654,0.0009040402942546933,available
+makeCoffee,makeCoffee-4,00:42,put mug on second countertop,False,True,,A,0.9999987901339381,2.5527466612479186e-05,available
+makeCoffee,makeCoffee-5,00:17,pick up mug,True,True,True,A,0.9998766053723329,0.001780219083816374,available
+makeCoffee,makeCoffee-5,00:22,put mug on sink,True,False,False,B,0.9997965730844882,0.0027881184662963284,available
+makeCoffee,makeCoffee-5,00:25,toggle on faucet,False,True,,A,0.9998766054164605,0.0017802185108535846,available
+makeCoffee,makeCoffee-5,00:28,toggle off faucet,False,True,,A,0.9999546021388404,0.0007204494583810701,available
+makeCoffee,makeCoffee-5,00:31,pick up mug,False,True,,A,0.9998415637342705,0.002228626386868482,available
+makeCoffee,makeCoffee-5,00:32,pour liquid from mug into sink,False,False,,B,0.998830489517361,0.013077151127334189,available
+makeCoffee,makeCoffee-5,00:44,put mug in coffee machine,False,False,,B,0.9933071485896835,0.05796691765844321,available
+makeCoffee,makeCoffee-5,00:47,toggle on coffee machine,False,True,,A,0.999925153802872,0.001133796577967522,available
+makeCoffee,makeCoffee-5,00:50,toggle off coffee machine,False,True,,A,0.9995694428819758,0.005435306624609062,available
+makeCoffee,makeCoffee-5,00:53,pick up mug,False,True,,A,0.9998766053723329,0.001780219083816374,available
+makeCoffee,makeCoffee-5,00:56,put mug on second countertop,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+makeCoffee,makeCoffee-6,00:23,pick up mug,True,False,True,B,0.9999785550551182,0.00036352789553793454,available
+makeCoffee,makeCoffee-6,00:46,put mug on sink,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+makeCoffee,makeCoffee-6,00:49,toggle on faucet,True,True,True,A,0.9999945777819207,0.00010267174112224464,available
+makeCoffee,makeCoffee-6,00:52,toggle off faucet,True,True,True,A,0.9999852610222102,0.00025782434599506466,available
+makeCoffee,makeCoffee-6,00:55,pick up mug,True,False,True,B,0.9997965730844882,0.0027881184662963284,available
+makeCoffee,makeCoffee-6,00:56,pour liquid from mug into sink,True,False,True,B,0.5621765008857981,0.9888163926508522,available
+makeCoffee,makeCoffee-6,01:08,put mug in coffee machine,True,False,True,B,0.9999952149045797,9.147050816911523e-05,available
+makeCoffee,makeCoffee-6,01:11,toggle on coffee machine,True,True,True,A,0.9994472214174237,0.0067788933958978954,available
+makeCoffee,makeCoffee-6,01:14,toggle off coffee machine,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+makeCoffee,makeCoffee-6,01:17,pick up mug,True,False,True,B,0.9997965730844882,0.0027881184662963284,available
+makeCoffee,makeCoffee-6,01:20,put mug on second countertop,True,False,True,B,0.9999921107340083,0.00014511805274578548,available
+makeCoffee,makeCoffee-7,00:17,pick up mug,True,True,True,A,0.9998766053723329,0.001780219083816374,available
+makeCoffee,makeCoffee-7,00:26,put mug on sink,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+makeCoffee,makeCoffee-7,00:29,toggle on faucet,True,True,True,A,0.999964643734043,0.0005738443623561031,available
+makeCoffee,makeCoffee-7,00:32,toggle off faucet,True,True,False,A,0.9999724643101547,0.0004568449854295502,available
+makeCoffee,makeCoffee-7,00:35,pick up mug,False,True,,A,0.9999646437424718,0.0005738442377127494,available
+makeCoffee,makeCoffee-7,00:47,put mug in coffee machine,False,True,,A,0.9998766053723329,0.001780219083816374,available
+makeCoffee,makeCoffee-7,00:50,toggle on coffee machine,False,True,,A,0.9999417087232138,0.0009040401965186355,available
+makeCoffee,makeCoffee-7,00:53,toggle off coffee machine,False,True,,A,0.9992903296589789,0.008447026073181966,available
+makeCoffee,makeCoffee-7,00:56,pick up mug,False,True,,A,0.9999646437424718,0.0005738442377127494,available
+makeCoffee,makeCoffee-7,00:59,put mug on second countertop,False,True,,A,0.9999998724809325,3.1045127342423593e-06,available
+makeCoffee,makeCoffee-8,00:17,pick up mug,True,True,False,A,0.9997965729390125,0.002788120250251277,available
+makeCoffee,makeCoffee-8,00:30,put mug in coffee machine,False,False,,B,0.9890130563371704,0.08726716782208123,available
+makeCoffee,makeCoffee-8,00:33,toggle on coffee machine,False,True,,A,0.9997388096421918,0.003485615977251547,available
+makeCoffee,makeCoffee-8,00:36,toggle off coffee machine,False,True,,A,0.9997388096421918,0.003485615977251547,available
+makeCoffee,makeCoffee-8,00:39,pick up mug,False,True,,A,0.999925153802872,0.001133796577967522,available
+makeCoffee,makeCoffee-8,00:42,put mug on second countertop,False,True,,A,0.9999785550602308,0.00036352781624779574,available
+makeCoffee,makeCoffee-9,00:23,pick up bowl,True,True,False,A,0.9999957771647316,8.148403454488396e-05,available
+makeCoffee,makeCoffee-9,00:50,put bowl in coffee machine,False,False,,B,0.999925153802872,0.001133796577967522,available
+makeCoffee,makeCoffee-9,00:53,toggle on coffee machine,False,True,,A,0.9999869928752253,0.0002298752288747113,available
+makeCoffee,makeCoffee-9,00:56,toggle off coffee machine,False,True,,A,0.9999646437635458,0.000573843926080292,available
+makeCoffee,makeCoffee-9,00:59,pick up bowl,False,True,,A,0.9999417087162654,0.0009040402942546933,available
+makeCoffee,makeCoffee-9,01:02,put bowl on second countertop,False,True,,A,0.9998415637531547,0.002228626148483538,available
+makeSalad,makeSalad-1,00:10,pick up lettuce,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-1,00:31,put lettuce on first countertop,True,True,True,A,0.9999998874648162,2.760017155851152e-06,available
+makeSalad,makeSalad-1,00:54,pick up tomato,True,True,True,A,0.9999885212296566,0.0002049346093407361,available
+makeSalad,makeSalad-1,01:15,put tomato on first countertop,True,True,True,A,0.9999977396747258,4.56534431713181e-05,available
+makeSalad,makeSalad-1,01:29,pick up potato,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-1,01:41,put potato on first countertop,True,True,True,A,0.9999998144608402,4.416660967442774e-06,available
+makeSalad,makeSalad-1,01:48,pick up knife,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+makeSalad,makeSalad-1,01:55,slice lettuce,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+makeSalad,makeSalad-1,02:03,slice tomato,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+makeSalad,makeSalad-1,02:04,put knife on first countertop,True,True,False,A,0.9999994284997149,1.267669761323519e-05,available
+makeSalad,makeSalad-1,02:05,slice potato,False,False,,B,0.9999724643035903,0.0004568450848709717,available
+makeSalad,makeSalad-1,02:14,pick up lettuce slice,False,True,,A,0.9999962733608835,7.258146119082659e-05,available
+makeSalad,makeSalad-1,02:17,put lettuce slice in bowl,False,True,,A,0.9999962733608835,7.258146119082659e-05,available
+makeSalad,makeSalad-1,02:20,pick up tomato slice,False,True,,A,0.999989870011893,0.00018268112324772617,available
+makeSalad,makeSalad-1,02:23,put tomato slice in bowl,False,True,,A,0.9999977396747258,4.56534431713181e-05,available
+makeSalad,makeSalad-1,02:26,pick up potato slice,False,False,,B,0.9890130563371704,0.08726716782208123,available
+makeSalad,makeSalad-1,02:29,put potato slice in bowl,False,False,,B,0.9999977396747258,4.56534431713181e-05,available
+makeSalad,makeSalad-1,02:48,open fridge,False,True,,A,0.9999546021388404,0.0007204494583810701,available
+makeSalad,makeSalad-1,03:04,pick up bowl,False,True,,A,0.9968273169336631,0.030903471446774997,available
+makeSalad,makeSalad-1,03:24,put bowl in fridge,False,True,,A,0.9999967112522586,6.464600299327198e-05,available
+makeSalad,makeSalad-1,03:29,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+makeSalad,makeSalad-10,00:10,pick up lettuce,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-10,00:58,pick up tomato,True,True,True,A,0.9999885212296566,0.0002049346093407361,available
+makeSalad,makeSalad-10,01:37,pick up potato,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-10,02:00,pick up knife,True,True,True,A,0.9999962733608835,7.258146119082659e-05,available
+makeSalad,makeSalad-10,02:07,slice lettuce,True,True,True,A,0.9984988179739498,0.01624473653630814,available
+makeSalad,makeSalad-10,02:14,slice potato,True,True,True,A,0.9996646499458114,0.004354351991977225,available
+makeSalad,makeSalad-10,02:17,slice tomato,True,True,True,A,0.9998766053723329,0.001780219083816374,available
+makeSalad,makeSalad-10,02:35,pick up lettuce slice,True,True,True,A,0.9999251537939506,0.0011337967002374957,available
+makeSalad,makeSalad-10,02:38,put lettuce slice in bowl,True,False,True,B,0.9999994284997149,1.267669761323519e-05,available
+makeSalad,makeSalad-10,02:41,pick up potato slice,True,True,True,A,0.9999996072136301,8.925067298424608e-06,available
+makeSalad,makeSalad-10,02:44,put potato slice in bowl,True,True,True,A,0.9999997300421382,6.280153187162631e-06,available
+makeSalad,makeSalad-10,02:45,pick up tomato slice,True,False,False,B,0.9999998555019682,3.491815420311467e-06,available
+makeSalad,makeSalad-10,02:46,put tomato slice in bowl,False,False,,B,0.9999999586006244,1.0750801278688535e-06,available
+makeSalad,makeSalad-10,03:00,open fridge,False,True,,A,0.999925153802872,0.001133796577967522,available
+makeSalad,makeSalad-10,03:16,pick up bowl,False,True,,A,0.9999962733608835,7.258146119082659e-05,available
+makeSalad,makeSalad-10,03:32,put bowl in fridge,False,True,,A,0.9999998555019682,3.491815420311467e-06,available
+makeSalad,makeSalad-10,03:35,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+makeSalad,makeSalad-2,00:10,pick up lettuce,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-2,00:31,put lettuce on first countertop,True,True,True,A,0.9999982396568656,3.618984826916553e-05,available
+makeSalad,makeSalad-2,00:54,pick up tomato,True,True,True,A,0.9999885212296566,0.0002049346093407361,available
+makeSalad,makeSalad-2,01:15,put tomato on first countertop,True,True,True,A,0.9999989322969232,2.2720457049677194e-05,available
+makeSalad,makeSalad-2,01:29,pick up potato,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-2,01:41,put potato on first countertop,True,True,True,A,0.9999999778405106,5.954298016009165e-07,available
+makeSalad,makeSalad-2,01:48,pick up knife,True,True,True,A,0.999989870011893,0.00018268112324772617,available
+makeSalad,makeSalad-2,01:55,slice lettuce,True,True,True,A,0.9968273169336631,0.030903471446774997,available
+makeSalad,makeSalad-2,01:58,slice potato,True,True,True,A,0.9968273169336631,0.030903471446774997,available
+makeSalad,makeSalad-2,02:06,slice tomato,True,True,True,A,0.9997388096733121,0.0034856156068474534,available
+makeSalad,makeSalad-2,02:07,put knife on first countertop,True,True,True,A,0.9999999468421502,1.3612575517135648e-06,available
+makeSalad,makeSalad-2,02:16,pick up lettuce slice,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+makeSalad,makeSalad-2,02:19,put lettuce slice in bowl,True,True,True,A,0.9999998362622821,3.927217218750354e-06,available
+makeSalad,makeSalad-2,02:22,pick up tomato slice,True,True,True,A,0.999989870011893,0.00018268112324772617,available
+makeSalad,makeSalad-2,02:25,put tomato slice in bowl,True,True,True,A,0.9999998874648162,2.760017155851152e-06,available
+makeSalad,makeSalad-2,02:28,pick up potato slice,True,True,True,A,0.9999982396568656,3.618984826916553e-05,available
+makeSalad,makeSalad-2,02:31,put potato slice in pan,True,False,False,B,0.9999998874648162,2.760017155851152e-06,available
+makeSalad,makeSalad-2,02:50,open fridge,False,True,,A,0.9999546021388404,0.0007204494583810701,available
+makeSalad,makeSalad-2,03:06,pick up bowl,False,True,,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-2,03:26,put bowl in fridge,False,True,,A,0.9999921107349486,0.00014511803680413704,available
+makeSalad,makeSalad-2,03:31,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+makeSalad,makeSalad-3,00:10,pick up lettuce,True,True,True,A,0.9999977396747258,4.56534431713181e-05,available
+makeSalad,makeSalad-3,00:31,put lettuce on first countertop,True,True,True,A,0.9999998874648162,2.760017155851152e-06,available
+makeSalad,makeSalad-3,00:46,pick up apple,True,True,False,A,0.9999832985848862,0.0002891407960567083,available
+makeSalad,makeSalad-3,00:59,put apple on first countertop,False,True,,A,0.9999997617630155,5.5851788203125485e-06,available
+makeSalad,makeSalad-3,01:13,pick up potato,False,True,,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-3,01:25,put potato on first countertop,False,True,,A,0.9999998362622821,3.927217218750354e-06,available
+makeSalad,makeSalad-3,01:32,pick up knife,False,True,,A,0.9999832985848862,0.0002891407960567083,available
+makeSalad,makeSalad-3,01:39,slice lettuce,False,True,,A,0.9990889489238549,0.01051555021965498,available
+makeSalad,makeSalad-3,01:47,slice potato,False,True,,A,0.9996646499458114,0.004354351991977225,available
+makeSalad,makeSalad-3,01:56,slice apple,False,True,,A,0.9999038975892415,0.001421133001438565,available
+makeSalad,makeSalad-3,01:57,put knife on first countertop,False,True,,A,0.9999998555019682,3.491815420311467e-06,available
+makeSalad,makeSalad-3,02:05,pick up lettuce slice,False,True,,A,0.9999982396568656,3.618984826916553e-05,available
+makeSalad,makeSalad-3,02:08,put lettuce slice in bowl,False,True,,A,0.999999057755336,2.0220654636653533e-05,available
+makeSalad,makeSalad-3,02:11,pick up potato slice,False,True,,A,0.999989870011893,0.00018268112324772617,available
+makeSalad,makeSalad-3,02:14,put potato slice in bowl,False,True,,A,0.9999910603051653,0.00016282788400912558,available
+makeSalad,makeSalad-3,02:17,pick up apple slice,False,True,,A,0.999999057755336,2.0220654636653533e-05,available
+makeSalad,makeSalad-3,02:20,put apple slice in bowl,False,False,,B,0.9999993524053851,1.4247794040839634e-05,available
+makeSalad,makeSalad-3,02:39,open fridge,False,True,,A,0.9999546021388404,0.0007204494583810701,available
+makeSalad,makeSalad-3,02:55,pick up bowl,False,True,,A,0.9999417087232138,0.0009040401965186355,available
+makeSalad,makeSalad-3,03:15,put bowl in fridge,False,True,,A,0.9999970976877992,5.7573337778860017e-05,available
+makeSalad,makeSalad-3,03:20,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+makeSalad,makeSalad-4,00:10,pick up lettuce,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-4,00:58,pick up tomato,True,True,True,A,0.9999885212296566,0.0002049346093407361,available
+makeSalad,makeSalad-4,01:37,pick up potato,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-4,02:00,pick up knife,True,True,True,A,0.999997438718515,5.127018562230698e-05,available
+makeSalad,makeSalad-4,02:07,slice lettuce,True,True,True,A,0.7310585903489892,0.8399415210762481,available
+makeSalad,makeSalad-4,02:10,slice potato,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+makeSalad,makeSalad-4,02:13,slice tomato,True,True,True,A,0.9998415637531547,0.002228626148483538,available
+makeSalad,makeSalad-4,02:21,pick up lettuce slice,True,True,True,A,0.9999992661791399,1.601253126401421e-05,available
+makeSalad,makeSalad-4,02:24,put lettuce slice in bowl,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+makeSalad,makeSalad-4,02:27,pick up tomato slice,True,True,True,A,0.9999999226557719,1.9387743157428543e-06,available
+makeSalad,makeSalad-4,02:30,put tomato slice in bowl,True,True,True,A,0.9999999317439576,1.723271425266314e-06,available
+makeSalad,makeSalad-4,02:33,pick up potato slice,True,True,True,A,0.9999999468421502,1.3612575517135648e-06,available
+makeSalad,makeSalad-4,02:36,put potato slice in bowl,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+makeSalad,makeSalad-4,02:52,open fridge,True,True,True,A,0.999925153802872,0.001133796577967522,available
+makeSalad,makeSalad-4,03:08,pick up bowl,True,False,True,B,0.9947798743112779,0.04708878421920025,available
+makeSalad,makeSalad-4,03:24,put bowl in fridge,True,False,True,B,0.9999785550551182,0.00036352789553793454,available
+makeSalad,makeSalad-4,03:27,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+makeSalad,makeSalad-5,00:10,pick up lettuce,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-5,00:58,pick up tomato,True,True,True,A,0.9999885212296566,0.0002049346093407361,available
+makeSalad,makeSalad-5,01:37,pick up potato,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-5,02:00,pick up knife,True,True,True,A,0.9999962733608835,7.258146119082659e-05,available
+makeSalad,makeSalad-5,02:07,slice lettuce,True,True,True,A,0.9984988179739498,0.01624473653630814,available
+makeSalad,makeSalad-5,02:10,slice tomato,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+makeSalad,makeSalad-5,02:27,pick up lettuce slice,True,True,True,A,0.9999993524053851,1.4247794040839634e-05,available
+makeSalad,makeSalad-5,02:30,put lettuce slice in bowl,True,False,True,B,0.9999994284997149,1.267669761323519e-05,available
+makeSalad,makeSalad-5,02:33,pick up tomato slice,True,True,True,A,0.9999984465026854,3.2217581156089804e-05,available
+makeSalad,makeSalad-5,02:36,put tomato slice in bowl,True,True,True,A,0.9999989322969232,2.2720457049677194e-05,available
+makeSalad,makeSalad-5,02:39,pick up potato,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+makeSalad,makeSalad-5,02:42,put potato in bowl,True,False,False,B,0.9999994956527948,1.127809826024321e-05,available
+makeSalad,makeSalad-5,02:56,open fridge,False,True,,A,0.999925153802872,0.001133796577967522,available
+makeSalad,makeSalad-5,03:12,pick up bowl,False,True,,A,0.9999785550602308,0.00036352781624779574,available
+makeSalad,makeSalad-5,03:28,put bowl in fridge,False,True,,A,0.9999980052698924,4.064874699476472e-05,available
+makeSalad,makeSalad-5,03:31,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+makeSalad,makeSalad-6,00:10,pick up lettuce,False,True,,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-6,00:31,put lettuce on first countertop,False,True,,A,0.9999998874648162,2.760017155851152e-06,available
+makeSalad,makeSalad-6,00:54,pick up tomato,False,True,,A,0.9999885212296566,0.0002049346093407361,available
+makeSalad,makeSalad-6,01:15,put tomato on first countertop,False,True,,A,0.9999977396747258,4.56534431713181e-05,available
+makeSalad,makeSalad-6,01:29,pick up potato,False,True,,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-6,01:41,put potato on first countertop,False,True,,A,0.9999998144608402,4.416660967442774e-06,available
+makeSalad,makeSalad-6,01:48,pick up knife,False,True,,A,0.9999724643101547,0.0004568449854295502,available
+makeSalad,makeSalad-6,01:55,slice lettuce,False,True,,A,0.9997965729390125,0.002788120250251277,available
+makeSalad,makeSalad-6,01:58,slice potato,False,True,,A,0.9998766053723329,0.001780219083816374,available
+makeSalad,makeSalad-6,02:06,slice tomato,False,True,,A,0.9998415637342705,0.002228626386868482,available
+makeSalad,makeSalad-6,02:07,put knife on first countertop,False,True,,A,0.9999997897565931,4.96681778329076e-06,available
+makeSalad,makeSalad-6,02:16,pick up lettuce slice,False,True,,A,0.9999938558278723,0.00011523419737095476,available
+makeSalad,makeSalad-6,02:19,put lettuce slice in bowl,False,True,,A,0.9999997617630155,5.5851788203125485e-06,available
+makeSalad,makeSalad-6,02:22,pick up potato slice,False,True,,A,0.9999251537939506,0.0011337967002374957,available
+makeSalad,makeSalad-6,02:25,put potato slice in bowl,False,True,,A,0.9999998724809325,3.1045127342423593e-06,available
+makeSalad,makeSalad-6,02:28,pick up tomato slice,False,True,,A,0.9999724643101547,0.0004568449854295502,available
+makeSalad,makeSalad-6,02:31,put tomato slice in bowl,False,True,,A,0.9999967112518665,6.464601013386288e-05,available
+makeSalad,makeSalad-6,02:46,open fridge,False,True,,A,0.999925153802872,0.001133796577967522,available
+makeSalad,makeSalad-6,03:00,pick up bowl,False,False,,B,0.9525741301883566,0.27535993272667686,available
+makeSalad,makeSalad-6,03:14,put bowl in fridge,False,False,,B,0.9999724643068726,0.00045684503515017855,available
+makeSalad,makeSalad-6,03:17,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+makeSalad,makeSalad-7,00:10,pick up lettuce,False,True,,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-7,00:31,put lettuce on first countertop,False,True,,A,0.9999998874648162,2.760017155851152e-06,available
+makeSalad,makeSalad-7,00:54,pick up tomato,False,True,,A,0.9999885212296566,0.0002049346093407361,available
+makeSalad,makeSalad-7,01:15,put tomato on first countertop,False,True,,A,0.9999987901339381,2.5527466612479186e-05,available
+makeSalad,makeSalad-7,01:29,pick up potato,False,True,,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-7,01:41,put potato on first countertop,False,True,,A,0.999999974890009,6.701820991850731e-07,available
+makeSalad,makeSalad-7,01:48,pick up knife,False,True,,A,0.9999984465026854,3.2217581156089804e-05,available
+makeSalad,makeSalad-7,01:55,slice lettuce,False,True,,A,0.9997965729390125,0.002788120250251277,available
+makeSalad,makeSalad-7,02:02,slice potato,False,False,,B,0.6224593312018546,0.956286539380729,available
+makeSalad,makeSalad-7,02:05,slice tomato,False,True,,A,0.9999785550576745,0.00036352785589286314,available
+makeSalad,makeSalad-7,02:06,put knife on first countertop,False,True,,A,0.9999994956527948,1.127809826024321e-05,available
+makeSalad,makeSalad-7,02:09,pick up potato slice,False,True,,A,0.9999996072136301,8.925067298424608e-06,available
+makeSalad,makeSalad-7,02:12,put potato slice in bowl,False,True,,A,0.9999993524053851,1.4247794040839634e-05,available
+makeSalad,makeSalad-7,02:15,pick up tomato slice,False,True,,A,0.9999993524053851,1.4247794040839634e-05,available
+makeSalad,makeSalad-7,02:18,put tomato slice in bowl,False,True,,A,0.9999998362622821,3.927217218750354e-06,available
+makeSalad,makeSalad-7,02:35,open fridge,False,True,,A,0.999925153802872,0.001133796577967522,available
+makeSalad,makeSalad-7,02:51,pick up bowl,False,True,,A,0.9999785550576745,0.00036352785589286314,available
+makeSalad,makeSalad-7,03:07,put bowl in fridge,False,True,,A,0.9999982396568656,3.618984826916553e-05,available
+makeSalad,makeSalad-7,03:10,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+makeSalad,makeSalad-8,00:10,pick up lettuce,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-8,00:58,pick up tomato,True,True,True,A,0.9999885212296566,0.0002049346093407361,available
+makeSalad,makeSalad-8,01:19,put tomato on countertop,True,False,False,B,0.9998766053723329,0.001780219083816374,available
+makeSalad,makeSalad-8,01:33,pick up potato,False,False,,B,0.9998766053723329,0.001780219083816374,available
+makeSalad,makeSalad-8,01:45,put potato on countertop,False,False,,B,0.9999977396747258,4.56534431713181e-05,available
+makeSalad,makeSalad-8,01:52,pick up knife,False,False,,B,0.9999038976006969,0.001421132848569472,available
+makeSalad,makeSalad-8,01:57,slice lettuce,False,False,,B,0.9998766053723329,0.001780219083816374,available
+makeSalad,makeSalad-8,02:09,slice potato,False,False,,B,0.9999989322969232,2.2720457049677194e-05,available
+makeSalad,makeSalad-8,02:10,slice tomato,False,False,,B,0.9995694428819758,0.005435306624609062,available
+makeSalad,makeSalad-8,02:11,put knife on countertop,False,False,,B,0.9999869928705739,0.00022987530436896234,available
+makeSalad,makeSalad-8,02:23,pick up lettuce slice,False,False,,B,0.9999546021442518,0.0007204493803105356,available
+makeSalad,makeSalad-8,02:26,put lettuce slice in bowl,False,False,,B,0.9999546021442518,0.0007204493803105356,available
+makeSalad,makeSalad-8,02:38,pick up potato slice,False,True,,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-8,02:52,put potato slice in bowl,False,False,,B,0.9980732656706854,0.020155434739198397,available
+makeSalad,makeSalad-8,02:55,pick up tomato slice,False,False,,B,0.9997388096421918,0.003485615977251547,available
+makeSalad,makeSalad-8,02:58,put tomato slice in bowl,False,True,,A,0.9994472214174237,0.0067788933958978954,available
+makeSalad,makeSalad-8,03:14,open fridge,False,True,,A,0.999925153802872,0.001133796577967522,available
+makeSalad,makeSalad-8,03:30,pick up bowl,False,False,,B,0.9947798736922386,0.04708878890789473,available
+makeSalad,makeSalad-8,03:46,put bowl in fridge,False,True,,A,0.999989870011893,0.00018268112324772617,available
+makeSalad,makeSalad-8,03:49,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+makeSalad,makeSalad-9,00:10,pick up lettuce,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-9,00:58,pick up tomato,True,True,True,A,0.9999885212296566,0.0002049346093407361,available
+makeSalad,makeSalad-9,01:37,pick up potato,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+makeSalad,makeSalad-9,02:00,pick up knife,True,True,True,A,0.9999962733608835,7.258146119082659e-05,available
+makeSalad,makeSalad-9,02:07,slice lettuce,True,True,True,A,0.9984988179739498,0.01624473653630814,available
+makeSalad,makeSalad-9,02:14,slice potato,True,True,True,A,0.9996646499458114,0.004354351991977225,available
+makeSalad,makeSalad-9,02:17,slice tomato,True,True,True,A,0.9998766053723329,0.001780219083816374,available
+makeSalad,makeSalad-9,02:35,pick up lettuce slice,True,True,True,A,0.9999251537939506,0.0011337967002374957,available
+makeSalad,makeSalad-9,02:38,put lettuce slice in bowl,True,False,True,B,0.9999994284997149,1.267669761323519e-05,available
+makeSalad,makeSalad-9,02:41,pick up potato slice,True,True,True,A,0.9999996072136301,8.925067298424608e-06,available
+makeSalad,makeSalad-9,02:44,put potato slice in bowl,True,True,True,A,0.9999997300421382,6.280153187162631e-06,available
+makeSalad,makeSalad-9,02:47,pick up tomato slice,True,True,True,A,0.9999987901339381,2.5527466612479186e-05,available
+makeSalad,makeSalad-9,02:50,put tomato slice in bowl,True,True,True,A,0.9999998144608402,4.416660967442774e-06,available
+makeSalad,makeSalad-9,03:04,open fridge,True,True,True,A,0.999925153802872,0.001133796577967522,available
+makeSalad,makeSalad-9,03:20,pick up bowl,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+makeSalad,makeSalad-9,03:34,put bowl in fridge,True,False,False,B,0.9999724643068726,0.00045684503515017855,available
+makeSalad,makeSalad-9,03:37,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-1,00:15,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-1,00:21,pick up egg,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+storeEgg,storeEgg-1,00:41,put egg on first countertop,True,True,True,A,0.9999992661791399,1.601253126401421e-05,available
+storeEgg,storeEgg-1,01:03,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-1,01:25,pick up egg,True,True,True,A,0.9994472212857038,0.006778894821134688,available
+storeEgg,storeEgg-1,01:39,put egg in bowl,True,True,True,A,0.9959298622312515,0.038179771541896446,available
+storeEgg,storeEgg-1,01:53,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-1,02:07,pick up pan,True,True,False,A,0.9999970976877992,5.7573337778860017e-05,available
+storeEgg,storeEgg-1,02:21,put pan in fridge,False,True,,A,0.9999938558278723,0.00011523419737095476,available
+storeEgg,storeEgg-1,02:24,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-10,00:15,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-10,00:35,put egg on countertop,True,False,False,B,0.9999970976877992,5.7573337778860017e-05,available
+storeEgg,storeEgg-10,00:57,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-10,01:06,pick up egg,False,False,,B,0.999995214903439,9.147052833019699e-05,available
+storeEgg,storeEgg-10,01:18,put egg in bowl,False,False,,B,0.9999938558271397,0.00011523421005071947,available
+storeEgg,storeEgg-10,01:32,open fridge,False,True,,A,0.9999952149051501,9.147049808839806e-05,available
+storeEgg,storeEgg-10,01:46,pick up bowl,False,True,,A,0.9999957771647316,8.148403454488396e-05,available
+storeEgg,storeEgg-10,02:00,put bowl in fridge,False,True,,A,0.9999967112522586,6.464600299327198e-05,available
+storeEgg,storeEgg-10,02:03,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-2,00:15,open fridge,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+storeEgg,storeEgg-2,00:16,pick up egg,True,False,True,B,0.9999038975892415,0.001421133001438565,available
+storeEgg,storeEgg-2,00:36,put egg on countertop,True,False,True,B,0.9999970976877992,5.7573337778860017e-05,available
+storeEgg,storeEgg-2,00:58,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-2,01:06,pick up egg,True,False,True,B,0.999995214903439,9.147052833019699e-05,available
+storeEgg,storeEgg-2,01:19,put egg in bowl,True,False,True,B,0.9999994956527948,1.127809826024321e-05,available
+storeEgg,storeEgg-2,01:33,open fridge,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+storeEgg,storeEgg-2,01:47,pick up bowl,True,True,True,A,0.9999957771647316,8.148403454488396e-05,available
+storeEgg,storeEgg-2,02:01,put bowl in fridge,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+storeEgg,storeEgg-2,02:04,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-3,00:15,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-3,00:21,pick up egg,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+storeEgg,storeEgg-3,00:43,put egg on first countertop,True,True,True,A,0.9999982396568656,3.618984826916553e-05,available
+storeEgg,storeEgg-3,01:05,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-3,01:27,pick up egg,True,True,True,A,0.9994472212857038,0.006778894821134688,available
+storeEgg,storeEgg-3,01:42,put egg in pan,True,True,False,A,0.9999952149051501,9.147049808839806e-05,available
+storeEgg,storeEgg-3,01:55,open fridge,False,True,,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-3,02:09,pick up pan,False,True,,A,0.6224593312018546,0.956286539380729,available
+storeEgg,storeEgg-3,02:23,put pan in fridge,False,True,,A,0.9999967112514744,6.464601727444197e-05,available
+storeEgg,storeEgg-3,02:26,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-4,00:15,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-4,00:21,pick up egg,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+storeEgg,storeEgg-4,00:43,put egg on first countertop,True,True,True,A,0.9999982396568656,3.618984826916553e-05,available
+storeEgg,storeEgg-4,01:05,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-4,01:27,pick up egg,True,True,True,A,0.9994472212857038,0.006778894821134688,available
+storeEgg,storeEgg-4,01:41,put egg in container,True,False,True,B,0.9999996940976409,7.061180939971169e-06,available
+storeEgg,storeEgg-4,01:55,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-4,02:09,pick up bowl,True,True,True,A,0.9999938558278723,0.00011523419737095476,available
+storeEgg,storeEgg-4,02:23,put bowl in fridge,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+storeEgg,storeEgg-4,02:26,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-5,00:15,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-5,00:21,pick up egg,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+storeEgg,storeEgg-5,00:43,put egg on first countertop,True,True,True,A,0.9999982396568656,3.618984826916553e-05,available
+storeEgg,storeEgg-5,01:05,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-5,01:27,pick up egg,True,True,True,A,0.9994472212857038,0.006778894821134688,available
+storeEgg,storeEgg-5,01:41,put egg in bowl,True,False,True,B,0.9999977396747258,4.56534431713181e-05,available
+storeEgg,storeEgg-5,01:55,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-5,02:09,pick up bowl,True,True,True,A,0.9999938558278723,0.00011523419737095476,available
+storeEgg,storeEgg-5,02:23,put bowl in fridge,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+storeEgg,storeEgg-5,02:26,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-6,00:15,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-6,00:21,pick up egg,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+storeEgg,storeEgg-6,00:43,put egg on first countertop,True,True,True,A,0.9999996533672291,7.938855270846538e-06,available
+storeEgg,storeEgg-6,01:05,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-6,01:27,pick up egg,True,False,True,B,0.9999646437382576,0.0005738443000351214,available
+storeEgg,storeEgg-6,01:41,put egg in bowl,True,False,True,B,0.9999994956527948,1.127809826024321e-05,available
+storeEgg,storeEgg-6,01:55,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-6,02:09,pick up bowl,True,True,True,A,0.9999957771647316,8.148403454488396e-05,available
+storeEgg,storeEgg-6,02:23,put bowl in fridge,True,True,True,A,0.999925153802872,0.001133796577967522,available
+storeEgg,storeEgg-6,02:26,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-7,00:15,pick up egg,True,False,False,B,0.999995214903439,9.147052833019699e-05,available
+storeEgg,storeEgg-7,00:27,put egg in bowl,False,False,,B,0.9999938558271397,0.00011523421005071947,available
+storeEgg,storeEgg-7,00:41,open fridge,False,True,,A,0.9999952149051501,9.147049808839806e-05,available
+storeEgg,storeEgg-7,00:55,pick up bowl,False,True,,A,0.9999957771647316,8.148403454488396e-05,available
+storeEgg,storeEgg-7,01:09,put bowl in fridge,False,True,,A,0.9999967112522586,6.464600299327198e-05,available
+storeEgg,storeEgg-7,01:12,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-8,00:15,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-8,00:21,pick up egg,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+storeEgg,storeEgg-8,00:43,put egg on first countertop,True,True,True,A,0.999997438718515,5.127018562230698e-05,available
+storeEgg,storeEgg-8,01:05,close fridge,True,True,True,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-8,01:27,pick up egg,True,True,True,A,0.9994472212857038,0.006778894821134688,available
+storeEgg,storeEgg-8,01:41,put egg in bowl,True,False,True,B,0.9999945777819207,0.00010267174112224464,available
+storeEgg,storeEgg-8,01:55,open fridge,True,True,True,A,0.9998766054311666,0.0017802183199049912,available
+storeEgg,storeEgg-8,02:09,pick up bowl,True,True,True,A,0.9998415637531547,0.002228626148483538,available
+storeEgg,storeEgg-8,02:21,put bowl in fridge,True,False,False,B,0.9999251537939506,0.0011337967002374957,available
+storeEgg,storeEgg-8,02:24,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-9,00:15,open fridge,True,False,False,B,0.9999938558256749,0.00011523423541002103,available
+storeEgg,storeEgg-9,00:21,pick up egg,False,False,,B,0.999995214903439,9.147052833019699e-05,available
+storeEgg,storeEgg-9,00:41,put egg on countertop,False,False,,B,0.9999970976877992,5.7573337778860017e-05,available
+storeEgg,storeEgg-9,01:07,close fridge,False,True,,A,0.9999038975777871,0.0014211331542979086,available
+storeEgg,storeEgg-9,01:16,pick up egg,False,False,,B,0.999995214903439,9.147052833019699e-05,available
+storeEgg,storeEgg-9,01:28,put egg in bowl,False,False,,B,0.9999938558271397,0.00011523421005071947,available
+storeEgg,storeEgg-9,01:46,open fridge,False,True,,A,0.999925153802872,0.001133796577967522,available
+storeEgg,storeEgg-9,02:00,pick up bowl,False,True,,A,0.9999957771647316,8.148403454488396e-05,available
+storeEgg,storeEgg-9,02:18,put bowl in fridge,False,True,,A,0.9999994284997149,1.267669761323519e-05,available
+storeEgg,storeEgg-9,02:23,close fridge,False,True,,A,0.9997965731087307,0.002788118169012952,available
+switchDevices,switchDevices-1,00:19,toggle on laptop,True,True,False,A,0.9999646437424718,0.0005738442377127494,available
+switchDevices,switchDevices-1,00:22,pick up laptop,False,True,,A,0.9996646499458114,0.004354351991977225,available
+switchDevices,switchDevices-1,00:44,put laptop on tv stand,False,True,,A,0.9999987901339381,2.5527466612479186e-05,available
+switchDevices,switchDevices-1,00:55,pick up remote control,False,True,,A,0.999999057755336,2.0220654636653533e-05,available
+switchDevices,switchDevices-1,01:07,toggle off television,False,True,,A,0.9999970976877992,5.7573337778860017e-05,available
+switchDevices,switchDevices-1,01:12,put remote control on tv stand,False,True,,A,0.9999970976877992,5.7573337778860017e-05,available
+switchDevices,switchDevices-10,00:19,close laptop,True,True,True,A,0.9998766054752887,0.001780217747012588,available
+switchDevices,switchDevices-10,00:22,pick up laptop,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+switchDevices,switchDevices-10,00:44,put laptop on tv stand,True,True,True,A,0.9999962733608835,7.258146119082659e-05,available
+switchDevices,switchDevices-10,01:04,toggle on television,True,False,False,B,0.999988521231025,0.00020493458688599923,available
+switchDevices,switchDevices-2,00:19,close laptop,True,True,True,A,0.9998766054752887,0.001780217747012588,available
+switchDevices,switchDevices-2,00:22,pick up laptop,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+switchDevices,switchDevices-2,00:44,put laptop on tv stand,True,True,True,A,0.9999980052698924,4.064874699476472e-05,available
+switchDevices,switchDevices-2,00:55,toggle on television,True,False,True,B,0.999988521231025,0.00020493458688599923,available
+switchDevices,switchDevices-2,01:04,pick up remote control,True,False,True,B,0.9999938558271397,0.00011523421005071947,available
+switchDevices,switchDevices-2,01:05,put remote control on tv stand,True,False,True,B,0.9999952149045797,9.147050816911523e-05,available
+switchDevices,switchDevices-3,00:19,close laptop,True,True,True,A,0.9998766054752887,0.001780217747012588,available
+switchDevices,switchDevices-3,00:22,pick up laptop,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+switchDevices,switchDevices-3,00:44,put laptop on tv stand,True,True,True,A,0.9999962733608835,7.258146119082659e-05,available
+switchDevices,switchDevices-3,00:47,open laptop,True,True,False,A,0.9999991684720095,1.7994620173877958e-05,available
+switchDevices,switchDevices-3,00:58,pick up remote control,False,True,,A,0.999999057755336,2.0220654636653533e-05,available
+switchDevices,switchDevices-3,01:10,toggle on television,False,True,,A,0.999925153802872,0.001133796577967522,available
+switchDevices,switchDevices-3,01:15,put remote control on tv stand,False,True,,A,0.9999982396568656,3.618984826916553e-05,available
+switchDevices,switchDevices-4,00:24,toggle off floor lamp,True,False,True,B,0.9980732652124251,0.020155438871260582,available
+switchDevices,switchDevices-4,00:41,close laptop,True,True,True,A,0.9998766054752887,0.001780217747012588,available
+switchDevices,switchDevices-4,00:44,pick up laptop,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+switchDevices,switchDevices-4,01:06,put laptop on tv stand,True,True,True,A,0.999998629043345,2.867915148081539e-05,available
+switchDevices,switchDevices-4,01:17,pick up remote control,True,True,True,A,0.999999057755336,2.0220654636653533e-05,available
+switchDevices,switchDevices-4,01:39,toggle on floor lamp,True,False,False,B,0.8519528019683106,0.6049317644988689,available
+switchDevices,switchDevices-5,00:19,close laptop,True,True,True,A,0.9998766054752887,0.001780217747012588,available
+switchDevices,switchDevices-5,00:22,pick up laptop,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+switchDevices,switchDevices-5,00:48,put laptop in garbage can,True,True,False,A,0.9999993524053851,1.4247794040839634e-05,available
+switchDevices,switchDevices-5,01:01,pick up remote control,False,True,,A,0.999999057755336,2.0220654636653533e-05,available
+switchDevices,switchDevices-5,01:13,toggle on television,False,True,,A,0.999989870011893,0.00018268112324772617,available
+switchDevices,switchDevices-5,01:18,put remote control on tv stand,False,True,,A,0.9999998144608402,4.416660967442774e-06,available
+switchDevices,switchDevices-6,00:19,close laptop,True,True,True,A,0.9998766054752887,0.001780217747012588,available
+switchDevices,switchDevices-6,00:22,pick up laptop,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+switchDevices,switchDevices-6,00:42,put laptop in tv stand,True,False,True,B,0.9999724643101547,0.0004568449854295502,available
+switchDevices,switchDevices-6,00:51,pick up remote control,True,False,True,B,0.9999869928752253,0.0002298752288747113,available
+switchDevices,switchDevices-6,01:03,toggle on television,True,False,True,B,0.9999962733608835,7.258146119082659e-05,available
+switchDevices,switchDevices-6,01:04,put remote control on tv stand,True,False,True,B,0.9999996072136301,8.925067298424608e-06,available
+switchDevices,switchDevices-7,00:19,pick up laptop,True,True,True,A,0.9998766053723329,0.001780219083816374,available
+switchDevices,switchDevices-7,00:41,put laptop on tv stand,True,True,False,A,0.999998629043345,2.867915148081539e-05,available
+switchDevices,switchDevices-7,00:52,pick up remote control,False,True,,A,0.999999057755336,2.0220654636653533e-05,available
+switchDevices,switchDevices-7,01:04,toggle on television,False,True,,A,0.999925153802872,0.001133796577967522,available
+switchDevices,switchDevices-7,01:09,put remote control on tv stand,False,True,,A,0.9999982396568656,3.618984826916553e-05,available
+switchDevices,switchDevices-8,00:19,close laptop,True,True,True,A,0.9998766054752887,0.001780217747012588,available
+switchDevices,switchDevices-8,00:22,pick up laptop,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+switchDevices,switchDevices-8,00:44,put laptop on tv stand,True,True,True,A,0.9999962733608835,7.258146119082659e-05,available
+switchDevices,switchDevices-8,00:55,pick up remote control,True,True,True,A,0.999999057755336,2.0220654636653533e-05,available
+switchDevices,switchDevices-8,01:07,toggle on television,True,False,False,B,0.999988521231025,0.00020493458688599923,available
+switchDevices,switchDevices-9,00:19,close laptop,True,True,True,A,0.9998766054752887,0.001780217747012588,available
+switchDevices,switchDevices-9,00:22,pick up laptop,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+switchDevices,switchDevices-9,00:40,put laptop on tv stand,True,False,False,B,0.9998766053723329,0.001780219083816374,available
+switchDevices,switchDevices-9,00:54,pick up remote control,False,False,,B,0.9999852610222102,0.00025782434599506466,available
+switchDevices,switchDevices-9,01:06,toggle on television,False,False,,B,0.9999546021388404,0.0007204494583810701,available
+toastBread,toastBread-1,00:23,pick up knife,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+toastBread,toastBread-1,00:33,slice bread,True,False,True,B,0.8807970904940926,0.5270653048890119,available
+toastBread,toastBread-1,00:36,put knife on second countertop,True,True,True,A,0.999998629043345,2.867915148081539e-05,available
+toastBread,toastBread-1,00:39,pick up bread slice,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+toastBread,toastBread-1,00:45,put bread slice in toaster,True,False,False,B,0.9999974387182097,5.127019129340547e-05,available
+toastBread,toastBread-1,00:48,toggle on toaster,False,True,,A,0.9999982396568656,3.618984826916553e-05,available
+toastBread,toastBread-10,00:23,pick up knife,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+toastBread,toastBread-10,00:33,slice bread,True,False,True,B,0.8807970904940926,0.5270653048890119,available
+toastBread,toastBread-10,00:36,put knife on second countertop,True,True,False,A,0.9999994956527948,1.127809826024321e-05,available
+toastBread,toastBread-10,00:42,put bread slice in toaster,False,False,,B,0.9999974387182097,5.127019129340547e-05,available
+toastBread,toastBread-10,00:45,toggle on toaster,False,True,,A,0.9999982396568656,3.618984826916553e-05,available
+toastBread,toastBread-2,00:23,pick up knife,True,False,True,B,0.9999938558271397,0.00011523421005071947,available
+toastBread,toastBread-2,00:31,slice bread,True,False,True,B,0.999998005269417,4.064875599938589e-05,available
+toastBread,toastBread-2,00:32,put knife on countertop,True,False,True,B,0.9999910603062309,0.00016282786613705123,available
+toastBread,toastBread-2,00:35,pick up bread slice,True,False,True,B,0.9706877660157724,0.1909309320287591,available
+toastBread,toastBread-2,00:43,put bread slice in toaster,True,False,True,B,0.9999921107340083,0.00014511805274578548,available
+toastBread,toastBread-2,00:46,toggle on toaster,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+toastBread,toastBread-3,00:23,pick up knife,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+toastBread,toastBread-3,00:33,slice bread,True,False,True,B,0.8807970904940926,0.5270653048890119,available
+toastBread,toastBread-3,00:36,put knife on second countertop,True,True,True,A,0.999998629043345,2.867915148081539e-05,available
+toastBread,toastBread-3,00:39,pick up bread slice,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+toastBread,toastBread-3,00:47,put bread slice in toaster,True,False,True,B,0.999989870011893,0.00018268112324772617,available
+toastBread,toastBread-3,00:50,toggle on toaster,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+toastBread,toastBread-4,00:23,pick up knife,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+toastBread,toastBread-4,00:31,slice bread,True,False,False,B,0.999998005269417,4.064875599938589e-05,available
+toastBread,toastBread-4,00:34,put knife on second countertop,False,False,,B,0.9984988177952635,0.01624473821194138,available
+toastBread,toastBread-4,00:37,pick up bread slice,False,True,,A,0.5621765008857981,0.9888163926508522,available
+toastBread,toastBread-4,00:45,put bread slice in toaster,False,False,,B,0.9999921107340083,0.00014511805274578548,available
+toastBread,toastBread-4,00:48,toggle on toaster,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+toastBread,toastBread-5,00:23,pick up knife,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+toastBread,toastBread-5,00:33,slice bread,True,False,True,B,0.8807970904940926,0.5270653048890119,available
+toastBread,toastBread-5,00:36,put knife on second countertop,True,True,True,A,0.999998629043345,2.867915148081539e-05,available
+toastBread,toastBread-5,00:39,pick up bread slice,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+toastBread,toastBread-5,00:45,put bread slice in toaster,True,False,False,B,0.9999980052696545,4.0648751497235244e-05,available
+toastBread,toastBread-5,00:48,toggle on toaster,False,True,,A,0.9999646437424718,0.0005738442377127494,available
+toastBread,toastBread-6,00:28,slice bread,True,False,False,B,0.999998005269417,4.064875599938589e-05,available
+toastBread,toastBread-6,00:31,pick up bread slice,False,False,,B,0.9706877660157724,0.1909309320287591,available
+toastBread,toastBread-6,00:39,put bread slice in toaster,False,False,,B,0.9999921107340083,0.00014511805274578548,available
+toastBread,toastBread-6,00:42,toggle on toaster,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+toastBread,toastBread-7,00:21,pick up bread,True,True,False,A,0.9999038975892415,0.001421133001438565,available
+toastBread,toastBread-7,00:29,put bread in toaster,False,False,,B,0.8807970904940926,0.5270653048890119,available
+toastBread,toastBread-7,00:32,toggle on toaster,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+toastBread,toastBread-8,00:23,pick up knife,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+toastBread,toastBread-8,00:33,slice bread,True,False,False,B,0.8807970904940926,0.5270653048890119,available
+toastBread,toastBread-8,00:50,pick up bread slice,False,False,,B,0.9992903296589789,0.008447026073181966,available
+toastBread,toastBread-8,00:58,put bread slice in toaster,False,False,,B,0.999998790133794,2.552746944721236e-05,available
+toastBread,toastBread-8,01:01,toggle on toaster,False,True,,A,0.9999962733608835,7.258146119082659e-05,available
+toastBread,toastBread-9,00:23,pick up knife,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+toastBread,toastBread-9,00:33,slice bread,True,False,True,B,0.8807970904940926,0.5270653048890119,available
+toastBread,toastBread-9,00:36,put knife on second countertop,True,True,True,A,0.999998629043345,2.867915148081539e-05,available
+toastBread,toastBread-9,00:39,pick up bread slice,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+toastBread,toastBread-9,00:47,toggle on toaster,True,True,False,A,0.9999646437424718,0.0005738442377127494,available
+toastBread,toastBread-9,00:50,put bread slice in toaster,False,False,,B,0.9998766053723329,0.001780219083816374,available
+warmWater,warmWater-1,00:08,pick up mug,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-1,00:20,put mug in sink,True,True,True,A,0.9999991684720095,1.7994620173877958e-05,available
+warmWater,warmWater-1,00:23,toggle on faucet,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-1,00:26,toggle off faucet,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-1,00:29,pick up mug,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+warmWater,warmWater-1,00:42,put mug on first countertop,True,True,True,A,0.9999998362622821,3.927217218750354e-06,available
+warmWater,warmWater-1,00:47,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+warmWater,warmWater-1,00:54,pick up mug,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+warmWater,warmWater-1,01:01,put mug in microwave,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+warmWater,warmWater-1,01:04,toggle on microwave,True,False,True,B,0.9997965731087307,0.002788118169012952,available
+warmWater,warmWater-1,01:07,close microwave,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-1,01:10,toggle off microwave,True,True,True,A,0.9995694428306715,0.005435307198236721,available
+warmWater,warmWater-1,01:13,open microwave,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+warmWater,warmWater-1,01:16,pick up mug,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+warmWater,warmWater-1,01:50,put mug on dining table,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-10,00:08,pick up mug,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-10,00:20,put mug in sink,True,True,True,A,0.9999991684720095,1.7994620173877958e-05,available
+warmWater,warmWater-10,00:21,toggle on faucet,True,False,False,B,0.9999957771682555,8.148397163292943e-05,available
+warmWater,warmWater-10,00:24,toggle off faucet,False,True,,A,0.9999989322969232,2.2720457049677194e-05,available
+warmWater,warmWater-10,00:27,pick up mug,False,True,,A,0.999989870011893,0.00018268112324772617,available
+warmWater,warmWater-10,00:49,open microwave,False,True,,A,0.9999038975892415,0.001421133001438565,available
+warmWater,warmWater-10,00:56,pick up mug,False,True,,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-10,01:03,put mug in microwave,False,True,,A,0.9999982396568656,3.618984826916553e-05,available
+warmWater,warmWater-10,01:06,close microwave,False,True,,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-10,01:09,toggle on microwave,False,True,,A,0.9997965729390125,0.002788120250251277,available
+warmWater,warmWater-10,01:12,toggle off microwave,False,True,,A,0.9995694428306715,0.005435307198236721,available
+warmWater,warmWater-10,01:15,open microwave,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+warmWater,warmWater-10,01:18,pick up mug,False,True,,A,0.9999417087232138,0.0009040401965186355,available
+warmWater,warmWater-10,01:52,put mug on dining table,False,True,,A,0.9999993524053851,1.4247794040839634e-05,available
+warmWater,warmWater-2,00:07,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+warmWater,warmWater-2,00:14,pick up mug,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-2,00:21,put mug in microwave,True,True,True,A,0.9999982396568656,3.618984826916553e-05,available
+warmWater,warmWater-2,00:24,close microwave,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-2,00:27,toggle on microwave,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+warmWater,warmWater-2,00:30,toggle off microwave,True,True,True,A,0.9995694428306715,0.005435307198236721,available
+warmWater,warmWater-2,00:33,open microwave,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+warmWater,warmWater-2,00:36,pick up mug,True,True,True,A,0.9999417087232138,0.0009040401965186355,available
+warmWater,warmWater-2,00:47,put mug in sink,True,True,True,A,0.9999991684720095,1.7994620173877958e-05,available
+warmWater,warmWater-2,00:50,toggle on faucet,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-2,00:53,toggle off faucet,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-2,00:56,pick up mug,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+warmWater,warmWater-2,01:25,put mug on dining table,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-3,00:08,pick up mug,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-3,00:20,put mug in sink,True,True,True,A,0.9999991684720095,1.7994620173877958e-05,available
+warmWater,warmWater-3,00:23,toggle on faucet,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-3,00:26,toggle off faucet,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-3,00:29,pick up mug,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+warmWater,warmWater-3,00:42,put mug on first countertop,True,True,True,A,0.9999998362622821,3.927217218750354e-06,available
+warmWater,warmWater-3,00:47,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+warmWater,warmWater-3,00:54,pick up mug,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+warmWater,warmWater-3,01:01,put mug in microwave,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+warmWater,warmWater-3,01:04,close microwave,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-3,01:07,toggle on microwave,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+warmWater,warmWater-3,01:10,toggle off microwave,True,True,True,A,0.9995694428306715,0.005435307198236721,available
+warmWater,warmWater-4,00:08,pick up mug,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-4,00:20,put mug in sink,True,True,True,A,0.9999991684720095,1.7994620173877958e-05,available
+warmWater,warmWater-4,00:23,toggle on faucet,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-4,00:26,toggle off faucet,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-4,00:29,pick up mug,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+warmWater,warmWater-4,00:42,put mug on first countertop,True,True,True,A,0.9999998362622821,3.927217218750354e-06,available
+warmWater,warmWater-4,00:47,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+warmWater,warmWater-4,00:54,pick up mug,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+warmWater,warmWater-4,01:01,put mug in microwave,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+warmWater,warmWater-4,01:04,close microwave,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-4,01:07,toggle on microwave,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+warmWater,warmWater-4,01:10,toggle off microwave,True,True,True,A,0.9995694428306715,0.005435307198236721,available
+warmWater,warmWater-4,01:40,pick up cup,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-4,01:58,put cup on dining table,True,True,True,A,0.9999987901339381,2.5527466612479186e-05,available
+warmWater,warmWater-5,00:13,pick up cup,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+warmWater,warmWater-5,00:22,put cup in sink,True,True,True,A,0.999997438718515,5.127018562230698e-05,available
+warmWater,warmWater-5,00:25,toggle on faucet,True,True,True,A,0.9999646437382576,0.0005738443000351214,available
+warmWater,warmWater-5,00:28,toggle off faucet,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-5,00:31,pick up cup,True,True,True,A,0.9995694428819758,0.005435306624609062,available
+warmWater,warmWater-5,01:01,put cup on first countertop,True,True,True,A,0.9999997617630155,5.5851788203125485e-06,available
+warmWater,warmWater-5,01:11,open microwave,True,True,True,A,0.9999724643068726,0.00045684503515017855,available
+warmWater,warmWater-5,01:23,pick up cup,True,True,True,A,0.999999554915127,1.0033152570072834e-05,available
+warmWater,warmWater-5,01:35,put cup in microwave,True,False,True,B,0.9999785550602308,0.00036352781624779574,available
+warmWater,warmWater-5,01:38,close microwave,True,True,True,A,0.7772998611746911,0.7650673186733778,available
+warmWater,warmWater-5,01:41,toggle on microwave,True,True,True,A,0.8175744828610095,0.6853545206769461,available
+warmWater,warmWater-5,01:44,toggle off microwave,True,True,True,A,0.989013057642646,0.0872671593467673,available
+warmWater,warmWater-5,01:47,open microwave,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+warmWater,warmWater-5,01:50,pick up cup,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+warmWater,warmWater-5,02:23,put cup on dining table,True,True,True,A,0.9999997897565931,4.96681778329076e-06,available
+warmWater,warmWater-6,00:08,pick up mug,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-6,00:20,put mug in sink,True,True,True,A,0.9999991684720095,1.7994620173877958e-05,available
+warmWater,warmWater-6,00:23,toggle on faucet,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-6,00:26,toggle off faucet,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-6,00:29,pick up mug,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+warmWater,warmWater-6,00:46,put mug on first countertop,True,True,True,A,0.9999998362622821,3.927217218750354e-06,available
+warmWater,warmWater-6,00:52,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+warmWater,warmWater-6,00:59,pick up mug,True,False,True,B,0.9968273169336631,0.030903471446774997,available
+warmWater,warmWater-6,01:06,put mug in microwave,True,False,True,B,0.9046505453836383,0.4540779225983458,available
+warmWater,warmWater-6,01:09,close microwave,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-6,01:12,toggle on microwave,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+warmWater,warmWater-6,01:15,toggle off microwave,True,True,True,A,0.9995694428306715,0.005435307198236721,available
+warmWater,warmWater-6,01:18,open microwave,True,True,True,A,0.9999251537850291,0.0011337968225144793,available
+warmWater,warmWater-6,01:25,pick up mug,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+warmWater,warmWater-6,02:00,put mug on dining table,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-7,00:08,pick up mug,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-7,00:20,put mug in sink,True,True,True,A,0.9999991684720095,1.7994620173877958e-05,available
+warmWater,warmWater-7,00:23,toggle on faucet,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-7,00:26,toggle off faucet,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-7,00:29,pick up mug,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+warmWater,warmWater-7,00:51,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+warmWater,warmWater-7,01:21,pick up cup,True,True,False,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-7,01:51,put cup in microwave,False,True,,A,0.9999987901339381,2.5527466612479186e-05,available
+warmWater,warmWater-7,01:54,close microwave,False,True,,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-7,01:57,toggle on microwave,False,True,,A,0.9997965729390125,0.002788120250251277,available
+warmWater,warmWater-7,02:00,toggle off microwave,False,True,,A,0.9995694428306715,0.005435307198236721,available
+warmWater,warmWater-7,02:03,open microwave,False,True,,A,0.9998766054458745,0.001780218128933131,available
+warmWater,warmWater-7,02:10,pick up mug,False,True,,A,0.9999724643101547,0.0004568449854295502,available
+warmWater,warmWater-7,02:45,put mug on dining table,False,True,,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-8,00:08,pick up mug,True,True,True,A,0.999925153802872,0.001133796577967522,available
+warmWater,warmWater-8,00:20,put mug in sink,True,True,False,A,0.998830489517361,0.013077151127334189,available
+warmWater,warmWater-8,00:23,toggle on faucet,False,True,,A,0.9999962733608835,7.258146119082659e-05,available
+warmWater,warmWater-8,00:26,toggle off faucet,False,True,,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-8,00:29,pick up mug,False,True,,A,0.9995694428819758,0.005435306624609062,available
+warmWater,warmWater-8,00:51,open microwave,False,True,,A,0.9999038975892415,0.001421133001438565,available
+warmWater,warmWater-8,00:58,pick up mug,False,True,,A,0.999925153802872,0.001133796577967522,available
+warmWater,warmWater-8,01:05,put mug in microwave,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+warmWater,warmWater-8,01:08,close microwave,False,True,,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-8,01:11,toggle on microwave,False,True,,A,0.9997965729390125,0.002788120250251277,available
+warmWater,warmWater-8,01:14,toggle off microwave,False,True,,A,0.9995694428306715,0.005435307198236721,available
+warmWater,warmWater-8,01:17,open microwave,False,True,,A,0.9997965731087307,0.002788118169012952,available
+warmWater,warmWater-8,01:20,pick up mug,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+warmWater,warmWater-8,01:54,put mug on dining table,False,True,,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-9,00:08,pick up mug,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+warmWater,warmWater-9,00:20,put mug in sink,True,True,True,A,0.9999991684720095,1.7994620173877958e-05,available
+warmWater,warmWater-9,00:23,toggle on faucet,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-9,00:26,toggle off faucet,True,True,True,A,0.9999952149051501,9.147049808839806e-05,available
+warmWater,warmWater-9,00:29,pick up mug,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+warmWater,warmWater-9,00:51,open microwave,True,True,True,A,0.9999038975892415,0.001421133001438565,available
+warmWater,warmWater-9,00:58,pick up mug,True,True,True,A,0.9999724643101547,0.0004568449854295502,available
+warmWater,warmWater-9,01:05,put mug in microwave,True,True,True,A,0.9999970976877992,5.7573337778860017e-05,available
+warmWater,warmWater-9,01:08,close microwave,True,True,True,A,0.9999832985848862,0.0002891407960567083,available
+warmWater,warmWater-9,01:11,toggle on microwave,True,True,True,A,0.9997965729390125,0.002788120250251277,available
+warmWater,warmWater-9,01:14,toggle off microwave,True,True,True,A,0.9995694428306715,0.005435307198236721,available
+warmWater,warmWater-9,01:17,open microwave,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+warmWater,warmWater-9,01:20,pick up mug,True,True,True,A,0.9999646437424718,0.0005738442377127494,available
+warmWater,warmWater-9,01:29,pour liquid from mug into sink,True,False,False,B,0.9999038976006969,0.001421132848569472,available
+warmWater,warmWater-9,01:58,put mug on dining table,False,True,,A,0.9999993524053851,1.4247794040839634e-05,available
+waterPlant,waterPlant-1,00:18,pick up pot,True,True,True,A,0.9999038976006969,0.001421132848569472,available
+waterPlant,waterPlant-1,00:25,put pot in sink,True,True,False,A,0.9999921107349486,0.00014511803680413704,available
+waterPlant,waterPlant-1,00:28,toggle on faucet,False,True,,A,0.9999417087232138,0.0009040401965186355,available
+waterPlant,waterPlant-1,00:31,toggle off faucet,False,True,,A,0.9999832985809044,0.00028914085924474514,available
+waterPlant,waterPlant-1,00:34,pick up pot,False,True,,A,0.9997388096733121,0.0034856156068474534,available
+waterPlant,waterPlant-1,00:39,pour liquid from pot into house plant,False,True,,A,0.9914225153545169,0.07120787216987294,available
+waterPlant,waterPlant-10,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+waterPlant,waterPlant-10,00:25,put pot in sink,True,True,True,A,0.999997739676612,4.5653407796146974e-05,available
+waterPlant,waterPlant-10,00:28,toggle on faucet,True,True,True,A,0.9999646437382576,0.0005738443000351214,available
+waterPlant,waterPlant-10,00:31,toggle off faucet,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+waterPlant,waterPlant-10,00:32,pick up pot,True,False,False,B,0.9999038976006969,0.001421132848569472,available
+waterPlant,waterPlant-10,00:37,pour liquid from pot into house plant,False,False,,B,0.9999417087093173,0.0009040403919877627,available
+waterPlant,waterPlant-2,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+waterPlant,waterPlant-2,00:23,put pot on third countertop,True,True,False,A,0.9999997617630155,5.5851788203125485e-06,available
+waterPlant,waterPlant-2,00:26,toggle on faucet,False,True,,A,0.9999724643068726,0.00045684503515017855,available
+waterPlant,waterPlant-2,00:29,toggle off faucet,False,True,,A,0.9999832985848862,0.0002891407960567083,available
+waterPlant,waterPlant-2,00:32,pick up pot,False,True,,A,0.9997965729390125,0.002788120250251277,available
+waterPlant,waterPlant-2,00:37,pour liquid from pot into house plant,False,False,,B,0.9998601779659012,0.0019920046463684786,available
+waterPlant,waterPlant-3,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+waterPlant,waterPlant-3,00:25,put pot in sink,True,True,True,A,0.999997739676612,4.5653407796146974e-05,available
+waterPlant,waterPlant-3,00:28,toggle on faucet,True,True,True,A,0.9999646437382576,0.0005738443000351214,available
+waterPlant,waterPlant-3,00:31,toggle off faucet,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+waterPlant,waterPlant-3,00:34,pick up pot,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+waterPlant,waterPlant-3,00:38,pour liquid from pot into sink,True,False,False,B,0.9399133456181842,0.32778880867646076,available
+waterPlant,waterPlant-3,00:43,pour liquid from pot into house plant,False,False,,B,0.9999251537850291,0.0011337968225144793,available
+waterPlant,waterPlant-4,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+waterPlant,waterPlant-4,00:25,toggle on faucet,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+waterPlant,waterPlant-4,00:28,toggle off faucet,True,True,False,A,0.9999038976006969,0.001421132848569472,available
+waterPlant,waterPlant-4,00:31,put pot in sink,False,True,,A,0.999997739676612,4.5653407796146974e-05,available
+waterPlant,waterPlant-4,00:34,pick up pot,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+waterPlant,waterPlant-4,00:39,pour liquid from pot into house plant,False,False,,B,0.9998601779659012,0.0019920046463684786,available
+waterPlant,waterPlant-5,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+waterPlant,waterPlant-5,00:25,put pot in sink,True,True,True,A,0.9999987901339381,2.5527466612479186e-05,available
+waterPlant,waterPlant-5,00:28,toggle on faucet,True,True,True,A,0.9999785550602308,0.00036352781624779574,available
+waterPlant,waterPlant-5,00:31,toggle off faucet,True,True,True,A,0.9999810748503627,0.00032422598826965126,available
+waterPlant,waterPlant-5,00:34,pick up kettle,True,True,True,A,0.999989870011893,0.00018268112324772617,available
+waterPlant,waterPlant-5,00:39,pour liquid from kettle into house plant,True,False,True,B,0.9999038975663327,0.0014211333071572666,available
+waterPlant,waterPlant-6,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+waterPlant,waterPlant-6,00:25,put pot in sink,True,True,True,A,0.999997739676612,4.5653407796146974e-05,available
+waterPlant,waterPlant-6,00:28,toggle on faucet,True,True,True,A,0.9999646437382576,0.0005738443000351214,available
+waterPlant,waterPlant-6,00:31,toggle off faucet,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+waterPlant,waterPlant-6,00:44,pick up container,True,False,True,B,0.9770226276228725,0.15784614560253715,available
+waterPlant,waterPlant-6,00:56,pour liquid from bowl into house plant,True,False,True,B,0.9999417087579567,0.0009040397078124725,available
+waterPlant,waterPlant-7,00:16,pick up pot,True,False,True,B,0.9999957771682555,8.148397163292943e-05,available
+waterPlant,waterPlant-7,00:21,put pot in sink,True,False,True,B,0.9999869928736749,0.0002298752540394058,available
+waterPlant,waterPlant-7,00:24,toggle on faucet,True,True,True,A,0.9999832985809044,0.00028914085924474514,available
+waterPlant,waterPlant-7,00:27,toggle off faucet,True,True,True,A,0.9999832985828951,0.00028914082765096535,available
+waterPlant,waterPlant-7,00:32,pick up pot,True,False,True,B,0.9999957771682555,8.148397163292943e-05,available
+waterPlant,waterPlant-7,00:36,pour liquid from pot into house plant,True,False,True,B,0.9999832985848862,0.0002891407960567083,available
+waterPlant,waterPlant-8,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+waterPlant,waterPlant-8,00:25,put pot in sink,True,True,True,A,0.999997739676612,4.5653407796146974e-05,available
+waterPlant,waterPlant-8,00:26,toggle on faucet,True,False,False,B,0.9999852610186964,0.0002578244023919092,available
+waterPlant,waterPlant-8,00:29,toggle off faucet,False,True,,A,0.9999885212296566,0.0002049346093407361,available
+waterPlant,waterPlant-8,00:32,pick up pot,False,True,,A,0.9999546021442518,0.0007204493803105356,available
+waterPlant,waterPlant-8,00:37,pour liquid from pot into house plant,False,False,,B,0.9998601779659012,0.0019920046463684786,available
+waterPlant,waterPlant-9,00:18,pick up pot,True,True,True,A,0.9999869928752253,0.0002298752288747113,available
+waterPlant,waterPlant-9,00:25,put pot in sink,True,True,True,A,0.999997739676612,4.5653407796146974e-05,available
+waterPlant,waterPlant-9,00:28,toggle on faucet,True,True,True,A,0.9999646437382576,0.0005738443000351214,available
+waterPlant,waterPlant-9,00:31,toggle off faucet,True,True,True,A,0.9999921107349486,0.00014511803680413704,available
+waterPlant,waterPlant-9,00:34,pick up pot,True,True,True,A,0.9999546021442518,0.0007204493803105356,available
+waterPlant,waterPlant-9,00:39,pour liquid from pot into house plant,True,False,False,B,0.9999832985848862,0.0002891407960567083,available

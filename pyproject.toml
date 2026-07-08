@@ -1,0 +1,109 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reflect"
+version = "0.1.0"
+description = "DRR - Detect, Reason, Re-plan: robot failure explanation and correction, extending REFLECT (Liu et al., 2023)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Aleix Urbano Roura"},
+    {name = "Fontys HTES research group"},
+]
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "pydantic>=2.0",
+]
+
+[project.urls]
+Upstream = "https://github.com/real-stanford/reflect"
+"Project page" = "https://robot-reflect.github.io/"
+
+[project.optional-dependencies]
+sim = [
+    "ai2thor",
+    "torch",
+    "torchvision",
+    "open-clip-torch",
+    "sentence-transformers",
+    "open3d",
+    "Pillow",
+    "moviepy",
+    "imageio",
+    "imageio-ffmpeg",
+    "wav2clip",
+]
+# The real-world pipeline additionally needs OpenAI CLIP, which has no PyPI
+# release: pip install git+https://github.com/openai/CLIP.git
+real-world = [
+    "torch",
+    "torchvision",
+    "open-clip-torch",
+    "sentence-transformers",
+    "zarr",
+    "imagecodecs",
+    "timm",
+    "librosa",
+    "opencv-python",
+    "scikit-image",
+]
+perception = [
+    "ultralytics",
+    "torch",
+    "torchvision",
+    "open-clip-torch",
+    "open3d",
+    "opencv-python",
+    "Pillow",
+    "kornia",
+    "transforms3d",
+]
+llm = [
+    "openai>=1.0",
+    "ollama>=0.6.1",
+    "portkey-ai",
+    "anthropic",
+]
+viz = [
+    "rerun-sdk>=0.23",
+]
+calibration = [
+    "torch",
+    "torchvision",
+    "open-clip-torch",
+    "open3d",
+    "transformers",
+    "datasets",
+]
+analysis = [
+    "pandas",
+    "matplotlib",
+    "ipywidgets",
+    "jupyter",
+    "python-dotenv",
+]
+dev = [
+    "ruff",
+]
+all = ["reflect[sim,real-world,perception,llm,viz,calibration,analysis,dev]"]
+
+[project.scripts]
+reflect-sim = "reflect.cli.sim_validation:main"
+reflect-real = "reflect.cli.real_world_validation:main"
+reflect-sweep = "reflect.cli.reasoning_sweep:main"
+reflect-check = "reflect.cli.check_setup:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+reflect = ["configs/**/*.json", "configs/**/*.md"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120

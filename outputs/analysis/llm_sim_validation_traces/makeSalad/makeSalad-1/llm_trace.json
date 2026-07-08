@@ -1,0 +1,1205 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up lettuce. Here are the robot observations after execution:\nVisual observation: tomato, lettuce. tomato is on top of third countertop. tomato is on top of sink. lettuce is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999690004804951,
+        "B": 3.099951950491509e-05
+      },
+      "confidence": 0.9999690004804951,
+      "uncertainty": 3.0999519504915085e-05,
+      "entropy": 0.0005090141965348457,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.3815388534407,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put lettuce on first countertop. Here are the robot observations after execution:\nVisual observation: bowl, knife, lettuce. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999996000008,
+        "B": 3.999991999958934e-06
+      },
+      "confidence": 0.999996000008,
+      "uncertainty": 3.9999919999589295e-06,
+      "entropy": 7.749689944602653e-05,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -12.42921819685665,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up tomato. Here are the robot observations after execution:\nVisual observation: tomato. tomato is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999730003644967,
+        "B": 2.6999635503233113e-05
+      },
+      "confidence": 0.9999730003644967,
+      "uncertainty": 2.6999635503344166e-05,
+      "entropy": 0.0004487170972098937,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.519687191931324,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put tomato on first countertop. Here are the robot observations after execution:\nVisual observation: bowl, tomato, knife, lettuce. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999770002635003e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.1304756432889446e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up potato. Here are the robot observations after execution:\nVisual observation: fridge (closed), potato. potato is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999897005304318,
+        "B": 0.00010299469568209029
+      },
+      "confidence": 0.999897005304318,
+      "uncertainty": 0.00010299469568197939,
+      "entropy": 0.0015127616890528676,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.18083306929285,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put potato on first countertop. Here are the robot observations after execution:\nVisual observation: bowl, tomato, knife, potato, lettuce. potato is on top of first countertop. potato is on the left of cup. potato is on the left of lettuce. potato is on the right of spoon. potato is on the right of bowl. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999350021124543,
+        "B": 6.499788754577018e-05
+      },
+      "confidence": 0.9999350021124543,
+      "uncertainty": 6.499788754565916e-05,
+      "entropy": 0.0009978407966561393,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.641155787892593,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up knife. Here are the robot observations after execution:\nVisual observation: bowl, tomato, knife. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the right of spoon. knife is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999996000008,
+        "B": 3.999991999958934e-06
+      },
+      "confidence": 0.999996000008,
+      "uncertainty": 3.9999919999589295e-06,
+      "entropy": 7.749689944602653e-05,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -12.42921819685665,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to slice lettuce. Here are the robot observations after execution:\nVisual observation: bowl, lettuce slice, knife, potato. lettuce slice is on top of first countertop. lettuce slice is on the left of bread. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. potato is on the left of cup. bowl is on top of first countertop. knife is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "available",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.7772998611746911,
+        "B": 0.22270013882530884
+      },
+      "confidence": 0.7772998611746911,
+      "uncertainty": 0.22270013882530892,
+      "entropy": 0.7650673186733778,
+      "fallback_applied": false,
+      "fallback_labels": [],
+      "fallback_logprob": null,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to slice tomato. Here are the robot observations after execution:\nVisual observation: tomato slice, bowl, lettuce slice, knife, potato. tomato slice is on top of first countertop. lettuce slice is on top of first countertop. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. bowl is on the right of tomato slice. bowl is on top of first countertop. bowl is on the right of spoon. knife is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "available",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9626731126558706,
+        "B": 0.037326887344129464
+      },
+      "confidence": 0.9626731126558706,
+      "uncertainty": 0.03732688734412937,
+      "entropy": 0.22989887288796731,
+      "fallback_applied": false,
+      "fallback_labels": [],
+      "fallback_logprob": null,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put knife on first countertop. Here are the robot observations after execution:\nVisual observation: tomato slice, bowl, lettuce slice, knife, potato. knife is on top of first countertop. tomato slice is on top of first countertop. lettuce slice is on top of first countertop. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. bowl is on the right of tomato slice. bowl is on top of first countertop. bowl is on the right of spoon. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999500012489787e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.13037191173936e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to slice potato. Here are the robot observations after execution:\nVisual observation: tomato slice, bowl, lettuce slice, knife, potato. tomato slice is on top of first countertop. lettuce slice is on top of first countertop. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. knife is on top of first countertop. bowl is on the right of tomato slice. bowl is on top of first countertop. bowl is on the right of spoon. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.00011099383972790207,
+        "B": 0.9998890061602721
+      },
+      "confidence": 0.9998890061602721,
+      "uncertainty": 0.000110993839727902,
+      "entropy": 0.0016182732838217985,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -9.106035856138837,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up lettuce slice. Here are the robot observations after execution:\nVisual observation: bowl, lettuce slice, potato. lettuce slice is on top of first countertop. lettuce slice is on the left of bread. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. potato is on the left of cup. potato is on the right of spoon. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. lettuce slice is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999280025919378,
+        "B": 7.199740806218545e-05
+      },
+      "confidence": 0.9999280025919378,
+      "uncertainty": 7.199740806218546e-05,
+      "entropy": 0.0010946729711537812,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.538880438732516,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put lettuce slice in bowl. Here are the robot observations after execution:\nVisual observation: tomato slice, bowl, lettuce slice, knife, potato. tomato slice is on the left of lettuce slice. tomato slice is on top of first countertop. tomato slice is on the left of spoon. tomato slice is on the left of bowl. lettuce slice is on top of first countertop. lettuce slice is on the left of potato. lettuce slice is inside bowl. lettuce slice is on the right of spoon. potato is on top of first countertop. potato is on the right of spoon. potato is on the right of bowl. knife is on top of first countertop. bowl is on top of first countertop. bowl is on the right of spoon. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999890000604997,
+        "B": 1.0999939500266896e-05
+      },
+      "confidence": 0.9999890000604997,
+      "uncertainty": 1.0999939500266898e-05,
+      "entropy": 0.00019706206806479514,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -11.417620785156766,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up tomato slice. Here are the robot observations after execution:\nVisual observation: tomato slice, bowl, lettuce slice, knife. tomato slice is on top of first countertop. tomato slice is on the left of spoon. tomato slice is on the left of bowl. lettuce slice is on top of first countertop. lettuce slice is inside bowl. knife is on top of first countertop. bowl is on top of first countertop. tomato slice is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999470014044752,
+        "B": 5.299859552476687e-05
+      },
+      "confidence": 0.9999470014044752,
+      "uncertainty": 5.2998595524766934e-05,
+      "entropy": 0.0008292342123570105,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.845245144295971,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put tomato slice in bowl. Here are the robot observations after execution:\nVisual observation: tomato slice, bowl, lettuce slice, knife, potato. tomato slice is on the left of lettuce slice. tomato slice is on top of first countertop. tomato slice is on the left of potato. tomato slice is on the right of spoon. tomato slice is inside bowl. lettuce slice is on top of first countertop. lettuce slice is on the left of potato. lettuce slice is inside bowl. lettuce slice is on the right of spoon. potato is on top of first countertop. potato is on the right of spoon. potato is on the right of bowl. knife is on top of first countertop. bowl is on top of first countertop. bowl is on the right of spoon. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 9.999920000309997e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.130565307357394e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up potato slice. Here are the robot observations after execution:\nVisual observation: tomato slice, bowl, lettuce slice, knife, potato. tomato slice is on the left of lettuce slice. tomato slice is on top of first countertop. tomato slice is on the right of spoon. tomato slice is inside bowl. lettuce slice is on top of first countertop. lettuce slice is on the left of cup. lettuce slice is on the right of spoon. lettuce slice is inside bowl. knife is on top of first countertop. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. potato is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.000522863259339479,
+        "B": 0.9994771367406604
+      },
+      "confidence": 0.9994771367406604,
+      "uncertainty": 0.0005228632593395899,
+      "entropy": 0.0064540130929466024,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -7.556190582502339,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put potato slice in bowl. Here are the robot observations after execution:\nVisual observation: tomato slice, bowl, lettuce slice, knife, potato. tomato slice is on the left of lettuce slice. tomato slice is on top of first countertop. tomato slice is on the left of potato. tomato slice is on the left of spoon. tomato slice is on the left of bowl. lettuce slice is on top of first countertop. lettuce slice is inside bowl. lettuce slice is on the right of spoon. potato is on the left of lettuce slice. potato is on top of first countertop. potato is on the right of spoon. potato is on top of bowl. knife is on top of first countertop. bowl is on top of first countertop. bowl is on the right of spoon. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 1.899981950115315e-05,
+        "B": 0.9999810001804988
+      },
+      "confidence": 0.9999810001804988,
+      "uncertainty": 1.8999819501153148e-05,
+      "entropy": 0.0003253972945551032,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -10.871081078782266,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to open fridge. Here are the robot observations after execution:\nVisual observation: fridge (open). egg is inside fridge. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9985290828606113,
+        "B": 0.0014709171393887377
+      },
+      "confidence": 0.9985290828606113,
+      "uncertainty": 0.0014709171393887388,
+      "entropy": 0.015960483229079496,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -6.521869168392813,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up bowl. Here are the robot observations after execution:\nVisual observation: tomato slice, bowl, lettuce slice, knife, potato. tomato slice is on top of first countertop. tomato slice is on the left of spoon. lettuce slice is on top of first countertop. lettuce slice is on the right of spoon. potato is on top of bowl. knife is on top of first countertop. bowl is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9995461030424057,
+        "B": 0.00045389695759434656
+      },
+      "confidence": 0.9995461030424057,
+      "uncertainty": 0.00045389695759434634,
+      "entropy": 0.005695369724678792,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -7.697640351334747,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put bowl in fridge. Here are the robot observations after execution:\nVisual observation: tomato slice, fridge (open), bowl, lettuce slice, potato. tomato slice is on the left of lettuce slice. tomato slice is below potato. tomato slice is inside fridge. tomato slice is inside bowl. lettuce slice is inside fridge. potato is inside fridge. potato is on top of bowl. bowl is inside fridge. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999943001624469,
+        "B": 5.699837553085898e-05
+      },
+      "confidence": 0.999943001624469,
+      "uncertainty": 5.699837553096998e-05,
+      "entropy": 0.0008858330485042436,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.772487789994456,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to close fridge. Here are the robot observations after execution:\nVisual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9947269515863255,
+        "B": 0.0052730484136746
+      },
+      "confidence": 0.9947269515863255,
+      "uncertainty": 0.005273048413674486,
+      "entropy": 0.04748924105904469,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -5.245146637047052,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to make a salad with tomato, potato and lettuce and store in the fridge. At 02:05, a failure was identified.\n\n[Robot actions and observations before 02:05]\n00:01. Action: Move to lettuce. Visual observation: fridge (closed), potato. potato is on top of second countertop. potato is on the left of plate. nothing is inside robot gripper.\n00:03. Action: Move to lettuce. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:07. Action: Move to lettuce. Visual observation: tomato, lettuce. lettuce is on the right of mug. lettuce is inside sink. lettuce is on the left of kettle. lettuce is on the right of tomato. tomato is on top of third countertop. tomato is on top of sink. nothing is inside robot gripper.\n00:10. Action: Pick up lettuce. Visual observation: tomato, lettuce. tomato is on top of third countertop. tomato is on top of sink. lettuce is inside robot gripper.\n00:13. Action: Move to bowl. Visual observation: lettuce. lettuce is inside robot gripper.\n00:29. Action: Move to bowl. Visual observation: bowl, knife, lettuce. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. lettuce is inside robot gripper.\n00:30. Action: Move to bowl. Visual observation: bowl, knife, lettuce. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. lettuce is inside robot gripper.\n00:31. Action: Put lettuce on first countertop. Visual observation: bowl, knife, lettuce. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. nothing is inside robot gripper.\n00:33. Action: Move to tomato. Visual observation: bowl, lettuce. lettuce is on top of first countertop. lettuce is on the left of bread. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. nothing is inside robot gripper.\n00:35. Action: Move to tomato. Visual observation: lettuce. lettuce is on top of first countertop. lettuce is on the left of bread. lettuce is on the left of apple. lettuce is on the left of cup. nothing is inside robot gripper.\n00:37. Action: Move to tomato. Visual observation: nothing is inside robot gripper.\n00:41. Action: Move to tomato. Visual observation: tomato. tomato is on top of third countertop. tomato is on top of sink. nothing is inside robot gripper.\n00:51. Action: Move to tomato. Visual observation: tomato. tomato is on top of third countertop. tomato is on top of sink. tomato is on the right of dish sponge. nothing is inside robot gripper.\n00:54. Action: Pick up tomato. Visual observation: tomato. tomato is inside robot gripper.\n01:11. Action: Move to bowl. Visual observation: tomato, lettuce. lettuce is on top of first countertop. tomato is inside robot gripper.\n01:13. Action: Move to bowl. Visual observation: bowl, tomato, knife, lettuce. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. tomato is inside robot gripper.\n01:14. Action: Move to bowl. Visual observation: bowl, tomato, knife, lettuce. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. tomato is inside robot gripper.\n01:15. Action: Put tomato on first countertop. Visual observation: bowl, tomato, knife, lettuce. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. nothing is inside robot gripper.\n01:19. Action: Move to potato. Visual observation: bowl, tomato, knife, lettuce. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. lettuce is on top of first countertop. lettuce is on the left of bread. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. nothing is inside robot gripper.\n01:21. Action: Move to potato. Visual observation: bowl, lettuce. lettuce is on top of first countertop. lettuce is on the left of bread. lettuce is on the left of apple. lettuce is on the left of cup. lettuce is on the right of bowl. bowl is on top of first countertop. bowl is on the left of cup. nothing is inside robot gripper.\n01:23. Action: Move to potato. Visual observation: nothing is inside robot gripper.\n01:25. Action: Move to potato. Visual observation: fridge (closed), potato. potato is on top of second countertop. nothing is inside robot gripper.\n01:26. Action: Move to potato. Visual observation: fridge (closed), potato. potato is on top of second countertop. nothing is inside robot gripper.\n01:29. Action: Pick up potato. Visual observation: fridge (closed), potato. potato is inside robot gripper.\n01:33. Action: Move to bowl. Visual observation: potato. potato is inside robot gripper.\n01:39. Action: Move to bowl. Visual observation: bowl, tomato, knife, potato, lettuce. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. potato is inside robot gripper.\n01:40. Action: Move to bowl. Visual observation: bowl, tomato, knife, potato, lettuce. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. potato is inside robot gripper.\n01:41. Action: Put potato on first countertop. Visual observation: bowl, tomato, knife, potato, lettuce. potato is on top of first countertop. potato is on the left of cup. potato is on the left of lettuce. potato is on the right of spoon. potato is on the right of bowl. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. nothing is inside robot gripper.\n01:43. Action: Move to knife. Visual observation: bowl, tomato, knife, potato. potato is on top of first countertop. potato is on the right of spoon. potato is on the right of bowl. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the right of spoon. nothing is inside robot gripper.\n01:45. Action: Move to knife. Visual observation: bowl, tomato, knife. knife is on top of first countertop. knife is on the left of spoon. knife is on the left of bowl. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the right of spoon. nothing is inside robot gripper.\n01:48. Action: Pick up knife. Visual observation: bowl, tomato, knife. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the right of spoon. knife is inside robot gripper.\n01:51. Action: Move to bowl. Visual observation: bowl, tomato, knife, potato, lettuce. potato is on top of first countertop. potato is on the left of cup. potato is on the left of lettuce. potato is on the right of spoon. potato is on the right of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. knife is inside robot gripper.\n01:52. Action: Move to bowl. Visual observation: bowl, tomato, knife, potato, lettuce. potato is on top of first countertop. potato is on the left of cup. potato is on the left of lettuce. potato is on the right of spoon. potato is on the right of bowl. lettuce is on top of first countertop. lettuce is on the left of cup. lettuce is on the right of spoon. lettuce is on the right of bowl. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the left of cup. bowl is on the right of spoon. knife is inside robot gripper.\n01:55. Action: Slice lettuce. Visual observation: bowl, lettuce slice, knife, potato. lettuce slice is on top of first countertop. lettuce slice is on the left of bread. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. potato is on the left of cup. bowl is on top of first countertop. knife is inside robot gripper.\n01:57. Action: Move to tomato. Visual observation: bowl, lettuce slice, tomato, knife, potato. lettuce slice is on top of first countertop. lettuce slice is on the left of bread. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. potato is on the left of cup. tomato is on top of first countertop. bowl is on top of first countertop. knife is inside robot gripper.\n01:59. Action: Move to tomato. Visual observation: bowl, lettuce slice, tomato, knife, potato. lettuce slice is on top of first countertop. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the right of spoon. knife is inside robot gripper.\n02:00. Action: Move to tomato. Visual observation: bowl, lettuce slice, tomato, knife, potato. lettuce slice is on top of first countertop. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. tomato is on top of first countertop. tomato is on the left of spoon. tomato is on the left of bowl. bowl is on top of first countertop. bowl is on the right of spoon. knife is inside robot gripper.\n02:03. Action: Slice tomato. Visual observation: tomato slice, bowl, lettuce slice, knife, potato. tomato slice is on top of first countertop. lettuce slice is on top of first countertop. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. bowl is on the right of tomato slice. bowl is on top of first countertop. bowl is on the right of spoon. knife is inside robot gripper.\n02:04. Action: Put knife on first countertop. Visual observation: tomato slice, bowl, lettuce slice, knife, potato. knife is on top of first countertop. tomato slice is on top of first countertop. lettuce slice is on top of first countertop. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. bowl is on the right of tomato slice. bowl is on top of first countertop. bowl is on the right of spoon. nothing is inside robot gripper.\n\n[Observation at the end of 02:05]\nAction: Slice potato. Visual observation: tomato slice, bowl, lettuce slice, knife, potato. tomato slice is on top of first countertop. lettuce slice is on top of first countertop. lettuce slice is on the right of potato. lettuce slice is on the right of spoon. lettuce slice is on the right of bowl. potato is on top of first countertop. knife is on top of first countertop. bowl is on the right of tomato slice. bowl is on top of first countertop. bowl is on the right of spoon. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 02:05] or [Observation at the end of 02:05], briefly explain what happened at 02:05 and what caused the failure.\nA:"
+    },
+    "response": "At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "02:05, 02:04"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nInitial plan:\n1. (pick_up, lettuce)\n2. (put_on, lettuce, countertop)\n3. (pick_up, tomato)\n4. (put_on, tomato, countertop)\n5. (pick_up, potato)\n6. (put_on, potato, countertop)\n7. (pick_up, knife)\n8. (slice_obj, lettuce)\n9. (slice_obj, tomato)\n10. (put_on, knife, countertop)\n11. (slice_obj, potato)\n12. (pick_up, lettuce slice)\n13. (put_in, lettuce slice, bowl)\n14. (pick_up, tomato slice)\n15. (put_in, tomato slice, bowl)\n16. (pick_up, potato slice)\n17. (put_in, potato slice, bowl)\n18. (open_obj, fridge)\n19. (pick_up, bowl)\n20. (put_in, bowl, fridge)\n21. (close_obj, fridge)\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (none)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Lettuce), (put_in, Lettuce), (put_on, Lettuce), (toggle_on, Lettuce), (toggle_off, Lettuce), (open_obj, Lettuce), (close_obj, Lettuce), (slice_obj, Lettuce), (crack_obj, Lettuce), (pour, Lettuce)\nAvailable objects: Bowl, CounterTop, Fridge, Knife, Lettuce, LettuceSliced, Potato, PotatoSliced, Tomato, TomatoSliced\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "To correct the prior failure, the robot should first grasp the knife before any slicing can be done."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "Grasping the potato could prepare for repositioning it for slicing if it is not properly placed after the failed attempt."
+        },
+        {
+          "action": "slice_obj",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "Retrying the intended potato slicing is the core recovery goal, though it is only valid if the knife is first in hand."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Lettuce",
+          "obj2": null,
+          "rationale": "If restarting or re-establishing ingredient handling is needed, lettuce is one of the required salad ingredients."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "Opening the fridge is a future required step for storage, and could be considered if the robot is checking the destination state."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (pick_up, Knife) \u2014 To correct the prior failure, the robot should first grasp the knife before any slicing can be done.\nB) (pick_up, Potato) \u2014 Grasping the potato could prepare for repositioning it for slicing if it is not properly placed after the failed attempt.\nC) (slice_obj, Potato) \u2014 Retrying the intended potato slicing is the core recovery goal, though it is only valid if the knife is first in hand.\nD) (pick_up, Lettuce) \u2014 If restarting or re-establishing ingredient handling is needed, lettuce is one of the required salad ingredients.\nE) (open_obj, Fridge) \u2014 Opening the fridge is a future required step for storage, and could be considered if the robot is checking the destination state.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999770002644979,
+        "B": 5.749933875504049e-06,
+        "C": 5.749933875504049e-06,
+        "D": 5.749933875504049e-06,
+        "E": 5.749933875504049e-06
+      },
+      "confidence": 0.9999770002644979,
+      "uncertainty": 2.2999735502127194e-05,
+      "entropy": 0.00018672462468953012,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -12.06632220313348,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nInitial plan:\n1. (pick_up, lettuce)\n2. (put_on, lettuce, countertop)\n3. (pick_up, tomato)\n4. (put_on, tomato, countertop)\n5. (pick_up, potato)\n6. (put_on, potato, countertop)\n7. (pick_up, knife)\n8. (slice_obj, lettuce)\n9. (slice_obj, tomato)\n10. (put_on, knife, countertop)\n11. (slice_obj, potato)\n12. (pick_up, lettuce slice)\n13. (put_in, lettuce slice, bowl)\n14. (pick_up, tomato slice)\n15. (put_in, tomato slice, bowl)\n16. (pick_up, potato slice)\n17. (put_in, potato slice, bowl)\n18. (open_obj, fridge)\n19. (pick_up, bowl)\n20. (put_in, bowl, fridge)\n21. (close_obj, fridge)\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Lettuce), (put_in, Lettuce), (put_on, Lettuce), (toggle_on, Lettuce), (toggle_off, Lettuce), (open_obj, Lettuce), (close_obj, Lettuce), (slice_obj, Lettuce), (crack_obj, Lettuce), (pour, Lettuce)\nAvailable objects: Bowl, CounterTop, Fridge, Knife, Lettuce, LettuceSliced, Potato, PotatoSliced, Tomato, TomatoSliced\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "The failure occurred because the robot was not holding the knife; reacquiring it is the most direct correction."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "Securing the potato could prepare for correcting the unsliced potato step, depending on where it landed after the drop/crack sound."
+        },
+        {
+          "action": "slice_obj",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "Retrying the intended potato slicing is a plausible corrective step once the knife issue is addressed."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "If ingredients are already or will soon be assembled, picking up the bowl advances toward the storage-in-fridge goal."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "Opening the fridge prepares for the final storage step and is a valid next action toward the success state."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife)\n\nCandidate next actions:\nA) (pick_up, Knife) \u2014 The failure occurred because the robot was not holding the knife; reacquiring it is the most direct correction.\nB) (pick_up, Potato) \u2014 Securing the potato could prepare for correcting the unsliced potato step, depending on where it landed after the drop/crack sound.\nC) (slice_obj, Potato) \u2014 Retrying the intended potato slicing is a plausible corrective step once the knife issue is addressed.\nD) (pick_up, Bowl) \u2014 If ingredients are already or will soon be assembled, picking up the bowl advances toward the storage-in-fridge goal.\nE) (open_obj, Fridge) \u2014 Opening the fridge prepares for the final storage step and is a valid next action toward the success state.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999470014044752,
+        "B": 1.3249648881191717e-05,
+        "C": 1.3249648881191717e-05,
+        "D": 1.3249648881191717e-05,
+        "E": 1.3249648881191717e-05
+      },
+      "confidence": 0.9999470014044752,
+      "uncertainty": 5.2998595524766934e-05,
+      "entropy": 0.00040278224182127944,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.231539505415862,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nInitial plan:\n1. (pick_up, lettuce)\n2. (put_on, lettuce, countertop)\n3. (pick_up, tomato)\n4. (put_on, tomato, countertop)\n5. (pick_up, potato)\n6. (put_on, potato, countertop)\n7. (pick_up, knife)\n8. (slice_obj, lettuce)\n9. (slice_obj, tomato)\n10. (put_on, knife, countertop)\n11. (slice_obj, potato)\n12. (pick_up, lettuce slice)\n13. (put_in, lettuce slice, bowl)\n14. (pick_up, tomato slice)\n15. (put_in, tomato slice, bowl)\n16. (pick_up, potato slice)\n17. (put_in, potato slice, bowl)\n18. (open_obj, fridge)\n19. (pick_up, bowl)\n20. (put_in, bowl, fridge)\n21. (close_obj, fridge)\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife), (pick_up, Knife)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Lettuce), (put_in, Lettuce), (put_on, Lettuce), (toggle_on, Lettuce), (toggle_off, Lettuce), (open_obj, Lettuce), (close_obj, Lettuce), (slice_obj, Lettuce), (crack_obj, Lettuce), (pour, Lettuce)\nAvailable objects: Bowl, CounterTop, Fridge, Knife, Lettuce, LettuceSliced, Potato, PotatoSliced, Tomato, TomatoSliced\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "To recover from the failure, the robot should first hold the knife again before attempting any more slicing."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "Picking up the potato is a plausible corrective step to prepare it for slicing after the failed attempt."
+        },
+        {
+          "action": "slice_obj",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "The failed step was slicing the potato; retrying this is a direct correction candidate, assuming the knife is re-grasped first or immediately after."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Knife",
+          "obj2": "CounterTop",
+          "rationale": "If the knife was awkwardly handled during recovery, placing it on the countertop could be a stabilizing intermediate step before regrasping properly."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "The bowl will eventually be needed to collect ingredients, so retrieving it is another feasible next step though less direct than fixing the potato slicing."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife), (pick_up, Knife)\n\nCandidate next actions:\nA) (pick_up, Knife) \u2014 To recover from the failure, the robot should first hold the knife again before attempting any more slicing.\nB) (pick_up, Potato) \u2014 Picking up the potato is a plausible corrective step to prepare it for slicing after the failed attempt.\nC) (slice_obj, Potato) \u2014 The failed step was slicing the potato; retrying this is a direct correction candidate, assuming the knife is re-grasped first or immediately after.\nD) (put_on, Knife, CounterTop) \u2014 If the knife was awkwardly handled during recovery, placing it on the countertop could be a stabilizing intermediate step before regrasping properly.\nE) (pick_up, Bowl) \u2014 The bowl will eventually be needed to collect ingredients, so retrieving it is another feasible next step though less direct than fixing the potato slicing.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999660005779933,
+        "B": 8.499855501636901e-06,
+        "C": 8.499855501636901e-06,
+        "D": 8.499855501636901e-06,
+        "E": 8.499855501636901e-06
+      },
+      "confidence": 0.9999660005779933,
+      "uncertainty": 3.399942200665862e-05,
+      "entropy": 0.00026776912595405475,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.675461394419925,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nInitial plan:\n1. (pick_up, lettuce)\n2. (put_on, lettuce, countertop)\n3. (pick_up, tomato)\n4. (put_on, tomato, countertop)\n5. (pick_up, potato)\n6. (put_on, potato, countertop)\n7. (pick_up, knife)\n8. (slice_obj, lettuce)\n9. (slice_obj, tomato)\n10. (put_on, knife, countertop)\n11. (slice_obj, potato)\n12. (pick_up, lettuce slice)\n13. (put_in, lettuce slice, bowl)\n14. (pick_up, tomato slice)\n15. (put_in, tomato slice, bowl)\n16. (pick_up, potato slice)\n17. (put_in, potato slice, bowl)\n18. (open_obj, fridge)\n19. (pick_up, bowl)\n20. (put_in, bowl, fridge)\n21. (close_obj, fridge)\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife), (pick_up, Knife), (pick_up, Knife)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Lettuce), (put_in, Lettuce), (put_on, Lettuce), (toggle_on, Lettuce), (toggle_off, Lettuce), (open_obj, Lettuce), (close_obj, Lettuce), (slice_obj, Lettuce), (crack_obj, Lettuce), (pour, Lettuce)\nAvailable objects: Bowl, CounterTop, Fridge, Knife, Lettuce, LettuceSliced, Potato, PotatoSliced, Tomato, TomatoSliced\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "The last failure happened because the robot tried to slice without holding the knife, so reacquiring the knife is the most direct corrective step."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "If the potato is loose after the failed attempt, securing it could be a reasonable recovery step before preparing it further."
+        },
+        {
+          "action": "slice_obj",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "Retrying the intended task on the potato is relevant, assuming the controller first verifies the knife is in hand."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "The final goal involves storing a filled bowl in the fridge, so preparing the bowl is a plausible next recovery action."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "Opening the fridge is part of the eventual storage sequence and could be a candidate if the robot decides to prepare the destination early."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife), (pick_up, Knife), (pick_up, Knife)\n\nCandidate next actions:\nA) (pick_up, Knife) \u2014 The last failure happened because the robot tried to slice without holding the knife, so reacquiring the knife is the most direct corrective step.\nB) (pick_up, Potato) \u2014 If the potato is loose after the failed attempt, securing it could be a reasonable recovery step before preparing it further.\nC) (slice_obj, Potato) \u2014 Retrying the intended task on the potato is relevant, assuming the controller first verifies the knife is in hand.\nD) (pick_up, Bowl) \u2014 The final goal involves storing a filled bowl in the fridge, so preparing the bowl is a plausible next recovery action.\nE) (open_obj, Fridge) \u2014 Opening the fridge is part of the eventual storage sequence and could be a candidate if the robot decides to prepare the destination early.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 2.49997250014875e-13,
+        "C": 2.49997250014875e-13,
+        "D": 2.49997250014875e-13,
+        "E": 2.49997250014875e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 1.8650670496116843e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -29.017315477048438,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nInitial plan:\n1. (pick_up, lettuce)\n2. (put_on, lettuce, countertop)\n3. (pick_up, tomato)\n4. (put_on, tomato, countertop)\n5. (pick_up, potato)\n6. (put_on, potato, countertop)\n7. (pick_up, knife)\n8. (slice_obj, lettuce)\n9. (slice_obj, tomato)\n10. (put_on, knife, countertop)\n11. (slice_obj, potato)\n12. (pick_up, lettuce slice)\n13. (put_in, lettuce slice, bowl)\n14. (pick_up, tomato slice)\n15. (put_in, tomato slice, bowl)\n16. (pick_up, potato slice)\n17. (put_in, potato slice, bowl)\n18. (open_obj, fridge)\n19. (pick_up, bowl)\n20. (put_in, bowl, fridge)\n21. (close_obj, fridge)\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife), (pick_up, Knife), (pick_up, Knife), (pick_up, Knife)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Lettuce), (put_in, Lettuce), (put_on, Lettuce), (toggle_on, Lettuce), (toggle_off, Lettuce), (open_obj, Lettuce), (close_obj, Lettuce), (slice_obj, Lettuce), (crack_obj, Lettuce), (pour, Lettuce)\nAvailable objects: Bowl, CounterTop, Fridge, Knife, Lettuce, LettuceSliced, Potato, PotatoSliced, Tomato, TomatoSliced\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "The failure occurred because the robot tried to slice without holding the knife, so re-grasping the knife is the most direct correction."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "Securing the potato could prepare for a corrected cutting sequence if the potato is not stably positioned after the failed attempt."
+        },
+        {
+          "action": "slice_obj",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "Retrying the intended slice is relevant because the potato must be sliced for the salad, though it only succeeds if the knife is first in hand."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Preparing the bowl is a plausible recovery step toward assembling ingredients once slicing issues are resolved."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "Opening the fridge is a valid future step for storage, though it is premature before the salad is fully assembled."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife), (pick_up, Knife), (pick_up, Knife), (pick_up, Knife)\n\nCandidate next actions:\nA) (pick_up, Knife) \u2014 The failure occurred because the robot tried to slice without holding the knife, so re-grasping the knife is the most direct correction.\nB) (pick_up, Potato) \u2014 Securing the potato could prepare for a corrected cutting sequence if the potato is not stably positioned after the failed attempt.\nC) (slice_obj, Potato) \u2014 Retrying the intended slice is relevant because the potato must be sliced for the salad, though it only succeeds if the knife is first in hand.\nD) (pick_up, Bowl) \u2014 Preparing the bowl is a plausible recovery step toward assembling ingredients once slicing issues are resolved.\nE) (open_obj, Fridge) \u2014 Opening the fridge is a valid future step for storage, though it is premature before the salad is fully assembled.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 2.499932500908746e-13,
+        "C": 2.499932500908746e-13,
+        "D": 2.499932500908746e-13,
+        "E": 2.499932500908746e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 1.8650254006959884e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -29.017315477048438,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nInitial plan:\n1. (pick_up, lettuce)\n2. (put_on, lettuce, countertop)\n3. (pick_up, tomato)\n4. (put_on, tomato, countertop)\n5. (pick_up, potato)\n6. (put_on, potato, countertop)\n7. (pick_up, knife)\n8. (slice_obj, lettuce)\n9. (slice_obj, tomato)\n10. (put_on, knife, countertop)\n11. (slice_obj, potato)\n12. (pick_up, lettuce slice)\n13. (put_in, lettuce slice, bowl)\n14. (pick_up, tomato slice)\n15. (put_in, tomato slice, bowl)\n16. (pick_up, potato slice)\n17. (put_in, potato slice, bowl)\n18. (open_obj, fridge)\n19. (pick_up, bowl)\n20. (put_in, bowl, fridge)\n21. (close_obj, fridge)\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife), (pick_up, Knife), (pick_up, Knife), (pick_up, Knife), (pick_up, Knife)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Lettuce), (put_in, Lettuce), (put_on, Lettuce), (toggle_on, Lettuce), (toggle_off, Lettuce), (open_obj, Lettuce), (close_obj, Lettuce), (slice_obj, Lettuce), (crack_obj, Lettuce), (pour, Lettuce)\nAvailable objects: Bowl, CounterTop, Fridge, Knife, Lettuce, LettuceSliced, Potato, PotatoSliced, Tomato, TomatoSliced\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "Reacquire the knife so slicing can resume after the failure caused by not holding it."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "If the potato is loose after the failed slice attempt, securing it could be a reasonable corrective step before cutting."
+        },
+        {
+          "action": "slice_obj",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "Retry the intended task of slicing the potato, assuming the knife has just been or can immediately be brought back into use."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Knife",
+          "obj2": "CounterTop",
+          "rationale": "Stabilizing the knife placement on the countertop could help recover from any object disturbance indicated by the auditory observation."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "Opening the fridge is a plausible preparatory step for the eventual storage phase once ingredients are assembled in the bowl."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make a salad with tomato, potato and lettuce and store in the fridge\nFailure reason: At 02:05, the robot tried to **slice the potato without holding the knife**, which had just been placed on the countertop at 02:04. The failure was caused by executing the slice action with an empty gripper, so the potato remained unsliced.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: a bowl of lettuce, tomato and potato is stored inside the fridge.\nActions completed so far: (pick_up, Knife), (pick_up, Knife), (pick_up, Knife), (pick_up, Knife), (pick_up, Knife)\n\nCandidate next actions:\nA) (pick_up, Knife) \u2014 Reacquire the knife so slicing can resume after the failure caused by not holding it.\nB) (pick_up, Potato) \u2014 If the potato is loose after the failed slice attempt, securing it could be a reasonable corrective step before cutting.\nC) (slice_obj, Potato) \u2014 Retry the intended task of slicing the potato, assuming the knife has just been or can immediately be brought back into use.\nD) (put_on, Knife, CounterTop) \u2014 Stabilizing the knife placement on the countertop could help recover from any object disturbance indicated by the auditory observation.\nE) (open_obj, Fridge) \u2014 Opening the fridge is a plausible preparatory step for the eventual storage phase once ingredients are assembled in the bowl.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999850001124995,
+        "B": 3.7499718751332576e-06,
+        "C": 3.7499718751332576e-06,
+        "D": 3.7499718751332576e-06,
+        "E": 3.7499718751332576e-06
+      },
+      "confidence": 0.9999850001124995,
+      "uncertainty": 1.4999887500533049e-05,
+      "entropy": 0.00012576117485860072,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -12.493762217974544,
+      "response_text": "A"
+    }
+  }
+]

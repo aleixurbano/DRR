@@ -1,0 +1,66 @@
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python caches / tooling
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.env
+.venv/
+venv/
+env/
+.python-version
+
+# Local data / outputs
+datasets/
+tmp/
+temp/
+logs/
+
+# Build / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Backup / export artifacts
+*.bundle
+*.tar.gz
+*.log
+
+# Model artifacts
+*.ts
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Large generated data (regenerable, kept out of the public repo)
+# Only lightweight results (CSV, PNG, report .md, summary JSON) are tracked.
+*.jsonl
+*.pkl
+*.pkl.gz
+*.avi
+*.mp4
+!web/assets/media/**
+outputs/**/llm_cache.json
+outputs/**/*.bak*
+
+# Agentic artifacts
+.claude/
+CLAUDE.md
+.mcp.json

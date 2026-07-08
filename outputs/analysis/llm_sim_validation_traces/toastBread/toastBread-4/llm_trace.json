@@ -1,0 +1,710 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up knife. Here are the robot observations after execution:\nVisual observation: knife. knife is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999920000320001,
+        "B": 7.999968000049759e-06
+      },
+      "confidence": 0.9999920000320001,
+      "uncertainty": 7.99996799993874e-06,
+      "entropy": 0.0001469935209061058,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -11.736073016286218,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to slice bread. Here are the robot observations after execution:\nVisual observation: bread (not sliced), knife. bread is on the right of tomato. bread is on top of second countertop. knife is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 3.099951950491509e-05,
+        "B": 0.9999690004804951
+      },
+      "confidence": 0.9999690004804951,
+      "uncertainty": 3.0999519504915085e-05,
+      "entropy": 0.0005090141965348457,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -10.3815388534407,
+      "response_text": "B"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put knife on second countertop. Here are the robot observations after execution:\nVisual observation: bread (not sliced), knife. knife is on the left of tomato. knife is on the left of egg. bread is on top of second countertop. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "available",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.679178699175393,
+        "B": 0.32082130082460697
+      },
+      "confidence": 0.679178699175393,
+      "uncertainty": 0.320821300824607,
+      "entropy": 0.9052723567690952,
+      "fallback_applied": false,
+      "fallback_labels": [],
+      "fallback_logprob": null,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up bread slice. Here are the robot observations after execution:\nVisual observation: bread (not sliced), knife. knife is on the left of tomato. knife is on the left of egg. bread is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.0007437233006256652,
+        "B": 0.9992562766993743
+      },
+      "confidence": 0.9992562766993743,
+      "uncertainty": 0.0007437233006256649,
+      "entropy": 0.008802043229188034,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -7.203841500067228,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put bread slice in toaster. Here are the robot observations after execution:\nVisual observation: toaster (turned off), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 5.299859552476687e-05,
+        "B": 0.9999470014044752
+      },
+      "confidence": 0.9999470014044752,
+      "uncertainty": 5.2998595524766934e-05,
+      "entropy": 0.0008292342123570105,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -9.845245144295971,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on toaster. Here are the robot observations after execution:\nVisual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999350021124543,
+        "B": 6.499788754577018e-05
+      },
+      "confidence": 0.9999350021124543,
+      "uncertainty": 6.499788754565916e-05,
+      "entropy": 0.0009978407966561393,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.641155787892593,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to toast bread. At 00:31, a failure was identified.\n\n[Robot actions and observations before 00:31]\n00:01. Action: Move to knife. Visual observation: nothing is inside robot gripper.\n00:20. Action: Move to knife. Visual observation: knife. knife is on the right of pot. knife is on top of first countertop. nothing is inside robot gripper.\n00:23. Action: Pick up knife. Visual observation: knife. knife is inside robot gripper.\n00:29. Action: Move to bread. Visual observation: bread (not sliced), knife. bread is on the right of tomato. bread is on top of second countertop. knife is inside robot gripper.\n00:30. Action: Move to bread. Visual observation: bread (not sliced), knife. bread is on the right of tomato. bread is on top of second countertop. knife is inside robot gripper.\n\n[Observation at the end of 00:31]\nAction: Slice bread. Visual observation: bread (not sliced), knife. bread is on the right of tomato. bread is on top of second countertop. knife is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:31] or [Observation at the end of 00:31], briefly explain what happened at 00:31 and what caused the failure.\nA:"
+    },
+    "response": "At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "00:31, 00:29\u201300:30"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: toast bread\nInitial plan:\n1. (pick_up, knife)\n2. (slice_obj, bread)\n3. (put_on, knife, countertop)\n4. (pick_up, bread slice)\n5. (put_in, bread slice, toaster)\n6. (toggle_on, toaster)\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (none)\nAvailable actions: (pick_up, Bread), (put_in, Bread), (put_on, Bread), (toggle_on, Bread), (toggle_off, Bread), (open_obj, Bread), (close_obj, Bread), (slice_obj, Bread), (crack_obj, Bread), (pour, Bread), (pick_up, BreadSliced), (put_in, BreadSliced), (put_on, BreadSliced), (toggle_on, BreadSliced), (toggle_off, BreadSliced), (open_obj, BreadSliced), (close_obj, BreadSliced), (slice_obj, BreadSliced), (crack_obj, BreadSliced), (pour, BreadSliced), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Toaster), (put_in, Toaster), (put_on, Toaster), (toggle_on, Toaster), (toggle_off, Toaster), (open_obj, Toaster), (close_obj, Toaster), (slice_obj, Toaster), (crack_obj, Toaster), (pour, Toaster)\nAvailable objects: Bread, BreadSliced, CounterTop, Knife, Toaster\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "To retry slicing successfully, the robot should first grasp the knife since the gripper is empty and bread is still unsliced."
+        },
+        {
+          "action": "slice_obj",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "The failed step was slicing, and creating a bread slice is still required before inserting it into the toaster."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "Repositioning or stabilizing the bread may help correct the earlier slicing failure caused by poor alignment."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bread",
+          "obj2": "CounterTop",
+          "rationale": "Placing the bread securely on the countertop could provide a better surface and alignment for a more reliable slicing attempt."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "BreadSliced",
+          "obj2": null,
+          "rationale": "If a slice is actually available despite the observation uncertainty, picking it up would allow immediate progress toward placing it in the already-on toaster."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: toast bread\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (pick_up, Knife) \u2014 To retry slicing successfully, the robot should first grasp the knife since the gripper is empty and bread is still unsliced.\nB) (slice_obj, Bread) \u2014 The failed step was slicing, and creating a bread slice is still required before inserting it into the toaster.\nC) (pick_up, Bread) \u2014 Repositioning or stabilizing the bread may help correct the earlier slicing failure caused by poor alignment.\nD) (put_on, Bread, CounterTop) \u2014 Placing the bread securely on the countertop could provide a better surface and alignment for a more reliable slicing attempt.\nE) (pick_up, BreadSliced) \u2014 If a slice is actually available despite the observation uncertainty, picking it up would allow immediate progress toward placing it in the already-on toaster.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9980718612524018,
+        "B": 0.0004820346868995573,
+        "C": 0.0004820346868995573,
+        "D": 0.0004820346868995573,
+        "E": 0.0004820346868995573
+      },
+      "confidence": 0.9980718612524018,
+      "uncertainty": 0.0019281387475982292,
+      "entropy": 0.010346735098533571,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -7.637494481981093,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: toast bread\nInitial plan:\n1. (pick_up, knife)\n2. (slice_obj, bread)\n3. (put_on, knife, countertop)\n4. (pick_up, bread slice)\n5. (put_in, bread slice, toaster)\n6. (toggle_on, toaster)\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife)\nAvailable actions: (pick_up, Bread), (put_in, Bread), (put_on, Bread), (toggle_on, Bread), (toggle_off, Bread), (open_obj, Bread), (close_obj, Bread), (slice_obj, Bread), (crack_obj, Bread), (pour, Bread), (pick_up, BreadSliced), (put_in, BreadSliced), (put_on, BreadSliced), (toggle_on, BreadSliced), (toggle_off, BreadSliced), (open_obj, BreadSliced), (close_obj, BreadSliced), (slice_obj, BreadSliced), (crack_obj, BreadSliced), (pour, BreadSliced), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Toaster), (put_in, Toaster), (put_on, Toaster), (toggle_on, Toaster), (toggle_off, Toaster), (open_obj, Toaster), (close_obj, Toaster), (slice_obj, Toaster), (crack_obj, Toaster), (pour, Toaster)\nAvailable objects: Bread, BreadSliced, CounterTop, Knife, Toaster\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "slice_obj",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "The bread is still not sliced, so retrying the slice is the most direct correction toward creating a toastable bread slice."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "Repositioning the bread in the gripper can help improve alignment before attempting to slice again after the earlier cutting failure."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bread",
+          "obj2": "CounterTop",
+          "rationale": "Placing the bread on a stable countertop may provide a better surface and alignment for a subsequent slicing attempt."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "Ensuring the knife is actively grasped again can help recover from a failed slice if the tool is not in a usable cutting pose."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "Toaster",
+          "obj2": null,
+          "rationale": "Temporarily turning off the toaster can be a safe recovery step while correcting the unsliced bread before insertion."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: toast bread\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife)\n\nCandidate next actions:\nA) (slice_obj, Bread) \u2014 The bread is still not sliced, so retrying the slice is the most direct correction toward creating a toastable bread slice.\nB) (pick_up, Bread) \u2014 Repositioning the bread in the gripper can help improve alignment before attempting to slice again after the earlier cutting failure.\nC) (put_on, Bread, CounterTop) \u2014 Placing the bread on a stable countertop may provide a better surface and alignment for a subsequent slicing attempt.\nD) (pick_up, Knife) \u2014 Ensuring the knife is actively grasped again can help recover from a failed slice if the tool is not in a usable cutting pose.\nE) (toggle_off, Toaster) \u2014 Temporarily turning off the toaster can be a safe recovery step while correcting the unsliced bread before insertion.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9676478976237481,
+        "B": 0.0010438892646357214,
+        "C": 0.02922043458234472,
+        "D": 0.0010438892646357214,
+        "E": 0.0010438892646357214
+      },
+      "confidence": 0.9676478976237481,
+      "uncertainty": 0.03235210237625186,
+      "entropy": 0.0972723505377022,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -6.864801863503924,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: toast bread\nInitial plan:\n1. (pick_up, knife)\n2. (slice_obj, bread)\n3. (put_on, knife, countertop)\n4. (pick_up, bread slice)\n5. (put_in, bread slice, toaster)\n6. (toggle_on, toaster)\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife), (slice_obj, Bread)\nAvailable actions: (pick_up, Bread), (put_in, Bread), (put_on, Bread), (toggle_on, Bread), (toggle_off, Bread), (open_obj, Bread), (close_obj, Bread), (slice_obj, Bread), (crack_obj, Bread), (pour, Bread), (pick_up, BreadSliced), (put_in, BreadSliced), (put_on, BreadSliced), (toggle_on, BreadSliced), (toggle_off, BreadSliced), (open_obj, BreadSliced), (close_obj, BreadSliced), (slice_obj, BreadSliced), (crack_obj, BreadSliced), (pour, BreadSliced), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Toaster), (put_in, Toaster), (put_on, Toaster), (toggle_on, Toaster), (toggle_off, Toaster), (open_obj, Toaster), (close_obj, Toaster), (slice_obj, Toaster), (crack_obj, Toaster), (pour, Toaster)\nAvailable objects: Bread, BreadSliced, CounterTop, Knife, Toaster\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "slice_obj",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "Retry slicing the bread, since it is still unsliced and slicing previously failed due to likely misalignment."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "Re-grasp the knife to enable a better-positioned slicing retry, since the gripper is currently empty."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "Pick up the bread to reposition it for a more reliable slicing attempt."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bread",
+          "obj2": "CounterTop",
+          "rationale": "Place the bread onto the countertop to stabilize it before retrying the slice."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "Toaster",
+          "obj2": null,
+          "rationale": "Turn off the toaster while correcting the failed slicing step, since the bread is not yet ready to be inserted."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: toast bread\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife), (slice_obj, Bread)\n\nCandidate next actions:\nA) (slice_obj, Bread) \u2014 Retry slicing the bread, since it is still unsliced and slicing previously failed due to likely misalignment.\nB) (pick_up, Knife) \u2014 Re-grasp the knife to enable a better-positioned slicing retry, since the gripper is currently empty.\nC) (pick_up, Bread) \u2014 Pick up the bread to reposition it for a more reliable slicing attempt.\nD) (put_on, Bread, CounterTop) \u2014 Place the bread onto the countertop to stabilize it before retrying the slice.\nE) (toggle_off, Toaster) \u2014 Turn off the toaster while correcting the failed slicing step, since the bread is not yet ready to be inserted.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 1.0499779503098107e-05,
+        "B": 0.9999580008819876,
+        "C": 1.0499779503098107e-05,
+        "D": 1.0499779503098107e-05,
+        "E": 1.0499779503098107e-05
+      },
+      "confidence": 0.9999580008819876,
+      "uncertainty": 4.199911801239242e-05,
+      "entropy": 0.0003252580825762273,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.464156300726236,
+      "response_text": "B"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: toast bread\nInitial plan:\n1. (pick_up, knife)\n2. (slice_obj, bread)\n3. (put_on, knife, countertop)\n4. (pick_up, bread slice)\n5. (put_in, bread slice, toaster)\n6. (toggle_on, toaster)\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife), (slice_obj, Bread), (pick_up, Knife)\nAvailable actions: (pick_up, Bread), (put_in, Bread), (put_on, Bread), (toggle_on, Bread), (toggle_off, Bread), (open_obj, Bread), (close_obj, Bread), (slice_obj, Bread), (crack_obj, Bread), (pour, Bread), (pick_up, BreadSliced), (put_in, BreadSliced), (put_on, BreadSliced), (toggle_on, BreadSliced), (toggle_off, BreadSliced), (open_obj, BreadSliced), (close_obj, BreadSliced), (slice_obj, BreadSliced), (crack_obj, BreadSliced), (pour, BreadSliced), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Toaster), (put_in, Toaster), (put_on, Toaster), (toggle_on, Toaster), (toggle_off, Toaster), (open_obj, Toaster), (close_obj, Toaster), (slice_obj, Toaster), (crack_obj, Toaster), (pour, Toaster)\nAvailable objects: Bread, BreadSliced, CounterTop, Knife, Toaster\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "slice_obj",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "The bread is still not sliced, so retrying the failed slicing step is the most direct correction toward making toast."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "Picking up the knife again can help re-establish the proper tool state and positioning before attempting another slice."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "Repositioning the bread may improve alignment, since the previous slice likely failed due to poor positioning."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bread",
+          "obj2": "CounterTop",
+          "rationale": "Placing the bread securely on the countertop could create a more stable surface for a successful slicing attempt next."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "Toaster",
+          "obj2": null,
+          "rationale": "Turning off the toaster temporarily could be a safer correction while resolving the unsliced bread before insertion."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: toast bread\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife), (slice_obj, Bread), (pick_up, Knife)\n\nCandidate next actions:\nA) (slice_obj, Bread) \u2014 The bread is still not sliced, so retrying the failed slicing step is the most direct correction toward making toast.\nB) (pick_up, Knife) \u2014 Picking up the knife again can help re-establish the proper tool state and positioning before attempting another slice.\nC) (pick_up, Bread) \u2014 Repositioning the bread may improve alignment, since the previous slice likely failed due to poor positioning.\nD) (put_on, Bread, CounterTop) \u2014 Placing the bread securely on the countertop could create a more stable surface for a successful slicing attempt next.\nE) (toggle_off, Toaster) \u2014 Turning off the toaster temporarily could be a safer correction while resolving the unsliced bread before insertion.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9894055210539348,
+        "B": 0.0026486197365163406,
+        "C": 0.0026486197365163406,
+        "D": 0.0026486197365163406,
+        "E": 0.0026486197365163406
+      },
+      "confidence": 0.9894055210539348,
+      "uncertainty": 0.010594478946065244,
+      "entropy": 0.045607720269051896,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -5.933716628820423,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: toast bread\nInitial plan:\n1. (pick_up, knife)\n2. (slice_obj, bread)\n3. (put_on, knife, countertop)\n4. (pick_up, bread slice)\n5. (put_in, bread slice, toaster)\n6. (toggle_on, toaster)\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife), (slice_obj, Bread), (pick_up, Knife), (slice_obj, Bread)\nAvailable actions: (pick_up, Bread), (put_in, Bread), (put_on, Bread), (toggle_on, Bread), (toggle_off, Bread), (open_obj, Bread), (close_obj, Bread), (slice_obj, Bread), (crack_obj, Bread), (pour, Bread), (pick_up, BreadSliced), (put_in, BreadSliced), (put_on, BreadSliced), (toggle_on, BreadSliced), (toggle_off, BreadSliced), (open_obj, BreadSliced), (close_obj, BreadSliced), (slice_obj, BreadSliced), (crack_obj, BreadSliced), (pour, BreadSliced), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Toaster), (put_in, Toaster), (put_on, Toaster), (toggle_on, Toaster), (toggle_off, Toaster), (open_obj, Toaster), (close_obj, Toaster), (slice_obj, Toaster), (crack_obj, Toaster), (pour, Toaster)\nAvailable objects: Bread, BreadSliced, CounterTop, Knife, Toaster\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "The bread is still not sliced, so re-grasping the knife is a sensible correction before retrying the cut."
+        },
+        {
+          "action": "slice_obj",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "The failed step was slicing; retrying the bread slice action directly is the most goal-aligned correction if positioning is now adequate."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "Repositioning the bread may help achieve a better pose for a successful slice after the earlier likely alignment failure."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bread",
+          "obj2": "CounterTop",
+          "rationale": "Placing the bread on the countertop could stabilize it and improve alignment for a subsequent slicing attempt."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "Toaster",
+          "obj2": null,
+          "rationale": "The toaster is already on even though no bread slice is inside, so turning it off could be a safe corrective step before continuing."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: toast bread\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife), (slice_obj, Bread), (pick_up, Knife), (slice_obj, Bread)\n\nCandidate next actions:\nA) (pick_up, Knife) \u2014 The bread is still not sliced, so re-grasping the knife is a sensible correction before retrying the cut.\nB) (slice_obj, Bread) \u2014 The failed step was slicing; retrying the bread slice action directly is the most goal-aligned correction if positioning is now adequate.\nC) (pick_up, Bread) \u2014 Repositioning the bread may help achieve a better pose for a successful slice after the earlier likely alignment failure.\nD) (put_on, Bread, CounterTop) \u2014 Placing the bread on the countertop could stabilize it and improve alignment for a subsequent slicing attempt.\nE) (toggle_off, Toaster) \u2014 The toaster is already on even though no bread slice is inside, so turning it off could be a safe corrective step before continuing.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9964014902110871,
+        "B": 0.0008996274472281854,
+        "C": 0.0008996274472281854,
+        "D": 0.0008996274472281854,
+        "E": 0.0008996274472281854
+      },
+      "confidence": 0.9964014902110871,
+      "uncertainty": 0.0035985097889128514,
+      "entropy": 0.017913262071109645,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -7.013529827864129,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: toast bread\nInitial plan:\n1. (pick_up, knife)\n2. (slice_obj, bread)\n3. (put_on, knife, countertop)\n4. (pick_up, bread slice)\n5. (put_in, bread slice, toaster)\n6. (toggle_on, toaster)\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife), (slice_obj, Bread), (pick_up, Knife), (slice_obj, Bread), (pick_up, Knife)\nAvailable actions: (pick_up, Bread), (put_in, Bread), (put_on, Bread), (toggle_on, Bread), (toggle_off, Bread), (open_obj, Bread), (close_obj, Bread), (slice_obj, Bread), (crack_obj, Bread), (pour, Bread), (pick_up, BreadSliced), (put_in, BreadSliced), (put_on, BreadSliced), (toggle_on, BreadSliced), (toggle_off, BreadSliced), (open_obj, BreadSliced), (close_obj, BreadSliced), (slice_obj, BreadSliced), (crack_obj, BreadSliced), (pour, BreadSliced), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Knife), (put_in, Knife), (put_on, Knife), (toggle_on, Knife), (toggle_off, Knife), (open_obj, Knife), (close_obj, Knife), (slice_obj, Knife), (crack_obj, Knife), (pour, Knife), (pick_up, Toaster), (put_in, Toaster), (put_on, Toaster), (toggle_on, Toaster), (toggle_off, Toaster), (open_obj, Toaster), (close_obj, Toaster), (slice_obj, Toaster), (crack_obj, Toaster), (pour, Toaster)\nAvailable objects: Bread, BreadSliced, CounterTop, Knife, Toaster\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "slice_obj",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "Bread is still not sliced, so retrying the slicing step directly addresses the failure and is necessary before inserting a slice into the toaster."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Knife",
+          "obj2": null,
+          "rationale": "Picking up the knife prepares for a better-aligned slicing attempt, which is likely needed since the prior cut failed due to positioning."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bread",
+          "obj2": null,
+          "rationale": "Repositioning the bread may help correct alignment before another slicing attempt, since it is currently on top of the toaster."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "Toaster",
+          "obj2": null,
+          "rationale": "Turning the toaster off could make correction safer while handling and slicing bread, since it is already on and no slice is inside yet."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bread",
+          "obj2": "CounterTop",
+          "rationale": "Placing the bread on the countertop would provide a more stable surface for a subsequent slicing attempt than its current location on top of the toaster."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: toast bread\nFailure reason: At 00:31, the robot attempted to slice the bread, but the observation still shows the bread as \u201cnot sliced,\u201d so the slicing action failed. The likely cause is that after only moving to the bread at 00:29\u201300:30, the robot was not properly aligned or positioned to cut it successfully.\nCurrent state: Visual observation: toaster (turned on), bread (not sliced). bread is on the right of salt shaker. bread is on the left of microwave. bread is on top of toaster. toaster is on the right of salt shaker. toaster is on the right of pepper shaker. toaster is on the left of microwave. toaster is on top of first countertop. nothing is inside robot gripper. Auditory observation: toaster turns on.\nSuccess state: bread slice is inside a toaster that is turned on.\nActions completed so far: (pick_up, Knife), (slice_obj, Bread), (pick_up, Knife), (slice_obj, Bread), (pick_up, Knife)\n\nCandidate next actions:\nA) (slice_obj, Bread) \u2014 Bread is still not sliced, so retrying the slicing step directly addresses the failure and is necessary before inserting a slice into the toaster.\nB) (pick_up, Knife) \u2014 Picking up the knife prepares for a better-aligned slicing attempt, which is likely needed since the prior cut failed due to positioning.\nC) (pick_up, Bread) \u2014 Repositioning the bread may help correct alignment before another slicing attempt, since it is currently on top of the toaster.\nD) (toggle_off, Toaster) \u2014 Turning the toaster off could make correction safer while handling and slicing bread, since it is already on and no slice is inside yet.\nE) (put_on, Bread, CounterTop) \u2014 Placing the bread on the countertop would provide a more stable surface for a subsequent slicing attempt than its current location on top of the toaster.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "E",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "E",
+      "confidence_label": "E",
+      "option_probs": {
+        "A": 0.18219968919553914,
+        "B": 0.000412651705940255,
+        "C": 0.000412651705940255,
+        "D": 0.000412651705940255,
+        "E": 0.8165623556866402
+      },
+      "confidence": 0.8165623556866402,
+      "uncertainty": 0.18343764431335985,
+      "entropy": 0.3015636233187213,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D"
+      ],
+      "fallback_logprob": -7.792906647824699,
+      "response_text": "E"
+    }
+  }
+]

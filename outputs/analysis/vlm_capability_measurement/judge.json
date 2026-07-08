@@ -1,0 +1,818 @@
+[
+ {
+  "crop_idx": 0,
+  "source": "sim",
+  "yoloe_label": "box",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 1,
+  "source": "sim",
+  "yoloe_label": "knife",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 2,
+  "source": "sim",
+  "yoloe_label": "box",
+  "winner": "qwen3-vl:8b"
+ },
+ {
+  "crop_idx": 3,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 4,
+  "source": "sim",
+  "yoloe_label": "paper towel roll",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 5,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 6,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 7,
+  "source": "sim",
+  "yoloe_label": "soap bottle",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 8,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 9,
+  "source": "sim",
+  "yoloe_label": "faucet",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 10,
+  "source": "sim",
+  "yoloe_label": "sink",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 11,
+  "source": "sim",
+  "yoloe_label": "tape",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 12,
+  "source": "sim",
+  "yoloe_label": "plate",
+  "winner": "qwen3-vl:8b"
+ },
+ {
+  "crop_idx": 13,
+  "source": "sim",
+  "yoloe_label": "television",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 14,
+  "source": "sim",
+  "yoloe_label": "lamp",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 15,
+  "source": "sim",
+  "yoloe_label": "gripper",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 16,
+  "source": "sim",
+  "yoloe_label": "laptop",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 17,
+  "source": "sim",
+  "yoloe_label": "keyboard",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 18,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 19,
+  "source": "sim",
+  "yoloe_label": "stove knob",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 20,
+  "source": "sim",
+  "yoloe_label": "tape",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 21,
+  "source": "sim",
+  "yoloe_label": "faucet",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 22,
+  "source": "sim",
+  "yoloe_label": "sink",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 23,
+  "source": "sim",
+  "yoloe_label": "lamp",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 24,
+  "source": "sim",
+  "yoloe_label": "soap bar",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 25,
+  "source": "sim",
+  "yoloe_label": "counter",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 26,
+  "source": "sim",
+  "yoloe_label": "shelf",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 27,
+  "source": "sim",
+  "yoloe_label": "plate",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 28,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 29,
+  "source": "sim",
+  "yoloe_label": "shelf",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 30,
+  "source": "sim",
+  "yoloe_label": "cup",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 31,
+  "source": "sim",
+  "yoloe_label": "desk",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 32,
+  "source": "sim",
+  "yoloe_label": "egg",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 33,
+  "source": "sim",
+  "yoloe_label": "knife",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 34,
+  "source": "sim",
+  "yoloe_label": "television",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 35,
+  "source": "sim",
+  "yoloe_label": "sink",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 36,
+  "source": "sim",
+  "yoloe_label": "chair",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 37,
+  "source": "sim",
+  "yoloe_label": "shelf",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 38,
+  "source": "sim",
+  "yoloe_label": "apple",
+  "winner": "qwen3-vl:8b"
+ },
+ {
+  "crop_idx": 39,
+  "source": "sim",
+  "yoloe_label": "soap bar",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 40,
+  "source": "sim",
+  "yoloe_label": "cup",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 41,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 42,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 43,
+  "source": "sim",
+  "yoloe_label": "house plant",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 44,
+  "source": "sim",
+  "yoloe_label": "desk",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 45,
+  "source": "sim",
+  "yoloe_label": "cup",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 46,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 47,
+  "source": "sim",
+  "yoloe_label": "cup",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 48,
+  "source": "sim",
+  "yoloe_label": "tape",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 49,
+  "source": "sim",
+  "yoloe_label": "faucet",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 50,
+  "source": "sim",
+  "yoloe_label": "sink",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 51,
+  "source": "sim",
+  "yoloe_label": "tool",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 52,
+  "source": "sim",
+  "yoloe_label": "phone",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 53,
+  "source": "sim",
+  "yoloe_label": "microwave",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 54,
+  "source": "sim",
+  "yoloe_label": "gripper",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 55,
+  "source": "sim",
+  "yoloe_label": "cup",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 56,
+  "source": "sim",
+  "yoloe_label": "knife",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 57,
+  "source": "sim",
+  "yoloe_label": "sink",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 58,
+  "source": "sim",
+  "yoloe_label": "window",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 59,
+  "source": "sim",
+  "yoloe_label": "television",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 60,
+  "source": "sim",
+  "yoloe_label": "tool",
+  "winner": "qwen3-vl:8b"
+ },
+ {
+  "crop_idx": 61,
+  "source": "real",
+  "yoloe_label": "bowl",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 62,
+  "source": "real",
+  "yoloe_label": "jar",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 63,
+  "source": "real",
+  "yoloe_label": "desk",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 64,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 65,
+  "source": "real",
+  "yoloe_label": "bottle",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 66,
+  "source": "real",
+  "yoloe_label": "desk",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 67,
+  "source": "real",
+  "yoloe_label": "computer mouse",
+  "winner": "qwen3-vl:30b"
+ },
+ {
+  "crop_idx": 68,
+  "source": "real",
+  "yoloe_label": "stool",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 69,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 70,
+  "source": "real",
+  "yoloe_label": "bowl",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 71,
+  "source": "real",
+  "yoloe_label": "bottle",
+  "winner": "qwen3-vl:8b"
+ },
+ {
+  "crop_idx": 72,
+  "source": "real",
+  "yoloe_label": "laptop",
+  "winner": "NONE"
+ },
+ {
+  "crop_idx": 73,
+  "source": "real",
+  "yoloe_label": "chair",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 74,
+  "source": "real",
+  "yoloe_label": "desk",
+  "winner": "qwen3-vl:30b"
+ },
+ {
+  "crop_idx": 75,
+  "source": "real",
+  "yoloe_label": "desk",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 76,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 77,
+  "source": "real",
+  "yoloe_label": "bottle",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 78,
+  "source": "real",
+  "yoloe_label": "bottle",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 79,
+  "source": "real",
+  "yoloe_label": "plate",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 80,
+  "source": "real",
+  "yoloe_label": "tool",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 81,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 82,
+  "source": "real",
+  "yoloe_label": "tool",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 83,
+  "source": "real",
+  "yoloe_label": "bed",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 84,
+  "source": "real",
+  "yoloe_label": "book",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 85,
+  "source": "real",
+  "yoloe_label": "bag",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 86,
+  "source": "real",
+  "yoloe_label": "box",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 87,
+  "source": "real",
+  "yoloe_label": "cutting board",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 88,
+  "source": "real",
+  "yoloe_label": "table",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 89,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 90,
+  "source": "real",
+  "yoloe_label": "bag",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 91,
+  "source": "real",
+  "yoloe_label": "television",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 92,
+  "source": "real",
+  "yoloe_label": "remote control",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 93,
+  "source": "real",
+  "yoloe_label": "remote control",
+  "winner": "NONE"
+ },
+ {
+  "crop_idx": 94,
+  "source": "real",
+  "yoloe_label": "remote control",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 95,
+  "source": "real",
+  "yoloe_label": "remote control",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 96,
+  "source": "real",
+  "yoloe_label": "remote control",
+  "winner": "NONE"
+ },
+ {
+  "crop_idx": 97,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 98,
+  "source": "real",
+  "yoloe_label": "remote control",
+  "winner": "qwen3-vl:8b"
+ },
+ {
+  "crop_idx": 99,
+  "source": "real",
+  "yoloe_label": "laptop",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 100,
+  "source": "real",
+  "yoloe_label": "keyboard",
+  "winner": "qwen3-vl:30b"
+ },
+ {
+  "crop_idx": 101,
+  "source": "real",
+  "yoloe_label": "dishwasher",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 102,
+  "source": "real",
+  "yoloe_label": "dishwasher",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 103,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 104,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 105,
+  "source": "real",
+  "yoloe_label": "shelf",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 106,
+  "source": "real",
+  "yoloe_label": "counter",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 107,
+  "source": "real",
+  "yoloe_label": "shelf",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 108,
+  "source": "real",
+  "yoloe_label": "stove burner",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 109,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 110,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 111,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 112,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 113,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "gemma4:26b"
+ },
+ {
+  "crop_idx": 114,
+  "source": "real",
+  "yoloe_label": "desk",
+  "winner": "NONE"
+ },
+ {
+  "crop_idx": 115,
+  "source": "real",
+  "yoloe_label": "desk",
+  "winner": "NONE"
+ },
+ {
+  "crop_idx": 116,
+  "source": "real",
+  "yoloe_label": "gripper",
+  "winner": "qwen3-vl:30b"
+ },
+ {
+  "crop_idx": 117,
+  "source": "real",
+  "yoloe_label": "tool",
+  "winner": "NONE"
+ },
+ {
+  "crop_idx": 118,
+  "source": "real",
+  "yoloe_label": "remote control",
+  "winner": "qwen3-vl:8b"
+ },
+ {
+  "crop_idx": 119,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 120,
+  "source": "real",
+  "yoloe_label": "chair",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 121,
+  "source": "real",
+  "yoloe_label": "laptop",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 122,
+  "source": "real",
+  "yoloe_label": "desk",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 123,
+  "source": "real",
+  "yoloe_label": "bottle",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 124,
+  "source": "real",
+  "yoloe_label": "chair",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 125,
+  "source": "real",
+  "yoloe_label": "towel",
+  "winner": "qwen3-vl:8b"
+ },
+ {
+  "crop_idx": 126,
+  "source": "real",
+  "yoloe_label": "chair",
+  "winner": "gemma4:31b"
+ },
+ {
+  "crop_idx": 127,
+  "source": "real",
+  "yoloe_label": "towel",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 128,
+  "source": "real",
+  "yoloe_label": "toaster",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 129,
+  "source": "real",
+  "yoloe_label": "bottle",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 130,
+  "source": "real",
+  "yoloe_label": "paper towel roll",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 131,
+  "source": "real",
+  "yoloe_label": "jar",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 132,
+  "source": "real",
+  "yoloe_label": "robot arm",
+  "winner": "qwen3.5:9b"
+ },
+ {
+  "crop_idx": 133,
+  "source": "real",
+  "yoloe_label": "bottle",
+  "winner": "qwen3.5:27b"
+ },
+ {
+  "crop_idx": 134,
+  "source": "real",
+  "yoloe_label": "chair",
+  "winner": "qwen3-vl:8b"
+ },
+ {
+  "crop_idx": 135,
+  "source": "real",
+  "yoloe_label": "stool",
+  "winner": "qwen3.5:27b"
+ }
+]

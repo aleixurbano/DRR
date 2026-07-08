@@ -1,0 +1,976 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (empty and clean). mug is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999690004804951,
+        "B": 3.099951950491509e-05
+      },
+      "confidence": 0.9999690004804951,
+      "uncertainty": 3.0999519504915085e-05,
+      "entropy": 0.0005090141965348457,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.3815388534407,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put mug in sink. Here are the robot observations after execution:\nVisual observation: mug (empty and clean), faucet (turned off), sink. mug is inside sink. mug is on the left of knife. mug is on the right of spatula. mug is on the left of apple. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999500012499791,
+        "B": 4.99987500208743e-05
+      },
+      "confidence": 0.9999500012499791,
+      "uncertainty": 4.999875002087428e-05,
+      "entropy": 0.0007865007083484608,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.903512552431136,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on faucet. Here are the robot observations after execution:\nVisual observation: mug (empty and clean), faucet (turned off), sink. mug is inside sink. mug is on the left of knife. mug is on the right of spatula. mug is on the left of apple. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 9.999960000070002e-13,
+        "B": 0.9999999999989999
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.1305806754454886e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "B"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle off faucet. Here are the robot observations after execution:\nVisual observation: mug (empty and clean), faucet (turned off), sink. mug is inside sink. mug is on the left of kettle. mug is on the right of plate. mug is on the left of dish sponge. mug is on the right of spatula. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999920000320001,
+        "B": 7.999968000049759e-06
+      },
+      "confidence": 0.9999920000320001,
+      "uncertainty": 7.99996799993874e-06,
+      "entropy": 0.0001469935209061058,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -11.736073016286218,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (empty and clean), faucet (turned off), sink. plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 9.999890000595e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.130553781330152e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to open microwave. Here are the robot observations after execution:\nVisual observation: microwave (open and turned off). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9914834728463426,
+        "B": 0.00851652715365725
+      },
+      "confidence": 0.9914834728463426,
+      "uncertainty": 0.00851652715365736,
+      "entropy": 0.07078982663557104,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -4.76574663230998,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (empty and clean). mug is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999920000320001,
+        "B": 7.999968000049759e-06
+      },
+      "confidence": 0.9999920000320001,
+      "uncertainty": 7.99996799993874e-06,
+      "entropy": 0.0001469935209061058,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -11.736073016286218,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put mug in microwave. Here are the robot observations after execution:\nVisual observation: mug (empty and clean), microwave (open and turned off). mug is inside microwave. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999310023804453,
+        "B": 6.899761955470039e-05
+      },
+      "confidence": 0.9999310023804453,
+      "uncertainty": 6.89976195547004e-05,
+      "entropy": 0.001053299662349819,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.581438553169367,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to close microwave. Here are the robot observations after execution:\nVisual observation: microwave (closed and turned off). nothing is inside robot gripper. Auditory observation: water runs in sink.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9959611780685658,
+        "B": 0.004038821931434121
+      },
+      "confidence": 0.9959611780685658,
+      "uncertainty": 0.004038821931434233,
+      "entropy": 0.03793111096164886,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -5.511802230663123,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on microwave. Here are the robot observations after execution:\nVisual observation: microwave (closed and turned on). nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9995381067055669,
+        "B": 0.0004618932944332464
+      },
+      "confidence": 0.9995381067055669,
+      "uncertainty": 0.00046189329443313554,
+      "entropy": 0.005784065514696282,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -7.680176657989129,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle off microwave. Here are the robot observations after execution:\nVisual observation: microwave (closed and turned off). nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9998510110999487,
+        "B": 0.00014898890005132778
+      },
+      "confidence": 0.9998510110999487,
+      "uncertainty": 0.0001489889000513278,
+      "entropy": 0.0021089520477427484,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -8.811638751093616,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to open microwave. Here are the robot observations after execution:\nVisual observation: mug (empty and clean), microwave (open and turned off). mug is inside microwave. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9859664020106279,
+        "B": 0.014033597989371979
+      },
+      "confidence": 0.9859664020106279,
+      "uncertainty": 0.014033597989372093,
+      "entropy": 0.10647986158889039,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -4.266300968039601,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (empty and clean), microwave (open and turned off). microwave is above mug. mug is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999350021124543,
+        "B": 6.499788754577018e-05
+      },
+      "confidence": 0.9999350021124543,
+      "uncertainty": 6.499788754565916e-05,
+      "entropy": 0.0009978407966561393,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.641155787892593,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put mug on dining table. Here are the robot observations after execution:\nVisual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999660005769952e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.130433381961871e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to Serve a glass of warm water at the dining table. At 00:21, a failure was identified.\n\n[Robot actions and observations before 00:21]\n00:01. Action: Move to mug. Visual observation: microwave (closed and turned off). nothing is inside robot gripper.\n00:05. Action: Move to mug. Visual observation: mug (empty and clean). mug is on the left of stove knob. mug is on top of first countertop. nothing is inside robot gripper.\n00:08. Action: Pick up mug. Visual observation: mug (empty and clean). mug is inside robot gripper.\n00:13. Action: Move to sink. Visual observation: mug (empty and clean), sink. plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n00:15. Action: Move to sink. Visual observation: mug (empty and clean), faucet (turned off), sink. plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n00:17. Action: Move to sink. Visual observation: mug (empty and clean), faucet (turned off), sink. plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n00:20. Action: Put mug in sink. Visual observation: mug (empty and clean), faucet (turned off), sink. mug is inside sink. mug is on the left of knife. mug is on the right of spatula. mug is on the left of apple. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n\n[Observation at the end of 00:21]\nAction: Toggle on faucet. Visual observation: mug (empty and clean), faucet (turned off), sink. mug is inside sink. mug is on the left of knife. mug is on the right of spatula. mug is on the left of apple. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:21] or [Observation at the end of 00:21], briefly explain what happened at 00:21 and what caused the failure.\nA:"
+    },
+    "response": "At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "00:20, 00:21"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Serve a glass of warm water at the dining table\nInitial plan:\n1. (pick_up, mug)\n2. (put_in, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_on, mug, countertop)\n7. (open_obj, microwave)\n8. (pick_up, mug)\n9. (put_in, mug, microwave)\n10. (close_obj, microwave)\n11. (toggle_on, microwave)\n12. (toggle_off, microwave)\n13. (open_obj, microwave)\n14. (pick_up, mug)\n15. (put_on, mug, dining table)\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (none)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, DiningTable), (put_in, DiningTable), (put_on, DiningTable), (toggle_on, DiningTable), (toggle_off, DiningTable), (open_obj, DiningTable), (close_obj, DiningTable), (slice_obj, DiningTable), (crack_obj, DiningTable), (pour, DiningTable), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug)\nAvailable objects: CounterTop, DiningTable, Faucet, Microwave, Mug, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug is currently on the dining table and must be moved to refill and heat it."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "Placing the mug on the countertop could position it for a new attempt to prepare warm water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "Sink",
+          "rationale": "The mug needs to be returned to the sink to attempt filling it with water again."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Turning on the faucet is required to fill the mug with water after the earlier failed toggle."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "Opening the microwave prepares for reheating the mug once it has been filled with water."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Serve a glass of warm water at the dining table\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug is currently on the dining table and must be moved to refill and heat it.\nB) (put_on, Mug, CounterTop) \u2014 Placing the mug on the countertop could position it for a new attempt to prepare warm water.\nC) (put_in, Mug, Sink) \u2014 The mug needs to be returned to the sink to attempt filling it with water again.\nD) (toggle_on, Faucet) \u2014 Turning on the faucet is required to fill the mug with water after the earlier failed toggle.\nE) (open_obj, Microwave) \u2014 Opening the microwave prepares for reheating the mug once it has been filled with water.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999350021124543,
+        "B": 1.6249471886442542e-05,
+        "C": 1.6249471886442542e-05,
+        "D": 1.6249471886442542e-05,
+        "E": 1.6249471886442542e-05
+      },
+      "confidence": 0.9999350021124543,
+      "uncertainty": 6.499788754565916e-05,
+      "entropy": 0.00048573277278958607,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.027450149012484,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Serve a glass of warm water at the dining table\nInitial plan:\n1. (pick_up, mug)\n2. (put_in, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_on, mug, countertop)\n7. (open_obj, microwave)\n8. (pick_up, mug)\n9. (put_in, mug, microwave)\n10. (close_obj, microwave)\n11. (toggle_on, microwave)\n12. (toggle_off, microwave)\n13. (open_obj, microwave)\n14. (pick_up, mug)\n15. (put_on, mug, dining table)\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, DiningTable), (put_in, DiningTable), (put_on, DiningTable), (toggle_on, DiningTable), (toggle_off, DiningTable), (open_obj, DiningTable), (close_obj, DiningTable), (slice_obj, DiningTable), (crack_obj, DiningTable), (pour, DiningTable), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug)\nAvailable objects: CounterTop, DiningTable, Faucet, Microwave, Mug, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug is currently on the dining table and must be moved to refill and reheat it."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "DiningTable",
+          "obj2": null,
+          "rationale": "A recovery attempt could start by interacting with the table area where the mug currently sits."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Since the previous failure was the faucet staying off, retrying the faucet is a plausible correction step before refilling the mug."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "Preparing the microwave could be part of redoing the warming sequence once the mug is refilled."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "Faucet",
+          "rationale": "Placing the mug at the faucet area is a plausible step toward filling it with water after the failed sink-fill attempt."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Serve a glass of warm water at the dining table\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug is currently on the dining table and must be moved to refill and reheat it.\nB) (pick_up, DiningTable) \u2014 A recovery attempt could start by interacting with the table area where the mug currently sits.\nC) (toggle_on, Faucet) \u2014 Since the previous failure was the faucet staying off, retrying the faucet is a plausible correction step before refilling the mug.\nD) (open_obj, Microwave) \u2014 Preparing the microwave could be part of redoing the warming sequence once the mug is refilled.\nE) (put_in, Mug, Faucet) \u2014 Placing the mug at the faucet area is a plausible step toward filling it with water after the failed sink-fill attempt.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.8992025176220897,
+        "B": 0.002007411432155326,
+        "C": 0.0947752480814444,
+        "D": 0.002007411432155326,
+        "E": 0.002007411432155326
+      },
+      "confidence": 0.8992025176220897,
+      "uncertainty": 0.10079748237791031,
+      "entropy": 0.2213536860852884,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -6.21090923159465,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Serve a glass of warm water at the dining table\nInitial plan:\n1. (pick_up, mug)\n2. (put_in, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_on, mug, countertop)\n7. (open_obj, microwave)\n8. (pick_up, mug)\n9. (put_in, mug, microwave)\n10. (close_obj, microwave)\n11. (toggle_on, microwave)\n12. (toggle_off, microwave)\n13. (open_obj, microwave)\n14. (pick_up, mug)\n15. (put_on, mug, dining table)\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug), (pick_up, Mug)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, DiningTable), (put_in, DiningTable), (put_on, DiningTable), (toggle_on, DiningTable), (toggle_off, DiningTable), (open_obj, DiningTable), (close_obj, DiningTable), (slice_obj, DiningTable), (crack_obj, DiningTable), (pour, DiningTable), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug)\nAvailable objects: CounterTop, DiningTable, Faucet, Microwave, Mug, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug is currently on the dining table and must be manipulated again to refill and warm it."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "Moving the mug to the countertop could be a staging step before taking it to the sink or microwave."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retrying the faucet could address the earlier failure if the mug is moved back to the sink soon."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "Opening the microwave prepares for reheating once the mug is filled with water."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "DiningTable",
+          "obj2": null,
+          "rationale": "Interacting with the dining table is a distinct available action candidate, though less useful than picking up the mug."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Serve a glass of warm water at the dining table\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug), (pick_up, Mug)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug is currently on the dining table and must be manipulated again to refill and warm it.\nB) (put_on, Mug, CounterTop) \u2014 Moving the mug to the countertop could be a staging step before taking it to the sink or microwave.\nC) (toggle_on, Faucet) \u2014 Retrying the faucet could address the earlier failure if the mug is moved back to the sink soon.\nD) (open_obj, Microwave) \u2014 Opening the microwave prepares for reheating once the mug is filled with water.\nE) (pick_up, DiningTable) \u2014 Interacting with the dining table is a distinct available action candidate, though less useful than picking up the mug.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 2.499875003122446e-13,
+        "C": 2.499875003122446e-13,
+        "D": 2.499875003122446e-13,
+        "E": 2.499875003122446e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 1.8649853634676068e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -29.017315477048438,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Serve a glass of warm water at the dining table\nInitial plan:\n1. (pick_up, mug)\n2. (put_in, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_on, mug, countertop)\n7. (open_obj, microwave)\n8. (pick_up, mug)\n9. (put_in, mug, microwave)\n10. (close_obj, microwave)\n11. (toggle_on, microwave)\n12. (toggle_off, microwave)\n13. (open_obj, microwave)\n14. (pick_up, mug)\n15. (put_on, mug, dining table)\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug), (pick_up, Mug), (pick_up, Mug)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, DiningTable), (put_in, DiningTable), (put_on, DiningTable), (toggle_on, DiningTable), (toggle_off, DiningTable), (open_obj, DiningTable), (close_obj, DiningTable), (slice_obj, DiningTable), (crack_obj, DiningTable), (pour, DiningTable), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug)\nAvailable objects: CounterTop, DiningTable, Faucet, Microwave, Mug, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug is currently on the dining table and must be moved to be filled and heated."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "Placing the mug on the countertop could stage it closer to the sink/microwave workflow for refilling and reheating."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "Opening the microwave prepares for reheating once the mug is refilled, though the mug still needs water first."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retrying the faucet addresses the original failure source so water can be dispensed when the mug is positioned appropriately."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "Faucet",
+          "rationale": "Moving the mug to the faucet area is a plausible correction step toward filling it with water before warming."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Serve a glass of warm water at the dining table\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug), (pick_up, Mug), (pick_up, Mug)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug is currently on the dining table and must be moved to be filled and heated.\nB) (put_on, Mug, CounterTop) \u2014 Placing the mug on the countertop could stage it closer to the sink/microwave workflow for refilling and reheating.\nC) (open_obj, Microwave) \u2014 Opening the microwave prepares for reheating once the mug is refilled, though the mug still needs water first.\nD) (toggle_on, Faucet) \u2014 Retrying the faucet addresses the original failure source so water can be dispensed when the mug is positioned appropriately.\nE) (put_in, Mug, Faucet) \u2014 Moving the mug to the faucet area is a plausible correction step toward filling it with water before warming.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9525516002098002,
+        "B": 7.882715545378302e-06,
+        "C": 7.882715545378302e-06,
+        "D": 7.882715545378302e-06,
+        "E": 0.04742475164356353
+      },
+      "confidence": 0.9525516002098002,
+      "uncertainty": 0.04744839979019977,
+      "entropy": 0.11877562311430527,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D"
+      ],
+      "fallback_logprob": -11.750838101102033,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Serve a glass of warm water at the dining table\nInitial plan:\n1. (pick_up, mug)\n2. (put_in, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_on, mug, countertop)\n7. (open_obj, microwave)\n8. (pick_up, mug)\n9. (put_in, mug, microwave)\n10. (close_obj, microwave)\n11. (toggle_on, microwave)\n12. (toggle_off, microwave)\n13. (open_obj, microwave)\n14. (pick_up, mug)\n15. (put_on, mug, dining table)\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug), (pick_up, Mug), (pick_up, Mug), (pick_up, Mug)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, DiningTable), (put_in, DiningTable), (put_on, DiningTable), (toggle_on, DiningTable), (toggle_off, DiningTable), (open_obj, DiningTable), (close_obj, DiningTable), (slice_obj, DiningTable), (crack_obj, DiningTable), (pour, DiningTable), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug)\nAvailable objects: CounterTop, DiningTable, Faucet, Microwave, Mug, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug is currently on the dining table and must be manipulated again to refill and heat it."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "Sink",
+          "rationale": "Placing the mug in the sink sets up the missed water-filling step after the earlier faucet failure."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retrying the faucet is the direct correction for the failure so the mug can be filled with water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "Microwave",
+          "rationale": "After refilling, the mug will need to go into the microwave to make the water warm."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "Opening the microwave is a necessary preparatory step before inserting the mug for heating."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Serve a glass of warm water at the dining table\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug), (pick_up, Mug), (pick_up, Mug), (pick_up, Mug)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug is currently on the dining table and must be manipulated again to refill and heat it.\nB) (put_in, Mug, Sink) \u2014 Placing the mug in the sink sets up the missed water-filling step after the earlier faucet failure.\nC) (toggle_on, Faucet) \u2014 Retrying the faucet is the direct correction for the failure so the mug can be filled with water.\nD) (put_in, Mug, Microwave) \u2014 After refilling, the mug will need to go into the microwave to make the water warm.\nE) (open_obj, Microwave) \u2014 Opening the microwave is a necessary preparatory step before inserting the mug for heating.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9927702612124928,
+        "B": 0.001807434696876831,
+        "C": 0.001807434696876831,
+        "D": 0.001807434696876831,
+        "E": 0.001807434696876831
+      },
+      "confidence": 0.9927702612124928,
+      "uncertainty": 0.007229738787507212,
+      "entropy": 0.032847159068703016,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -6.315846733559495,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Serve a glass of warm water at the dining table\nInitial plan:\n1. (pick_up, mug)\n2. (put_in, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_on, mug, countertop)\n7. (open_obj, microwave)\n8. (pick_up, mug)\n9. (put_in, mug, microwave)\n10. (close_obj, microwave)\n11. (toggle_on, microwave)\n12. (toggle_off, microwave)\n13. (open_obj, microwave)\n14. (pick_up, mug)\n15. (put_on, mug, dining table)\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug), (pick_up, Mug), (pick_up, Mug), (pick_up, Mug), (pick_up, Mug)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, DiningTable), (put_in, DiningTable), (put_on, DiningTable), (toggle_on, DiningTable), (toggle_off, DiningTable), (open_obj, DiningTable), (close_obj, DiningTable), (slice_obj, DiningTable), (crack_obj, DiningTable), (pour, DiningTable), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug)\nAvailable objects: CounterTop, DiningTable, Faucet, Microwave, Mug, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug is currently on the dining table and must be manipulated again to refill it with water."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retry turning on the faucet so water can be dispensed for filling the mug."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "Sink",
+          "rationale": "Placing the mug in the sink is necessary before using the faucet to fill it."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "If the mug can be refilled, opening the microwave prepares for reheating the water afterward."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "Moving the mug to the countertop could be a staging step before transporting it to the sink and microwave."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Serve a glass of warm water at the dining table\nFailure reason: At 00:21, the robot tried to turn on the faucet, but it remained off, so the mug in the sink was never filled with water. The failure was caused by an unsuccessful faucet toggle after placing the mug in the sink at 00:20.\nCurrent state: Visual observation: mug (empty and clean), dining table. mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nActions completed so far: (pick_up, Mug), (pick_up, Mug), (pick_up, Mug), (pick_up, Mug), (pick_up, Mug)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug is currently on the dining table and must be manipulated again to refill it with water.\nB) (toggle_on, Faucet) \u2014 Retry turning on the faucet so water can be dispensed for filling the mug.\nC) (put_in, Mug, Sink) \u2014 Placing the mug in the sink is necessary before using the faucet to fill it.\nD) (open_obj, Microwave) \u2014 If the mug can be refilled, opening the microwave prepares for reheating the water afterward.\nE) (put_on, Mug, CounterTop) \u2014 Moving the mug to the countertop could be a staging step before transporting it to the sink and microwave.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "C",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "C",
+      "confidence_label": "C",
+      "option_probs": {
+        "A": 0.00023364075592538497,
+        "B": 0.00023364075592538497,
+        "C": 0.9990654369762983,
+        "D": 0.00023364075592538497,
+        "E": 0.00023364075592538497
+      },
+      "confidence": 0.9990654369762983,
+      "uncertainty": 0.0009345630237016511,
+      "entropy": 0.0054358642311524725,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -8.361725853369455,
+      "response_text": "C"
+    }
+  }
+]

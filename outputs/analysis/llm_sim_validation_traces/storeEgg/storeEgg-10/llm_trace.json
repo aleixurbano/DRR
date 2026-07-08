@@ -1,0 +1,813 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to open fridge. Here are the robot observations after execution:\nVisual observation: fridge (open). lettuce is inside fridge. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9984871455198215,
+        "B": 0.0015128544801785715
+      },
+      "confidence": 0.9984871455198215,
+      "uncertainty": 0.0015128544801784605,
+      "entropy": 0.016354129786482482,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -6.4937570284587345,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put egg on countertop. Here are the robot observations after execution:\nVisual observation: nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 4.1999118012392436e-05,
+        "B": 0.9999580008819876
+      },
+      "confidence": 0.9999580008819876,
+      "uncertainty": 4.199911801239242e-05,
+      "entropy": 0.000671227643998151,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -10.077861939606345,
+      "response_text": "B"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to close fridge. Here are the robot observations after execution:\nVisual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9947269515863255,
+        "B": 0.0052730484136746
+      },
+      "confidence": 0.9947269515863255,
+      "uncertainty": 0.005273048413674486,
+      "entropy": 0.04748924105904469,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -5.245146637047052,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up egg. Here are the robot observations after execution:\nVisual observation: fridge (closed). nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 9.999770002635003e-13,
+        "B": 0.9999999999990001
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.1304756432889446e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put egg in bowl. Here are the robot observations after execution:\nVisual observation: bowl. bowl is on top of dining table. bowl is on the left of fork. bowl is on the left of spoon. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 3.999991999958934e-06,
+        "B": 0.999996000008
+      },
+      "confidence": 0.999996000008,
+      "uncertainty": 3.9999919999589295e-06,
+      "entropy": 7.749689944602653e-05,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -12.42921819685665,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to open fridge. Here are the robot observations after execution:\nVisual observation: fridge (open), egg (not sliced and not cracked). lettuce is inside fridge. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999855010511992,
+        "B": 0.00014498948800811806
+      },
+      "confidence": 0.999855010511992,
+      "uncertainty": 0.00014498948800800715,
+      "entropy": 0.002058032194672294,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -8.838849314667435,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up bowl. Here are the robot observations after execution:\nVisual observation: bowl. bowl is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999730003644967,
+        "B": 2.6999635503233113e-05
+      },
+      "confidence": 0.9999730003644967,
+      "uncertainty": 2.6999635503344166e-05,
+      "entropy": 0.0004487170972098937,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.519687191931324,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put bowl in fridge. Here are the robot observations after execution:\nVisual observation: fridge (open), bowl, egg (not sliced and not cracked). lettuce is inside fridge. bowl is inside fridge. egg is inside fridge. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999850001124995,
+        "B": 1.4999887500533034e-05
+      },
+      "confidence": 0.9999850001124995,
+      "uncertainty": 1.4999887500533049e-05,
+      "entropy": 0.00026200863014916125,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -11.107467856854653,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to close fridge. Here are the robot observations after execution:\nVisual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9947269515863255,
+        "B": 0.0052730484136746
+      },
+      "confidence": 0.9947269515863255,
+      "uncertainty": 0.005273048413674486,
+      "entropy": 0.04748924105904469,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -5.245146637047052,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to Store an egg in a bowl in the fridge. At 00:35, a failure was identified.\n\n[Robot actions and observations before 00:35]\n00:01. Action: Move to fridge. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:03. Action: Move to fridge. Visual observation: nothing is inside robot gripper.\n00:07. Action: Move to fridge. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:12. Action: Move to fridge. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:15. Action: Open fridge. Visual observation: fridge (open). lettuce is inside fridge. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n00:17. Action: Move to countertop. Visual observation: fridge (open). nothing is inside robot gripper.\n00:25. Action: Move to countertop. Visual observation: nothing is inside robot gripper.\n00:29. Action: Move to countertop. Visual observation: fridge (open). nothing is inside robot gripper.\n00:33. Action: Move to countertop. Visual observation: nothing is inside robot gripper.\n00:34. Action: Move to countertop. Visual observation: nothing is inside robot gripper.\n\n[Observation at the end of 00:35]\nAction: Put egg on countertop. Visual observation: nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:35] or [Observation at the end of 00:35], briefly explain what happened at 00:35 and what caused the failure.\nA:"
+    },
+    "response": "At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "00:35, 00:15"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Store an egg in a bowl in the fridge\nInitial plan:\n1. (open_obj, fridge)\n2. (put_on, egg, countertop)\n3. (close_obj, fridge)\n4. (pick_up, egg)\n5. (put_in, egg, bowl)\n6. (open_obj, fridge)\n7. (pick_up, bowl)\n8. (put_in, bowl, fridge)\n9. (close_obj, fridge)\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (none)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge)\nAvailable objects: Bowl, CounterTop, Egg, Fridge\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "Open the fridge first to inspect whether the egg fell or remains inside, since the drop/crack sound happened during fridge opening."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Egg",
+          "obj2": null,
+          "rationale": "If the egg is still intact and reachable, recovering it is necessary before placing it into a bowl."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Getting the bowl ready is useful because the goal requires the egg to be stored in the bowl inside the fridge."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Egg",
+          "obj2": "Bowl",
+          "rationale": "If both objects are available and the egg is intact, placing the egg into the bowl directly advances toward the goal."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bowl",
+          "obj2": "Fridge",
+          "rationale": "Once the bowl contains the egg, moving the bowl into the fridge completes the storage part of the task."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Store an egg in a bowl in the fridge\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (open_obj, Fridge) \u2014 Open the fridge first to inspect whether the egg fell or remains inside, since the drop/crack sound happened during fridge opening.\nB) (pick_up, Egg) \u2014 If the egg is still intact and reachable, recovering it is necessary before placing it into a bowl.\nC) (pick_up, Bowl) \u2014 Getting the bowl ready is useful because the goal requires the egg to be stored in the bowl inside the fridge.\nD) (put_in, Egg, Bowl) \u2014 If both objects are available and the egg is intact, placing the egg into the bowl directly advances toward the goal.\nE) (put_in, Bowl, Fridge) \u2014 Once the bowl contains the egg, moving the bowl into the fridge completes the storage part of the task.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999890000604997,
+        "B": 2.7499848750667236e-06,
+        "C": 2.7499848750667236e-06,
+        "D": 2.7499848750667236e-06,
+        "E": 2.7499848750667236e-06
+      },
+      "confidence": 0.9999890000604997,
+      "uncertainty": 1.0999939500266898e-05,
+      "entropy": 9.434484536695168e-05,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -12.803915146276657,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Store an egg in a bowl in the fridge\nInitial plan:\n1. (open_obj, fridge)\n2. (put_on, egg, countertop)\n3. (close_obj, fridge)\n4. (pick_up, egg)\n5. (put_in, egg, bowl)\n6. (open_obj, fridge)\n7. (pick_up, bowl)\n8. (put_in, bowl, fridge)\n9. (close_obj, fridge)\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge)\nAvailable objects: Bowl, CounterTop, Egg, Fridge\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Egg",
+          "obj2": null,
+          "rationale": "The gripper is empty and the egg is needed for the goal; first check if the egg is still intact and graspable."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "The fridge is currently closed, and reopening it may be needed soon to continue storing items inside."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Preparing the bowl could help recover by positioning the container before handling the egg."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Egg",
+          "obj2": "Bowl",
+          "rationale": "If the egg is already within reach or currently held after recovery, placing it into the bowl directly advances toward the goal."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bowl",
+          "obj2": "CounterTop",
+          "rationale": "Setting the bowl on the countertop can create a stable staging area for placing the egg into it next."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Store an egg in a bowl in the fridge\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge)\n\nCandidate next actions:\nA) (pick_up, Egg) \u2014 The gripper is empty and the egg is needed for the goal; first check if the egg is still intact and graspable.\nB) (open_obj, Fridge) \u2014 The fridge is currently closed, and reopening it may be needed soon to continue storing items inside.\nC) (pick_up, Bowl) \u2014 Preparing the bowl could help recover by positioning the container before handling the egg.\nD) (put_in, Egg, Bowl) \u2014 If the egg is already within reach or currently held after recovery, placing it into the bowl directly advances toward the goal.\nE) (put_on, Bowl, CounterTop) \u2014 Setting the bowl on the countertop can create a stable staging area for placing the egg into it next.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999943001624469,
+        "B": 1.4249593882714743e-05,
+        "C": 1.4249593882714743e-05,
+        "D": 1.4249593882714743e-05,
+        "E": 1.4249593882714743e-05
+      },
+      "confidence": 0.999943001624469,
+      "uncertainty": 5.699837553096998e-05,
+      "entropy": 0.00043060325673627877,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.158782151114346,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Store an egg in a bowl in the fridge\nInitial plan:\n1. (open_obj, fridge)\n2. (put_on, egg, countertop)\n3. (close_obj, fridge)\n4. (pick_up, egg)\n5. (put_in, egg, bowl)\n6. (open_obj, fridge)\n7. (pick_up, bowl)\n8. (put_in, bowl, fridge)\n9. (close_obj, fridge)\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge), (pick_up, Egg)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge)\nAvailable objects: Bowl, CounterTop, Egg, Fridge\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Egg",
+          "obj2": null,
+          "rationale": "The gripper is empty and the egg is needed for the goal, so the best correction is to try to recover or reacquire the egg first."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "Opening the fridge may be needed to inspect whether the egg fell back inside before proceeding."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Preparing the bowl first is a reasonable recovery step since the final goal requires the egg to be placed into it."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bowl",
+          "obj2": "CounterTop",
+          "rationale": "Placing the bowl on the countertop could stabilize the setup for later placing the egg into the bowl."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "If recovery requires focusing outside the fridge area, ensuring the fridge is closed keeps the environment in a safe known state."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Store an egg in a bowl in the fridge\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge), (pick_up, Egg)\n\nCandidate next actions:\nA) (pick_up, Egg) \u2014 The gripper is empty and the egg is needed for the goal, so the best correction is to try to recover or reacquire the egg first.\nB) (open_obj, Fridge) \u2014 Opening the fridge may be needed to inspect whether the egg fell back inside before proceeding.\nC) (pick_up, Bowl) \u2014 Preparing the bowl first is a reasonable recovery step since the final goal requires the egg to be placed into it.\nD) (put_on, Bowl, CounterTop) \u2014 Placing the bowl on the countertop could stabilize the setup for later placing the egg into the bowl.\nE) (close_obj, Fridge) \u2014 If recovery requires focusing outside the fridge area, ensuring the fridge is closed keeps the environment in a safe known state.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999850001124995,
+        "B": 3.7499718751332576e-06,
+        "C": 3.7499718751332576e-06,
+        "D": 3.7499718751332576e-06,
+        "E": 3.7499718751332576e-06
+      },
+      "confidence": 0.9999850001124995,
+      "uncertainty": 1.4999887500533049e-05,
+      "entropy": 0.00012576117485860072,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -12.493762217974544,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Store an egg in a bowl in the fridge\nInitial plan:\n1. (open_obj, fridge)\n2. (put_on, egg, countertop)\n3. (close_obj, fridge)\n4. (pick_up, egg)\n5. (put_in, egg, bowl)\n6. (open_obj, fridge)\n7. (pick_up, bowl)\n8. (put_in, bowl, fridge)\n9. (close_obj, fridge)\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge), (pick_up, Egg), (pick_up, Egg)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge)\nAvailable objects: Bowl, CounterTop, Egg, Fridge\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Egg",
+          "obj2": null,
+          "rationale": "The egg is not in the gripper; recovering it is the most direct correction toward placing it into a bowl."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "The fridge is currently closed, and reopening it may be needed soon to continue the storage task after recovery."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Getting the bowl ready is useful because the goal requires the egg to be in the bowl before storing it in the fridge."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Egg",
+          "obj2": "CounterTop",
+          "rationale": "If the egg is recovered in hand, placing it on the countertop could stabilize it temporarily while preparing the bowl."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Egg",
+          "obj2": "Bowl",
+          "rationale": "This is the key goal-progressing action once the egg has been successfully recovered."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Store an egg in a bowl in the fridge\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge), (pick_up, Egg), (pick_up, Egg)\n\nCandidate next actions:\nA) (pick_up, Egg) \u2014 The egg is not in the gripper; recovering it is the most direct correction toward placing it into a bowl.\nB) (open_obj, Fridge) \u2014 The fridge is currently closed, and reopening it may be needed soon to continue the storage task after recovery.\nC) (pick_up, Bowl) \u2014 Getting the bowl ready is useful because the goal requires the egg to be in the bowl before storing it in the fridge.\nD) (put_on, Egg, CounterTop) \u2014 If the egg is recovered in hand, placing it on the countertop could stabilize it temporarily while preparing the bowl.\nE) (put_in, Egg, Bowl) \u2014 This is the key goal-progressing action once the egg has been successfully recovered.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 2.4999800000774987e-13,
+        "C": 2.4999800000774987e-13,
+        "D": 2.4999800000774987e-13,
+        "E": 2.4999800000774987e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 1.8650722720049047e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -29.017315477048438,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Store an egg in a bowl in the fridge\nInitial plan:\n1. (open_obj, fridge)\n2. (put_on, egg, countertop)\n3. (close_obj, fridge)\n4. (pick_up, egg)\n5. (put_in, egg, bowl)\n6. (open_obj, fridge)\n7. (pick_up, bowl)\n8. (put_in, bowl, fridge)\n9. (close_obj, fridge)\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge), (pick_up, Egg), (pick_up, Egg), (pick_up, Egg)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge)\nAvailable objects: Bowl, CounterTop, Egg, Fridge\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Egg",
+          "obj2": null,
+          "rationale": "The gripper is empty and the egg is needed for the goal; first try to recover or reacquire the egg."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "The fridge is currently closed, and opening it may be necessary to inspect for the egg or continue storing items inside."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Preparing the bowl is a reasonable recovery step since the final goal requires the egg to be in the bowl before refrigeration."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Egg",
+          "obj2": "Bowl",
+          "rationale": "If the egg has just been recovered and is in hand, placing it into the bowl directly advances toward the success state."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bowl",
+          "obj2": "Fridge",
+          "rationale": "If the bowl is already available and the egg is or will be inside it, moving the bowl into the fridge progresses toward completion."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Store an egg in a bowl in the fridge\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge), (pick_up, Egg), (pick_up, Egg), (pick_up, Egg)\n\nCandidate next actions:\nA) (pick_up, Egg) \u2014 The gripper is empty and the egg is needed for the goal; first try to recover or reacquire the egg.\nB) (open_obj, Fridge) \u2014 The fridge is currently closed, and opening it may be necessary to inspect for the egg or continue storing items inside.\nC) (pick_up, Bowl) \u2014 Preparing the bowl is a reasonable recovery step since the final goal requires the egg to be in the bowl before refrigeration.\nD) (put_in, Egg, Bowl) \u2014 If the egg has just been recovered and is in hand, placing it into the bowl directly advances toward the success state.\nE) (put_in, Bowl, Fridge) \u2014 If the bowl is already available and the egg is or will be inside it, moving the bowl into the fridge progresses toward completion.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 2.4999050018024794e-13,
+        "C": 2.4999050018024794e-13,
+        "D": 2.4999050018024794e-13,
+        "E": 2.4999050018024794e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 1.8650062523455393e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -29.017315477048438,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Store an egg in a bowl in the fridge\nInitial plan:\n1. (open_obj, fridge)\n2. (put_on, egg, countertop)\n3. (close_obj, fridge)\n4. (pick_up, egg)\n5. (put_in, egg, bowl)\n6. (open_obj, fridge)\n7. (pick_up, bowl)\n8. (put_in, bowl, fridge)\n9. (close_obj, fridge)\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge), (pick_up, Egg), (pick_up, Egg), (pick_up, Egg), (pick_up, Egg)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge)\nAvailable objects: Bowl, CounterTop, Egg, Fridge\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Egg",
+          "obj2": null,
+          "rationale": "The gripper is empty and the egg is needed to complete the goal, so reacquiring the egg is the most direct correction."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "Opening the fridge may be useful to inspect or prepare the storage location before placing the bowl inside."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Preparing the bowl now could help if the egg is recovered next and then placed into it before fridge storage."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Egg",
+          "obj2": "Bowl",
+          "rationale": "If the egg is actually already held or immediately recoverable, placing it into the bowl directly advances toward the success state."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bowl",
+          "obj2": "Fridge",
+          "rationale": "If the bowl is already in hand and contains the egg, this would complete the storage portion of the task."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Store an egg in a bowl in the fridge\nFailure reason: At 00:35, the robot attempted to put the egg on the countertop, but its gripper was already empty, so there was no egg to place. The likely cause is that the egg was dropped or cracked earlier when the fridge was opened at 00:15, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound.\nCurrent state: Visual observation: fridge (closed). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\nSuccess state: A bowl with an egg is stored inside the fridge.\nActions completed so far: (open_obj, Fridge), (pick_up, Egg), (pick_up, Egg), (pick_up, Egg), (pick_up, Egg)\n\nCandidate next actions:\nA) (pick_up, Egg) \u2014 The gripper is empty and the egg is needed to complete the goal, so reacquiring the egg is the most direct correction.\nB) (open_obj, Fridge) \u2014 Opening the fridge may be useful to inspect or prepare the storage location before placing the bowl inside.\nC) (pick_up, Bowl) \u2014 Preparing the bowl now could help if the egg is recovered next and then placed into it before fridge storage.\nD) (put_in, Egg, Bowl) \u2014 If the egg is actually already held or immediately recoverable, placing it into the bowl directly advances toward the success state.\nE) (put_in, Bowl, Fridge) \u2014 If the bowl is already in hand and contains the egg, this would complete the storage portion of the task.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999943001624469,
+        "B": 1.4249593882714743e-05,
+        "C": 1.4249593882714743e-05,
+        "D": 1.4249593882714743e-05,
+        "E": 1.4249593882714743e-05
+      },
+      "confidence": 0.999943001624469,
+      "uncertainty": 5.699837553096998e-05,
+      "entropy": 0.00043060325673627877,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.158782151114346,
+      "response_text": "A"
+    }
+  }
+]

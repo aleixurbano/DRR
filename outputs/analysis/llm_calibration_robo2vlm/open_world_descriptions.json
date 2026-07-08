@@ -1,0 +1,8 @@
+{
+  "boilWater early": "window 2, knife, window, window 3, box 2, paper towel roll, box, window 4.",
+  "boilWater pre-failure": "tape, faucet, window, sink, plate, soap bottle.",
+  "cookEgg early": "lamp, television.",
+  "cookEgg pre-failure": "tape, window, stove knob, gripper, laptop, keyboard.",
+  "toastBread early": "lamp, counter, window 2, faucet, shelf 3, cabinet, window, sink, shelf, shelf 2, banana, plate, person, book, soap bar, soap bottle. soap bar is on the left of counter. soap bar is on the right of shelf 3. soap bar is below soap bottle. counter is on the left of shelf. counter is on the left of plate. counter is above shelf 2. counter is on the right of shelf 3. shelf is on the right of shelf 2. plate is on the right of shelf 2. shelf 2 is on the right of shelf 3. soap bottle is on the left of window 2.",
+  "toastBread pre-failure": "hand towel, knife, desk, soap bar, shelf 3, shelf 2, sink, shelf, chair, dish sponge, egg, cup, sink 2, apple, television. egg is inside desk. knife is inside desk. desk is above television. desk is on the right of apple. egg is on the left of knife. egg is above television. egg is on the right of apple. knife is above television. knife is on the right of apple. television is below apple. sink 2 is inside sink. chair is on the left of shelf 3. soap bar is above shelf 2. shelf 2 is below sink 2."
+}

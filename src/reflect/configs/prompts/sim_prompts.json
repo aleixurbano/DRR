@@ -1,0 +1,135 @@
+{
+  "subgoal-verifier": {
+    "template-system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+    "template-user": "The robot goal is to [SUBGOAL]. Here are the robot observations after execution:\n[OBSERVATION]\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:",
+    "params": {
+      "max_tokens": 1,
+      "temperature": 0.0,
+      "top_p": 1,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "logprobs": true
+    },
+    "save": false
+  },
+  "task-verifier": {
+    "template-system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+    "template-user": "The robot task is to [TASK_NAME]. The task is considered successful if [SUCCESS_CONDITION].\nActions executed by the robot:\n[ACTIONS_TAKEN]\nFinal scene state:\n[CURRENT_STATE]\nQ: Based on the evidence above, is the task complete?\nA = Yes\nB = No\nLabel:",
+    "params": {
+      "max_tokens": 1,
+      "temperature": 0.0,
+      "top_p": 1,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "logprobs": true
+    },
+    "save": false
+  },
+  "reasoning-execution": {
+        "template-system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Identify the ROOT CAUSE time step — the earliest step where things went wrong — even if it is earlier than the step where the failure was detected.",
+        "template-user": "The robot task is to [TASK_NAME]. At [STEP], a failure was detected (this is when the failure became observable, not necessarily the root cause).\n\n[Robot actions and observations before [STEP]]\n[SUMMARY]\n[Observation at the end of [STEP]]\n[OBSERVATION]\nQ: Looking at the full history, identify the ROOT CAUSE of the failure: what went wrong and at which earlier time step did it first go wrong? [STEP] may only be where the failure manifested, not where it originated.\nA:",
+        "params": {
+            "temperature": 0.2,
+            "top_p": 0.9,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0
+        },
+        "save": true
+    },
+    "reasoning-execution-steps": {
+        "template-system": "",
+        "template-user": "[FAILURE_REASON]\nQ: From the above explanation, extract ONLY the earliest root cause time step(s) in MM:SS format (separated by comma). Do not include the step where the failure was merely observed, only the step(s) where the underlying cause originated.\nA:",
+        "params": {
+            "temperature": 0.0,
+            "top_p": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0
+        },
+        "save": false
+    },
+    "reasoning-execution-no-history": {
+        "template-system": "You are expected to provide explanation for a robot failure. You are given robot observations so far. Briefly explain the failure in 1-2 sentence.",
+        "template-user": "The robot task is to [TASK_NAME]. At [STEP], a failure was identified.\n\n[Observation at the end of [STEP]]\n[OBSERVATION]\nQ: Infer from [Observation at the end of [STEP]], briefly explain what happened at [STEP] and what caused the failure.\nA:",
+        "params": {
+            "temperature": 0.2,
+            "top_p": 0.9,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0
+        },
+        "save": true
+    },
+    "reasoning-plan": {
+        "template-system": "You are expected to provide explanation for a robot failure. You are given the current robot state, the goal condition, and the robot plan. Briefly explain what was wrong with the robot plan in 1-2 sentence.",
+        "template-user": "The robot task is to [TASK_NAME]. The task is considered successful if [SUCCESS_CONDITION]\nHere's the robot observation at the end of the task execution:\n[CURRENT_STATE]\nThe robot plan is:\n[OBSERVATION]\nQ: Known that all actions in the robot plan were executed successfully, what's wrong with the robot plan that caused the robot to fail?\nA:",
+        "params": {
+            "temperature": 0.2,
+            "top_p": 0.9,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0
+        },
+        "save": true
+    },
+    "reasoning-plan-steps": {
+        "template-system": "Given the identified failure reason, you are expected to output an earliest time step that is relevant to the failure. You must output a time step.",
+        "template-user": "[PREV_PROMPT]\nQ: Which time step is most relevant to the above failure?\nA:",
+        "params": {
+            "temperature": 0.0,
+            "top_p": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "stop": [",", "."]
+        },
+        "save": false
+    },
+    "correction": {
+        "template-system": "[PREFIX]",
+        "template-user": "Task: [TASK_NAME]\nInitial plan:\n[PLAN]\nFailure reason: [FAILURE_REASON]\nCurrent state: [CURRENT_STATE]\nSuccess state: [SUCCESS_CONDITION]\nCorrection plan:",
+        "params": {
+            "temperature": 0.4,
+            "top_p": 0.9,
+            "frequency_penalty": 0.5,
+            "presence_penalty": 0.3
+        },
+        "save": true
+    },
+    "plan-propose": {
+        "template-system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+        "template-user": "Task: [TASK_NAME]\nInitial plan:\n[PLAN]\nFailure reason: [FAILURE_REASON]\nCurrent state: [CURRENT_STATE]\nSuccess state: [SUCCESS_CONDITION]\nActions completed so far: [ACTIONS_SO_FAR]\nAvailable actions: [AVAILABLE_ACTIONS]\nAvailable objects: [AVAILABLE_OBJECTS]\n\nPropose 5 candidate next actions:",
+        "params": {
+            "temperature": 0.8,
+            "top_p": 0.95,
+            "frequency_penalty": 0.3,
+            "presence_penalty": 0.0
+        },
+        "save": false
+    },
+    "plan-select": {
+        "template-system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+        "template-user": "Task: [TASK_NAME]\nFailure reason: [FAILURE_REASON]\nCurrent state: [CURRENT_STATE]\nSuccess state: [SUCCESS_CONDITION]\nActions completed so far: [ACTIONS_SO_FAR]\n\nCandidate next actions:\n[CANDIDATES]\n\nWhich candidate is the best next action?\nLabel:",
+        "params": {
+            "max_tokens": 1,
+            "temperature": 0.0,
+            "top_p": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0
+        },
+        "save": false
+    },
+    "plan-propose-thinking": {
+        "template-system": "You are a robot action planner. Propose exactly 4 diverse candidate actions for the IMMEDIATE next step only. All 4 candidates must be executable RIGHT NOW given the current state and actions completed so far — do not propose future steps or actions that require additional prior steps to complete first. Each candidate must use one of the available actions and objects.",
+        "template-user": "Task: [TASK_NAME]\nInitial plan:\n[PLAN]\nFailure reason: [FAILURE_REASON]\nCurrent state: [CURRENT_STATE]\nSuccess state: [SUCCESS_CONDITION]\nActions completed so far: [ACTIONS_SO_FAR]\nPropose 4 candidate actions that are all executable RIGHT NOW as the next immediate step and help the robot reach it's goal:",
+        "params": {}
+    },
+    "plan-select-done": {
+        "template-system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character. If no additional steps are needed to complete the task, output E.",
+        "template-user": "Task: [TASK_NAME]\nOriginal plan:\n[PLAN]\nFailure reason: [FAILURE_REASON]\nSuccess state: [SUCCESS_CONDITION]\nCurrent state: [CURRENT_STATE]\nActions completed so far: [ACTIONS_SO_FAR]\n\nCandidate next actions:\n[CANDIDATES]\nE) Done - No more steps needed\n\nWhich candidate best advances the robot toward the success state, or E if the task is already complete?\nLabel:",
+        "params": {
+            "max_tokens": 1,
+            "temperature": 0.0,
+            "top_p": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0
+        },
+        "save": false
+    }
+}

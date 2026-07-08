@@ -1,0 +1,712 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle off floor lamp. Here are the robot observations after execution:\nVisual observation: floor lamp. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.0007017536556479521,
+        "B": 0.999298246344352
+      },
+      "confidence": 0.999298246344352,
+      "uncertainty": 0.000701753655647952,
+      "entropy": 0.0083641572038422,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -7.261928133404961,
+      "response_text": "B"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to close laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9933164350401938,
+        "B": 0.006683564959806046
+      },
+      "confidence": 0.9933164350401938,
+      "uncertainty": 0.006683564959806154,
+      "entropy": 0.057899920717354045,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -5.008103757170632,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9998510110999487,
+        "B": 0.00014898890005132778
+      },
+      "confidence": 0.9998510110999487,
+      "uncertainty": 0.0001489889000513278,
+      "entropy": 0.0021089520477427484,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -8.811638751093616,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put laptop on tv stand. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off), tv stand. laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. tv stand is on the left of garbage can. television is on top of tv stand. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999730003634986e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.1304602754818765e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up remote control. Here are the robot observations after execution:\nVisual observation: remote control. remote control is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999620007219909,
+        "B": 3.799927800918199e-05
+      },
+      "confidence": 0.9999620007219909,
+      "uncertainty": 3.799927800907099e-05,
+      "entropy": 0.0006127891286137383,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.177943398176755,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on floor lamp. Here are the robot observations after execution:\nVisual observation: floor lamp, remote control. remote control is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "available",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.07585818002124356,
+        "B": 0.9241418199787566
+      },
+      "confidence": 0.9241418199787566,
+      "uncertainty": 0.07585818002124345,
+      "entropy": 0.38741437875968504,
+      "fallback_applied": false,
+      "fallback_labels": [],
+      "fallback_logprob": null,
+      "response_text": "A"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to Close the laptop and put it on the TV stand and switch on television. At 00:24, a failure was identified.\n\n[Robot actions and observations before 00:24]\n00:01. Action: Move to floor lamp. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:07. Action: Move to floor lamp. Visual observation: nothing is inside robot gripper.\n00:21. Action: Move to floor lamp. Visual observation: floor lamp. floor lamp is on the left of painting. nothing is inside robot gripper.\n00:23. Action: Move to floor lamp. Visual observation: floor lamp. nothing is inside robot gripper.\n\n[Observation at the end of 00:24]\nAction: Toggle off floor lamp. Visual observation: floor lamp. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:24] or [Observation at the end of 00:24], briefly explain what happened at 00:24 and what caused the failure.\nA:"
+    },
+    "response": "At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "00:24, 00:01\u201300:23"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, floor lamp)\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (none)\nAvailable actions: (pick_up, FloorLamp), (put_in, FloorLamp), (put_on, FloorLamp), (toggle_on, FloorLamp), (toggle_off, FloorLamp), (open_obj, FloorLamp), (close_obj, FloorLamp), (slice_obj, FloorLamp), (crack_obj, FloorLamp), (pour, FloorLamp), (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand)\nAvailable objects: FloorLamp, Laptop, RemoteControl, TVStand\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "The remote is already in the gripper, so using it now may turn on the television and directly advance one goal."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Shifting focus to the laptop corrects the previous wrong-object behavior and enables placing it on the TV stand next."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "The laptop must be closed for the success condition, so closing it is a necessary corrective step."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Placing the laptop on the TV stand is one of the required end-state conditions."
+        },
+        {
+          "action": "put_on",
+          "obj1": "RemoteControl",
+          "obj2": "TVStand",
+          "rationale": "If the robot needs to free its gripper before manipulating the laptop, setting the remote on the TV stand is a reasonable correction."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (toggle_on, RemoteControl) \u2014 The remote is already in the gripper, so using it now may turn on the television and directly advance one goal.\nB) (pick_up, Laptop) \u2014 Shifting focus to the laptop corrects the previous wrong-object behavior and enables placing it on the TV stand next.\nC) (close_obj, Laptop) \u2014 The laptop must be closed for the success condition, so closing it is a necessary corrective step.\nD) (put_on, Laptop, TVStand) \u2014 Placing the laptop on the TV stand is one of the required end-state conditions.\nE) (put_on, RemoteControl, TVStand) \u2014 If the robot needs to free its gripper before manipulating the laptop, setting the remote on the TV stand is a reasonable correction.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999850001124995,
+        "B": 3.7499718751332576e-06,
+        "C": 3.7499718751332576e-06,
+        "D": 3.7499718751332576e-06,
+        "E": 3.7499718751332576e-06
+      },
+      "confidence": 0.9999850001124995,
+      "uncertainty": 1.4999887500533049e-05,
+      "entropy": 0.00012576117485860072,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -12.493762217974544,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, floor lamp)\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl)\nAvailable actions: (pick_up, FloorLamp), (put_in, FloorLamp), (put_on, FloorLamp), (toggle_on, FloorLamp), (toggle_off, FloorLamp), (open_obj, FloorLamp), (close_obj, FloorLamp), (slice_obj, FloorLamp), (crack_obj, FloorLamp), (pour, FloorLamp), (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand)\nAvailable objects: FloorLamp, Laptop, RemoteControl, TVStand\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "The remote control is already in the gripper, so using it now is a direct way to turn on the television and recover from the earlier wrong-object behavior."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Picking up the laptop would resume progress on the main task after the robot got distracted by the floor lamp."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "The laptop must be closed in the goal state, so closing it is a relevant corrective step if the robot can act on it next."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Placing the laptop on the TV stand is one of the required goal conditions and is a sensible next correction once attention returns to the correct objects."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "FloorLamp",
+          "obj2": null,
+          "rationale": "If the floor lamp was incorrectly affected, toggling it again could undo the mistaken interaction before continuing with the TV-related task."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl)\n\nCandidate next actions:\nA) (toggle_on, RemoteControl) \u2014 The remote control is already in the gripper, so using it now is a direct way to turn on the television and recover from the earlier wrong-object behavior.\nB) (pick_up, Laptop) \u2014 Picking up the laptop would resume progress on the main task after the robot got distracted by the floor lamp.\nC) (close_obj, Laptop) \u2014 The laptop must be closed in the goal state, so closing it is a relevant corrective step if the robot can act on it next.\nD) (put_on, Laptop, TVStand) \u2014 Placing the laptop on the TV stand is one of the required goal conditions and is a sensible next correction once attention returns to the correct objects.\nE) (toggle_off, FloorLamp) \u2014 If the floor lamp was incorrectly affected, toggling it again could undo the mistaken interaction before continuing with the TV-related task.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999850001124995,
+        "B": 3.7499718751332576e-06,
+        "C": 3.7499718751332576e-06,
+        "D": 3.7499718751332576e-06,
+        "E": 3.7499718751332576e-06
+      },
+      "confidence": 0.9999850001124995,
+      "uncertainty": 1.4999887500533049e-05,
+      "entropy": 0.00012576117485860072,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -12.493762217974544,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, floor lamp)\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl), (toggle_on, RemoteControl)\nAvailable actions: (pick_up, FloorLamp), (put_in, FloorLamp), (put_on, FloorLamp), (toggle_on, FloorLamp), (toggle_off, FloorLamp), (open_obj, FloorLamp), (close_obj, FloorLamp), (slice_obj, FloorLamp), (crack_obj, FloorLamp), (pour, FloorLamp), (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand)\nAvailable objects: FloorLamp, Laptop, RemoteControl, TVStand\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "The remote control is already in the gripper, so using it now may turn on the television and directly advance the TV goal."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Shifting attention to the laptop corrects the earlier wrong-object behavior and is needed before placing it on the TV stand."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "The laptop must be closed in the success state, so closing it is a goal-relevant corrective step."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Placing the laptop on the TV stand satisfies the placement part of the task if the robot can execute it now."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "FloorLamp",
+          "obj2": null,
+          "rationale": "Interacting with the floor lamp is available but less relevant; this is a distinct candidate reflecting another possible immediate correction from the current view."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl), (toggle_on, RemoteControl)\n\nCandidate next actions:\nA) (toggle_on, RemoteControl) \u2014 The remote control is already in the gripper, so using it now may turn on the television and directly advance the TV goal.\nB) (pick_up, Laptop) \u2014 Shifting attention to the laptop corrects the earlier wrong-object behavior and is needed before placing it on the TV stand.\nC) (close_obj, Laptop) \u2014 The laptop must be closed in the success state, so closing it is a goal-relevant corrective step.\nD) (put_on, Laptop, TVStand) \u2014 Placing the laptop on the TV stand satisfies the placement part of the task if the robot can execute it now.\nE) (toggle_off, FloorLamp) \u2014 Interacting with the floor lamp is available but less relevant; this is a distinct candidate reflecting another possible immediate correction from the current view.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999350021124543,
+        "B": 1.6249471886442542e-05,
+        "C": 1.6249471886442542e-05,
+        "D": 1.6249471886442542e-05,
+        "E": 1.6249471886442542e-05
+      },
+      "confidence": 0.9999350021124543,
+      "uncertainty": 6.499788754565916e-05,
+      "entropy": 0.00048573277278958607,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.027450149012484,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, floor lamp)\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl)\nAvailable actions: (pick_up, FloorLamp), (put_in, FloorLamp), (put_on, FloorLamp), (toggle_on, FloorLamp), (toggle_off, FloorLamp), (open_obj, FloorLamp), (close_obj, FloorLamp), (slice_obj, FloorLamp), (crack_obj, FloorLamp), (pour, FloorLamp), (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand)\nAvailable objects: FloorLamp, Laptop, RemoteControl, TVStand\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "close_obj",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Closing the laptop is required for the success state and corrects the earlier focus on the wrong object."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Placing the laptop on the TV stand is one of the task goals after it is handled correctly."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "The remote control is already in the gripper, so using it is a plausible immediate step to turn on the television."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Picking up the laptop would enable moving it to the TV stand once it is closed."
+        },
+        {
+          "action": "put_on",
+          "obj1": "RemoteControl",
+          "obj2": "TVStand",
+          "rationale": "Setting down the remote on the TV stand could free the gripper before manipulating the laptop."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl)\n\nCandidate next actions:\nA) (close_obj, Laptop) \u2014 Closing the laptop is required for the success state and corrects the earlier focus on the wrong object.\nB) (put_on, Laptop, TVStand) \u2014 Placing the laptop on the TV stand is one of the task goals after it is handled correctly.\nC) (toggle_on, RemoteControl) \u2014 The remote control is already in the gripper, so using it is a plausible immediate step to turn on the television.\nD) (pick_up, Laptop) \u2014 Picking up the laptop would enable moving it to the TV stand once it is closed.\nE) (put_on, RemoteControl, TVStand) \u2014 Setting down the remote on the TV stand could free the gripper before manipulating the laptop.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "C",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "C",
+      "confidence_label": "C",
+      "option_probs": {
+        "A": 0.00040392333996847084,
+        "B": 0.00040392333996847084,
+        "C": 0.9983843066401261,
+        "D": 0.00040392333996847084,
+        "E": 0.00040392333996847084
+      },
+      "confidence": 0.9983843066401261,
+      "uncertainty": 0.001615693359873882,
+      "entropy": 0.0088477327571664,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -7.814285450561708,
+      "response_text": "C"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, floor lamp)\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl)\nAvailable actions: (pick_up, FloorLamp), (put_in, FloorLamp), (put_on, FloorLamp), (toggle_on, FloorLamp), (toggle_off, FloorLamp), (open_obj, FloorLamp), (close_obj, FloorLamp), (slice_obj, FloorLamp), (crack_obj, FloorLamp), (pour, FloorLamp), (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand)\nAvailable objects: FloorLamp, Laptop, RemoteControl, TVStand\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "The remote control is already in the gripper, so using it now may turn on the television and directly progress the TV task."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "The laptop must eventually be moved to the TV stand, so shifting attention from the lamp to the laptop is a corrective step."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "The success condition requires the laptop to be closed, so closing it is a necessary subgoal."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Placing the laptop on the TV stand is explicitly required by the goal state."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "FloorLamp",
+          "obj2": null,
+          "rationale": "An alternative correction is to stop interacting incorrectly with the lamp and reset focus away from the wrong target."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl)\n\nCandidate next actions:\nA) (toggle_on, RemoteControl) \u2014 The remote control is already in the gripper, so using it now may turn on the television and directly progress the TV task.\nB) (pick_up, Laptop) \u2014 The laptop must eventually be moved to the TV stand, so shifting attention from the lamp to the laptop is a corrective step.\nC) (close_obj, Laptop) \u2014 The success condition requires the laptop to be closed, so closing it is a necessary subgoal.\nD) (put_on, Laptop, TVStand) \u2014 Placing the laptop on the TV stand is explicitly required by the goal state.\nE) (toggle_off, FloorLamp) \u2014 An alternative correction is to stop interacting incorrectly with the lamp and reset focus away from the wrong target.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999855010511992,
+        "B": 3.624737200202951e-05,
+        "C": 3.624737200202951e-05,
+        "D": 3.624737200202951e-05,
+        "E": 3.624737200202951e-05
+      },
+      "confidence": 0.999855010511992,
+      "uncertainty": 0.00014498948800800715,
+      "entropy": 0.001011233369310014,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -10.225143675787326,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, floor lamp)\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl)\nAvailable actions: (pick_up, FloorLamp), (put_in, FloorLamp), (put_on, FloorLamp), (toggle_on, FloorLamp), (toggle_off, FloorLamp), (open_obj, FloorLamp), (close_obj, FloorLamp), (slice_obj, FloorLamp), (crack_obj, FloorLamp), (pour, FloorLamp), (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand)\nAvailable objects: FloorLamp, Laptop, RemoteControl, TVStand\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "The remote control is already in the gripper, so using it now may turn on the television and directly advance one goal."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Shifts attention back to the correct task object and is needed before placing the laptop on the TV stand."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "The laptop must be closed in the success state, so closing it is a key corrective step."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Placing the laptop on the TV stand directly addresses the placement requirement if the robot can do so next."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "FloorLamp",
+          "obj2": null,
+          "rationale": "Interacting with the floor lamp is likely unhelpful, but this is a distinct available action candidate in case the system is still wrongly focused there and needs a state change to disengage."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:24, the robot toggled the **floor lamp off** instead of working on the **laptop/TV task**. The failure happened because from 00:01\u201300:23 it kept navigating to the floor lamp area and never picked up or closed the laptop, so it appears to have targeted the wrong object.\nCurrent state: Visual observation: floor lamp, remote control. remote control is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl), (toggle_on, RemoteControl)\n\nCandidate next actions:\nA) (toggle_on, RemoteControl) \u2014 The remote control is already in the gripper, so using it now may turn on the television and directly advance one goal.\nB) (pick_up, Laptop) \u2014 Shifts attention back to the correct task object and is needed before placing the laptop on the TV stand.\nC) (close_obj, Laptop) \u2014 The laptop must be closed in the success state, so closing it is a key corrective step.\nD) (put_on, Laptop, TVStand) \u2014 Placing the laptop on the TV stand directly addresses the placement requirement if the robot can do so next.\nE) (toggle_off, FloorLamp) \u2014 Interacting with the floor lamp is likely unhelpful, but this is a distinct available action candidate in case the system is still wrongly focused there and needs a state change to disengage.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999620007219909,
+        "B": 9.499819502295497e-06,
+        "C": 9.499819502295497e-06,
+        "D": 9.499819502295497e-06,
+        "E": 9.499819502295497e-06
+      },
+      "confidence": 0.9999620007219909,
+      "uncertainty": 3.799927800907099e-05,
+      "entropy": 0.0002966447092606955,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.564237759296645,
+      "response_text": "A"
+    }
+  }
+]

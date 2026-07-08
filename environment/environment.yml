@@ -1,0 +1,30 @@
+# Recommended conda environment for DRRA / reflect.
+#
+# Creates the `reflect-py314` environment used throughout the project and installs
+# the package (with all optional extras) from pyproject.toml, so dependency
+# versions stay defined in a single place. This is the portable / cross-platform
+# path; for a bit-for-bit reproducible Linux/CUDA rebuild use environment.lock.yml.
+#
+# Run from the repository root (the `pip: - --editable .` entry resolves against
+# the current directory):
+#
+#   conda env create -f environment/environment.yml
+#   conda activate reflect-py314
+#   reflect-check        # verify paths, keys, and dependencies
+#
+# Notes:
+#   - Python 3.14 is what the internship ran on. Most of the scientific/ML stack
+#     (torch, ai2thor, open3d, ...) ships as pip wheels and is pulled in by the
+#     extras below; on Linux the default torch wheel includes CUDA support.
+#   - OpenAI CLIP has no PyPI release and is installed straight from Git.
+#   - To install a lighter subset, drop `[all]` and pick extras from
+#     pyproject.toml, e.g. `--editable .[sim,llm,analysis]`.
+name: reflect-py314
+channels:
+  - conda-forge
+dependencies:
+  - python=3.14
+  - pip
+  - pip:
+      - --editable .[all]
+      - git+https://github.com/openai/CLIP.git

@@ -1,0 +1,676 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean). pot is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999920000320001,
+        "B": 7.999968000049759e-06
+      },
+      "confidence": 0.9999920000320001,
+      "uncertainty": 7.99996799993874e-06,
+      "entropy": 0.0001469935209061058,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -11.736073016286218,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put pot in sink. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), sink. pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999730003634986e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.1304602754818765e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), sink. pot is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9998890061602721,
+        "B": 0.00011099383972790207
+      },
+      "confidence": 0.9998890061602721,
+      "uncertainty": 0.000110993839727902,
+      "entropy": 0.0016182732838217985,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.106035856138837,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put pot on fourth stove burner. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned off), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999540010579839,
+        "B": 4.599894201617878e-05
+      },
+      "confidence": 0.9999540010579839,
+      "uncertainty": 4.59989420160678e-05,
+      "entropy": 0.0007291155063110307,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.986892161387962,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on fourth stove burner. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 9.99981000179498e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.1305230454201995e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-plan",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the current robot state, the goal condition, and the robot plan. Briefly explain what was wrong with the robot plan in 1-2 sentence.",
+      "user": "The robot task is to boil water. The task is considered successful if a pot is filled with water, the pot is on top of a stove burner that is turned on.\nHere's the robot observation at the end of the task execution:\npot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper.\nThe robot plan is:\n00:18. Goal: Pick up pot.\n00:25. Goal: Put pot in sink.\n00:28. Goal: Pick up pot.\n00:42. Goal: Put pot on fourth stove burner.\n00:45. Goal: Toggle on fourth stove burner.\n\nQ: Known that all actions in the robot plan were executed successfully, what's wrong with the robot plan that caused the robot to fail?\nA:"
+    },
+    "response": "The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met."
+  },
+  {
+    "call": "reasoning-plan-steps",
+    "prompt": {
+      "system": "Given the identified failure reason, you are expected to output an earliest time step that is relevant to the failure. You must output a time step.",
+      "user": "The robot task is to boil water. The task is considered successful if a pot is filled with water, the pot is on top of a stove burner that is turned on.\nHere's the robot observation at the end of the task execution:\npot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper.\nThe robot plan is:\n00:18. Goal: Pick up pot.\n00:25. Goal: Put pot in sink.\n00:28. Goal: Pick up pot.\n00:42. Goal: Put pot on fourth stove burner.\n00:45. Goal: Toggle on fourth stove burner.\n\nQ: Known that all actions in the robot plan were executed successfully, what's wrong with the robot plan that caused the robot to fail?\nA: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nQ: Which time step is most relevant to the above failure?\nA:"
+    },
+    "response": "00:28"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (pick_up, pot)\n4. (put_on, pot, fourth stove burner)\n5. (toggle_on, fourth stove burner)\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (none)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink), (pick_up, StoveBurner), (put_in, StoveBurner), (put_on, StoveBurner), (toggle_on, StoveBurner), (toggle_off, StoveBurner), (open_obj, StoveBurner), (close_obj, StoveBurner), (slice_obj, StoveBurner), (crack_obj, StoveBurner), (pour, StoveBurner)\nAvailable objects: CounterTop, Faucet, Pot, Sink, StoveBurner, StoveBurner-4\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "The pot must be moved off the burner so it can be filled with water."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "StoveBurner-4",
+          "obj2": null,
+          "rationale": "Turning off the active burner is a safe corrective step before handling the pot."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Placing the pot in the sink positions it to be filled with water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Faucet",
+          "rationale": "Moving the pot under the faucet is a direct way to prepare for filling it with water."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "If the pot is already positioned appropriately, turning on the faucet would start filling it with water."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 The pot must be moved off the burner so it can be filled with water.\nB) (toggle_off, StoveBurner-4) \u2014 Turning off the active burner is a safe corrective step before handling the pot.\nC) (put_in, Pot, Sink) \u2014 Placing the pot in the sink positions it to be filled with water.\nD) (put_in, Pot, Faucet) \u2014 Moving the pot under the faucet is a direct way to prepare for filling it with water.\nE) (toggle_on, Faucet) \u2014 If the pot is already positioned appropriately, turning on the faucet would start filling it with water.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "D",
+      "option_probs": {
+        "A": 0.0002590926280257032,
+        "B": 0.43748318859121116,
+        "C": 0.0002590926280257032,
+        "D": 0.5617395335247117,
+        "E": 0.0002590926280257032
+      },
+      "confidence": 0.5617395335247117,
+      "uncertainty": 0.43826046647528827,
+      "entropy": 0.4300001483461188,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "E"
+      ],
+      "fallback_logprob": -8.258324923036787,
+      "response_text": "B"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (pick_up, pot)\n4. (put_on, pot, fourth stove burner)\n5. (toggle_on, fourth stove burner)\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink), (pick_up, StoveBurner), (put_in, StoveBurner), (put_on, StoveBurner), (toggle_on, StoveBurner), (toggle_off, StoveBurner), (open_obj, StoveBurner), (close_obj, StoveBurner), (slice_obj, StoveBurner), (crack_obj, StoveBurner), (pour, StoveBurner)\nAvailable objects: CounterTop, Faucet, Pot, Sink, StoveBurner, StoveBurner-4\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "The pot is currently on the burner and must be moved before it can be filled with water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Placing the pot in the sink sets up a likely path to fill it with water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Faucet",
+          "rationale": "Moving the pot under the faucet directly supports filling it with water."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Turning on the faucet is necessary to get water flowing into the pot once it is positioned correctly."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "StoveBurner-4",
+          "obj2": null,
+          "rationale": "After the correction, the burner will need to be on again for the pot of water to boil."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 The pot is currently on the burner and must be moved before it can be filled with water.\nB) (put_in, Pot, Sink) \u2014 Placing the pot in the sink sets up a likely path to fill it with water.\nC) (put_in, Pot, Faucet) \u2014 Moving the pot under the faucet directly supports filling it with water.\nD) (toggle_on, Faucet) \u2014 Turning on the faucet is necessary to get water flowing into the pot once it is positioned correctly.\nE) (toggle_on, StoveBurner-4) \u2014 After the correction, the burner will need to be on again for the pot of water to boil.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.777144479964522,
+        "B": 6.66328907414915e-05,
+        "C": 0.22265562136325345,
+        "D": 6.66328907414915e-05,
+        "E": 6.66328907414915e-05
+      },
+      "confidence": 0.777144479964522,
+      "uncertainty": 0.22285552003547804,
+      "entropy": 0.3307492699091456,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -9.616312247346816,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (pick_up, pot)\n4. (put_on, pot, fourth stove burner)\n5. (toggle_on, fourth stove burner)\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4), (pick_up, Pot)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink), (pick_up, StoveBurner), (put_in, StoveBurner), (put_on, StoveBurner), (toggle_on, StoveBurner), (toggle_off, StoveBurner), (open_obj, StoveBurner), (close_obj, StoveBurner), (slice_obj, StoveBurner), (crack_obj, StoveBurner), (pour, StoveBurner)\nAvailable objects: CounterTop, Faucet, Pot, Sink, StoveBurner, StoveBurner-4\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Place the pot in the sink so it can be filled with water."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "CounterTop",
+          "rationale": "Set the pot down temporarily to reposition before moving it to the sink for filling."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "If the pot is not securely in hand, picking it up is needed before transporting it to the sink."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Turn on the faucet to provide water for filling the pot."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "StoveBurner-4",
+          "obj2": null,
+          "rationale": "Turn off the active burner for safety before removing and filling the pot."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4), (pick_up, Pot)\n\nCandidate next actions:\nA) (put_in, Pot, Sink) \u2014 Place the pot in the sink so it can be filled with water.\nB) (put_on, Pot, CounterTop) \u2014 Set the pot down temporarily to reposition before moving it to the sink for filling.\nC) (pick_up, Pot) \u2014 If the pot is not securely in hand, picking it up is needed before transporting it to the sink.\nD) (toggle_on, Faucet) \u2014 Turn on the faucet to provide water for filling the pot.\nE) (toggle_off, StoveBurner-4) \u2014 Turn off the active burner for safety before removing and filling the pot.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.923762754045392,
+        "B": 0.00013672718666102315,
+        "C": 0.00013672718666102315,
+        "D": 0.00013672718666102315,
+        "E": 0.07582706439462497
+      },
+      "confidence": 0.923762754045392,
+      "uncertainty": 0.07623724595460801,
+      "entropy": 0.1693042840172178,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D"
+      ],
+      "fallback_logprob": -8.897522955726958,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (pick_up, pot)\n4. (put_on, pot, fourth stove burner)\n5. (toggle_on, fourth stove burner)\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4), (pick_up, Pot), (put_in, Pot, Sink)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink), (pick_up, StoveBurner), (put_in, StoveBurner), (put_on, StoveBurner), (toggle_on, StoveBurner), (toggle_off, StoveBurner), (open_obj, StoveBurner), (close_obj, StoveBurner), (slice_obj, StoveBurner), (crack_obj, StoveBurner), (pour, StoveBurner)\nAvailable objects: CounterTop, Faucet, Pot, Sink, StoveBurner, StoveBurner-4\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "The pot is needed for filling, and the gripper is empty, so picking it up is a sensible correction step."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Placing the pot in the sink positions it to be filled with water, addressing the missing water requirement."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Turning on the faucet would allow water to flow into the pot once it is correctly positioned for filling."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "StoveBurner-4",
+          "obj2": null,
+          "rationale": "Turning off the active burner is a safe intermediate correction before moving or filling the pot."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "StoveBurner",
+          "rationale": "After filling, the pot must be on a burner; this action is relevant to restoring the pot to a heating position."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4), (pick_up, Pot), (put_in, Pot, Sink)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 The pot is needed for filling, and the gripper is empty, so picking it up is a sensible correction step.\nB) (put_in, Pot, Sink) \u2014 Placing the pot in the sink positions it to be filled with water, addressing the missing water requirement.\nC) (toggle_on, Faucet) \u2014 Turning on the faucet would allow water to flow into the pot once it is correctly positioned for filling.\nD) (toggle_off, StoveBurner-4) \u2014 Turning off the active burner is a safe intermediate correction before moving or filling the pot.\nE) (put_on, Pot, StoveBurner) \u2014 After filling, the pot must be on a burner; this action is relevant to restoring the pot to a heating position.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.7587135327780217,
+        "B": 0.02291116345699974,
+        "C": 0.21737506658364428,
+        "D": 0.0005001185906671203,
+        "E": 0.0005001185906671203
+      },
+      "confidence": 0.7587135327780217,
+      "uncertainty": 0.24128646722197833,
+      "entropy": 0.39477458059707565,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -7.600665306330888,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (pick_up, pot)\n4. (put_on, pot, fourth stove burner)\n5. (toggle_on, fourth stove burner)\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4), (pick_up, Pot), (put_in, Pot, Sink), (pick_up, Pot)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink), (pick_up, StoveBurner), (put_in, StoveBurner), (put_on, StoveBurner), (toggle_on, StoveBurner), (toggle_off, StoveBurner), (open_obj, StoveBurner), (close_obj, StoveBurner), (slice_obj, StoveBurner), (crack_obj, StoveBurner), (pour, StoveBurner)\nAvailable objects: CounterTop, Faucet, Pot, Sink, StoveBurner, StoveBurner-4\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Place the empty pot in the sink so it can be filled with water, addressing the missing step."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Turn on the faucet to start filling the pot with water while it is at the sink."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "Grab the pot to reposition it for filling or to return it to the burner after filling."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "StoveBurner-4",
+          "rationale": "After filling, the pot must be placed back onto the active burner to satisfy the boiling setup."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "StoveBurner",
+          "obj2": null,
+          "rationale": "Ensure a stove burner is on so the water-filled pot can boil once placed on it."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4), (pick_up, Pot), (put_in, Pot, Sink), (pick_up, Pot)\n\nCandidate next actions:\nA) (put_in, Pot, Sink) \u2014 Place the empty pot in the sink so it can be filled with water, addressing the missing step.\nB) (toggle_on, Faucet) \u2014 Turn on the faucet to start filling the pot with water while it is at the sink.\nC) (pick_up, Pot) \u2014 Grab the pot to reposition it for filling or to return it to the burner after filling.\nD) (put_on, Pot, StoveBurner-4) \u2014 After filling, the pot must be placed back onto the active burner to satisfy the boiling setup.\nE) (toggle_on, StoveBurner) \u2014 Ensure a stove burner is on so the water-filled pot can boil once placed on it.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 2.49997250014875e-13,
+        "C": 2.49997250014875e-13,
+        "D": 2.49997250014875e-13,
+        "E": 2.49997250014875e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 1.8650670496116843e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -29.017315477048438,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (pick_up, pot)\n4. (put_on, pot, fourth stove burner)\n5. (toggle_on, fourth stove burner)\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4), (pick_up, Pot), (put_in, Pot, Sink), (pick_up, Pot), (put_in, Pot, Sink)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink), (pick_up, StoveBurner), (put_in, StoveBurner), (put_on, StoveBurner), (toggle_on, StoveBurner), (toggle_off, StoveBurner), (open_obj, StoveBurner), (close_obj, StoveBurner), (slice_obj, StoveBurner), (crack_obj, StoveBurner), (pour, StoveBurner)\nAvailable objects: CounterTop, Faucet, Pot, Sink, StoveBurner, StoveBurner-4\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "The pot is currently on the burner; picking it up is a sensible first correction so it can be moved to the sink/faucet to be filled with water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Placing the pot in the sink positions it to receive water, directly addressing the missing fill-water step."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Turning on the faucet would start water flow needed to fill the pot, assuming the pot is already positioned under it."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "StoveBurner",
+          "obj2": null,
+          "rationale": "Ensuring a stove burner is on supports the final success condition once the pot has been filled and placed back on a burner."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "StoveBurner",
+          "rationale": "Returning the filled pot onto a stove burner is required for boiling after the water-filling correction is completed."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: The plan never included filling the pot with water. Although the pot ended up on an active burner, it was still empty, so the goal condition for boiling water was not met.\nCurrent state: Visual observation: pot (empty and clean), third stove burner (turned off), fourth stove burner (turned on), second stove burner (turned off), first stove burner (turned off). pot is on top of fourth stove burner. pot is on the left of stove knob. pot is on the right of salt shaker. pot is on the right of pepper shaker. pot is on the right of spatula. nothing is inside robot gripper. Auditory observation: stove burner turns on.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (toggle_off, StoveBurner-4), (pick_up, Pot), (put_in, Pot, Sink), (pick_up, Pot), (put_in, Pot, Sink)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 The pot is currently on the burner; picking it up is a sensible first correction so it can be moved to the sink/faucet to be filled with water.\nB) (put_in, Pot, Sink) \u2014 Placing the pot in the sink positions it to receive water, directly addressing the missing fill-water step.\nC) (toggle_on, Faucet) \u2014 Turning on the faucet would start water flow needed to fill the pot, assuming the pot is already positioned under it.\nD) (toggle_on, StoveBurner) \u2014 Ensuring a stove burner is on supports the final success condition once the pot has been filled and placed back on a burner.\nE) (put_on, Pot, StoveBurner) \u2014 Returning the filled pot onto a stove burner is required for boiling after the water-filling correction is completed.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999730003644967,
+        "B": 6.7499088758082774e-06,
+        "C": 6.7499088758082774e-06,
+        "D": 6.7499088758082774e-06,
+        "E": 6.7499088758082774e-06
+      },
+      "confidence": 0.9999730003644967,
+      "uncertainty": 2.6999635503344166e-05,
+      "entropy": 0.0002165081551505784,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.905981553051214,
+      "response_text": "A"
+    }
+  }
+]

@@ -1,0 +1,1583 @@
+[
+  {
+    "task": "waterPlant",
+    "episode": "waterPlant-2",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:11. Action: Move to pot. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:15. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of potato. pot is on top of third countertop. nothing is inside robot gripper.\n00:18. Action: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is inside robot gripper.\n00:22. Action: Move to sink. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is inside robot gripper.\n00:23. Action: Put pot on third countertop. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper.\n00:26. Action: Toggle on faucet. Visual observation: faucet (turned on), sink, pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:29. Action: Toggle off faucet. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:32. Action: Pick up pot. Visual observation: house plant (empty), sink, faucet (turned off), pot (empty and clean). house plant is on the left of soap bottle. house plant is on top of third countertop. pot is inside robot gripper. Auditory observation: water runs in sink.\n00:33. Action: Move to house plant. Visual observation: house plant (empty), sink, faucet (turned off), pot (empty and clean). house plant is on the left of soap bottle. house plant is on top of third countertop. pot is inside robot gripper. Auditory observation: water runs in sink.\n00:34. Action: Move to house plant. Visual observation: house plant (empty), sink, pot (empty and clean). house plant is on the left of soap bottle. house plant is on top of third countertop. pot is inside robot gripper. Auditory observation: water runs in sink.\n00:35. Action: Move to house plant. Visual observation: house plant (empty), sink, pot (empty and clean). house plant is on the left of soap bottle. house plant is above potato. house plant is on top of third countertop. pot is inside robot gripper. Auditory observation: water runs in sink.\n00:36. Action: Move to house plant. Visual observation: house plant (empty), sink, pot (empty and clean). house plant is on top of third countertop. pot is inside robot gripper. Auditory observation: water runs in sink.\n00:37. Action: Pour liquid from pot into house plant. Visual observation: house plant (empty), sink, pot (empty and clean). house plant is on top of third countertop. pot is inside robot gripper. Auditory observation: water runs in sink.\n",
+    "l2_summary": "00:18. Goal: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:23. Goal: Put pot on third countertop. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper.\n00:26. Goal: Toggle on faucet. Visual observation: faucet (turned on), sink, pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:29. Goal: Toggle off faucet. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:32. Goal: Pick up pot. Visual observation: house plant (empty), sink, faucet (turned off), pot (empty and clean). house plant is on the left of soap bottle. house plant is on top of third countertop. pot is inside robot gripper. Auditory observation: water runs in sink.\n00:37. Goal: Pour liquid from pot into house plant. Visual observation: house plant (empty), sink, pot (empty and clean). house plant is on top of third countertop. pot is inside robot gripper. Auditory observation: water runs in sink.\n",
+    "num_keyframes": 21,
+    "num_events": 39,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "The failure at 00:29 was caused by the robot not placing the pot under the faucet before turning it on at 00:26. As a result, when the faucet was turned off at 00:29, the pot remained empty and clean, indicating that the water ran into the sink instead of the pot.",
+      "pred_failure_step": [
+        "00:29",
+        "00:26"
+      ],
+      "error_type": "execution",
+      "gt_failure_reason": "Wrong Plan - pot is put on countertop instead of inside sink",
+      "gt_failure_step": [
+        "00:23",
+        "00:37"
+      ],
+      "gt_error_type": "execution"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Pot)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, Sink)",
+        "(put_on, Pot, CounterTop)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, HousePlant)",
+        "(pour, Pot, HousePlant)"
+      ],
+      "llm_plan_raw": [
+        "1. (put_in, pot, sink)",
+        "2. (toggle_on, faucet)",
+        "3. (toggle_off, faucet)",
+        "4. (pick_up, pot)",
+        "5. (pour, pot, house plant)"
+      ],
+      "llm_plan": [
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(pour, HousePlant, Pot)"
+      ],
+      "num_steps": 5
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Pot)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, Sink)",
+        "(put_on, Pot, CounterTop)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, HousePlant)",
+        "(pour, Pot, HousePlant)"
+      ],
+      "llm_plan_raw": [
+        "1. (put_in, pot, sink)",
+        "2. (toggle_on, faucet)",
+        "3. (toggle_off, faucet)",
+        "4. (pick_up, pot)",
+        "5. (pour, pot, house plant)"
+      ],
+      "llm_plan": [
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(pour, HousePlant, Pot)"
+      ],
+      "num_steps": 5,
+      "success": false
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean). pot is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put pot on third countertop. Here are the robot observations after execution:\nVisual observation: sink, faucet (turned off), pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on faucet. Here are the robot observations after execution:\nVisual observation: faucet (turned on), sink, pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper. Auditory observation: water runs in sink.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle off faucet. Here are the robot observations after execution:\nVisual observation: sink, faucet (turned off), pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper. Auditory observation: water runs in sink.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "No"
+      },
+      {
+        "call": "reasoning-execution",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+          "user": "The robot task is to water the plant. At 00:29, a failure was identified.\n\n[Robot actions and observations before 00:29]\n00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:11. Action: Move to pot. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:15. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of potato. pot is on top of third countertop. nothing is inside robot gripper.\n00:18. Action: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is inside robot gripper.\n00:22. Action: Move to sink. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is inside robot gripper.\n00:23. Action: Put pot on third countertop. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper.\n00:26. Action: Toggle on faucet. Visual observation: faucet (turned on), sink, pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper. Auditory observation: water runs in sink.\n\n[Observation at the end of 00:29]\nAction: Toggle off faucet. Visual observation: sink, faucet (turned off), pot (empty and clean). pot is on top of third countertop. nothing is inside robot gripper. Auditory observation: water runs in sink.\n\nQ: Infer from [Robot actions and observations before 00:29] or [Observation at the end of 00:29], briefly explain what happened at 00:29 and what caused the failure.\nA:"
+        },
+        "response": "The failure at 00:29 was caused by the robot not placing the pot under the faucet before turning it on at 00:26. As a result, when the faucet was turned off at 00:29, the pot remained empty and clean, indicating that the water ran into the sink instead of the pot."
+      },
+      {
+        "call": "reasoning-execution-steps",
+        "prompt": {
+          "system": "",
+          "user": "The failure at 00:29 was caused by the robot not placing the pot under the faucet before turning it on at 00:26. As a result, when the faucet was turned off at 00:29, the pot remained empty and clean, indicating that the water ran into the sink instead of the pot.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+        },
+        "response": "00:29, 00:26"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: water the plant\nInitial plan:\n1. (pick_up, pot)\n2. (put_on, pot, countertop)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (pour, pot, house plant)\nFailure reason: The failure at 00:29 was caused by the robot not placing the pot under the faucet before turning it on at 00:26. As a result, when the faucet was turned off at 00:29, the pot remained empty and clean, indicating that the water ran into the sink instead of the pot.\nCurrent state: house plant (empty), sink, faucet (turned off), pot (empty and clean). house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nCorrection plan:"
+        },
+        "response": "1. (put_in, pot, sink)\n2. (toggle_on, faucet)\n3. (toggle_off, faucet)\n4. (pick_up, pot)\n5. (pour, pot, house plant)"
+      }
+    ],
+    "error": ""
+  },
+  {
+    "task": "switchDevices",
+    "episode": "switchDevices-10",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:07. Action: Move to laptop. Visual observation: nothing is inside robot gripper.\n00:16. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:19. Action: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:22. Action: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:36. Action: Move to tv stand. Visual observation: laptop (closed and turned off), remote control. remote control is on top of coffee table. laptop is inside robot gripper.\n00:38. Action: Move to tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n00:39. Action: Move to tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n00:44. Action: Put laptop on tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n00:48. Action: Move to remote control. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is below television. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n00:50. Action: Move to remote control. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. book is on top of tv stand. nothing is inside robot gripper.\n00:52. Action: Move to remote control. Visual observation: remote control. remote control is on top of coffee table. nothing is inside robot gripper.\n00:57. Action: Move to television. Visual observation: remote control, tv stand. remote control is on top of coffee table. nothing is inside robot gripper.\n00:59. Action: Move to television. Visual observation: laptop (closed and turned off), tv stand. laptop is on top of tv stand. watch is on top of tv stand. keychain is on top of tv stand. tv stand is below book. nothing is inside robot gripper.\n01:01. Action: Move to television. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n01:04. Action: Toggle on television. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n",
+    "l2_summary": "00:19. Goal: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:22. Goal: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:44. Goal: Put laptop on tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n01:04. Goal: Toggle on television. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n",
+    "num_keyframes": 17,
+    "num_events": 66,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "The failure at 01:04 occurred when the robot attempted to turn on the television. The robot failed to pick up the remote control before moving to the television, hence it could not toggle on the television as it had nothing in its gripper to perform the action.",
+      "pred_failure_step": [
+        "01:04"
+      ],
+      "error_type": "execution",
+      "gt_failure_reason": "Missing (pick_up, RemoteControl)",
+      "gt_failure_step": [
+        "01:04"
+      ],
+      "gt_error_type": "execution"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Laptop)",
+        "(close_obj, Laptop)",
+        "(pick_up, Laptop)",
+        "(navigate_to_obj, TVStand)",
+        "(put_on, Laptop, TVStand)",
+        "(navigate_to_obj, RemoteControl)",
+        "(navigate_to_obj, Television)",
+        "(toggle_on, Television)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, remote control)",
+        "2. (toggle_on, television)",
+        "3. (put_in_some_container, remote control)"
+      ],
+      "llm_plan": [
+        "(pick_up, RemoteControl)",
+        "(toggle_on, Television)",
+        "(put_in, RemoteControl, Box)"
+      ],
+      "num_steps": 3
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Laptop)",
+        "(close_obj, Laptop)",
+        "(pick_up, Laptop)",
+        "(navigate_to_obj, TVStand)",
+        "(put_on, Laptop, TVStand)",
+        "(navigate_to_obj, RemoteControl)",
+        "(navigate_to_obj, Television)",
+        "(toggle_on, Television)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, remote control)",
+        "2. (toggle_on, television)",
+        "3. (put_in_some_container, remote control)"
+      ],
+      "llm_plan": [
+        "(pick_up, RemoteControl)",
+        "(toggle_on, Television)",
+        "(put_in, RemoteControl, Box)"
+      ],
+      "num_steps": 3,
+      "success": false
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to close laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put laptop on tv stand. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on television. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "No"
+      },
+      {
+        "call": "reasoning-execution",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+          "user": "The robot task is to Close the laptop and put it on the TV stand and switch on television. At 01:04, a failure was identified.\n\n[Robot actions and observations before 01:04]\n00:01. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:07. Action: Move to laptop. Visual observation: nothing is inside robot gripper.\n00:16. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:19. Action: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:22. Action: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:36. Action: Move to tv stand. Visual observation: laptop (closed and turned off), remote control. remote control is on top of coffee table. laptop is inside robot gripper.\n00:38. Action: Move to tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n00:39. Action: Move to tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n00:44. Action: Put laptop on tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n00:48. Action: Move to remote control. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is below television. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n00:50. Action: Move to remote control. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. book is on top of tv stand. nothing is inside robot gripper.\n00:52. Action: Move to remote control. Visual observation: remote control. remote control is on top of coffee table. nothing is inside robot gripper.\n00:57. Action: Move to television. Visual observation: remote control, tv stand. remote control is on top of coffee table. nothing is inside robot gripper.\n00:59. Action: Move to television. Visual observation: laptop (closed and turned off), tv stand. laptop is on top of tv stand. watch is on top of tv stand. keychain is on top of tv stand. tv stand is below book. nothing is inside robot gripper.\n01:01. Action: Move to television. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n\n[Observation at the end of 01:04]\nAction: Toggle on television. Visual observation: laptop (closed and turned off), television (turned off), tv stand. laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 01:04] or [Observation at the end of 01:04], briefly explain what happened at 01:04 and what caused the failure.\nA:"
+        },
+        "response": "The failure at 01:04 occurred when the robot attempted to turn on the television. The robot failed to pick up the remote control before moving to the television, hence it could not toggle on the television as it had nothing in its gripper to perform the action."
+      },
+      {
+        "call": "reasoning-execution-steps",
+        "prompt": {
+          "system": "",
+          "user": "The failure at 01:04 occurred when the robot attempted to turn on the television. The robot failed to pick up the remote control before moving to the television, hence it could not toggle on the television as it had nothing in its gripper to perform the action.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+        },
+        "response": "01:04"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (toggle_on, television)\nFailure reason: The failure at 01:04 occurred when the robot attempted to turn on the television. The robot failed to pick up the remote control before moving to the television, hence it could not toggle on the television as it had nothing in its gripper to perform the action.\nCurrent state: laptop (closed and turned off), remote control, television (turned off), tv stand. laptop is on top of tv stand. remote control is on top of coffee table. television is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. watch is on top of tv stand. nothing is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nCorrection plan:"
+        },
+        "response": "1. (pick_up, remote control)\n2. (toggle_on, television)\n3. (put_in_some_container, remote control)"
+      }
+    ],
+    "error": ""
+  },
+  {
+    "task": "switchDevices",
+    "episode": "switchDevices-8",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:07. Action: Move to laptop. Visual observation: nothing is inside robot gripper.\n00:16. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:19. Action: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:22. Action: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:36. Action: Move to tv stand. Visual observation: remote control, laptop (closed and turned off). remote control is on top of coffee table. laptop is inside robot gripper.\n00:38. Action: Move to tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n00:39. Action: Move to tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n00:44. Action: Put laptop on tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n00:48. Action: Move to remote control. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n00:50. Action: Move to remote control. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. book is on top of tv stand. nothing is inside robot gripper.\n00:52. Action: Move to remote control. Visual observation: remote control. remote control is on top of coffee table. nothing is inside robot gripper.\n00:55. Action: Pick up remote control. Visual observation: remote control. remote control is inside robot gripper.\n01:00. Action: Move to television. Visual observation: remote control, tv stand. nothing is inside robot gripper.\n01:02. Action: Move to television. Visual observation: remote control, laptop (closed and turned off), tv stand. laptop is on top of tv stand. watch is on top of tv stand. keychain is on top of tv stand. tv stand is below book. nothing is inside robot gripper.\n01:04. Action: Move to television. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n01:07. Action: Toggle on television. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n",
+    "l2_summary": "00:19. Goal: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:22. Goal: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:44. Goal: Put laptop on tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n00:55. Goal: Pick up remote control. Visual observation: remote control. remote control is inside robot gripper.\n01:07. Goal: Toggle on television. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n",
+    "num_keyframes": 18,
+    "num_events": 69,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "The failure at 01:07 occurred when the robot attempted to toggle on the television. The cause of the failure was that the robot did not have the remote control in its gripper, even though it had picked it up at 00:55. It seems the robot dropped or misplaced the remote control between 00:55 and 01:00.",
+      "pred_failure_step": [
+        "01:07",
+        "00:55",
+        "01:00"
+      ],
+      "error_type": "execution",
+      "gt_failure_reason": "Dropped RemoteControl",
+      "gt_failure_step": [
+        "00:59"
+      ],
+      "gt_error_type": "execution"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Laptop)",
+        "(close_obj, Laptop)",
+        "(pick_up, Laptop)",
+        "(navigate_to_obj, TVStand)",
+        "(put_on, Laptop, TVStand)",
+        "(navigate_to_obj, RemoteControl)",
+        "(pick_up, RemoteControl)",
+        "(navigate_to_obj, Television)",
+        "(toggle_on, Television)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, remote control)",
+        "2. (toggle_on, television)"
+      ],
+      "llm_plan": [
+        "(pick_up, RemoteControl)",
+        "(toggle_on, Television)"
+      ],
+      "num_steps": 2
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Laptop)",
+        "(close_obj, Laptop)",
+        "(pick_up, Laptop)",
+        "(navigate_to_obj, TVStand)",
+        "(put_on, Laptop, TVStand)",
+        "(navigate_to_obj, RemoteControl)",
+        "(pick_up, RemoteControl)",
+        "(navigate_to_obj, Television)",
+        "(toggle_on, Television)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, remote control)",
+        "2. (toggle_on, television)"
+      ],
+      "llm_plan": [
+        "(pick_up, RemoteControl)",
+        "(toggle_on, Television)"
+      ],
+      "num_steps": 2,
+      "success": false
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to close laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put laptop on tv stand. Here are the robot observations after execution:\nVisual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up remote control. Here are the robot observations after execution:\nVisual observation: remote control. remote control is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on television. Here are the robot observations after execution:\nVisual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "No"
+      },
+      {
+        "call": "reasoning-execution",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+          "user": "The robot task is to Close the laptop and put it on the TV stand and switch on television. At 01:07, a failure was identified.\n\n[Robot actions and observations before 01:07]\n00:01. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:07. Action: Move to laptop. Visual observation: nothing is inside robot gripper.\n00:16. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:19. Action: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:22. Action: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:36. Action: Move to tv stand. Visual observation: remote control, laptop (closed and turned off). remote control is on top of coffee table. laptop is inside robot gripper.\n00:38. Action: Move to tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n00:39. Action: Move to tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n00:44. Action: Put laptop on tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n00:48. Action: Move to remote control. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of keychain. laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n00:50. Action: Move to remote control. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on the right of book. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. book is on top of tv stand. nothing is inside robot gripper.\n00:52. Action: Move to remote control. Visual observation: remote control. remote control is on top of coffee table. nothing is inside robot gripper.\n00:55. Action: Pick up remote control. Visual observation: remote control. remote control is inside robot gripper.\n01:00. Action: Move to television. Visual observation: remote control, tv stand. nothing is inside robot gripper.\n01:02. Action: Move to television. Visual observation: remote control, laptop (closed and turned off), tv stand. laptop is on top of tv stand. watch is on top of tv stand. keychain is on top of tv stand. tv stand is below book. nothing is inside robot gripper.\n01:04. Action: Move to television. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n\n[Observation at the end of 01:07]\nAction: Toggle on television. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. book is on top of tv stand. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 01:07] or [Observation at the end of 01:07], briefly explain what happened at 01:07 and what caused the failure.\nA:"
+        },
+        "response": "The failure at 01:07 occurred when the robot attempted to toggle on the television. The cause of the failure was that the robot did not have the remote control in its gripper, even though it had picked it up at 00:55. It seems the robot dropped or misplaced the remote control between 00:55 and 01:00."
+      },
+      {
+        "call": "reasoning-execution-steps",
+        "prompt": {
+          "system": "",
+          "user": "The failure at 01:07 occurred when the robot attempted to toggle on the television. The cause of the failure was that the robot did not have the remote control in its gripper, even though it had picked it up at 00:55. It seems the robot dropped or misplaced the remote control between 00:55 and 01:00.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+        },
+        "response": "01:07, 00:55, 01:00"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, television)\nFailure reason: The failure at 01:07 occurred when the robot attempted to toggle on the television. The cause of the failure was that the robot did not have the remote control in its gripper, even though it had picked it up at 00:55. It seems the robot dropped or misplaced the remote control between 00:55 and 01:00.\nCurrent state: tv stand, remote control, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. watch is on top of tv stand. nothing is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nCorrection plan:"
+        },
+        "response": "1. (pick_up, remote control)\n2. (toggle_on, television)"
+      }
+    ],
+    "error": ""
+  },
+  {
+    "task": "waterPlant",
+    "episode": "waterPlant-8",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:11. Action: Move to pot. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:15. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of potato. pot is on top of third countertop. nothing is inside robot gripper.\n00:18. Action: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:22. Action: Move to sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:25. Action: Put pot in sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n00:26. Action: Toggle on faucet. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n00:29. Action: Toggle off faucet. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n00:32. Action: Pick up pot. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:34. Action: Move to house plant. Visual observation: pot (empty and clean), sink, house plant (empty), faucet (turned off). house plant is on the left of soap bottle. house plant is on top of third countertop. pot is inside robot gripper.\n00:36. Action: Move to house plant. Visual observation: pot (empty and clean), sink, house plant (empty). house plant is on top of third countertop. pot is inside robot gripper.\n00:37. Action: Pour liquid from pot into house plant. Visual observation: pot (empty and clean), sink, house plant (empty). house plant is on top of third countertop. pot is inside robot gripper.\n",
+    "l2_summary": "00:18. Goal: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:25. Goal: Put pot in sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n00:26. Goal: Toggle on faucet. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n00:29. Goal: Toggle off faucet. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n00:32. Goal: Pick up pot. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:37. Goal: Pour liquid from pot into house plant. Visual observation: pot (empty and clean), sink, house plant (empty). house plant is on top of third countertop. pot is inside robot gripper.\n",
+    "num_keyframes": 14,
+    "num_events": 39,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "At 00:26, the robot failed to turn on the faucet despite its action to do so. This could be due to a malfunction in the robot's actuator or an issue with the faucet itself.",
+      "pred_failure_step": [
+        "00:26"
+      ],
+      "error_type": "execution",
+      "gt_failure_reason": "Failed to successfully execute (toggle_on, Faucet)",
+      "gt_failure_step": [
+        "00:26"
+      ],
+      "gt_error_type": "execution"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Pot)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, Sink)",
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, HousePlant)",
+        "(pour, Pot, HousePlant)"
+      ],
+      "llm_plan_raw": [
+        "1. (put_in, pot, sink)",
+        "2. (pick_up, water jug)",
+        "3. (pour, water jug, pot)",
+        "4. (pick_up, pot)",
+        "5. (pour, pot, house plant)"
+      ],
+      "llm_plan": [
+        "(put_in, Pot, Sink)",
+        "(pick_up, Bottle)",
+        "(pour, Pot, Bottle)",
+        "(pick_up, Pot)",
+        "(pour, HousePlant, Pot)"
+      ],
+      "num_steps": 5
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Pot)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, Sink)",
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, HousePlant)",
+        "(pour, Pot, HousePlant)"
+      ],
+      "llm_plan_raw": [
+        "1. (put_in, pot, sink)",
+        "2. (pick_up, water jug)",
+        "3. (pour, water jug, pot)",
+        "4. (pick_up, pot)",
+        "5. (pour, pot, house plant)"
+      ],
+      "llm_plan": [
+        "(put_in, Pot, Sink)",
+        "(pick_up, Bottle)",
+        "(pour, Pot, Bottle)",
+        "(pick_up, Pot)",
+        "(pour, HousePlant, Pot)"
+      ],
+      "num_steps": 5,
+      "success": false
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean). pot is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put pot in sink. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on faucet. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "No"
+      },
+      {
+        "call": "reasoning-execution",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+          "user": "The robot task is to water the plant. At 00:26, a failure was identified.\n\n[Robot actions and observations before 00:26]\n00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:11. Action: Move to pot. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:15. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of potato. pot is on top of third countertop. nothing is inside robot gripper.\n00:18. Action: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:22. Action: Move to sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:25. Action: Put pot in sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\n[Observation at the end of 00:26]\nAction: Toggle on faucet. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:26] or [Observation at the end of 00:26], briefly explain what happened at 00:26 and what caused the failure.\nA:"
+        },
+        "response": "At 00:26, the robot failed to turn on the faucet despite its action to do so. This could be due to a malfunction in the robot's actuator or an issue with the faucet itself."
+      },
+      {
+        "call": "reasoning-execution-steps",
+        "prompt": {
+          "system": "",
+          "user": "At 00:26, the robot failed to turn on the faucet despite its action to do so. This could be due to a malfunction in the robot's actuator or an issue with the faucet itself.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+        },
+        "response": "00:26"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: water the plant\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (pour, pot, house plant)\nFailure reason: At 00:26, the robot failed to turn on the faucet despite its action to do so. This could be due to a malfunction in the robot's actuator or an issue with the faucet itself.\nCurrent state: pot (empty and clean), sink, house plant (empty), faucet (turned off). house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nCorrection plan:"
+        },
+        "response": "1. (put_in, pot, sink)\n2. (pick_up, water jug)\n3. (pour, water jug, pot)\n4. (pick_up, pot)\n5. (pour, pot, house plant)"
+      }
+    ],
+    "error": ""
+  },
+  {
+    "task": "waterPlant",
+    "episode": "waterPlant-4",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:11. Action: Move to pot. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:15. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of potato. pot is on top of third countertop. nothing is inside robot gripper.\n00:18. Action: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:22. Action: Move to sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:25. Action: Toggle on faucet. Visual observation: pot (empty and clean), faucet (turned on), sink. pot is inside robot gripper. Auditory observation: water runs in sink.\n00:28. Action: Toggle off faucet. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:31. Action: Put pot in sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n00:34. Action: Pick up pot. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:36. Action: Move to house plant. Visual observation: pot (empty and clean), sink, house plant (empty), faucet (turned off). house plant is on the left of soap bottle. house plant is on top of third countertop. pot is inside robot gripper.\n00:38. Action: Move to house plant. Visual observation: pot (empty and clean), sink, house plant (empty). house plant is on top of third countertop. pot is inside robot gripper.\n00:39. Action: Pour liquid from pot into house plant. Visual observation: pot (empty and clean), sink, house plant (empty). house plant is on top of third countertop. pot is inside robot gripper.\n",
+    "l2_summary": "00:18. Goal: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:25. Goal: Toggle on faucet. Visual observation: pot (empty and clean), faucet (turned on), sink. pot is inside robot gripper. Auditory observation: water runs in sink.\n00:28. Goal: Toggle off faucet. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:31. Goal: Put pot in sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n00:34. Goal: Pick up pot. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:39. Goal: Pour liquid from pot into house plant. Visual observation: pot (empty and clean), sink, house plant (empty). house plant is on top of third countertop. pot is inside robot gripper.\n",
+    "num_keyframes": 15,
+    "num_events": 41,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "The failure at 00:39 was caused by the robot attempting to water the house plant with an empty pot. Despite the robot's actions of turning on the faucet and placing the pot in the sink, it did not actually fill the pot with water before moving to the house plant.",
+      "pred_failure_step": [
+        "00:39"
+      ],
+      "error_type": "execution",
+      "gt_failure_reason": "Wrong order - faucet is turned on and off before pot is put in the sink",
+      "gt_failure_step": [
+        "00:28",
+        "00:31"
+      ],
+      "gt_error_type": "execution"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Pot)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(put_in, Pot, Sink)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, HousePlant)",
+        "(pour, Pot, HousePlant)"
+      ],
+      "llm_plan_raw": [
+        "1. (put_in, pot, sink)",
+        "2. (toggle_on, faucet)",
+        "3. (toggle_off, faucet)",
+        "4. (pick_up, pot)",
+        "5. (pour, pot, house plant)"
+      ],
+      "llm_plan": [
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(pour, HousePlant, Pot)"
+      ],
+      "num_steps": 5
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Pot)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(put_in, Pot, Sink)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, HousePlant)",
+        "(pour, Pot, HousePlant)"
+      ],
+      "llm_plan_raw": [
+        "1. (put_in, pot, sink)",
+        "2. (toggle_on, faucet)",
+        "3. (toggle_off, faucet)",
+        "4. (pick_up, pot)",
+        "5. (pour, pot, house plant)"
+      ],
+      "llm_plan": [
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(pour, HousePlant, Pot)"
+      ],
+      "num_steps": 5,
+      "success": false
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean). pot is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on faucet. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), faucet (turned on), sink. pot is inside robot gripper. Auditory observation: water runs in sink.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle off faucet. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put pot in sink. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pour liquid from pot into house plant. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), sink, house plant (empty). house plant is on top of third countertop. pot is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "No"
+      },
+      {
+        "call": "reasoning-execution",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+          "user": "The robot task is to water the plant. At 00:39, a failure was identified.\n\n[Robot actions and observations before 00:39]\n00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:11. Action: Move to pot. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:15. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of potato. pot is on top of third countertop. nothing is inside robot gripper.\n00:18. Action: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:22. Action: Move to sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:25. Action: Toggle on faucet. Visual observation: pot (empty and clean), faucet (turned on), sink. pot is inside robot gripper. Auditory observation: water runs in sink.\n00:28. Action: Toggle off faucet. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:31. Action: Put pot in sink. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n00:34. Action: Pick up pot. Visual observation: pot (empty and clean), sink, faucet (turned off). pot is inside robot gripper.\n00:36. Action: Move to house plant. Visual observation: pot (empty and clean), sink, house plant (empty), faucet (turned off). house plant is on the left of soap bottle. house plant is on top of third countertop. pot is inside robot gripper.\n00:38. Action: Move to house plant. Visual observation: pot (empty and clean), sink, house plant (empty). house plant is on top of third countertop. pot is inside robot gripper.\n\n[Observation at the end of 00:39]\nAction: Pour liquid from pot into house plant. Visual observation: pot (empty and clean), sink, house plant (empty). house plant is on top of third countertop. pot is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:39] or [Observation at the end of 00:39], briefly explain what happened at 00:39 and what caused the failure.\nA:"
+        },
+        "response": "The failure at 00:39 was caused by the robot attempting to water the house plant with an empty pot. Despite the robot's actions of turning on the faucet and placing the pot in the sink, it did not actually fill the pot with water before moving to the house plant."
+      },
+      {
+        "call": "reasoning-execution-steps",
+        "prompt": {
+          "system": "",
+          "user": "The failure at 00:39 was caused by the robot attempting to water the house plant with an empty pot. Despite the robot's actions of turning on the faucet and placing the pot in the sink, it did not actually fill the pot with water before moving to the house plant.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+        },
+        "response": "00:39"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: water the plant\nInitial plan:\n1. (pick_up, pot)\n2. (toggle_on, faucet)\n3. (toggle_off, faucet)\n4. (put_in, pot, sink)\n5. (pick_up, pot)\n6. (pour, pot, house plant)\nFailure reason: The failure at 00:39 was caused by the robot attempting to water the house plant with an empty pot. Despite the robot's actions of turning on the faucet and placing the pot in the sink, it did not actually fill the pot with water before moving to the house plant.\nCurrent state: pot (empty and clean), sink, house plant (empty), faucet (turned off). house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nCorrection plan:"
+        },
+        "response": "1. (put_in, pot, sink)\n2. (toggle_on, faucet)\n3. (toggle_off, faucet)\n4. (pick_up, pot)\n5. (pour, pot, house plant)"
+      }
+    ],
+    "error": ""
+  },
+  {
+    "task": "cookEgg",
+    "episode": "cookEgg-9",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to fridge. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:04. Action: Move to fridge. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:07. Action: Open fridge. Visual observation: fridge (open), egg (not sliced and not cracked). egg is inside fridge. nothing is inside robot gripper. Auditory observation: stove burner turns on.\n00:10. Action: Pick up egg. Visual observation: fridge (open), egg (not sliced and not cracked). egg is inside robot gripper.\n00:13. Action: Close fridge. Visual observation: fridge (closed), egg (not sliced and not cracked). egg is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n00:19. Action: Move to first stove burner. Visual observation: egg (not sliced and not cracked). egg is inside robot gripper.\n00:29. Action: Move to first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned off), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n00:30. Action: Move to first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned off), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n00:33. Action: Toggle on first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n00:34. Action: Move to pan. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n00:35. Action: Move to pan. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n00:36. Action: Move to pan. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n00:37. Action: Move to pan. Visual observation: second stove burner (turned off), pan (clean), egg (not sliced and not cracked), fourth stove burner (turned off). pan is on the left of salt shaker. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n00:39. Action: Move to pan. Visual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n00:41. Action: Move to pan. Visual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n00:44. Action: Pick up pan. Visual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n00:47. Action: Move to first stove burner. Visual observation: pan (clean), egg (not sliced and not cracked), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). pan is on the left of salt shaker. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n00:49. Action: Move to first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n00:52. Action: Move to first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n00:53. Action: Put pan on first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n00:56. Action: Move to egg. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n00:59. Action: Pick up egg. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n01:03. Action: Move to pan. Visual observation: second stove burner (turned off), pan (clean), egg (not sliced and not cracked), fourth stove burner (turned off). pan is on the left of salt shaker. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n01:05. Action: Move to pan. Visual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n01:07. Action: Move to pan. Visual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n01:08. Action: Crack egg. Visual observation: pan (clean), cracked egg. pan is above cracked egg. pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. cracked egg is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n01:11. Action: Put cracked egg in pan. Visual observation: pan (clean), cracked egg. cracked egg is on the left of salt shaker. cracked egg is on the right of kettle. cracked egg is inside pan. cracked egg is on the left of pepper shaker. cracked egg is on the left of spatula. cracked egg is on top of first countertop. pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. nothing is inside robot gripper.\n",
+    "l2_summary": "00:07. Goal: Open fridge. Visual observation: fridge (open), egg (not sliced and not cracked). egg is inside fridge. nothing is inside robot gripper. Auditory observation: stove burner turns on.\n00:10. Goal: Pick up egg. Visual observation: fridge (open), egg (not sliced and not cracked). egg is inside robot gripper.\n00:13. Goal: Close fridge. Visual observation: fridge (closed), egg (not sliced and not cracked). egg is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n00:33. Goal: Toggle on first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n00:44. Goal: Pick up pan. Visual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n00:53. Goal: Put pan on first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n00:59. Goal: Pick up egg. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n01:08. Goal: Crack egg. Visual observation: pan (clean), cracked egg. pan is above cracked egg. pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. cracked egg is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n01:11. Goal: Put cracked egg in pan. Visual observation: pan (clean), cracked egg. cracked egg is on the left of salt shaker. cracked egg is on the right of kettle. cracked egg is inside pan. cracked egg is on the left of pepper shaker. cracked egg is on the left of spatula. cracked egg is on top of first countertop. pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. nothing is inside robot gripper.\n",
+    "num_keyframes": 30,
+    "num_events": 73,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "The failure at 00:44 was caused by the robot's attempt to pick up the pan while it was still holding the egg. This action is not possible as the robot can only hold one item at a time, leading to a failure in the task execution.",
+      "pred_failure_step": [
+        "00:44"
+      ],
+      "error_type": "execution",
+      "gt_failure_reason": "The robot did not put down the egg in its gripper before trying to pick up the pan.",
+      "gt_failure_step": [
+        "00:33",
+        "00:34",
+        "00:35",
+        "00:36",
+        "00:37",
+        "00:38",
+        "00:39",
+        "00:40",
+        "00:41",
+        "00:42",
+        "00:43",
+        "00:44"
+      ],
+      "gt_error_type": "execution"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Fridge)",
+        "(open_obj, Fridge)",
+        "(pick_up, Egg)",
+        "(close_obj, Fridge)",
+        "(navigate_to_obj, StoveBurner-1)",
+        "(toggle_on, StoveBurner-1)",
+        "(navigate_to_obj, Pan)",
+        "(pick_up, Pan)",
+        "(navigate_to_obj, StoveBurner-1)",
+        "(put_on, Pan, StoveBurner-1)",
+        "(navigate_to_obj, Egg)",
+        "(pick_up, Egg)",
+        "(navigate_to_obj, Pan)",
+        "(crack_obj, Egg)",
+        "(put_in, EggCracked, Pan)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, pan)",
+        "2. (put_on, pan, first stove burner)",
+        "3. (pick_up, cracked egg)",
+        "4. (put_in, cracked egg, pan)"
+      ],
+      "llm_plan": [
+        "(pick_up, Pan)",
+        "(put_on, Pan, StoveBurner-1)",
+        "(pick_up, EggCracked)",
+        "(put_in, EggCracked, Pan)"
+      ],
+      "num_steps": 4
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Fridge)",
+        "(open_obj, Fridge)",
+        "(pick_up, Egg)",
+        "(close_obj, Fridge)",
+        "(navigate_to_obj, StoveBurner-1)",
+        "(toggle_on, StoveBurner-1)",
+        "(navigate_to_obj, Pan)",
+        "(pick_up, Pan)",
+        "(navigate_to_obj, StoveBurner-1)",
+        "(put_on, Pan, StoveBurner-1)",
+        "(navigate_to_obj, Egg)",
+        "(pick_up, Egg)",
+        "(navigate_to_obj, Pan)",
+        "(crack_obj, Egg)",
+        "(put_in, EggCracked, Pan)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, pan)",
+        "2. (put_on, pan, first stove burner)",
+        "3. (pick_up, cracked egg)",
+        "4. (put_in, cracked egg, pan)"
+      ],
+      "llm_plan": [
+        "(pick_up, Pan)",
+        "(put_on, Pan, StoveBurner-1)",
+        "(pick_up, EggCracked)",
+        "(put_in, EggCracked, Pan)"
+      ],
+      "num_steps": 4,
+      "success": true
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to open fridge. Here are the robot observations after execution:\nVisual observation: fridge (open), egg (not sliced and not cracked). egg is inside fridge. nothing is inside robot gripper. Auditory observation: stove burner turns on.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up egg. Here are the robot observations after execution:\nVisual observation: fridge (open), egg (not sliced and not cracked). egg is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to close fridge. Here are the robot observations after execution:\nVisual observation: fridge (closed), egg (not sliced and not cracked). egg is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on first stove burner. Here are the robot observations after execution:\nVisual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up pan. Here are the robot observations after execution:\nVisual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "No"
+      },
+      {
+        "call": "reasoning-execution",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+          "user": "The robot task is to cook egg. At 00:44, a failure was identified.\n\n[Robot actions and observations before 00:44]\n00:01. Action: Move to fridge. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:04. Action: Move to fridge. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:07. Action: Open fridge. Visual observation: fridge (open), egg (not sliced and not cracked). egg is inside fridge. nothing is inside robot gripper. Auditory observation: stove burner turns on.\n00:10. Action: Pick up egg. Visual observation: fridge (open), egg (not sliced and not cracked). egg is inside robot gripper.\n00:13. Action: Close fridge. Visual observation: fridge (closed), egg (not sliced and not cracked). egg is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n00:19. Action: Move to first stove burner. Visual observation: egg (not sliced and not cracked). egg is inside robot gripper.\n00:29. Action: Move to first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned off), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n00:30. Action: Move to first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned off), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper.\n00:33. Action: Toggle on first stove burner. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n00:34. Action: Move to pan. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n00:35. Action: Move to pan. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n00:36. Action: Move to pan. Visual observation: egg (not sliced and not cracked), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n00:37. Action: Move to pan. Visual observation: second stove burner (turned off), pan (clean), egg (not sliced and not cracked), fourth stove burner (turned off). pan is on the left of salt shaker. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n00:39. Action: Move to pan. Visual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n00:41. Action: Move to pan. Visual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n\n[Observation at the end of 00:44]\nAction: Pick up pan. Visual observation: pan (clean), egg (not sliced and not cracked). pan is on the left of salt shaker. pan is on the right of kettle. pan is on the left of pepper shaker. pan is on the left of spatula. pan is on top of first countertop. egg is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:44] or [Observation at the end of 00:44], briefly explain what happened at 00:44 and what caused the failure.\nA:"
+        },
+        "response": "The failure at 00:44 was caused by the robot's attempt to pick up the pan while it was still holding the egg. This action is not possible as the robot can only hold one item at a time, leading to a failure in the task execution."
+      },
+      {
+        "call": "reasoning-execution-steps",
+        "prompt": {
+          "system": "",
+          "user": "The failure at 00:44 was caused by the robot's attempt to pick up the pan while it was still holding the egg. This action is not possible as the robot can only hold one item at a time, leading to a failure in the task execution.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+        },
+        "response": "00:44"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: cook egg\nInitial plan:\n1. (open_obj, fridge)\n2. (pick_up, egg)\n3. (close_obj, fridge)\n4. (toggle_on, first stove burner)\n5. (pick_up, pan)\n6. (put_on, pan, first stove burner)\n7. (pick_up, egg)\n8. (crack_obj, egg)\n9. (put_in, cracked egg, pan)\nFailure reason: The failure at 00:44 was caused by the robot's attempt to pick up the pan while it was still holding the egg. This action is not possible as the robot can only hold one item at a time, leading to a failure in the task execution.\nCurrent state: pan (clean), fridge (closed), first stove burner (turned on), fourth stove burner (turned off), second stove burner (turned off), cracked egg, third stove burner (turned off). pan is on top of first countertop. cracked egg is inside pan. cracked egg is on top of first countertop. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nCorrection plan:"
+        },
+        "response": "1. (pick_up, pan)\n2. (put_on, pan, first stove burner)\n3. (pick_up, cracked egg)\n4. (put_in, cracked egg, pan)"
+      }
+    ],
+    "error": ""
+  },
+  {
+    "task": "warmWater",
+    "episode": "warmWater-7",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to mug. Visual observation: microwave (closed and turned off). nothing is inside robot gripper.\n00:05. Action: Move to mug. Visual observation: mug (empty and clean). mug is on the left of stove knob. mug is on top of first countertop. nothing is inside robot gripper.\n00:08. Action: Pick up mug. Visual observation: mug (empty and clean). mug is inside robot gripper.\n00:13. Action: Move to sink. Visual observation: sink, mug (empty and clean). plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n00:15. Action: Move to sink. Visual observation: sink, faucet (turned off), mug (empty and clean). plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n00:17. Action: Move to sink. Visual observation: sink, faucet (turned off), mug (empty and clean). plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n00:20. Action: Put mug in sink. Visual observation: sink, faucet (turned off), mug (empty and clean). mug is inside sink. mug is on the left of knife. mug is on the right of spatula. mug is on the left of apple. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n00:23. Action: Toggle on faucet. Visual observation: faucet (turned on), sink, mug (filled with water and clean). mug is inside sink. mug is on the left of kettle. mug is on the right of plate. mug is on the left of dish sponge. mug is on the right of spatula. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n00:26. Action: Toggle off faucet. Visual observation: sink, faucet (turned off), mug (filled with water and clean). mug is inside sink. mug is on the left of kettle. mug is on the right of plate. mug is on the left of dish sponge. mug is on the right of spatula. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:29. Action: Pick up mug. Visual observation: sink, faucet (turned off), mug (filled with water and clean). plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n00:36. Action: Move to microwave. Visual observation: mug (filled with water and clean). mug is inside robot gripper.\n00:37. Action: Move to microwave. Visual observation: microwave (closed and turned off), mug (filled with water and clean). mug is inside robot gripper.\n00:41. Action: Move to countertop. Visual observation: mug (filled with water and clean). mug is inside robot gripper.\n00:50. Action: Move to microwave. Visual observation: microwave (closed and turned off). nothing is inside robot gripper.\n00:51. Action: Open microwave. Visual observation: microwave (open and turned off). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n00:56. Action: Move to cup. Visual observation: faucet (turned off). nothing is inside robot gripper.\n01:00. Action: Move to cup. Visual observation: nothing is inside robot gripper.\n01:06. Action: Move to cup. Visual observation: sink, faucet (turned off). nothing is inside robot gripper.\n01:10. Action: Move to cup. Visual observation: sink. nothing is inside robot gripper.\n01:12. Action: Move to cup. Visual observation: nothing is inside robot gripper.\n01:18. Action: Move to cup. Visual observation: sink, faucet (turned off), cup. cup is on top of second countertop. nothing is inside robot gripper.\n01:21. Action: Pick up cup. Visual observation: sink, faucet (turned off), cup. cup is inside robot gripper.\n01:28. Action: Move to microwave. Visual observation: sink, faucet (turned off), cup. plate is on top of sink. cup is inside robot gripper.\n01:30. Action: Move to microwave. Visual observation: sink, mug (filled with water and clean), cup. mug is on the left of toaster. mug is on top of first countertop. plate is on top of sink. cup is inside robot gripper.\n01:32. Action: Move to microwave. Visual observation: sink, faucet (turned off), mug (filled with water and clean), cup. mug is on the left of toaster. mug is on top of first countertop. plate is on top of sink. cup is inside robot gripper.\n01:36. Action: Move to microwave. Visual observation: sink, faucet (turned off), mug (filled with water and clean), cup. mug is on the left of toaster. mug is on top of first countertop. plate is on top of sink. spatula is on top of sink. cup is inside robot gripper.\n01:40. Action: Move to microwave. Visual observation: sink, mug (filled with water and clean), cup. mug is on the left of toaster. mug is on top of first countertop. plate is on top of sink. spatula is on top of sink. cup is inside robot gripper.\n01:42. Action: Move to microwave. Visual observation: sink, mug (filled with water and clean), cup. mug is on the left of toaster. mug is on top of first countertop. cup is inside robot gripper.\n01:44. Action: Move to microwave. Visual observation: mug (filled with water and clean), cup. mug is on the left of toaster. mug is on top of first countertop. cup is inside robot gripper.\n01:48. Action: Move to microwave. Visual observation: microwave (open and turned off), cup. microwave is above cup. cup is inside robot gripper.\n01:51. Action: Put cup in microwave. Visual observation: microwave (open and turned off), cup. cup is inside microwave. nothing is inside robot gripper.\n01:54. Action: Close microwave. Visual observation: microwave (closed and turned off). nothing is inside robot gripper. Auditory observation: water runs in sink.\n01:57. Action: Toggle on microwave. Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\n02:00. Action: Toggle off microwave. Visual observation: microwave (closed and turned off). nothing is inside robot gripper.\n02:03. Action: Open microwave. Visual observation: microwave (open and turned off), cup. cup is inside microwave. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n02:06. Action: Move to mug. Visual observation: microwave (open and turned off). nothing is inside robot gripper.\n02:07. Action: Move to mug. Visual observation: mug (filled with water and clean). mug is on top of first countertop. nothing is inside robot gripper.\n02:10. Action: Pick up mug. Visual observation: mug (filled with water and clean). mug is inside robot gripper.\n02:16. Action: Move to dining table. Visual observation: sink, mug (filled with water and clean). plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n02:18. Action: Move to dining table. Visual observation: sink, faucet (turned off), mug (filled with water and clean). plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n02:24. Action: Move to dining table. Visual observation: sink, faucet (turned off), mug (filled with water and clean). plate is on top of sink. mug is inside robot gripper.\n02:34. Action: Move to dining table. Visual observation: sink, mug (filled with water and clean). mug is inside robot gripper.\n02:40. Action: Move to dining table. Visual observation: dining table, mug (filled with water and clean). dining table is above mug. house plant is on top of dining table. mug is inside robot gripper.\n02:45. Action: Put mug on dining table. Visual observation: dining table, mug (filled with water and clean). mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\n",
+    "l2_summary": "00:08. Goal: Pick up mug. Visual observation: mug (empty and clean). mug is inside robot gripper.\n00:20. Goal: Put mug in sink. Visual observation: sink, faucet (turned off), mug (empty and clean). mug is inside sink. mug is on the left of knife. mug is on the right of spatula. mug is on the left of apple. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n00:23. Goal: Toggle on faucet. Visual observation: faucet (turned on), sink, mug (filled with water and clean). mug is inside sink. mug is on the left of kettle. mug is on the right of plate. mug is on the left of dish sponge. mug is on the right of spatula. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n00:26. Goal: Toggle off faucet. Visual observation: sink, faucet (turned off), mug (filled with water and clean). mug is inside sink. mug is on the left of kettle. mug is on the right of plate. mug is on the left of dish sponge. mug is on the right of spatula. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:29. Goal: Pick up mug. Visual observation: sink, faucet (turned off), mug (filled with water and clean). plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n00:51. Goal: Open microwave. Visual observation: microwave (open and turned off). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n01:21. Goal: Pick up cup. Visual observation: sink, faucet (turned off), cup. cup is inside robot gripper.\n01:51. Goal: Put cup in microwave. Visual observation: microwave (open and turned off), cup. cup is inside microwave. nothing is inside robot gripper.\n01:54. Goal: Close microwave. Visual observation: microwave (closed and turned off). nothing is inside robot gripper. Auditory observation: water runs in sink.\n01:57. Goal: Toggle on microwave. Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\n02:00. Goal: Toggle off microwave. Visual observation: microwave (closed and turned off). nothing is inside robot gripper.\n02:03. Goal: Open microwave. Visual observation: microwave (open and turned off), cup. cup is inside microwave. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n02:10. Goal: Pick up mug. Visual observation: mug (filled with water and clean). mug is inside robot gripper.\n02:45. Goal: Put mug on dining table. Visual observation: dining table, mug (filled with water and clean). mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\n",
+    "num_keyframes": 50,
+    "num_events": 167,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "The robot failed because it did not heat the water. It filled the mug with water and placed it on the table, but it never put the mug in the microwave to warm the water. Instead, it put the cup in the microwave.",
+      "pred_failure_step": [
+        "01:21"
+      ],
+      "error_type": "planning",
+      "gt_failure_reason": "Wrong Plan: puts cup inside microwave instead of mug filled with water",
+      "gt_failure_step": [
+        "01:21",
+        "01:51"
+      ],
+      "gt_error_type": "execution"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Mug)",
+        "(pick_up, Mug)",
+        "(navigate_to_obj, Sink)",
+        "(put_in, Mug, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Mug)",
+        "(navigate_to_obj, Microwave)",
+        "(put_on, Mug, CounterTop)",
+        "(open_obj, Microwave)",
+        "(pick_up, Cup)",
+        "(put_in, Cup, Microwave)",
+        "(close_obj, Microwave)",
+        "(toggle_on, Microwave)",
+        "(toggle_off, Microwave)",
+        "(open_obj, Microwave)",
+        "(pick_up, Mug)",
+        "(navigate_to_obj, DiningTable)",
+        "(put_on, Mug, DiningTable)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, mug)",
+        "2. (put_on, mug, countertop)",
+        "3. (open, microwave)",
+        "4. (pick_up, cup)",
+        "5. (put_on, cup, countertop)",
+        "6. (pick_up, mug)",
+        "7. (put_in, mug, microwave)",
+        "8. (close, microwave)",
+        "9. (toggle_on, microwave)",
+        "10. (toggle_off, microwave)",
+        "11. (open, microwave)",
+        "12. (pick_up, mug)",
+        "13. (put_on, mug, dining table)"
+      ],
+      "llm_plan": [
+        "(pick_up, Mug)",
+        "(put_on, Mug, CounterTop)",
+        "(toggle_on, Microwave)",
+        "(pick_up, Cup)",
+        "(put_on, Cup, CounterTop)",
+        "(pick_up, Mug)",
+        "(put_in, Mug, Microwave)",
+        "(close_obj, Microwave)",
+        "(toggle_on, Microwave)",
+        "(toggle_off, Microwave)",
+        "(toggle_on, Microwave)",
+        "(pick_up, Mug)",
+        "(put_on, Mug, DiningTable)"
+      ],
+      "num_steps": 13
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Mug)",
+        "(pick_up, Mug)",
+        "(navigate_to_obj, Sink)",
+        "(put_in, Mug, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Mug)",
+        "(navigate_to_obj, Microwave)",
+        "(put_on, Mug, CounterTop)",
+        "(open_obj, Microwave)",
+        "(pick_up, Cup)",
+        "(put_in, Cup, Microwave)",
+        "(close_obj, Microwave)",
+        "(toggle_on, Microwave)",
+        "(toggle_off, Microwave)",
+        "(open_obj, Microwave)",
+        "(pick_up, Mug)",
+        "(navigate_to_obj, DiningTable)",
+        "(put_on, Mug, DiningTable)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, mug)",
+        "2. (put_on, mug, countertop)",
+        "3. (open, microwave)",
+        "4. (pick_up, cup)",
+        "5. (put_on, cup, countertop)",
+        "6. (pick_up, mug)",
+        "7. (put_in, mug, microwave)",
+        "8. (close, microwave)",
+        "9. (toggle_on, microwave)",
+        "10. (toggle_off, microwave)",
+        "11. (open, microwave)",
+        "12. (pick_up, mug)",
+        "13. (put_on, mug, dining table)"
+      ],
+      "llm_plan": [
+        "(pick_up, Mug)",
+        "(put_on, Mug, CounterTop)",
+        "(toggle_on, Microwave)",
+        "(pick_up, Cup)",
+        "(put_on, Cup, CounterTop)",
+        "(pick_up, Mug)",
+        "(put_in, Mug, Microwave)",
+        "(close_obj, Microwave)",
+        "(toggle_on, Microwave)",
+        "(toggle_off, Microwave)",
+        "(toggle_on, Microwave)",
+        "(pick_up, Mug)",
+        "(put_on, Mug, DiningTable)"
+      ],
+      "num_steps": 13,
+      "success": true
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (empty and clean). mug is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put mug in sink. Here are the robot observations after execution:\nVisual observation: sink, faucet (turned off), mug (empty and clean). mug is inside sink. mug is on the left of knife. mug is on the right of spatula. mug is on the left of apple. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on faucet. Here are the robot observations after execution:\nVisual observation: faucet (turned on), sink, mug (filled with water and clean). mug is inside sink. mug is on the left of kettle. mug is on the right of plate. mug is on the left of dish sponge. mug is on the right of spatula. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle off faucet. Here are the robot observations after execution:\nVisual observation: sink, faucet (turned off), mug (filled with water and clean). mug is inside sink. mug is on the left of kettle. mug is on the right of plate. mug is on the left of dish sponge. mug is on the right of spatula. plate is on top of sink. spatula is on top of sink. nothing is inside robot gripper. Auditory observation: water runs in sink.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: sink, faucet (turned off), mug (filled with water and clean). plate is on top of sink. spatula is on top of sink. mug is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to open microwave. Here are the robot observations after execution:\nVisual observation: microwave (open and turned off). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up cup. Here are the robot observations after execution:\nVisual observation: sink, faucet (turned off), cup. cup is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put cup in microwave. Here are the robot observations after execution:\nVisual observation: microwave (open and turned off), cup. cup is inside microwave. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to close microwave. Here are the robot observations after execution:\nVisual observation: microwave (closed and turned off). nothing is inside robot gripper. Auditory observation: water runs in sink.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on microwave. Here are the robot observations after execution:\nVisual observation: microwave (closed and turned on). nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle off microwave. Here are the robot observations after execution:\nVisual observation: microwave (closed and turned off). nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to open microwave. Here are the robot observations after execution:\nVisual observation: microwave (open and turned off), cup. cup is inside microwave. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (filled with water and clean). mug is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put mug on dining table. Here are the robot observations after execution:\nVisual observation: dining table, mug (filled with water and clean). mug is on top of dining table. house plant is on top of dining table. mug is below house plant. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "reasoning-plan",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the current robot state, the goal condition, and the robot plan. Briefly explain what was wrong with the robot plan in 1-2 sentence.",
+          "user": "The robot task is to Serve a glass of warm water at the dining table. The task is considered successful if a mug of warm water is on the dining table.\nHere's the robot observation at the end of the task execution:\nmug (filled with water and clean), cup, faucet (turned off), dining table, microwave (open and turned off), sink. cup is inside microwave. mug is on top of dining table. plate is on top of sink. spatula is on top of sink. house plant is on top of dining table. nothing is inside robot gripper.\nThe robot plan is:\n00:08. Goal: Pick up mug.\n00:20. Goal: Put mug in sink.\n00:23. Goal: Toggle on faucet.\n00:26. Goal: Toggle off faucet.\n00:29. Goal: Pick up mug.\n00:51. Goal: Open microwave.\n01:21. Goal: Pick up cup.\n01:51. Goal: Put cup in microwave.\n01:54. Goal: Close microwave.\n01:57. Goal: Toggle on microwave.\n02:00. Goal: Toggle off microwave.\n02:03. Goal: Open microwave.\n02:10. Goal: Pick up mug.\n02:45. Goal: Put mug on dining table.\n\nQ: Known that all actions in the robot plan were executed successfully, what's wrong with the robot plan that caused the robot to fail?\nA:"
+        },
+        "response": "The robot failed because it did not heat the water. It filled the mug with water and placed it on the table, but it never put the mug in the microwave to warm the water. Instead, it put the cup in the microwave."
+      },
+      {
+        "call": "reasoning-plan-steps",
+        "prompt": {
+          "system": "Given the identified failure reason, you are expected to output an earliest time step that is relevant to the failure. You must output a time step.",
+          "user": "The robot task is to Serve a glass of warm water at the dining table. The task is considered successful if a mug of warm water is on the dining table.\nHere's the robot observation at the end of the task execution:\nmug (filled with water and clean), cup, faucet (turned off), dining table, microwave (open and turned off), sink. cup is inside microwave. mug is on top of dining table. plate is on top of sink. spatula is on top of sink. house plant is on top of dining table. nothing is inside robot gripper.\nThe robot plan is:\n00:08. Goal: Pick up mug.\n00:20. Goal: Put mug in sink.\n00:23. Goal: Toggle on faucet.\n00:26. Goal: Toggle off faucet.\n00:29. Goal: Pick up mug.\n00:51. Goal: Open microwave.\n01:21. Goal: Pick up cup.\n01:51. Goal: Put cup in microwave.\n01:54. Goal: Close microwave.\n01:57. Goal: Toggle on microwave.\n02:00. Goal: Toggle off microwave.\n02:03. Goal: Open microwave.\n02:10. Goal: Pick up mug.\n02:45. Goal: Put mug on dining table.\n\nQ: Known that all actions in the robot plan were executed successfully, what's wrong with the robot plan that caused the robot to fail?\nA: The robot failed because it did not heat the water. It filled the mug with water and placed it on the table, but it never put the mug in the microwave to warm the water. Instead, it put the cup in the microwave.\nQ: Which time step is most relevant to the above failure?\nA:"
+        },
+        "response": "01:21"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: Serve a glass of warm water at the dining table\nInitial plan:\n1. (pick_up, mug)\n2. (put_in, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_on, mug, countertop)\n7. (open_obj, microwave)\n8. (pick_up, cup)\n9. (put_in, cup, microwave)\n10. (close_obj, microwave)\n11. (toggle_on, microwave)\n12. (toggle_off, microwave)\n13. (open_obj, microwave)\n14. (pick_up, mug)\n15. (put_on, mug, dining table)\nFailure reason: The robot failed because it did not heat the water. It filled the mug with water and placed it on the table, but it never put the mug in the microwave to warm the water. Instead, it put the cup in the microwave.\nCurrent state: mug (filled with water and clean), cup, faucet (turned off), dining table, microwave (open and turned off), sink. cup is inside microwave. mug is on top of dining table. plate is on top of sink. spatula is on top of sink. house plant is on top of dining table. nothing is inside robot gripper.\nSuccess state: a mug of warm water is on the dining table.\nCorrection plan:"
+        },
+        "response": "1. (pick_up, mug)\n2. (put_on, mug, countertop)\n3. (open, microwave)\n4. (pick_up, cup)\n5. (put_on, cup, countertop)\n6. (pick_up, mug)\n7. (put_in, mug, microwave)\n8. (close, microwave)\n9. (toggle_on, microwave)\n10. (toggle_off, microwave)\n11. (open, microwave)\n12. (pick_up, mug)\n13. (put_on, mug, dining table)"
+      }
+    ],
+    "error": ""
+  },
+  {
+    "task": "makeCoffee",
+    "episode": "makeCoffee-3",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to mug. Visual observation: nothing is inside robot gripper.\n00:13. Action: Move to mug. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:14. Action: Move to mug. Visual observation: mug (empty and dirty), sink, faucet (turned off). mug is inside sink. nothing is inside robot gripper.\n00:17. Action: Pick up mug. Visual observation: mug (empty and dirty), sink, faucet (turned off). mug is inside robot gripper.\n00:19. Action: Move to sink. Visual observation: mug (empty and dirty), coffee machine (turned off), sink, faucet (turned off). mug is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: mug (empty and dirty), coffee machine (turned off), sink, faucet (turned off). mug is inside robot gripper.\n00:26. Action: Put mug in sink. Visual observation: mug (empty and dirty), coffee machine (turned off), sink, faucet (turned off). mug is inside sink. nothing is inside robot gripper.\n00:29. Action: Toggle on faucet. Visual observation: mug (empty and dirty), coffee machine (turned off), faucet (turned on), sink. mug is inside sink. nothing is inside robot gripper.\n00:32. Action: Toggle off faucet. Visual observation: coffee machine (turned off), faucet (turned off), sink, mug (filled with water and clean). mug is inside sink. nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:35. Action: Pick up mug. Visual observation: coffee machine (turned off), faucet (turned off), sink, mug (filled with water and clean). mug is inside robot gripper.\n00:36. Action: Pour liquid from mug into sink. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). mug is inside robot gripper.\n00:39. Action: Move to coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n00:41. Action: Move to coffee machine. Visual observation: coffee machine (turned off), mug (empty and clean). cup is inside coffee machine. mug is inside robot gripper.\n00:43. Action: Move to coffee machine. Visual observation: coffee machine (turned off), mug (empty and clean). mug is inside robot gripper.\n00:45. Action: Move to coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n00:48. Action: Put mug in coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n00:51. Action: Toggle on coffee machine. Visual observation: coffee machine (turned on), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper. Auditory observation: coffee machine turns on.\n00:54. Action: Toggle off coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper. Auditory observation: coffee machine turns on.\n00:57. Action: Pick up mug. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n01:06. Action: Move to countertop. Visual observation: sink, mug (empty and clean). mug is inside robot gripper.\n01:10. Action: Move to countertop. Visual observation: mug (empty and clean). mug is inside robot gripper.\n01:11. Action: Move to countertop. Visual observation: mug (empty and clean). mug is inside robot gripper.\n01:16. Action: Put mug on countertop. Visual observation: mug (empty and clean). mug is on the right of butter knife. mug is on top of first countertop. nothing is inside robot gripper.\n",
+    "l2_summary": "00:17. Goal: Pick up mug. Visual observation: mug (empty and dirty), sink, faucet (turned off). mug is inside robot gripper.\n00:26. Goal: Put mug in sink. Visual observation: mug (empty and dirty), coffee machine (turned off), sink, faucet (turned off). mug is inside sink. nothing is inside robot gripper.\n00:29. Goal: Toggle on faucet. Visual observation: mug (empty and dirty), coffee machine (turned off), faucet (turned on), sink. mug is inside sink. nothing is inside robot gripper.\n00:32. Goal: Toggle off faucet. Visual observation: coffee machine (turned off), faucet (turned off), sink, mug (filled with water and clean). mug is inside sink. nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:35. Goal: Pick up mug. Visual observation: coffee machine (turned off), faucet (turned off), sink, mug (filled with water and clean). mug is inside robot gripper.\n00:36. Goal: Pour liquid from mug into sink. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). mug is inside robot gripper.\n00:48. Goal: Put mug in coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n00:51. Goal: Toggle on coffee machine. Visual observation: coffee machine (turned on), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper. Auditory observation: coffee machine turns on.\n00:54. Goal: Toggle off coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper. Auditory observation: coffee machine turns on.\n00:57. Goal: Pick up mug. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n01:16. Goal: Put mug on countertop. Visual observation: mug (empty and clean). mug is on the right of butter knife. mug is on top of first countertop. nothing is inside robot gripper.\n",
+    "num_keyframes": 30,
+    "num_events": 78,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "The failure at 00:54 was caused by the robot turning off the coffee machine prematurely, before it had a chance to brew the coffee. As a result, the mug remained empty and clean, and the task of making coffee was not completed.",
+      "pred_failure_step": [
+        "00:54"
+      ],
+      "error_type": "execution",
+      "gt_failure_reason": "The robot failed to put the mug inside the coffee machine because there was already a cup inside it, occupying the space.",
+      "gt_failure_step": 0,
+      "gt_error_type": "planning"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Mug)",
+        "(pick_up, Mug)",
+        "(navigate_to_obj, Sink)",
+        "(put_on, Mug, SinkBasin)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Mug)",
+        "(pour, Mug, Sink)",
+        "(navigate_to_obj, CoffeeMachine)",
+        "(put_in, Mug, CoffeeMachine)",
+        "(toggle_on, CoffeeMachine)",
+        "(toggle_off, CoffeeMachine)",
+        "(pick_up, Mug)",
+        "(put_on, Mug, CounterTop)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, mug)",
+        "2. (put_in, mug, coffee machine)",
+        "3. (toggle_on, coffee machine)",
+        "4. Wait for the coffee to brew",
+        "5. (toggle_off, coffee machine)",
+        "6. (pick_up, mug)",
+        "7. (put_on, mug, countertop)"
+      ],
+      "llm_plan": [
+        "(pick_up, Mug)",
+        "(put_in, Mug, CoffeeMachine)",
+        "(toggle_on, CoffeeMachine)",
+        "(put_in, Cup, CoffeeMachine)",
+        "(toggle_off, CoffeeMachine)",
+        "(pick_up, Mug)",
+        "(put_on, Mug, CounterTop)"
+      ],
+      "num_steps": 7
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Mug)",
+        "(pick_up, Mug)",
+        "(navigate_to_obj, Sink)",
+        "(put_on, Mug, SinkBasin)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Mug)",
+        "(pour, Mug, Sink)",
+        "(navigate_to_obj, CoffeeMachine)",
+        "(put_in, Mug, CoffeeMachine)",
+        "(toggle_on, CoffeeMachine)",
+        "(toggle_off, CoffeeMachine)",
+        "(pick_up, Mug)",
+        "(put_on, Mug, CounterTop)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, mug)",
+        "2. (put_in, mug, coffee machine)",
+        "3. (toggle_on, coffee machine)",
+        "4. Wait for the coffee to brew",
+        "5. (toggle_off, coffee machine)",
+        "6. (pick_up, mug)",
+        "7. (put_on, mug, countertop)"
+      ],
+      "llm_plan": [
+        "(pick_up, Mug)",
+        "(put_in, Mug, CoffeeMachine)",
+        "(toggle_on, CoffeeMachine)",
+        "(put_in, Cup, CoffeeMachine)",
+        "(toggle_off, CoffeeMachine)",
+        "(pick_up, Mug)",
+        "(put_on, Mug, CounterTop)"
+      ],
+      "num_steps": 7,
+      "success": false
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (empty and dirty), sink, faucet (turned off). mug is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put mug in sink. Here are the robot observations after execution:\nVisual observation: mug (empty and dirty), coffee machine (turned off), sink, faucet (turned off). mug is inside sink. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on faucet. Here are the robot observations after execution:\nVisual observation: mug (empty and dirty), coffee machine (turned off), faucet (turned on), sink. mug is inside sink. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle off faucet. Here are the robot observations after execution:\nVisual observation: coffee machine (turned off), faucet (turned off), sink, mug (filled with water and clean). mug is inside sink. nothing is inside robot gripper. Auditory observation: water runs in sink.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: coffee machine (turned off), faucet (turned off), sink, mug (filled with water and clean). mug is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pour liquid from mug into sink. Here are the robot observations after execution:\nVisual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). mug is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put mug in coffee machine. Here are the robot observations after execution:\nVisual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle on coffee machine. Here are the robot observations after execution:\nVisual observation: coffee machine (turned on), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper. Auditory observation: coffee machine turns on.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to toggle off coffee machine. Here are the robot observations after execution:\nVisual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper. Auditory observation: coffee machine turns on.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "No"
+      },
+      {
+        "call": "reasoning-execution",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+          "user": "The robot task is to make coffee. At 00:54, a failure was identified.\n\n[Robot actions and observations before 00:54]\n00:01. Action: Move to mug. Visual observation: nothing is inside robot gripper.\n00:13. Action: Move to mug. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:14. Action: Move to mug. Visual observation: mug (empty and dirty), sink, faucet (turned off). mug is inside sink. nothing is inside robot gripper.\n00:17. Action: Pick up mug. Visual observation: mug (empty and dirty), sink, faucet (turned off). mug is inside robot gripper.\n00:19. Action: Move to sink. Visual observation: mug (empty and dirty), coffee machine (turned off), sink, faucet (turned off). mug is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: mug (empty and dirty), coffee machine (turned off), sink, faucet (turned off). mug is inside robot gripper.\n00:26. Action: Put mug in sink. Visual observation: mug (empty and dirty), coffee machine (turned off), sink, faucet (turned off). mug is inside sink. nothing is inside robot gripper.\n00:29. Action: Toggle on faucet. Visual observation: mug (empty and dirty), coffee machine (turned off), faucet (turned on), sink. mug is inside sink. nothing is inside robot gripper.\n00:32. Action: Toggle off faucet. Visual observation: coffee machine (turned off), faucet (turned off), sink, mug (filled with water and clean). mug is inside sink. nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:35. Action: Pick up mug. Visual observation: coffee machine (turned off), faucet (turned off), sink, mug (filled with water and clean). mug is inside robot gripper.\n00:36. Action: Pour liquid from mug into sink. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). mug is inside robot gripper.\n00:39. Action: Move to coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n00:41. Action: Move to coffee machine. Visual observation: coffee machine (turned off), mug (empty and clean). cup is inside coffee machine. mug is inside robot gripper.\n00:43. Action: Move to coffee machine. Visual observation: coffee machine (turned off), mug (empty and clean). mug is inside robot gripper.\n00:45. Action: Move to coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n00:48. Action: Put mug in coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper.\n00:51. Action: Toggle on coffee machine. Visual observation: coffee machine (turned on), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper. Auditory observation: coffee machine turns on.\n\n[Observation at the end of 00:54]\nAction: Toggle off coffee machine. Visual observation: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). cup is inside coffee machine. mug is inside robot gripper. Auditory observation: coffee machine turns on.\n\nQ: Infer from [Robot actions and observations before 00:54] or [Observation at the end of 00:54], briefly explain what happened at 00:54 and what caused the failure.\nA:"
+        },
+        "response": "The failure at 00:54 was caused by the robot turning off the coffee machine prematurely, before it had a chance to brew the coffee. As a result, the mug remained empty and clean, and the task of making coffee was not completed."
+      },
+      {
+        "call": "reasoning-execution-steps",
+        "prompt": {
+          "system": "",
+          "user": "The failure at 00:54 was caused by the robot turning off the coffee machine prematurely, before it had a chance to brew the coffee. As a result, the mug remained empty and clean, and the task of making coffee was not completed.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+        },
+        "response": "00:54"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: make coffee\nInitial plan:\n1. (pick_up, mug)\n2. (put_on, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (pour, mug, sink)\n7. (put_in, mug, coffee machine)\n8. (toggle_on, coffee machine)\n9. (toggle_off, coffee machine)\n10. (pick_up, mug)\n11. (put_on, mug, countertop)\nFailure reason: The failure at 00:54 was caused by the robot turning off the coffee machine prematurely, before it had a chance to brew the coffee. As a result, the mug remained empty and clean, and the task of making coffee was not completed.\nCurrent state: coffee machine (turned off), sink, mug (empty and clean), faucet (turned off). mug is on top of first countertop. cup is inside coffee machine. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nCorrection plan:"
+        },
+        "response": "1. (pick_up, mug)\n2. (put_in, mug, coffee machine)\n3. (toggle_on, coffee machine)\n4. Wait for the coffee to brew\n5. (toggle_off, coffee machine)\n6. (pick_up, mug)\n7. (put_on, mug, countertop)"
+      }
+    ],
+    "error": ""
+  },
+  {
+    "task": "switchDevices",
+    "episode": "switchDevices-6",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:07. Action: Move to laptop. Visual observation: nothing is inside robot gripper.\n00:16. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:19. Action: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:22. Action: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:38. Action: Move to tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. laptop is inside robot gripper.\n00:39. Action: Move to tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. laptop is inside robot gripper.\n00:42. Action: Put laptop in tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. nothing is inside robot gripper.\n00:46. Action: Move to remote control. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on the left of keychain. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. nothing is inside robot gripper.\n00:48. Action: Move to remote control. Visual observation: tv stand, laptop (closed and turned off). laptop is on the left of keychain. laptop is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. nothing is inside robot gripper.\n00:50. Action: Move to remote control. Visual observation: remote control. remote control is below book. remote control is on top of coffee table. nothing is inside robot gripper.\n00:51. Action: Pick up remote control. Visual observation: remote control. remote control is below book. remote control is on top of coffee table. nothing is inside robot gripper.\n00:54. Action: Move to television. Visual observation: remote control, tv stand. remote control is on top of coffee table. nothing is inside robot gripper.\n00:58. Action: Move to television. Visual observation: tv stand, laptop (closed and turned off). laptop is on top of tv stand. watch is on top of tv stand. keychain is on top of tv stand. nothing is inside robot gripper.\n01:00. Action: Move to television. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. nothing is inside robot gripper.\n01:03. Action: Toggle on television. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. nothing is inside robot gripper.\n01:04. Action: Put remote control on tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. nothing is inside robot gripper.\n",
+    "l2_summary": "00:19. Goal: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:22. Goal: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:42. Goal: Put laptop in tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. nothing is inside robot gripper.\n00:51. Goal: Pick up remote control. Visual observation: remote control. remote control is below book. remote control is on top of coffee table. nothing is inside robot gripper.\n01:03. Goal: Toggle on television. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. nothing is inside robot gripper.\n01:04. Goal: Put remote control on tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. nothing is inside robot gripper.\n",
+    "num_keyframes": 17,
+    "num_events": 66,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "The failure at 00:51 occurred when the robot attempted to pick up the remote control but was unable to do so. The cause of the failure could be due to the remote control being positioned below a book, making it difficult for the robot to grip and lift it.",
+      "pred_failure_step": [
+        "00:51"
+      ],
+      "error_type": "execution",
+      "gt_failure_reason": "Book is blocking remote control",
+      "gt_failure_step": [
+        "00:51"
+      ],
+      "gt_error_type": "planning"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Laptop)",
+        "(close_obj, Laptop)",
+        "(pick_up, Laptop)",
+        "(navigate_to_obj, TVStand)",
+        "(put_in, Laptop, TVStand)",
+        "(navigate_to_obj, RemoteControl)",
+        "(pick_up, RemoteControl)",
+        "(navigate_to_obj, Television)",
+        "(toggle_on, Television)",
+        "(put_on, RemoteControl, TVStand)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, laptop)",
+        "2. (put_on, laptop, tv stand)",
+        "3. (pick_up, remote control)",
+        "4. (toggle_on, television)",
+        "5. (put_on, remote control, tv stand)"
+      ],
+      "llm_plan": [
+        "(pick_up, Laptop)",
+        "(put_on, Laptop, TVStand)",
+        "(pick_up, RemoteControl)",
+        "(toggle_on, Television)",
+        "(put_on, RemoteControl, TVStand)"
+      ],
+      "num_steps": 5
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Laptop)",
+        "(close_obj, Laptop)",
+        "(pick_up, Laptop)",
+        "(navigate_to_obj, TVStand)",
+        "(put_in, Laptop, TVStand)",
+        "(navigate_to_obj, RemoteControl)",
+        "(pick_up, RemoteControl)",
+        "(navigate_to_obj, Television)",
+        "(toggle_on, Television)",
+        "(put_on, RemoteControl, TVStand)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, laptop)",
+        "2. (put_on, laptop, tv stand)",
+        "3. (pick_up, remote control)",
+        "4. (toggle_on, television)",
+        "5. (put_on, remote control, tv stand)"
+      ],
+      "llm_plan": [
+        "(pick_up, Laptop)",
+        "(put_on, Laptop, TVStand)",
+        "(pick_up, RemoteControl)",
+        "(toggle_on, Television)",
+        "(put_on, RemoteControl, TVStand)"
+      ],
+      "num_steps": 5,
+      "success": true
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to close laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to put laptop in tv stand. Here are the robot observations after execution:\nVisual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "Yes"
+      },
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up remote control. Here are the robot observations after execution:\nVisual observation: remote control. remote control is below book. remote control is on top of coffee table. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "No"
+      },
+      {
+        "call": "reasoning-execution",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+          "user": "The robot task is to Close the laptop and put it on the TV stand and switch on television. At 00:51, a failure was identified.\n\n[Robot actions and observations before 00:51]\n00:01. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:07. Action: Move to laptop. Visual observation: nothing is inside robot gripper.\n00:16. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:19. Action: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:22. Action: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:38. Action: Move to tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. laptop is inside robot gripper.\n00:39. Action: Move to tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. laptop is inside robot gripper.\n00:42. Action: Put laptop in tv stand. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is below television. laptop is on the left of watch. laptop is on the left of keychain. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. nothing is inside robot gripper.\n00:46. Action: Move to remote control. Visual observation: tv stand, laptop (closed and turned off), television (turned off). laptop is on the left of keychain. laptop is on top of tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. nothing is inside robot gripper.\n00:48. Action: Move to remote control. Visual observation: tv stand, laptop (closed and turned off). laptop is on the left of keychain. laptop is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. nothing is inside robot gripper.\n00:50. Action: Move to remote control. Visual observation: remote control. remote control is below book. remote control is on top of coffee table. nothing is inside robot gripper.\n\n[Observation at the end of 00:51]\nAction: Pick up remote control. Visual observation: remote control. remote control is below book. remote control is on top of coffee table. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:51] or [Observation at the end of 00:51], briefly explain what happened at 00:51 and what caused the failure.\nA:"
+        },
+        "response": "The failure at 00:51 occurred when the robot attempted to pick up the remote control but was unable to do so. The cause of the failure could be due to the remote control being positioned below a book, making it difficult for the robot to grip and lift it."
+      },
+      {
+        "call": "reasoning-execution-steps",
+        "prompt": {
+          "system": "",
+          "user": "The failure at 00:51 occurred when the robot attempted to pick up the remote control but was unable to do so. The cause of the failure could be due to the remote control being positioned below a book, making it difficult for the robot to grip and lift it.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+        },
+        "response": "00:51"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_in, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, television)\n6. (put_on, remote control, tv stand)\nFailure reason: The failure at 00:51 occurred when the robot attempted to pick up the remote control but was unable to do so. The cause of the failure could be due to the remote control being positioned below a book, making it difficult for the robot to grip and lift it.\nCurrent state: remote control, tv stand, laptop (closed and turned off), television (turned off). laptop is on top of tv stand. television is on top of tv stand. keychain is on top of tv stand. watch is on top of tv stand. remote control is on top of coffee table. nothing is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nCorrection plan:"
+        },
+        "response": "1. (pick_up, laptop)\n2. (put_on, laptop, tv stand)\n3. (pick_up, remote control)\n4. (toggle_on, television)\n5. (put_on, remote control, tv stand)"
+      }
+    ],
+    "error": ""
+  },
+  {
+    "task": "boilWater",
+    "episode": "boilWater-2",
+    "status": "ok",
+    "l1_summary": "00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:07. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of butter knife. pot is on top of second countertop. nothing is inside robot gripper.\n00:08. Action: Pick up pot. Visual observation: pot (empty and clean). pot is on the left of butter knife. pot is on top of second countertop. nothing is inside robot gripper.\n00:11. Action: Move to sink. Visual observation: pot (empty and clean). pot is on the left of butter knife. bread is blocking pot. pot is on top of second countertop. nothing is inside robot gripper.\n00:13. Action: Move to sink. Visual observation: nothing is inside robot gripper.\n00:17. Action: Move to sink. Visual observation: sink, faucet (turned off). nothing is inside robot gripper.\n00:18. Action: Move to sink. Visual observation: sink, faucet (turned off). nothing is inside robot gripper.\n00:19. Action: Put pot in sink. Visual observation: sink, faucet (turned off). nothing is inside robot gripper.\n00:22. Action: Toggle on faucet. Visual observation: faucet (turned on), sink. nothing is inside robot gripper.\n00:25. Action: Toggle off faucet. Visual observation: sink, faucet (turned off). nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:29. Action: Move to pot. Visual observation: sink. nothing is inside robot gripper.\n00:31. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:35. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of butter knife. pot is on top of second countertop. nothing is inside robot gripper.\n00:36. Action: Pick up pot. Visual observation: sink, faucet (turned off). nothing is inside robot gripper.\n00:37. Action: Move to fourth stove burner. Visual observation: pot (empty and clean). pot is on the left of butter knife. pot is on top of second countertop. nothing is inside robot gripper.\n00:41. Action: Move to fourth stove burner. Visual observation: nothing is inside robot gripper.\n00:45. Action: Move to fourth stove burner. Visual observation: fourth stove burner (turned off). nothing is inside robot gripper.\n00:47. Action: Move to fourth stove burner. Visual observation: nothing is inside robot gripper.\n00:49. Action: Move to fourth stove burner. Visual observation: second stove burner (turned off), third stove burner (turned off), fourth stove burner (turned off), first stove burner (turned off). nothing is inside robot gripper.\n00:50. Action: Move to fourth stove burner. Visual observation: second stove burner (turned off), third stove burner (turned off), fourth stove burner (turned off), first stove burner (turned off). nothing is inside robot gripper.\n00:51. Action: Put pot on fourth stove burner. Visual observation: second stove burner (turned off), third stove burner (turned off), fourth stove burner (turned off), first stove burner (turned off). nothing is inside robot gripper.\n00:54. Action: Toggle on fourth stove burner. Visual observation: fourth stove burner (turned on), second stove burner (turned off), third stove burner (turned off), first stove burner (turned off). nothing is inside robot gripper. Auditory observation: stove burner turns on.\n",
+    "l2_summary": "00:08. Goal: Pick up pot. Visual observation: pot (empty and clean). pot is on the left of butter knife. pot is on top of second countertop. nothing is inside robot gripper.\n00:19. Goal: Put pot in sink. Visual observation: sink, faucet (turned off). nothing is inside robot gripper.\n00:22. Goal: Toggle on faucet. Visual observation: faucet (turned on), sink. nothing is inside robot gripper.\n00:25. Goal: Toggle off faucet. Visual observation: sink, faucet (turned off). nothing is inside robot gripper. Auditory observation: water runs in sink.\n00:36. Goal: Pick up pot. Visual observation: sink, faucet (turned off). nothing is inside robot gripper.\n00:51. Goal: Put pot on fourth stove burner. Visual observation: second stove burner (turned off), third stove burner (turned off), fourth stove burner (turned off), first stove burner (turned off). nothing is inside robot gripper.\n00:54. Goal: Toggle on fourth stove burner. Visual observation: fourth stove burner (turned on), second stove burner (turned off), third stove burner (turned off), first stove burner (turned off). nothing is inside robot gripper. Auditory observation: stove burner turns on.\n",
+    "num_keyframes": 27,
+    "num_events": 56,
+    "global_sg": null,
+    "reasoning_dict": {
+      "pred_failure_reason": "The failure at 00:08 occurred because the robot attempted to pick up the pot but was unsuccessful, as indicated by the observation that nothing is inside the robot's gripper after the action. The cause of the failure could be a malfunction in the robot's gripping mechanism or a misjudgment in the pot's location.",
+      "pred_failure_step": [
+        "00:08"
+      ],
+      "error_type": "execution",
+      "gt_failure_reason": "The robot cannot pick up the pot due to a bread occluding the pot.",
+      "gt_failure_step": "00:08",
+      "gt_error_type": "planning"
+    },
+    "replan_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Pot)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, Sink)",
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, StoveBurner-4)",
+        "(put_on, Pot, StoveBurner-4)",
+        "(toggle_on, StoveBurner-4)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, pot)",
+        "2. (put_in, pot, sink)",
+        "3. (toggle_on, faucet)",
+        "4. (toggle_off, faucet)",
+        "5. (pick_up, pot)",
+        "6. (put_on, pot, fourth stove burner)",
+        "7. (toggle_on, fourth stove burner)"
+      ],
+      "llm_plan": [
+        "(pick_up, Pot)",
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(put_on, Pot, StoveBurner-4)",
+        "(toggle_on, StoveBurner-4)"
+      ],
+      "num_steps": 7
+    },
+    "correction_dict": {
+      "task_plan": [
+        "(navigate_to_obj, Pot)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, Sink)",
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(navigate_to_obj, StoveBurner-4)",
+        "(put_on, Pot, StoveBurner-4)",
+        "(toggle_on, StoveBurner-4)"
+      ],
+      "llm_plan_raw": [
+        "1. (pick_up, pot)",
+        "2. (put_in, pot, sink)",
+        "3. (toggle_on, faucet)",
+        "4. (toggle_off, faucet)",
+        "5. (pick_up, pot)",
+        "6. (put_on, pot, fourth stove burner)",
+        "7. (toggle_on, fourth stove burner)"
+      ],
+      "llm_plan": [
+        "(pick_up, Pot)",
+        "(put_in, Pot, Sink)",
+        "(toggle_on, Faucet)",
+        "(toggle_off, Faucet)",
+        "(pick_up, Pot)",
+        "(put_on, Pot, StoveBurner-4)",
+        "(toggle_on, StoveBurner-4)"
+      ],
+      "num_steps": 7,
+      "success": false
+    },
+    "prompts_log": [
+      {
+        "call": "subgoal-verifier",
+        "prompt": {
+          "system": "You are a success verifier that outputs 'Yes' or 'No' to indicate whether the robot goal is satisfied given the robot observations.",
+          "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean). pot is on the left of butter knife. pot is on top of second countertop. nothing is inside robot gripper.\n\nQ: Is the goal satisfied?\nA:"
+        },
+        "response": "No"
+      },
+      {
+        "call": "reasoning-execution",
+        "prompt": {
+          "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+          "user": "The robot task is to boil water. At 00:08, a failure was identified.\n\n[Robot actions and observations before 00:08]\n00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:07. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of butter knife. pot is on top of second countertop. nothing is inside robot gripper.\n\n[Observation at the end of 00:08]\nAction: Pick up pot. Visual observation: pot (empty and clean). pot is on the left of butter knife. pot is on top of second countertop. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:08] or [Observation at the end of 00:08], briefly explain what happened at 00:08 and what caused the failure.\nA:"
+        },
+        "response": "The failure at 00:08 occurred because the robot attempted to pick up the pot but was unsuccessful, as indicated by the observation that nothing is inside the robot's gripper after the action. The cause of the failure could be a malfunction in the robot's gripping mechanism or a misjudgment in the pot's location."
+      },
+      {
+        "call": "reasoning-execution-steps",
+        "prompt": {
+          "system": "",
+          "user": "The failure at 00:08 occurred because the robot attempted to pick up the pot but was unsuccessful, as indicated by the observation that nothing is inside the robot's gripper after the action. The cause of the failure could be a malfunction in the robot's gripping mechanism or a misjudgment in the pot's location.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+        },
+        "response": "00:08"
+      },
+      {
+        "call": "correction",
+        "prompt": {
+          "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions: pick up, put in some container, put on some receptacle, open (e.g. fridge), close, toggle on (e.g. faucet), toggle off, slice object, crack object (e.g. egg), pour (liquid) from A to B.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+          "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (put_on, pot, fourth stove burner)\n7. (toggle_on, fourth stove burner)\nFailure reason: The failure at 00:08 occurred because the robot attempted to pick up the pot but was unsuccessful, as indicated by the observation that nothing is inside the robot's gripper after the action. The cause of the failure could be a malfunction in the robot's gripping mechanism or a misjudgment in the pot's location.\nCurrent state: first stove burner (turned off), pot (empty and clean), fourth stove burner (turned on), sink, second stove burner (turned off), third stove burner (turned off), faucet (turned off). pot is on top of second countertop. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nCorrection plan:"
+        },
+        "response": "1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (put_on, pot, fourth stove burner)\n7. (toggle_on, fourth stove burner)"
+      }
+    ],
+    "error": ""
+  }
+]

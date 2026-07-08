@@ -1,0 +1,711 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean). pot is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9998930057242958,
+        "B": 0.00010699427570415316
+      },
+      "confidence": 0.9998930057242958,
+      "uncertainty": 0.0001069942757041531,
+      "entropy": 0.0015656254763645999,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.142735223025468,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put pot in sink. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), faucet (turned off), sink. pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 9.99999999999001e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.130596043592748e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on faucet. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), faucet (turned off), sink. pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 9.499548764291262e-05,
+        "B": 0.9999050045123571
+      },
+      "confidence": 0.9999050045123571,
+      "uncertainty": 9.499548764291266e-05,
+      "entropy": 0.0014063519574549436,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -9.26168116598748,
+      "response_text": "B"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle off faucet. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), faucet (turned off), sink. pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999996000008,
+        "B": 3.999991999958934e-06
+      },
+      "confidence": 0.999996000008,
+      "uncertainty": 3.9999919999589295e-06,
+      "entropy": 7.749689944602653e-05,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -12.42921819685665,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean), faucet (turned off), sink. pot is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 9.999850001114991e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.130538413345594e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pour liquid from pot into house plant. Here are the robot observations after execution:\nVisual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.0015547900596371007,
+        "B": 0.998445209940363
+      },
+      "confidence": 0.998445209940363,
+      "uncertainty": 0.0015547900596369901,
+      "entropy": 0.016746079982215813,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -6.466414752345272,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to water the plant. At 00:26, a failure was identified.\n\n[Robot actions and observations before 00:26]\n00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:11. Action: Move to pot. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:15. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of potato. pot is on top of third countertop. nothing is inside robot gripper.\n00:18. Action: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: pot (empty and clean), faucet (turned off), sink. pot is inside robot gripper.\n00:22. Action: Move to sink. Visual observation: pot (empty and clean), faucet (turned off), sink. pot is inside robot gripper.\n00:25. Action: Put pot in sink. Visual observation: pot (empty and clean), faucet (turned off), sink. pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\n[Observation at the end of 00:26]\nAction: Toggle on faucet. Visual observation: pot (empty and clean), faucet (turned off), sink. pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:26] or [Observation at the end of 00:26], briefly explain what happened at 00:26 and what caused the failure.\nA:"
+    },
+    "response": "At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "00:26, 00:25"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: water the plant\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (pour, pot, house plant)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (none)\nAvailable actions: (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, HousePlant), (put_in, HousePlant), (put_on, HousePlant), (toggle_on, HousePlant), (toggle_off, HousePlant), (open_obj, HousePlant), (close_obj, HousePlant), (slice_obj, HousePlant), (crack_obj, HousePlant), (pour, HousePlant), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: Faucet, HousePlant, Pot, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Place the pot in the sink so it can be filled by the faucet before watering the plant."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retry turning on the faucet in case the robot is now properly positioned to fill the pot."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Set the pot onto the sink area as an alternative placement to improve alignment for filling."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Re-orient interaction toward the faucet to improve access before attempting to operate it again."
+        },
+        {
+          "action": "pour",
+          "obj1": "Pot",
+          "obj2": "HousePlant",
+          "rationale": "If the pot has already been filled offscreen or partially, pouring into the house plant could advance toward the goal."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: water the plant\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (put_in, Pot, Sink) \u2014 Place the pot in the sink so it can be filled by the faucet before watering the plant.\nB) (toggle_on, Faucet) \u2014 Retry turning on the faucet in case the robot is now properly positioned to fill the pot.\nC) (put_on, Pot, Sink) \u2014 Set the pot onto the sink area as an alternative placement to improve alignment for filling.\nD) (pick_up, Faucet) \u2014 Re-orient interaction toward the faucet to improve access before attempting to operate it again.\nE) (pour, Pot, HousePlant) \u2014 If the pot has already been filled offscreen or partially, pouring into the house plant could advance toward the goal.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999172342697409,
+        "B": 0.00020691432564776114,
+        "C": 0.00020691432564776114,
+        "D": 0.00020691432564776114,
+        "E": 0.00020691432564776114
+      },
+      "confidence": 0.999172342697409,
+      "uncertainty": 0.000827657302591045,
+      "entropy": 0.00487654839991689,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -8.483205736132865,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: water the plant\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (pour, pot, house plant)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink)\nAvailable actions: (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, HousePlant), (put_in, HousePlant), (put_on, HousePlant), (toggle_on, HousePlant), (toggle_off, HousePlant), (open_obj, HousePlant), (close_obj, HousePlant), (slice_obj, HousePlant), (crack_obj, HousePlant), (pour, HousePlant), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: Faucet, HousePlant, Pot, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Reposition the pot securely in the sink so the robot can free itself and better align to operate the faucet after the earlier toggle failure."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Move into direct interaction with the faucet handle to correct the likely alignment/reach issue before trying to turn it on again."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retry turning on the faucet in case the robot is now sufficiently aligned to start filling the pot."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Set the pot onto the sink area as an alternative placement that may improve access to the faucet and keep the pot under the water source."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "Re-grasp or stabilize the pot if the current hold is awkward, enabling a better corrective placement before operating the faucet."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: water the plant\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink)\n\nCandidate next actions:\nA) (put_in, Pot, Sink) \u2014 Reposition the pot securely in the sink so the robot can free itself and better align to operate the faucet after the earlier toggle failure.\nB) (pick_up, Faucet) \u2014 Move into direct interaction with the faucet handle to correct the likely alignment/reach issue before trying to turn it on again.\nC) (toggle_on, Faucet) \u2014 Retry turning on the faucet in case the robot is now sufficiently aligned to start filling the pot.\nD) (put_on, Pot, Sink) \u2014 Set the pot onto the sink area as an alternative placement that may improve access to the faucet and keep the pot under the water source.\nE) (pick_up, Pot) \u2014 Re-grasp or stabilize the pot if the current hold is awkward, enabling a better corrective placement before operating the faucet.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.0037557528720755236,
+        "B": 0.984976988511698,
+        "C": 0.0037557528720755236,
+        "D": 0.0037557528720755236,
+        "E": 0.0037557528720755236
+      },
+      "confidence": 0.984976988511698,
+      "uncertainty": 0.015023011488301985,
+      "entropy": 0.06139106114455618,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -5.584466515307789,
+      "response_text": "B"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: water the plant\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (pour, pot, house plant)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink), (pick_up, Faucet)\nAvailable actions: (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, HousePlant), (put_in, HousePlant), (put_on, HousePlant), (toggle_on, HousePlant), (toggle_off, HousePlant), (open_obj, HousePlant), (close_obj, HousePlant), (slice_obj, HousePlant), (crack_obj, HousePlant), (pour, HousePlant), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: Faucet, HousePlant, Pot, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Place the pot back in the sink so it can be filled before watering the plant."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retry turning on the faucet now that the next needed step is to get water into the pot."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Reposition or re-engage with the faucet to improve alignment before attempting to operate it again."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Set the pot onto the sink area to free manipulation and better position it for filling."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "Maintain or reassert control of the pot so it can be moved into the correct position for filling and pouring."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: water the plant\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink), (pick_up, Faucet)\n\nCandidate next actions:\nA) (put_in, Pot, Sink) \u2014 Place the pot back in the sink so it can be filled before watering the plant.\nB) (toggle_on, Faucet) \u2014 Retry turning on the faucet now that the next needed step is to get water into the pot.\nC) (pick_up, Faucet) \u2014 Reposition or re-engage with the faucet to improve alignment before attempting to operate it again.\nD) (put_on, Pot, Sink) \u2014 Set the pot onto the sink area to free manipulation and better position it for filling.\nE) (pick_up, Pot) \u2014 Maintain or reassert control of the pot so it can be moved into the correct position for filling and pouring.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "C",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "C",
+      "confidence_label": "C",
+      "option_probs": {
+        "A": 4.3213340754633136e-05,
+        "B": 4.3213340754633136e-05,
+        "C": 0.9524506350914239,
+        "D": 0.04741972488631216,
+        "E": 4.3213340754633136e-05
+      },
+      "confidence": 0.9524506350914239,
+      "uncertainty": 0.047549364908576086,
+      "entropy": 0.11946571962966403,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "E"
+      ],
+      "fallback_logprob": -10.04936129662271,
+      "response_text": "C"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: water the plant\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (pour, pot, house plant)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink), (pick_up, Faucet), (pick_up, Faucet)\nAvailable actions: (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, HousePlant), (put_in, HousePlant), (put_on, HousePlant), (toggle_on, HousePlant), (toggle_off, HousePlant), (open_obj, HousePlant), (close_obj, HousePlant), (slice_obj, HousePlant), (crack_obj, HousePlant), (pour, HousePlant), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: Faucet, HousePlant, Pot, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Ensure the pot is positioned in the sink before trying the faucet again, since it is currently in the robot gripper."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retry turning on the faucet now that the likely failure source was alignment; this is the needed step to fill the pot."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Reposition or establish interaction with the faucet handle to improve alignment before toggling it on."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Place the pot onto the sink area as an alternative stable placement to free manipulation for operating the faucet."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "Maintain or re-establish control of the pot so it can be correctly placed for filling if its current placement is uncertain."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: water the plant\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink), (pick_up, Faucet), (pick_up, Faucet)\n\nCandidate next actions:\nA) (put_in, Pot, Sink) \u2014 Ensure the pot is positioned in the sink before trying the faucet again, since it is currently in the robot gripper.\nB) (toggle_on, Faucet) \u2014 Retry turning on the faucet now that the likely failure source was alignment; this is the needed step to fill the pot.\nC) (pick_up, Faucet) \u2014 Reposition or establish interaction with the faucet handle to improve alignment before toggling it on.\nD) (put_on, Pot, Sink) \u2014 Place the pot onto the sink area as an alternative stable placement to free manipulation for operating the faucet.\nE) (pick_up, Pot) \u2014 Maintain or re-establish control of the pot so it can be correctly placed for filling if its current placement is uncertain.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "C",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "C",
+      "confidence_label": "C",
+      "option_probs": {
+        "A": 0.022973842335927537,
+        "B": 5.117461386120825e-05,
+        "C": 0.9768726338224888,
+        "D": 5.117461386120825e-05,
+        "E": 5.117461386120825e-05
+      },
+      "confidence": 0.9768726338224888,
+      "uncertainty": 0.02312736617751121,
+      "entropy": 0.06900805066085765,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -9.88026697190297,
+      "response_text": "C"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: water the plant\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (pour, pot, house plant)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink), (pick_up, Faucet), (pick_up, Faucet), (pick_up, Faucet)\nAvailable actions: (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, HousePlant), (put_in, HousePlant), (put_on, HousePlant), (toggle_on, HousePlant), (toggle_off, HousePlant), (open_obj, HousePlant), (close_obj, HousePlant), (slice_obj, HousePlant), (crack_obj, HousePlant), (pour, HousePlant), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: Faucet, HousePlant, Pot, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Place the pot into the sink so it can be positioned under the faucet before trying to operate the faucet again."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retry turning on the faucet now that correcting alignment/position near the sink may allow the action to succeed."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Interact with the faucet directly to improve positioning/alignment after the previous faucet operation failed."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "If the faucet requires an open state before water can flow, opening it may be an effective correction step."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Set the pot on the sink area as an alternative placement to better align it and the robot for operating the faucet."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: water the plant\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink), (pick_up, Faucet), (pick_up, Faucet), (pick_up, Faucet)\n\nCandidate next actions:\nA) (put_in, Pot, Sink) \u2014 Place the pot into the sink so it can be positioned under the faucet before trying to operate the faucet again.\nB) (toggle_on, Faucet) \u2014 Retry turning on the faucet now that correcting alignment/position near the sink may allow the action to succeed.\nC) (pick_up, Faucet) \u2014 Interact with the faucet directly to improve positioning/alignment after the previous faucet operation failed.\nD) (open_obj, Faucet) \u2014 If the faucet requires an open state before water can flow, opening it may be an effective correction step.\nE) (put_on, Pot, Sink) \u2014 Set the pot on the sink area as an alternative placement to better align it and the robot for operating the faucet.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.975077815889806,
+        "B": 0.022931632263928897,
+        "C": 0.000663517282088355,
+        "D": 0.000663517282088355,
+        "E": 0.000663517282088355
+      },
+      "confidence": 0.975077815889806,
+      "uncertainty": 0.02492218411019398,
+      "entropy": 0.07813172078028778,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -7.317955657676131,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: water the plant\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (pour, pot, house plant)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink), (pick_up, Faucet), (pick_up, Faucet), (pick_up, Faucet), (put_in, Pot, Sink)\nAvailable actions: (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, HousePlant), (put_in, HousePlant), (put_on, HousePlant), (toggle_on, HousePlant), (toggle_off, HousePlant), (open_obj, HousePlant), (close_obj, HousePlant), (slice_obj, HousePlant), (crack_obj, HousePlant), (pour, HousePlant), (pick_up, Pot), (put_in, Pot), (put_on, Pot), (toggle_on, Pot), (toggle_off, Pot), (open_obj, Pot), (close_obj, Pot), (slice_obj, Pot), (crack_obj, Pot), (pour, Pot), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: Faucet, HousePlant, Pot, Sink\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "The pot is in the gripper and needs to be stably placed in the sink before trying the faucet again."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Retry turning on the faucet, since this is the failed step blocking progress toward filling the pot."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "Reposition or re-engage with the faucet handle to improve alignment before toggling it on."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Faucet",
+          "obj2": null,
+          "rationale": "If the faucet requires an open interaction before water can flow, this could correct the failure."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pot",
+          "obj2": "Sink",
+          "rationale": "Place the pot on the sink area as an alternative stable placement that may allow better access to the faucet controls."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: water the plant\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet turned off, so the action failed. The likely cause is that the robot was not properly positioned/aligned to reach or operate the faucet handle after placing the pot in the sink at 00:25.\nCurrent state: Visual observation: house plant (empty), pot (empty and clean), sink. house plant is on top of third countertop. pot is inside robot gripper.\nSuccess state: the house plant is filled with water.\nActions completed so far: (put_in, Pot, Sink), (pick_up, Faucet), (pick_up, Faucet), (pick_up, Faucet), (put_in, Pot, Sink)\n\nCandidate next actions:\nA) (put_in, Pot, Sink) \u2014 The pot is in the gripper and needs to be stably placed in the sink before trying the faucet again.\nB) (toggle_on, Faucet) \u2014 Retry turning on the faucet, since this is the failed step blocking progress toward filling the pot.\nC) (pick_up, Faucet) \u2014 Reposition or re-engage with the faucet handle to improve alignment before toggling it on.\nD) (open_obj, Faucet) \u2014 If the faucet requires an open interaction before water can flow, this could correct the failure.\nE) (put_on, Pot, Sink) \u2014 Place the pot on the sink area as an alternative stable placement that may allow better access to the faucet controls.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "C",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "C",
+      "confidence_label": "C",
+      "option_probs": {
+        "A": 0.0003792121051932052,
+        "B": 0.0003792121051932052,
+        "C": 0.9984831515792271,
+        "D": 0.0003792121051932052,
+        "E": 0.0003792121051932052
+      },
+      "confidence": 0.9984831515792271,
+      "uncertainty": 0.0015168484207729316,
+      "entropy": 0.008365990149726178,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -7.877414865115073,
+      "response_text": "C"
+    }
+  }
+]

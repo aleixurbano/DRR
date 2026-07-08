@@ -1,0 +1,15 @@
+# Extra pip requirements for the real-world GPU pipeline (on top of environment.yml /
+# `pip install -e ".[real-world]"`).
+#
+# The exact pins below match the vendored AudioCLIP code (third_party/audioclip),
+# which predates current librosa/ignite APIs - do not bump them without testing
+# the audio path. visdom and pytorch-ignite are only needed if you retrain
+# AudioCLIP with its bundled ignite_trainer.
+zarr
+imagecodecs
+opencv-python
+scikit-image
+timm
+librosa==0.7.2
+pytorch-ignite==0.3.0
+visdom==0.1.8.9

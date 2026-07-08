@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When can we trust an LLM's failure reasoning? | DRR</title>
+<meta name="description" content="Accuracy transfers, calibration does not. DRR (Detect, Reason, Re-plan) studies when an LLM's confidence in robot failure reasoning can be trusted, and turns the answer into an uncertainty-gated recovery loop. Built on REFLECT.">
+<meta property="og:title" content="When can we trust an LLM's failure reasoning?">
+<meta property="og:description" content="Accuracy transfers across test distributions, calibration does not: a study of trusting LLM confidence in robot failure reasoning, and an uncertainty-gated recovery loop built on it.">
+<meta property="og:image" content="assets/fig/calibration_std_vs_target.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/lectoraat-logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>When can we trust an LLM's failure reasoning? An investigation on how Conformal Prediction can improve reliability in robotics</h1>
+    <p class="subtitle">DRR: Detect, Reason, Re-plan</p>
+    <p class="tagline">
+      Foundation models are increasingly capable of interacting with the physical world. 
+      However, to deploy them in homes, factories, and other human environments, accuracy 
+      alone is insufficient. We also need to know when they are likely to be wrong. 
+      This allows us to handle the safe cases autonomously and escalate when it matters.
+    </p>
+    <nav class="cta">
+      <a class="btn primary" href="https://github.com/aleixurbano/DRR">
+        <svg class="gh-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+          <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+        </svg>
+        Code
+      </a>
+      <a class="btn" href="https://github.com/aleixurbano/DRR#key-findings">Findings</a>
+      <a class="btn" href="https://github.com/aleixurbano/DRR/blob/main/outputs/analysis/llm_calibration_target_distribution/EXPERIMENT_16_REPORT.md">Report</a>
+    </nav>
+    <p class="authors">
+      <span>Aleix Urbano<sup>*</sup></span>
+      <span>Iman Mossavat<sup>*</sup></span>
+    </p>
+    <img class="hero-logo" src="assets/htes_logo_long.png" alt="High Tech Embedded Software">
+    <img class="hero-logo" src="assets/fontys_logo.png" alt="Fontys University of Applied Sciences">
+    <p class="eqcontrib"><sup>*</sup> Equal contribution.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- MEDIA -->
+  <div class="media-grid">
+    <figure>
+      <video autoplay loop muted playsinline preload="auto">
+        <source src="assets/media/recovery.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
+      <figcaption>Recovery of a failed episode.</figcaption>
+    </figure>
+    <figure class="trace-panel">
+      <div class="trace-cols">
+        <div class="trace-summary">
+          <p><strong>Original task:</strong> Boil Water</p>
+          <p><strong>Original failure reason:</strong> The robot put the pot in sink after
+            the faucet was turned off, as a result, the pot was not filled with water.</p>
+          <p class="trace-detected"><strong>Detected failure reason:</strong> The plan turned
+            the faucet on and off before placing the pot in the sink, so the pot was never
+            actually filled with water.</p>
+        </div>
+        <div class="trace-log">
+          <p><strong>Replan step 0:</strong><br>
+            <span class="t-propose">proposing candidates...</span><br>
+            <span class="t-select">Selecting from candidates...</span><br>
+            <span class="t-exec">Executing: (pick_up, Pot)</span></p>
+          <p><strong>Replan step 1:</strong><br>
+            <span class="t-propose">proposing candidates...</span><br>
+            <span class="t-select">Selecting from candidates...</span><br>
+            <span class="t-exec">Executing: (put_in, Pot, Sink)</span></p>
+          <p><strong>Replan step 2:</strong><br>
+            <span class="t-propose">proposing candidates...</span><br>
+            <span class="t-select">Selecting from candidates...</span><br>
+            <span class="t-exec">Executing: (toggle_on, Faucet)</span></p>
+          <p><strong>Replan step 3:</strong><br>
+            <span class="t-propose">proposing candidates...</span><br>
+            <span class="t-select">Selecting from candidates...</span><br>
+            <span class="t-exec">Executing: (toggle_off, Faucet)</span></p>
+          <p><strong>Replan step 4:</strong><br>
+            <span class="t-propose">proposing candidates...</span><br>
+            <span class="t-select">Selecting from candidates...</span><br>
+            <span class="t-exec">Executing: (pick_up, Pot)</span></p>
+          <p><strong>Replan step 5:</strong><br>
+            <span class="t-propose">proposing candidates...</span><br>
+            <span class="t-select">Selecting from candidates...</span><br>
+            <span class="t-exec">Executing: (put_on, Pot, StoveBurner-4)</span></p>
+          <p><strong>Replan step 6:</strong><br>
+            <span class="t-propose">proposing candidates...</span><br>
+            <span class="t-select">Selecting from candidates...</span><br>
+            <span class="t-success">Success: True</span></p>
+        </div>
+      </div>
+      <figcaption>The recovery trace for the episode.</figcaption>
+    </figure>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section id="overview">
+    <h2>Accuracy is not enough</h2>
+    <p>
+      Recent advances in LLMs, VLMs, and more recently VLAs have significantly expanded the capabilities of foundation models in physical environments. However, to deploy these systems in homes, factories, and other human environments, we must establish when their outputs can be trusted. Accuracy alone is insufficient. Knowing when a model is likely to be uncertain or wrong is critical for handling failure cases safely and escalating issues when necessary. Reliable deployment therefore requires more than high accuracy. A model that is consistently overconfident when incorrect provides misleading uncertainty estimates, while a model that is consistently underconfident when correct cannot be relied upon to make autonomous decisions. Safe deployment therefore requires models that produce calibrated uncertainty estimates alongside accurate predictions.
+    </p>
+    <p>
+      Our experiments show that strong performance on large-scale general-domain datasets does not guarantee equivalent behaviour under downstream distributions. Foundation models exhibit different calibration behaviour across environments. In our experiments, accuracy transferred from a general benchmark to our failure-reasoning task largely unchanged, whereas calibration did not. Models should therefore always be evaluated on the target distribution rather than relying solely on standard benchmarks.
+    </p>
+  </section>
+
+  <!-- EXPERIMENT 16 -->
+  <section id="experiment">
+    <h2>Note on experiment methodology</h2>
+    <p>
+      The experiments compare LLM behaviour across two datasets using identical evaluation conditions and metrics. The reference benchmark is MMLU-Pro, a general-knowledge benchmark. The target dataset consists of 821 multiple-choice questions generated from REFLECT's RoboFail ground-truth failure annotations. These questions cover outcome verification, failure localization, failure attribution, and missing-step identification, and are designed such that the execution trace is required to answer them.
+    </p>
+
+    <h3>How we read the model's confidence</h3>
+    <p>
+We derive confidence as 1 − normalized entropy of the answer-token log-probabilities, following the methodology introduced by KnowNo and KnowLoop. A review of the literature showed that self-stated confidence is generally unreliable and highly context dependent, whereas normalized entropy derived from log-probabilities provides a comparable uncertainty measure regardless of the model, context, or option set size. Although this is not the only approach for estimating uncertainty from foundation models, it provides a simple and model-agnostic confidence signal. Future work may explore or combine alternative methods such as API Is Enough and To Believe or Not to Believe Your LLM.
+    </p>
+
+    <h3>How we verified the results</h3>
+    <p>
+      The results were verified using multiple complementary metrics. Our primary metric was Expected Calibration Error (ECE), which measures the discrepancy between predicted confidence and empirical accuracy. Because ECE is known to be sensitive to binning artifacts, we also computed the Brier score and Negative Log-Likelihood (NLL) to verify that the observed trends were not artifacts of the chosen binning strategy. Population weights were applied so that conclusions could be generalized to the full dataset even when evaluations were performed on subsamples. To ensure that the question-generation pipeline did not introduce degenerate questions, we manually annotated a representative subsample and measured the degenerate rate, defined as the proportion of questions that were either unanswerable or admitted multiple correct answers. The analysis confirmed a low degenerate rate (2%), indicating that the generated benchmark is of sufficient quality for the reported evaluation.
+    </p>
+  </section>
+
+  <!-- FINDINGS -->
+  <section id="findings">
+    <h2>Key findings</h2>
+    <p>
+      Calibration on MMLU-Pro (standard) versus the failure-reasoning target set.
+      Confidence is 1 - normalized entropy of the answer-token logprobs. ECE is expected
+      calibration error, Brier and NLL are strictly proper scoring rules, and for all
+      three lower is better.
+    </p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Model</th><th>Std acc</th><th>Std ECE</th><th>Std Brier</th><th>Std NLL</th><th>Tgt acc</th><th>Tgt ECE</th><th>Tgt Brier</th><th>Tgt NLL</th></tr></thead>
+        <tbody>
+          <tr><td>gpt-5.4</td><td>0.688</td><td>0.165</td><td>0.182</td><td>0.929</td><td>0.665</td><td class="bad">0.281</td><td class="bad">0.281</td><td class="bad">1.968</td></tr>
+          <tr><td>qwen3.5:27b</td><td>0.644</td><td>0.062</td><td>0.157</td><td>0.482</td><td>0.670</td><td class="good">0.053</td><td>0.178</td><td>0.529</td></tr>
+          <tr><td>qwen3.5:9b</td><td>0.523</td><td>0.088</td><td>0.188</td><td>0.569</td><td>0.446</td><td>0.051</td><td>0.214</td><td>0.616</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="bullets">
+      <li>gpt-5.4 beats qwen3.5:9b on MMLU-Pro under the Brier score (0.182 vs 0.188) but loses to it on failure reasoning (0.281 vs 0.214). A standard benchmark can misrank which model's confidence is safe to act on. ECE and NLL keep the same ordering on both sets.</li>
+      <li>On the target set, gpt-5.4's predicted confidence saturates around 0.94 and is largely independent of correctness, so a confidence threshold would reject very few predictions.</li>
+      <li>Miscalibration concentrates on the hard diagnostic tasks (localization 0.322, attribution 0.366) and grows with difficulty. Outcome verification is easy and well calibrated (0.845, ECE 0.041).</li>
+    </ul>
+
+    <div class="plots">
+      <figure>
+        <img src="assets/fig/calibration_std_vs_target.png" alt="Three-panel figure. For each of gpt-5.4, qwen3.5:27b, and qwen3.5:9b: a reliability curve on the MMLU-Pro standard benchmark and on the failure-reasoning target set, with the confidence distribution below. Both Qwen models stay near the diagonal on both sets. gpt-5.4's target curve is flat around 0.3 accuracy at mid-to-high confidence, and 78% of its answers sit above 0.95 confidence, so its ECE grows from 0.165 to 0.281.">
+        <figcaption>Where the problem is: both Qwen models remain calibrated when moving from the
+          standard benchmark (gray) to the failure-reasoning target set (blue), staying near the
+          diagonal. gpt-5.4 does not: its confidence piles up above 0.95 (bottom-left histogram)
+          while accuracy stays at 0.67, so the same confidence threshold that is safe for Qwen
+          would wave through most of GPT's mistakes.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- RECOVERY LOOP -->
+  <section id="loop">
+    <h2>The DRR recovery loop</h2>
+    <p>
+      DRR extends REFLECT by replacing one-shot recovery with a closed-loop recovery procedure guided by model uncertainty.
+    </p>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="k">Detect</span>
+        Gather and structure the available observations so that 
+        a foundation model can determine whether an execution error occurred.
+      </div>
+      <div class="pillar">
+        <span class="k">Reason</span>
+        From the perception history, infer the underlying cause behind the failure.
+      </div>
+      <div class="pillar">
+        <span class="k">Re-plan</span>
+        Propose a valid recovery plan given the robot, environment, and affordances,
+        iteratively and uncertainty-aware.
+      </div>
+    </div>
+    <br>
+    <p>
+      A chain-of-thought model proposes candidate next actions, including an explicit
+      option to terminate, and a second, non-CoT model makes the final choice, so the
+      normalized entropy of its answer tokens is the same confidence signal we measured
+      above. Conformal prediction then turns that signal into a guarantee. A single-action
+      prediction set is executed autonomously, while a larger set halts and escalates
+      directly to a human.
+    </p>
+
+    <figure class="diagram">
+      <svg viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DRR pipeline: Detect and Reason feed a propose, select, conformal-gate cycle; when confident the gate executes and the robot re-observes, otherwise it escalates to a human.">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0,0 L9,5 L0,10 Z" fill="#666"/>
+          </marker>
+          <style>
+            .box{fill:#fff;stroke:#9a9a9e;stroke-width:1.4}
+            .lbl{font:600 15px -apple-system,Segoe UI,Roboto,sans-serif;fill:#1a1a1a}
+            .sub{font:12px -apple-system,Segoe UI,Roboto,sans-serif;fill:#707074}
+            .flow{stroke:#666;stroke-width:1.6;fill:none;marker-end:url(#arrow)}
+            .stage{font:700 12px -apple-system,Segoe UI,sans-serif;fill:#9a9a9e;letter-spacing:.1em}
+          </style>
+        </defs>
+
+        <!-- stage labels -->
+        <text x="155" y="46" text-anchor="middle" class="stage">DETECT</text>
+        <text x="430" y="46" text-anchor="middle" class="stage">REASON</text>
+        <text x="395" y="184" text-anchor="middle" class="stage">RE-PLAN</text>
+
+        <!-- closed-loop label along the top -->
+        <text x="368" y="20" text-anchor="middle" class="sub">confident: execute action, then re-observe</text>
+
+        <!-- top row: detect, reason -->
+        <rect class="box" x="60" y="56" width="190" height="62" rx="8"/>
+        <text x="155" y="83" text-anchor="middle" class="lbl">Perception</text>
+        <text x="155" y="101" text-anchor="middle" class="sub">scene graph, audio, state</text>
+
+        <rect class="box" x="330" y="56" width="200" height="62" rx="8"/>
+        <text x="430" y="83" text-anchor="middle" class="lbl">Failure reasoning</text>
+        <text x="430" y="101" text-anchor="middle" class="sub">detect, localize, attribute</text>
+
+        <polyline class="flow" points="250,87 322,87"/>
+
+        <!-- reason feeds the loop (orthogonal) -->
+        <polyline class="flow" points="430,118 430,152 175,152 175,190"/>
+
+        <!-- recovery loop row -->
+        <rect class="box" x="90" y="196" width="170" height="58" rx="8"/>
+        <text x="175" y="221" text-anchor="middle" class="lbl">Propose</text>
+        <text x="175" y="240" text-anchor="middle" class="sub">CoT candidates</text>
+
+        <rect class="box" x="310" y="196" width="170" height="58" rx="8"/>
+        <text x="395" y="221" text-anchor="middle" class="lbl">Select</text>
+        <text x="395" y="240" text-anchor="middle" class="sub">normalized entropy (logprobs)</text>
+
+        <rect class="box" x="530" y="196" width="190" height="58" rx="8"/>
+        <text x="625" y="221" text-anchor="middle" class="lbl">Conformal gate</text>
+        <text x="625" y="240" text-anchor="middle" class="sub">act, else escalate</text>
+
+        <polyline class="flow" points="260,225 302,225"/>
+        <polyline class="flow" points="480,225 522,225"/>
+
+        <!-- confident: closed loop back to perception (execute, re-observe) -->
+        <polyline class="flow" points="625,196 625,30 110,30 110,52"/>
+
+        <!-- not confident: escalate directly to a human -->
+        <polyline class="flow" points="625,254 625,286"/>
+        <text x="700" y="274" class="sub">not confident</text>
+        <rect class="box" x="530" y="288" width="190" height="40" rx="8"/>
+        <text x="625" y="313" text-anchor="middle" class="lbl">Escalate to human</text>
+      </svg>
+      <figcaption>The DRR recovery loop. Detection and reasoning feed a propose, select, gate cycle. The selector scores candidates by the normalized entropy of the answer-token log-probabilities, and the conformal gate executes autonomously when confident (then the robot re-observes) or escalates directly to a human otherwise.</figcaption>
+    </figure>
+  </section>
+
+  <!-- REPRODUCTION -->
+  <section id="reproduction">
+    <h2>Reproducing REFLECT</h2>
+    <p>Over all 100 simulated failure episodes (percentages; REFLECT figures from the paper's Table 1).</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Metric</th><th>DRR exec</th><th>DRR plan</th><th>DRR all</th><th>REFLECT (exec/plan)</th></tr></thead>
+        <tbody>
+          <tr><td>Explanation</td><td>92.4</td><td>85.3</td><td><strong>90.0</strong></td><td>88.4 / 84.2</td></tr>
+          <tr><td>Localization</td><td>75.8</td><td>88.2</td><td>80.0</td><td>96.0 / 80.7</td></tr>
+          <tr><td>Correction plan</td><td>45.5</td><td>52.9</td><td>48.0</td><td>79.1 / 80.7</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">
+      Explanation performance matches or exceeds the results reported in the original paper, while localization remains close. Correction planning remains the largest performance gap, which is consistent with our calibration results showing that diagnostic reasoning and recovery planning are the most challenging components of the task. Human-scored explanation accuracy improved from 57.6% in the initial reproduction to 90.0% in the final pipeline.
+    </p>
+  </section>
+
+  <!-- SCOPE -->
+  <section id="scope">
+    <h2>Scope and future work</h2>
+    <p>
+      This project explores how reliability-aware robotic systems built on foundation models could be structured. We conducted an in-depth investigation of existing approaches, analysing both their strengths and limitations with the objective of reporting results as faithfully as possible rather than optimizing for benchmark performance. The work is intended as an analysis of the current state of the field and an exploration of promising directions for future research, with safe autonomous execution serving as the primary focus of the proposed framework.
+    </p>
+    <p>
+      Several directions remain outside the scope of this work and represent opportunities for future research. These include alternative uncertainty estimation methods, applying the proposed approach to emerging Vision-Language-Action (VLA) models, understanding how uncertainty propagates from perception to reasoning, and developing adaptive recovery behaviours.
+    </p>
+  </section>
+
+  <!-- GET STARTED -->
+  <section id="start">
+    <h2>Get started</h2>
+    <pre><code>git submodule update --init --recursive
+conda env create -f environment/environment.yml
+conda activate reflect-py314
+reflect-check          # verify paths, keys, dependencies
+
+reflect-sim --tasks boilWater --episodes boilWater-1 \
+            --backend local --model qwen3.5:9b</code></pre>
+    <p>Full installation, CLI reference, and data policy are in the
+      <a href="https://github.com/aleixurbano/DRR#readme">README</a>.</p>
+  </section>
+
+  <!-- CITATION -->
+  <section id="cite">
+    <h2>Citation</h2>
+    <p>If you build on this work, please cite:</p>
+    <pre><code>@misc{urbano2026drr,
+  title  = {DRR: Detect, Reason, Re-plan --- When can we trust an LLM's failure reasoning?},
+  author = {Urbano, Aleix and Mossavat, Iman},
+  year   = {2026},
+  url    = {https://github.com/aleixurbano/DRR}
+}</code></pre>
+    <p class="note">DRR builds on
+      <a href="https://arxiv.org/abs/2306.15724">REFLECT (Liu, Bahety, and Song, 2023)</a>;
+      please also cite the original framework where appropriate.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <img class="logo" src="assets/htes_logo_long.png" alt="High Tech Embedded Software">
+    <div>
+      <p>Aleix Urbano and Iman Mossavat (equal contribution)</p>
+      <p>Fontys Lectoraat, Embodied AI research internship</p>
+      <p>Released under the <a href="https://github.com/aleixurbano/DRR/blob/main/LICENSE">MIT License</a>.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,790 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: pot (empty and clean). pot is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999855010511992,
+        "B": 0.00014498948800811806
+      },
+      "confidence": 0.999855010511992,
+      "uncertainty": 0.00014498948800800715,
+      "entropy": 0.002058032194672294,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -8.838849314667435,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put pot inside sink. Here are the robot observations after execution:\nVisual observation: faucet (turned off), sink, pot (empty and clean). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999730003634986e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.1304602754818765e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on faucet. Here are the robot observations after execution:\nVisual observation: faucet (turned off), sink, pot (empty and clean). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 9.99999999999001e-13,
+        "B": 0.9999999999989999
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.130596043592748e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "B"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle off faucet. Here are the robot observations after execution:\nVisual observation: faucet (turned off), sink, pot (empty and clean). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999996000008,
+        "B": 3.999991999958934e-06
+      },
+      "confidence": 0.999996000008,
+      "uncertainty": 3.9999919999589295e-06,
+      "entropy": 7.749689944602653e-05,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -12.42921819685665,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up pot. Here are the robot observations after execution:\nVisual observation: faucet (turned off), sink, pot (empty and clean). pot is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 9.999960000070002e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.1305806754454886e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put pot on fourth stove burner. Here are the robot observations after execution:\nVisual observation: third stove burner (turned off), first stove burner (turned off), second stove burner (turned off), pot (empty and clean), fourth stove burner (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999620007219909,
+        "B": 3.799927800918199e-05
+      },
+      "confidence": 0.9999620007219909,
+      "uncertainty": 3.799927800907099e-05,
+      "entropy": 0.0006127891286137383,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.177943398176755,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on fourth stove burner. Here are the robot observations after execution:\nVisual observation: third stove burner (turned off), first stove burner (turned off), second stove burner (turned off), fourth stove burner (turned on), pot (empty and clean). pot is on top of fourth stove burner. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999770002635003e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.1304756432889446e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to boilWater. At 00:26, a failure was identified.\n\n[Robot actions and observations before 00:26]\n00:01. Action: Move to pot. Visual observation: nothing is inside robot gripper.\n00:11. Action: Move to pot. Visual observation: faucet (turned off). nothing is inside robot gripper.\n00:15. Action: Move to pot. Visual observation: pot (empty and clean). pot is on the left of potato. pot is on top of third countertop. nothing is inside robot gripper.\n00:18. Action: Pick up pot. Visual observation: pot (empty and clean). pot is inside robot gripper.\n00:21. Action: Move to sink. Visual observation: faucet (turned off), sink, pot (empty and clean). pot is inside robot gripper.\n00:22. Action: Move to sink. Visual observation: faucet (turned off), sink, pot (empty and clean). pot is inside robot gripper.\n00:25. Action: Put pot inside sink. Visual observation: faucet (turned off), sink, pot (empty and clean). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\n[Observation at the end of 00:26]\nAction: Toggle on faucet. Visual observation: faucet (turned off), sink, pot (empty and clean). pot is inside sink. pot is on the right of soap bottle. nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:26] or [Observation at the end of 00:26], briefly explain what happened at 00:26 and what caused the failure.\nA:"
+    },
+    "response": "At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "00:26, 00:25"
+  },
+  {
+    "call": "correction",
+    "prompt": {
+      "system": "Provide a plan with the available actions for the robot to recover from the failure and finish the task.\nAvailable actions:\n- (pick_up, Plate)\n- (put_in, CreditCard, Plate)\n- (put_in, Tomato, Plate)\n- (put_in, Pot, Plate)\n- (put_in, Apple, Plate)\n- (put_in, Cup, Plate)\n- (put_in, SoapBottle, Plate)\n- (put_in, PaperTowelRoll, Plate)\n- (put_in, WineBottle, Plate)\n- (put_in, Bread, Plate)\n- (put_in, Bowl, Plate)\n- (put_in, Spatula, Plate)\n- (put_in, Potato, Plate)\n- (put_in, Spoon, Plate)\n- (put_in, Statue, Plate)\n- (put_in, ButterKnife, Plate)\n- (put_in, PepperShaker, Plate)\n- (put_in, Bottle, Plate)\n- (put_in, Egg, Plate)\n- (put_in, Knife, Plate)\n- (put_in, DishSponge, Plate)\n- (put_in, Book, Plate)\n- (put_in, Pan, Plate)\n- (put_in, Kettle, Plate)\n- (put_in, Lettuce, Plate)\n- (put_in, Fork, Plate)\n- (put_in, SaltShaker, Plate)\n- (put_in, Vase, Plate)\n- (put_in, Mug, Plate)\n- (pick_up, CreditCard)\n- (pick_up, Tomato)\n- (slice_obj, Tomato)\n- (pick_up, Pot)\n- (put_in, Plate, Pot)\n- (put_in, CreditCard, Pot)\n- (put_in, Tomato, Pot)\n- (put_in, Apple, Pot)\n- (put_in, Cup, Pot)\n- (put_in, SoapBottle, Pot)\n- (put_in, PaperTowelRoll, Pot)\n- (put_in, WineBottle, Pot)\n- (put_in, Bread, Pot)\n- (put_in, Bowl, Pot)\n- (put_in, Spatula, Pot)\n- (put_in, Potato, Pot)\n- (put_in, Spoon, Pot)\n- (put_in, Statue, Pot)\n- (put_in, ButterKnife, Pot)\n- (put_in, PepperShaker, Pot)\n- (put_in, Bottle, Pot)\n- (put_in, Egg, Pot)\n- (put_in, Knife, Pot)\n- (put_in, DishSponge, Pot)\n- (put_in, Book, Pot)\n- (put_in, Pan, Pot)\n- (put_in, Kettle, Pot)\n- (put_in, Lettuce, Pot)\n- (put_in, Fork, Pot)\n- (put_in, SaltShaker, Pot)\n- (put_in, Vase, Pot)\n- (put_in, Mug, Pot)\n- (pour, Cup, Pot)\n- (pour, WineBottle, Pot)\n- (pour, Bowl, Pot)\n- (pour, HousePlant, Pot)\n- (pour, Bottle, Pot)\n- (pour, Kettle, Pot)\n- (pour, Mug, Pot)\n- (pick_up, Apple)\n- (slice_obj, Apple)\n- (pick_up, Cup)\n- (put_in, Plate, Cup)\n- (put_in, CreditCard, Cup)\n- (put_in, Tomato, Cup)\n- (put_in, Pot, Cup)\n- (put_in, Apple, Cup)\n- (put_in, SoapBottle, Cup)\n- (put_in, PaperTowelRoll, Cup)\n- (put_in, WineBottle, Cup)\n- (put_in, Bread, Cup)\n- (put_in, Bowl, Cup)\n- (put_in, Spatula, Cup)\n- (put_in, Potato, Cup)\n- (put_in, Spoon, Cup)\n- (put_in, Statue, Cup)\n- (put_in, ButterKnife, Cup)\n- (put_in, PepperShaker, Cup)\n- (put_in, Bottle, Cup)\n- (put_in, Egg, Cup)\n- (put_in, Knife, Cup)\n- (put_in, DishSponge, Cup)\n- (put_in, Book, Cup)\n- (put_in, Pan, Cup)\n- (put_in, Kettle, Cup)\n- (put_in, Lettuce, Cup)\n- (put_in, Fork, Cup)\n- (put_in, SaltShaker, Cup)\n- (put_in, Vase, Cup)\n- (put_in, Mug, Cup)\n- (pour, Pot, Cup)\n- (pour, WineBottle, Cup)\n- (pour, Bowl, Cup)\n- (pour, HousePlant, Cup)\n- (pour, Bottle, Cup)\n- (pour, Kettle, Cup)\n- (pour, Mug, Cup)\n- (pick_up, SoapBottle)\n- (put_in, Plate, Fridge)\n- (put_in, CreditCard, Fridge)\n- (put_in, Tomato, Fridge)\n- (put_in, Pot, Fridge)\n- (put_in, Apple, Fridge)\n- (put_in, Cup, Fridge)\n- (put_in, SoapBottle, Fridge)\n- (put_in, PaperTowelRoll, Fridge)\n- (put_in, WineBottle, Fridge)\n- (put_in, Bread, Fridge)\n- (put_in, Bowl, Fridge)\n- (put_in, Spatula, Fridge)\n- (put_in, Potato, Fridge)\n- (put_in, Spoon, Fridge)\n- (put_in, Statue, Fridge)\n- (put_in, ButterKnife, Fridge)\n- (put_in, PepperShaker, Fridge)\n- (put_in, Bottle, Fridge)\n- (put_in, Egg, Fridge)\n- (put_in, Knife, Fridge)\n- (put_in, DishSponge, Fridge)\n- (put_in, Book, Fridge)\n- (put_in, Pan, Fridge)\n- (put_in, Kettle, Fridge)\n- (put_in, Lettuce, Fridge)\n- (put_in, Fork, Fridge)\n- (put_in, SaltShaker, Fridge)\n- (put_in, Vase, Fridge)\n- (put_in, Mug, Fridge)\n- (open_obj, Fridge)\n- (close_obj, Fridge)\n- (pick_up, PaperTowelRoll)\n- (put_in, Plate, Drawer)\n- (put_in, CreditCard, Drawer)\n- (put_in, Tomato, Drawer)\n- (put_in, Pot, Drawer)\n- (put_in, Apple, Drawer)\n- (put_in, Cup, Drawer)\n- (put_in, SoapBottle, Drawer)\n- (put_in, PaperTowelRoll, Drawer)\n- (put_in, WineBottle, Drawer)\n- (put_in, Bread, Drawer)\n- (put_in, Bowl, Drawer)\n- (put_in, Spatula, Drawer)\n- (put_in, Potato, Drawer)\n- (put_in, Spoon, Drawer)\n- (put_in, Statue, Drawer)\n- (put_in, ButterKnife, Drawer)\n- (put_in, PepperShaker, Drawer)\n- (put_in, Bottle, Drawer)\n- (put_in, Egg, Drawer)\n- (put_in, Knife, Drawer)\n- (put_in, DishSponge, Drawer)\n- (put_in, Book, Drawer)\n- (put_in, Pan, Drawer)\n- (put_in, Kettle, Drawer)\n- (put_in, Lettuce, Drawer)\n- (put_in, Fork, Drawer)\n- (put_in, SaltShaker, Drawer)\n- (put_in, Vase, Drawer)\n- (put_in, Mug, Drawer)\n- (open_obj, Drawer)\n- (close_obj, Drawer)\n- (put_on, Plate, SinkBasin)\n- (put_on, CreditCard, SinkBasin)\n- (put_on, Tomato, SinkBasin)\n- (put_on, Pot, SinkBasin)\n- (put_on, Apple, SinkBasin)\n- (put_on, Cup, SinkBasin)\n- (put_on, SoapBottle, SinkBasin)\n- (put_on, PaperTowelRoll, SinkBasin)\n- (put_on, WineBottle, SinkBasin)\n- (put_on, Bread, SinkBasin)\n- (put_on, Bowl, SinkBasin)\n- (put_on, Spatula, SinkBasin)\n- (put_on, Potato, SinkBasin)\n- (put_on, Spoon, SinkBasin)\n- (put_on, Statue, SinkBasin)\n- (put_on, ButterKnife, SinkBasin)\n- (put_on, PepperShaker, SinkBasin)\n- (put_on, Bottle, SinkBasin)\n- (put_on, Egg, SinkBasin)\n- (put_on, Knife, SinkBasin)\n- (put_on, DishSponge, SinkBasin)\n- (put_on, Book, SinkBasin)\n- (put_on, Pan, SinkBasin)\n- (put_on, Kettle, SinkBasin)\n- (put_on, Lettuce, SinkBasin)\n- (put_on, Fork, SinkBasin)\n- (put_on, SaltShaker, SinkBasin)\n- (put_on, Vase, SinkBasin)\n- (put_on, Mug, SinkBasin)\n- (pick_up, WineBottle)\n- (pour, Pot, WineBottle)\n- (pour, Cup, WineBottle)\n- (pour, Bowl, WineBottle)\n- (pour, HousePlant, WineBottle)\n- (pour, Bottle, WineBottle)\n- (pour, Kettle, WineBottle)\n- (pour, Mug, WineBottle)\n- (put_in, Plate, GarbageCan)\n- (put_in, CreditCard, GarbageCan)\n- (put_in, Tomato, GarbageCan)\n- (put_in, Pot, GarbageCan)\n- (put_in, Apple, GarbageCan)\n- (put_in, Cup, GarbageCan)\n- (put_in, SoapBottle, GarbageCan)\n- (put_in, PaperTowelRoll, GarbageCan)\n- (put_in, WineBottle, GarbageCan)\n- (put_in, Bread, GarbageCan)\n- (put_in, Bowl, GarbageCan)\n- (put_in, Spatula, GarbageCan)\n- (put_in, Potato, GarbageCan)\n- (put_in, Spoon, GarbageCan)\n- (put_in, Statue, GarbageCan)\n- (put_in, ButterKnife, GarbageCan)\n- (put_in, PepperShaker, GarbageCan)\n- (put_in, Bottle, GarbageCan)\n- (put_in, Egg, GarbageCan)\n- (put_in, Knife, GarbageCan)\n- (put_in, DishSponge, GarbageCan)\n- (put_in, Book, GarbageCan)\n- (put_in, Pan, GarbageCan)\n- (put_in, Kettle, GarbageCan)\n- (put_in, Lettuce, GarbageCan)\n- (put_in, Fork, GarbageCan)\n- (put_in, SaltShaker, GarbageCan)\n- (put_in, Vase, GarbageCan)\n- (put_in, Mug, GarbageCan)\n- (pick_up, Bread)\n- (slice_obj, Bread)\n- (pick_up, Bowl)\n- (put_in, Plate, Bowl)\n- (put_in, CreditCard, Bowl)\n- (put_in, Tomato, Bowl)\n- (put_in, Pot, Bowl)\n- (put_in, Apple, Bowl)\n- (put_in, Cup, Bowl)\n- (put_in, SoapBottle, Bowl)\n- (put_in, PaperTowelRoll, Bowl)\n- (put_in, WineBottle, Bowl)\n- (put_in, Bread, Bowl)\n- (put_in, Spatula, Bowl)\n- (put_in, Potato, Bowl)\n- (put_in, Spoon, Bowl)\n- (put_in, Statue, Bowl)\n- (put_in, ButterKnife, Bowl)\n- (put_in, PepperShaker, Bowl)\n- (put_in, Bottle, Bowl)\n- (put_in, Egg, Bowl)\n- (put_in, Knife, Bowl)\n- (put_in, DishSponge, Bowl)\n- (put_in, Book, Bowl)\n- (put_in, Pan, Bowl)\n- (put_in, Kettle, Bowl)\n- (put_in, Lettuce, Bowl)\n- (put_in, Fork, Bowl)\n- (put_in, SaltShaker, Bowl)\n- (put_in, Vase, Bowl)\n- (put_in, Mug, Bowl)\n- (pour, Pot, Bowl)\n- (pour, Cup, Bowl)\n- (pour, WineBottle, Bowl)\n- (pour, HousePlant, Bowl)\n- (pour, Bottle, Bowl)\n- (pour, Kettle, Bowl)\n- (pour, Mug, Bowl)\n- (put_on, Plate, StoveBurner)\n- (put_on, CreditCard, StoveBurner)\n- (put_on, Tomato, StoveBurner)\n- (put_on, Pot, StoveBurner)\n- (put_on, Apple, StoveBurner)\n- (put_on, Cup, StoveBurner)\n- (put_on, SoapBottle, StoveBurner)\n- (put_on, PaperTowelRoll, StoveBurner)\n- (put_on, WineBottle, StoveBurner)\n- (put_on, Bread, StoveBurner)\n- (put_on, Bowl, StoveBurner)\n- (put_on, Spatula, StoveBurner)\n- (put_on, Potato, StoveBurner)\n- (put_on, Spoon, StoveBurner)\n- (put_on, Statue, StoveBurner)\n- (put_on, ButterKnife, StoveBurner)\n- (put_on, PepperShaker, StoveBurner)\n- (put_on, Bottle, StoveBurner)\n- (put_on, Egg, StoveBurner)\n- (put_on, Knife, StoveBurner)\n- (put_on, DishSponge, StoveBurner)\n- (put_on, Book, StoveBurner)\n- (put_on, Pan, StoveBurner)\n- (put_on, Kettle, StoveBurner)\n- (put_on, Lettuce, StoveBurner)\n- (put_on, Fork, StoveBurner)\n- (put_on, SaltShaker, StoveBurner)\n- (put_on, Vase, StoveBurner)\n- (put_on, Mug, StoveBurner)\n- (toggle_on, StoveBurner)\n- (toggle_off, StoveBurner)\n- (pick_up, Spatula)\n- (pick_up, Potato)\n- (slice_obj, Potato)\n- (pick_up, Spoon)\n- (put_in, Plate, Shelf)\n- (put_in, CreditCard, Shelf)\n- (put_in, Tomato, Shelf)\n- (put_in, Pot, Shelf)\n- (put_in, Apple, Shelf)\n- (put_in, Cup, Shelf)\n- (put_in, SoapBottle, Shelf)\n- (put_in, PaperTowelRoll, Shelf)\n- (put_in, WineBottle, Shelf)\n- (put_in, Bread, Shelf)\n- (put_in, Bowl, Shelf)\n- (put_in, Spatula, Shelf)\n- (put_in, Potato, Shelf)\n- (put_in, Spoon, Shelf)\n- (put_in, Statue, Shelf)\n- (put_in, ButterKnife, Shelf)\n- (put_in, PepperShaker, Shelf)\n- (put_in, Bottle, Shelf)\n- (put_in, Egg, Shelf)\n- (put_in, Knife, Shelf)\n- (put_in, DishSponge, Shelf)\n- (put_in, Book, Shelf)\n- (put_in, Pan, Shelf)\n- (put_in, Kettle, Shelf)\n- (put_in, Lettuce, Shelf)\n- (put_in, Fork, Shelf)\n- (put_in, SaltShaker, Shelf)\n- (put_in, Vase, Shelf)\n- (put_in, Mug, Shelf)\n- (pick_up, Statue)\n- (pick_up, ButterKnife)\n- (put_in, Plate, Microwave)\n- (put_in, CreditCard, Microwave)\n- (put_in, Tomato, Microwave)\n- (put_in, Pot, Microwave)\n- (put_in, Apple, Microwave)\n- (put_in, Cup, Microwave)\n- (put_in, SoapBottle, Microwave)\n- (put_in, PaperTowelRoll, Microwave)\n- (put_in, WineBottle, Microwave)\n- (put_in, Bread, Microwave)\n- (put_in, Bowl, Microwave)\n- (put_in, Spatula, Microwave)\n- (put_in, Potato, Microwave)\n- (put_in, Spoon, Microwave)\n- (put_in, Statue, Microwave)\n- (put_in, ButterKnife, Microwave)\n- (put_in, PepperShaker, Microwave)\n- (put_in, Bottle, Microwave)\n- (put_in, Egg, Microwave)\n- (put_in, Knife, Microwave)\n- (put_in, DishSponge, Microwave)\n- (put_in, Book, Microwave)\n- (put_in, Pan, Microwave)\n- (put_in, Kettle, Microwave)\n- (put_in, Lettuce, Microwave)\n- (put_in, Fork, Microwave)\n- (put_in, SaltShaker, Microwave)\n- (put_in, Vase, Microwave)\n- (put_in, Mug, Microwave)\n- (toggle_on, Microwave)\n- (toggle_off, Microwave)\n- (open_obj, Microwave)\n- (close_obj, Microwave)\n- (pick_up, PepperShaker)\n- (pour, Pot, HousePlant)\n- (pour, Cup, HousePlant)\n- (pour, WineBottle, HousePlant)\n- (pour, Bowl, HousePlant)\n- (pour, Bottle, HousePlant)\n- (pour, Kettle, HousePlant)\n- (pour, Mug, HousePlant)\n- (put_in, Plate, Sink)\n- (put_in, CreditCard, Sink)\n- (put_in, Tomato, Sink)\n- (put_in, Pot, Sink)\n- (put_in, Apple, Sink)\n- (put_in, Cup, Sink)\n- (put_in, SoapBottle, Sink)\n- (put_in, PaperTowelRoll, Sink)\n- (put_in, WineBottle, Sink)\n- (put_in, Bread, Sink)\n- (put_in, Bowl, Sink)\n- (put_in, Spatula, Sink)\n- (put_in, Potato, Sink)\n- (put_in, Spoon, Sink)\n- (put_in, Statue, Sink)\n- (put_in, ButterKnife, Sink)\n- (put_in, PepperShaker, Sink)\n- (put_in, Bottle, Sink)\n- (put_in, Egg, Sink)\n- (put_in, Knife, Sink)\n- (put_in, DishSponge, Sink)\n- (put_in, Book, Sink)\n- (put_in, Pan, Sink)\n- (put_in, Kettle, Sink)\n- (put_in, Lettuce, Sink)\n- (put_in, Fork, Sink)\n- (put_in, SaltShaker, Sink)\n- (put_in, Vase, Sink)\n- (put_in, Mug, Sink)\n- (pour, Pot, Sink)\n- (pour, Cup, Sink)\n- (pour, WineBottle, Sink)\n- (pour, Bowl, Sink)\n- (pour, HousePlant, Sink)\n- (pour, Bottle, Sink)\n- (pour, Kettle, Sink)\n- (pour, Mug, Sink)\n- (pick_up, Bottle)\n- (pour, Pot, Bottle)\n- (pour, Cup, Bottle)\n- (pour, WineBottle, Bottle)\n- (pour, Bowl, Bottle)\n- (pour, HousePlant, Bottle)\n- (pour, Kettle, Bottle)\n- (pour, Mug, Bottle)\n- (pick_up, Egg)\n- (crack_obj, Egg)\n- (pick_up, Knife)\n- (pick_up, DishSponge)\n- (put_in, Plate, Toaster)\n- (put_in, CreditCard, Toaster)\n- (put_in, Tomato, Toaster)\n- (put_in, Pot, Toaster)\n- (put_in, Apple, Toaster)\n- (put_in, Cup, Toaster)\n- (put_in, SoapBottle, Toaster)\n- (put_in, PaperTowelRoll, Toaster)\n- (put_in, WineBottle, Toaster)\n- (put_in, Bread, Toaster)\n- (put_in, Bowl, Toaster)\n- (put_in, Spatula, Toaster)\n- (put_in, Potato, Toaster)\n- (put_in, Spoon, Toaster)\n- (put_in, Statue, Toaster)\n- (put_in, ButterKnife, Toaster)\n- (put_in, PepperShaker, Toaster)\n- (put_in, Bottle, Toaster)\n- (put_in, Egg, Toaster)\n- (put_in, Knife, Toaster)\n- (put_in, DishSponge, Toaster)\n- (put_in, Book, Toaster)\n- (put_in, Pan, Toaster)\n- (put_in, Kettle, Toaster)\n- (put_in, Lettuce, Toaster)\n- (put_in, Fork, Toaster)\n- (put_in, SaltShaker, Toaster)\n- (put_in, Vase, Toaster)\n- (put_in, Mug, Toaster)\n- (toggle_on, Toaster)\n- (toggle_off, Toaster)\n- (pick_up, Book)\n- (toggle_on, Faucet)\n- (toggle_off, Faucet)\n- (toggle_on, LightSwitch)\n- (toggle_off, LightSwitch)\n- (pick_up, Pan)\n- (put_in, Plate, Pan)\n- (put_in, CreditCard, Pan)\n- (put_in, Tomato, Pan)\n- (put_in, Pot, Pan)\n- (put_in, Apple, Pan)\n- (put_in, Cup, Pan)\n- (put_in, SoapBottle, Pan)\n- (put_in, PaperTowelRoll, Pan)\n- (put_in, WineBottle, Pan)\n- (put_in, Bread, Pan)\n- (put_in, Bowl, Pan)\n- (put_in, Spatula, Pan)\n- (put_in, Potato, Pan)\n- (put_in, Spoon, Pan)\n- (put_in, Statue, Pan)\n- (put_in, ButterKnife, Pan)\n- (put_in, PepperShaker, Pan)\n- (put_in, Bottle, Pan)\n- (put_in, Egg, Pan)\n- (put_in, Knife, Pan)\n- (put_in, DishSponge, Pan)\n- (put_in, Book, Pan)\n- (put_in, Kettle, Pan)\n- (put_in, Lettuce, Pan)\n- (put_in, Fork, Pan)\n- (put_in, SaltShaker, Pan)\n- (put_in, Vase, Pan)\n- (put_in, Mug, Pan)\n- (pick_up, Kettle)\n- (open_obj, Kettle)\n- (close_obj, Kettle)\n- (pour, Pot, Kettle)\n- (pour, Cup, Kettle)\n- (pour, WineBottle, Kettle)\n- (pour, Bowl, Kettle)\n- (pour, HousePlant, Kettle)\n- (pour, Bottle, Kettle)\n- (pour, Mug, Kettle)\n- (pick_up, Lettuce)\n- (toggle_on, StoveKnob)\n- (toggle_off, StoveKnob)\n- (pick_up, Fork)\n- (pick_up, SaltShaker)\n- (put_in, Plate, Cabinet)\n- (put_in, CreditCard, Cabinet)\n- (put_in, Tomato, Cabinet)\n- (put_in, Pot, Cabinet)\n- (put_in, Apple, Cabinet)\n- (put_in, Cup, Cabinet)\n- (put_in, SoapBottle, Cabinet)\n- (put_in, PaperTowelRoll, Cabinet)\n- (put_in, WineBottle, Cabinet)\n- (put_in, Bread, Cabinet)\n- (put_in, Bowl, Cabinet)\n- (put_in, Spatula, Cabinet)\n- (put_in, Potato, Cabinet)\n- (put_in, Spoon, Cabinet)\n- (put_in, Statue, Cabinet)\n- (put_in, ButterKnife, Cabinet)\n- (put_in, PepperShaker, Cabinet)\n- (put_in, Bottle, Cabinet)\n- (put_in, Egg, Cabinet)\n- (put_in, Knife, Cabinet)\n- (put_in, DishSponge, Cabinet)\n- (put_in, Book, Cabinet)\n- (put_in, Pan, Cabinet)\n- (put_in, Kettle, Cabinet)\n- (put_in, Lettuce, Cabinet)\n- (put_in, Fork, Cabinet)\n- (put_in, SaltShaker, Cabinet)\n- (put_in, Vase, Cabinet)\n- (put_in, Mug, Cabinet)\n- (open_obj, Cabinet)\n- (close_obj, Cabinet)\n- (put_in, Plate, CoffeeMachine)\n- (put_in, CreditCard, CoffeeMachine)\n- (put_in, Tomato, CoffeeMachine)\n- (put_in, Pot, CoffeeMachine)\n- (put_in, Apple, CoffeeMachine)\n- (put_in, Cup, CoffeeMachine)\n- (put_in, SoapBottle, CoffeeMachine)\n- (put_in, PaperTowelRoll, CoffeeMachine)\n- (put_in, WineBottle, CoffeeMachine)\n- (put_in, Bread, CoffeeMachine)\n- (put_in, Bowl, CoffeeMachine)\n- (put_in, Spatula, CoffeeMachine)\n- (put_in, Potato, CoffeeMachine)\n- (put_in, Spoon, CoffeeMachine)\n- (put_in, Statue, CoffeeMachine)\n- (put_in, ButterKnife, CoffeeMachine)\n- (put_in, PepperShaker, CoffeeMachine)\n- (put_in, Bottle, CoffeeMachine)\n- (put_in, Egg, CoffeeMachine)\n- (put_in, Knife, CoffeeMachine)\n- (put_in, DishSponge, CoffeeMachine)\n- (put_in, Book, CoffeeMachine)\n- (put_in, Pan, CoffeeMachine)\n- (put_in, Kettle, CoffeeMachine)\n- (put_in, Lettuce, CoffeeMachine)\n- (put_in, Fork, CoffeeMachine)\n- (put_in, SaltShaker, CoffeeMachine)\n- (put_in, Vase, CoffeeMachine)\n- (put_in, Mug, CoffeeMachine)\n- (toggle_on, CoffeeMachine)\n- (toggle_off, CoffeeMachine)\n- (pick_up, Vase)\n- (put_on, Plate, CounterTop)\n- (put_on, CreditCard, CounterTop)\n- (put_on, Tomato, CounterTop)\n- (put_on, Pot, CounterTop)\n- (put_on, Apple, CounterTop)\n- (put_on, Cup, CounterTop)\n- (put_on, SoapBottle, CounterTop)\n- (put_on, PaperTowelRoll, CounterTop)\n- (put_on, WineBottle, CounterTop)\n- (put_on, Bread, CounterTop)\n- (put_on, Bowl, CounterTop)\n- (put_on, Spatula, CounterTop)\n- (put_on, Potato, CounterTop)\n- (put_on, Spoon, CounterTop)\n- (put_on, Statue, CounterTop)\n- (put_on, ButterKnife, CounterTop)\n- (put_on, PepperShaker, CounterTop)\n- (put_on, Bottle, CounterTop)\n- (put_on, Egg, CounterTop)\n- (put_on, Knife, CounterTop)\n- (put_on, DishSponge, CounterTop)\n- (put_on, Book, CounterTop)\n- (put_on, Pan, CounterTop)\n- (put_on, Kettle, CounterTop)\n- (put_on, Lettuce, CounterTop)\n- (put_on, Fork, CounterTop)\n- (put_on, SaltShaker, CounterTop)\n- (put_on, Vase, CounterTop)\n- (put_on, Mug, CounterTop)\n- (pick_up, Mug)\n- (put_in, Plate, Mug)\n- (put_in, CreditCard, Mug)\n- (put_in, Tomato, Mug)\n- (put_in, Pot, Mug)\n- (put_in, Apple, Mug)\n- (put_in, Cup, Mug)\n- (put_in, SoapBottle, Mug)\n- (put_in, PaperTowelRoll, Mug)\n- (put_in, WineBottle, Mug)\n- (put_in, Bread, Mug)\n- (put_in, Bowl, Mug)\n- (put_in, Spatula, Mug)\n- (put_in, Potato, Mug)\n- (put_in, Spoon, Mug)\n- (put_in, Statue, Mug)\n- (put_in, ButterKnife, Mug)\n- (put_in, PepperShaker, Mug)\n- (put_in, Bottle, Mug)\n- (put_in, Egg, Mug)\n- (put_in, Knife, Mug)\n- (put_in, DishSponge, Mug)\n- (put_in, Book, Mug)\n- (put_in, Pan, Mug)\n- (put_in, Kettle, Mug)\n- (put_in, Lettuce, Mug)\n- (put_in, Fork, Mug)\n- (put_in, SaltShaker, Mug)\n- (put_in, Vase, Mug)\n- (pour, Pot, Mug)\n- (pour, Cup, Mug)\n- (pour, WineBottle, Mug)\n- (pour, Bowl, Mug)\n- (pour, HousePlant, Mug)\n- (pour, Bottle, Mug)\n- (pour, Kettle, Mug)\n- (put_on, Plate, CounterTop-1)\n- (put_on, CreditCard, CounterTop-1)\n- (put_on, Tomato, CounterTop-1)\n- (put_on, Pot, CounterTop-1)\n- (put_on, Apple, CounterTop-1)\n- (put_on, Cup, CounterTop-1)\n- (put_on, SoapBottle, CounterTop-1)\n- (put_on, PaperTowelRoll, CounterTop-1)\n- (put_on, WineBottle, CounterTop-1)\n- (put_on, Bread, CounterTop-1)\n- (put_on, Bowl, CounterTop-1)\n- (put_on, Spatula, CounterTop-1)\n- (put_on, Potato, CounterTop-1)\n- (put_on, Spoon, CounterTop-1)\n- (put_on, Statue, CounterTop-1)\n- (put_on, ButterKnife, CounterTop-1)\n- (put_on, PepperShaker, CounterTop-1)\n- (put_on, Bottle, CounterTop-1)\n- (put_on, Egg, CounterTop-1)\n- (put_on, Knife, CounterTop-1)\n- (put_on, DishSponge, CounterTop-1)\n- (put_on, Book, CounterTop-1)\n- (put_on, Pan, CounterTop-1)\n- (put_on, Kettle, CounterTop-1)\n- (put_on, Lettuce, CounterTop-1)\n- (put_on, Fork, CounterTop-1)\n- (put_on, SaltShaker, CounterTop-1)\n- (put_on, Vase, CounterTop-1)\n- (put_on, Mug, CounterTop-1)\n- (put_on, Plate, CounterTop-2)\n- (put_on, CreditCard, CounterTop-2)\n- (put_on, Tomato, CounterTop-2)\n- (put_on, Pot, CounterTop-2)\n- (put_on, Apple, CounterTop-2)\n- (put_on, Cup, CounterTop-2)\n- (put_on, SoapBottle, CounterTop-2)\n- (put_on, PaperTowelRoll, CounterTop-2)\n- (put_on, WineBottle, CounterTop-2)\n- (put_on, Bread, CounterTop-2)\n- (put_on, Bowl, CounterTop-2)\n- (put_on, Spatula, CounterTop-2)\n- (put_on, Potato, CounterTop-2)\n- (put_on, Spoon, CounterTop-2)\n- (put_on, Statue, CounterTop-2)\n- (put_on, ButterKnife, CounterTop-2)\n- (put_on, PepperShaker, CounterTop-2)\n- (put_on, Bottle, CounterTop-2)\n- (put_on, Egg, CounterTop-2)\n- (put_on, Knife, CounterTop-2)\n- (put_on, DishSponge, CounterTop-2)\n- (put_on, Book, CounterTop-2)\n- (put_on, Pan, CounterTop-2)\n- (put_on, Kettle, CounterTop-2)\n- (put_on, Lettuce, CounterTop-2)\n- (put_on, Fork, CounterTop-2)\n- (put_on, SaltShaker, CounterTop-2)\n- (put_on, Vase, CounterTop-2)\n- (put_on, Mug, CounterTop-2)\n- (put_on, Plate, CounterTop-3)\n- (put_on, CreditCard, CounterTop-3)\n- (put_on, Tomato, CounterTop-3)\n- (put_on, Pot, CounterTop-3)\n- (put_on, Apple, CounterTop-3)\n- (put_on, Cup, CounterTop-3)\n- (put_on, SoapBottle, CounterTop-3)\n- (put_on, PaperTowelRoll, CounterTop-3)\n- (put_on, WineBottle, CounterTop-3)\n- (put_on, Bread, CounterTop-3)\n- (put_on, Bowl, CounterTop-3)\n- (put_on, Spatula, CounterTop-3)\n- (put_on, Potato, CounterTop-3)\n- (put_on, Spoon, CounterTop-3)\n- (put_on, Statue, CounterTop-3)\n- (put_on, ButterKnife, CounterTop-3)\n- (put_on, PepperShaker, CounterTop-3)\n- (put_on, Bottle, CounterTop-3)\n- (put_on, Egg, CounterTop-3)\n- (put_on, Knife, CounterTop-3)\n- (put_on, DishSponge, CounterTop-3)\n- (put_on, Book, CounterTop-3)\n- (put_on, Pan, CounterTop-3)\n- (put_on, Kettle, CounterTop-3)\n- (put_on, Lettuce, CounterTop-3)\n- (put_on, Fork, CounterTop-3)\n- (put_on, SaltShaker, CounterTop-3)\n- (put_on, Vase, CounterTop-3)\n- (put_on, Mug, CounterTop-3)\n- (put_on, Plate, CounterTop-4)\n- (put_on, CreditCard, CounterTop-4)\n- (put_on, Tomato, CounterTop-4)\n- (put_on, Pot, CounterTop-4)\n- (put_on, Apple, CounterTop-4)\n- (put_on, Cup, CounterTop-4)\n- (put_on, SoapBottle, CounterTop-4)\n- (put_on, PaperTowelRoll, CounterTop-4)\n- (put_on, WineBottle, CounterTop-4)\n- (put_on, Bread, CounterTop-4)\n- (put_on, Bowl, CounterTop-4)\n- (put_on, Spatula, CounterTop-4)\n- (put_on, Potato, CounterTop-4)\n- (put_on, Spoon, CounterTop-4)\n- (put_on, Statue, CounterTop-4)\n- (put_on, ButterKnife, CounterTop-4)\n- (put_on, PepperShaker, CounterTop-4)\n- (put_on, Bottle, CounterTop-4)\n- (put_on, Egg, CounterTop-4)\n- (put_on, Knife, CounterTop-4)\n- (put_on, DishSponge, CounterTop-4)\n- (put_on, Book, CounterTop-4)\n- (put_on, Pan, CounterTop-4)\n- (put_on, Kettle, CounterTop-4)\n- (put_on, Lettuce, CounterTop-4)\n- (put_on, Fork, CounterTop-4)\n- (put_on, SaltShaker, CounterTop-4)\n- (put_on, Vase, CounterTop-4)\n- (put_on, Mug, CounterTop-4)\n- (put_on, Plate, StoveBurner-1)\n- (put_on, CreditCard, StoveBurner-1)\n- (put_on, Tomato, StoveBurner-1)\n- (put_on, Pot, StoveBurner-1)\n- (put_on, Apple, StoveBurner-1)\n- (put_on, Cup, StoveBurner-1)\n- (put_on, SoapBottle, StoveBurner-1)\n- (put_on, PaperTowelRoll, StoveBurner-1)\n- (put_on, WineBottle, StoveBurner-1)\n- (put_on, Bread, StoveBurner-1)\n- (put_on, Bowl, StoveBurner-1)\n- (put_on, Spatula, StoveBurner-1)\n- (put_on, Potato, StoveBurner-1)\n- (put_on, Spoon, StoveBurner-1)\n- (put_on, Statue, StoveBurner-1)\n- (put_on, ButterKnife, StoveBurner-1)\n- (put_on, PepperShaker, StoveBurner-1)\n- (put_on, Bottle, StoveBurner-1)\n- (put_on, Egg, StoveBurner-1)\n- (put_on, Knife, StoveBurner-1)\n- (put_on, DishSponge, StoveBurner-1)\n- (put_on, Book, StoveBurner-1)\n- (put_on, Pan, StoveBurner-1)\n- (put_on, Kettle, StoveBurner-1)\n- (put_on, Lettuce, StoveBurner-1)\n- (put_on, Fork, StoveBurner-1)\n- (put_on, SaltShaker, StoveBurner-1)\n- (put_on, Vase, StoveBurner-1)\n- (put_on, Mug, StoveBurner-1)\n- (toggle_on, StoveBurner-1)\n- (toggle_off, StoveBurner-1)\n- (put_on, Plate, StoveBurner-2)\n- (put_on, CreditCard, StoveBurner-2)\n- (put_on, Tomato, StoveBurner-2)\n- (put_on, Pot, StoveBurner-2)\n- (put_on, Apple, StoveBurner-2)\n- (put_on, Cup, StoveBurner-2)\n- (put_on, SoapBottle, StoveBurner-2)\n- (put_on, PaperTowelRoll, StoveBurner-2)\n- (put_on, WineBottle, StoveBurner-2)\n- (put_on, Bread, StoveBurner-2)\n- (put_on, Bowl, StoveBurner-2)\n- (put_on, Spatula, StoveBurner-2)\n- (put_on, Potato, StoveBurner-2)\n- (put_on, Spoon, StoveBurner-2)\n- (put_on, Statue, StoveBurner-2)\n- (put_on, ButterKnife, StoveBurner-2)\n- (put_on, PepperShaker, StoveBurner-2)\n- (put_on, Bottle, StoveBurner-2)\n- (put_on, Egg, StoveBurner-2)\n- (put_on, Knife, StoveBurner-2)\n- (put_on, DishSponge, StoveBurner-2)\n- (put_on, Book, StoveBurner-2)\n- (put_on, Pan, StoveBurner-2)\n- (put_on, Kettle, StoveBurner-2)\n- (put_on, Lettuce, StoveBurner-2)\n- (put_on, Fork, StoveBurner-2)\n- (put_on, SaltShaker, StoveBurner-2)\n- (put_on, Vase, StoveBurner-2)\n- (put_on, Mug, StoveBurner-2)\n- (toggle_on, StoveBurner-2)\n- (toggle_off, StoveBurner-2)\n- (put_on, Plate, StoveBurner-3)\n- (put_on, CreditCard, StoveBurner-3)\n- (put_on, Tomato, StoveBurner-3)\n- (put_on, Pot, StoveBurner-3)\n- (put_on, Apple, StoveBurner-3)\n- (put_on, Cup, StoveBurner-3)\n- (put_on, SoapBottle, StoveBurner-3)\n- (put_on, PaperTowelRoll, StoveBurner-3)\n- (put_on, WineBottle, StoveBurner-3)\n- (put_on, Bread, StoveBurner-3)\n- (put_on, Bowl, StoveBurner-3)\n- (put_on, Spatula, StoveBurner-3)\n- (put_on, Potato, StoveBurner-3)\n- (put_on, Spoon, StoveBurner-3)\n- (put_on, Statue, StoveBurner-3)\n- (put_on, ButterKnife, StoveBurner-3)\n- (put_on, PepperShaker, StoveBurner-3)\n- (put_on, Bottle, StoveBurner-3)\n- (put_on, Egg, StoveBurner-3)\n- (put_on, Knife, StoveBurner-3)\n- (put_on, DishSponge, StoveBurner-3)\n- (put_on, Book, StoveBurner-3)\n- (put_on, Pan, StoveBurner-3)\n- (put_on, Kettle, StoveBurner-3)\n- (put_on, Lettuce, StoveBurner-3)\n- (put_on, Fork, StoveBurner-3)\n- (put_on, SaltShaker, StoveBurner-3)\n- (put_on, Vase, StoveBurner-3)\n- (put_on, Mug, StoveBurner-3)\n- (toggle_on, StoveBurner-3)\n- (toggle_off, StoveBurner-3)\n- (put_on, Plate, StoveBurner-4)\n- (put_on, CreditCard, StoveBurner-4)\n- (put_on, Tomato, StoveBurner-4)\n- (put_on, Pot, StoveBurner-4)\n- (put_on, Apple, StoveBurner-4)\n- (put_on, Cup, StoveBurner-4)\n- (put_on, SoapBottle, StoveBurner-4)\n- (put_on, PaperTowelRoll, StoveBurner-4)\n- (put_on, WineBottle, StoveBurner-4)\n- (put_on, Bread, StoveBurner-4)\n- (put_on, Bowl, StoveBurner-4)\n- (put_on, Spatula, StoveBurner-4)\n- (put_on, Potato, StoveBurner-4)\n- (put_on, Spoon, StoveBurner-4)\n- (put_on, Statue, StoveBurner-4)\n- (put_on, ButterKnife, StoveBurner-4)\n- (put_on, PepperShaker, StoveBurner-4)\n- (put_on, Bottle, StoveBurner-4)\n- (put_on, Egg, StoveBurner-4)\n- (put_on, Knife, StoveBurner-4)\n- (put_on, DishSponge, StoveBurner-4)\n- (put_on, Book, StoveBurner-4)\n- (put_on, Pan, StoveBurner-4)\n- (put_on, Kettle, StoveBurner-4)\n- (put_on, Lettuce, StoveBurner-4)\n- (put_on, Fork, StoveBurner-4)\n- (put_on, SaltShaker, StoveBurner-4)\n- (put_on, Vase, StoveBurner-4)\n- (put_on, Mug, StoveBurner-4)\n- (toggle_on, StoveBurner-4)\n- (toggle_off, StoveBurner-4)\n- (put_in, Plate, Cabinet-1)\n- (put_in, CreditCard, Cabinet-1)\n- (put_in, Tomato, Cabinet-1)\n- (put_in, Pot, Cabinet-1)\n- (put_in, Apple, Cabinet-1)\n- (put_in, Cup, Cabinet-1)\n- (put_in, SoapBottle, Cabinet-1)\n- (put_in, PaperTowelRoll, Cabinet-1)\n- (put_in, WineBottle, Cabinet-1)\n- (put_in, Bread, Cabinet-1)\n- (put_in, Bowl, Cabinet-1)\n- (put_in, Spatula, Cabinet-1)\n- (put_in, Potato, Cabinet-1)\n- (put_in, Spoon, Cabinet-1)\n- (put_in, Statue, Cabinet-1)\n- (put_in, ButterKnife, Cabinet-1)\n- (put_in, PepperShaker, Cabinet-1)\n- (put_in, Bottle, Cabinet-1)\n- (put_in, Egg, Cabinet-1)\n- (put_in, Knife, Cabinet-1)\n- (put_in, DishSponge, Cabinet-1)\n- (put_in, Book, Cabinet-1)\n- (put_in, Pan, Cabinet-1)\n- (put_in, Kettle, Cabinet-1)\n- (put_in, Lettuce, Cabinet-1)\n- (put_in, Fork, Cabinet-1)\n- (put_in, SaltShaker, Cabinet-1)\n- (put_in, Vase, Cabinet-1)\n- (put_in, Mug, Cabinet-1)\n- (open_obj, Cabinet-1)\n- (close_obj, Cabinet-1)\n- (put_in, Plate, Cabinet-2)\n- (put_in, CreditCard, Cabinet-2)\n- (put_in, Tomato, Cabinet-2)\n- (put_in, Pot, Cabinet-2)\n- (put_in, Apple, Cabinet-2)\n- (put_in, Cup, Cabinet-2)\n- (put_in, SoapBottle, Cabinet-2)\n- (put_in, PaperTowelRoll, Cabinet-2)\n- (put_in, WineBottle, Cabinet-2)\n- (put_in, Bread, Cabinet-2)\n- (put_in, Bowl, Cabinet-2)\n- (put_in, Spatula, Cabinet-2)\n- (put_in, Potato, Cabinet-2)\n- (put_in, Spoon, Cabinet-2)\n- (put_in, Statue, Cabinet-2)\n- (put_in, ButterKnife, Cabinet-2)\n- (put_in, PepperShaker, Cabinet-2)\n- (put_in, Bottle, Cabinet-2)\n- (put_in, Egg, Cabinet-2)\n- (put_in, Knife, Cabinet-2)\n- (put_in, DishSponge, Cabinet-2)\n- (put_in, Book, Cabinet-2)\n- (put_in, Pan, Cabinet-2)\n- (put_in, Kettle, Cabinet-2)\n- (put_in, Lettuce, Cabinet-2)\n- (put_in, Fork, Cabinet-2)\n- (put_in, SaltShaker, Cabinet-2)\n- (put_in, Vase, Cabinet-2)\n- (put_in, Mug, Cabinet-2)\n- (open_obj, Cabinet-2)\n- (close_obj, Cabinet-2)\n- (put_in, Plate, Cabinet-3)\n- (put_in, CreditCard, Cabinet-3)\n- (put_in, Tomato, Cabinet-3)\n- (put_in, Pot, Cabinet-3)\n- (put_in, Apple, Cabinet-3)\n- (put_in, Cup, Cabinet-3)\n- (put_in, SoapBottle, Cabinet-3)\n- (put_in, PaperTowelRoll, Cabinet-3)\n- (put_in, WineBottle, Cabinet-3)\n- (put_in, Bread, Cabinet-3)\n- (put_in, Bowl, Cabinet-3)\n- (put_in, Spatula, Cabinet-3)\n- (put_in, Potato, Cabinet-3)\n- (put_in, Spoon, Cabinet-3)\n- (put_in, Statue, Cabinet-3)\n- (put_in, ButterKnife, Cabinet-3)\n- (put_in, PepperShaker, Cabinet-3)\n- (put_in, Bottle, Cabinet-3)\n- (put_in, Egg, Cabinet-3)\n- (put_in, Knife, Cabinet-3)\n- (put_in, DishSponge, Cabinet-3)\n- (put_in, Book, Cabinet-3)\n- (put_in, Pan, Cabinet-3)\n- (put_in, Kettle, Cabinet-3)\n- (put_in, Lettuce, Cabinet-3)\n- (put_in, Fork, Cabinet-3)\n- (put_in, SaltShaker, Cabinet-3)\n- (put_in, Vase, Cabinet-3)\n- (put_in, Mug, Cabinet-3)\n- (open_obj, Cabinet-3)\n- (close_obj, Cabinet-3)\n- (put_in, Plate, Cabinet-4)\n- (put_in, CreditCard, Cabinet-4)\n- (put_in, Tomato, Cabinet-4)\n- (put_in, Pot, Cabinet-4)\n- (put_in, Apple, Cabinet-4)\n- (put_in, Cup, Cabinet-4)\n- (put_in, SoapBottle, Cabinet-4)\n- (put_in, PaperTowelRoll, Cabinet-4)\n- (put_in, WineBottle, Cabinet-4)\n- (put_in, Bread, Cabinet-4)\n- (put_in, Bowl, Cabinet-4)\n- (put_in, Spatula, Cabinet-4)\n- (put_in, Potato, Cabinet-4)\n- (put_in, Spoon, Cabinet-4)\n- (put_in, Statue, Cabinet-4)\n- (put_in, ButterKnife, Cabinet-4)\n- (put_in, PepperShaker, Cabinet-4)\n- (put_in, Bottle, Cabinet-4)\n- (put_in, Egg, Cabinet-4)\n- (put_in, Knife, Cabinet-4)\n- (put_in, DishSponge, Cabinet-4)\n- (put_in, Book, Cabinet-4)\n- (put_in, Pan, Cabinet-4)\n- (put_in, Kettle, Cabinet-4)\n- (put_in, Lettuce, Cabinet-4)\n- (put_in, Fork, Cabinet-4)\n- (put_in, SaltShaker, Cabinet-4)\n- (put_in, Vase, Cabinet-4)\n- (put_in, Mug, Cabinet-4)\n- (open_obj, Cabinet-4)\n- (close_obj, Cabinet-4)\n- (put_in, Plate, Cabinet-5)\n- (put_in, CreditCard, Cabinet-5)\n- (put_in, Tomato, Cabinet-5)\n- (put_in, Pot, Cabinet-5)\n- (put_in, Apple, Cabinet-5)\n- (put_in, Cup, Cabinet-5)\n- (put_in, SoapBottle, Cabinet-5)\n- (put_in, PaperTowelRoll, Cabinet-5)\n- (put_in, WineBottle, Cabinet-5)\n- (put_in, Bread, Cabinet-5)\n- (put_in, Bowl, Cabinet-5)\n- (put_in, Spatula, Cabinet-5)\n- (put_in, Potato, Cabinet-5)\n- (put_in, Spoon, Cabinet-5)\n- (put_in, Statue, Cabinet-5)\n- (put_in, ButterKnife, Cabinet-5)\n- (put_in, PepperShaker, Cabinet-5)\n- (put_in, Bottle, Cabinet-5)\n- (put_in, Egg, Cabinet-5)\n- (put_in, Knife, Cabinet-5)\n- (put_in, DishSponge, Cabinet-5)\n- (put_in, Book, Cabinet-5)\n- (put_in, Pan, Cabinet-5)\n- (put_in, Kettle, Cabinet-5)\n- (put_in, Lettuce, Cabinet-5)\n- (put_in, Fork, Cabinet-5)\n- (put_in, SaltShaker, Cabinet-5)\n- (put_in, Vase, Cabinet-5)\n- (put_in, Mug, Cabinet-5)\n- (open_obj, Cabinet-5)\n- (close_obj, Cabinet-5)\n- (put_in, Plate, Cabinet-6)\n- (put_in, CreditCard, Cabinet-6)\n- (put_in, Tomato, Cabinet-6)\n- (put_in, Pot, Cabinet-6)\n- (put_in, Apple, Cabinet-6)\n- (put_in, Cup, Cabinet-6)\n- (put_in, SoapBottle, Cabinet-6)\n- (put_in, PaperTowelRoll, Cabinet-6)\n- (put_in, WineBottle, Cabinet-6)\n- (put_in, Bread, Cabinet-6)\n- (put_in, Bowl, Cabinet-6)\n- (put_in, Spatula, Cabinet-6)\n- (put_in, Potato, Cabinet-6)\n- (put_in, Spoon, Cabinet-6)\n- (put_in, Statue, Cabinet-6)\n- (put_in, ButterKnife, Cabinet-6)\n- (put_in, PepperShaker, Cabinet-6)\n- (put_in, Bottle, Cabinet-6)\n- (put_in, Egg, Cabinet-6)\n- (put_in, Knife, Cabinet-6)\n- (put_in, DishSponge, Cabinet-6)\n- (put_in, Book, Cabinet-6)\n- (put_in, Pan, Cabinet-6)\n- (put_in, Kettle, Cabinet-6)\n- (put_in, Lettuce, Cabinet-6)\n- (put_in, Fork, Cabinet-6)\n- (put_in, SaltShaker, Cabinet-6)\n- (put_in, Vase, Cabinet-6)\n- (put_in, Mug, Cabinet-6)\n- (open_obj, Cabinet-6)\n- (close_obj, Cabinet-6)\n- (put_in, Plate, Cabinet-7)\n- (put_in, CreditCard, Cabinet-7)\n- (put_in, Tomato, Cabinet-7)\n- (put_in, Pot, Cabinet-7)\n- (put_in, Apple, Cabinet-7)\n- (put_in, Cup, Cabinet-7)\n- (put_in, SoapBottle, Cabinet-7)\n- (put_in, PaperTowelRoll, Cabinet-7)\n- (put_in, WineBottle, Cabinet-7)\n- (put_in, Bread, Cabinet-7)\n- (put_in, Bowl, Cabinet-7)\n- (put_in, Spatula, Cabinet-7)\n- (put_in, Potato, Cabinet-7)\n- (put_in, Spoon, Cabinet-7)\n- (put_in, Statue, Cabinet-7)\n- (put_in, ButterKnife, Cabinet-7)\n- (put_in, PepperShaker, Cabinet-7)\n- (put_in, Bottle, Cabinet-7)\n- (put_in, Egg, Cabinet-7)\n- (put_in, Knife, Cabinet-7)\n- (put_in, DishSponge, Cabinet-7)\n- (put_in, Book, Cabinet-7)\n- (put_in, Pan, Cabinet-7)\n- (put_in, Kettle, Cabinet-7)\n- (put_in, Lettuce, Cabinet-7)\n- (put_in, Fork, Cabinet-7)\n- (put_in, SaltShaker, Cabinet-7)\n- (put_in, Vase, Cabinet-7)\n- (put_in, Mug, Cabinet-7)\n- (open_obj, Cabinet-7)\n- (close_obj, Cabinet-7)\n- (put_in, Plate, Cabinet-8)\n- (put_in, CreditCard, Cabinet-8)\n- (put_in, Tomato, Cabinet-8)\n- (put_in, Pot, Cabinet-8)\n- (put_in, Apple, Cabinet-8)\n- (put_in, Cup, Cabinet-8)\n- (put_in, SoapBottle, Cabinet-8)\n- (put_in, PaperTowelRoll, Cabinet-8)\n- (put_in, WineBottle, Cabinet-8)\n- (put_in, Bread, Cabinet-8)\n- (put_in, Bowl, Cabinet-8)\n- (put_in, Spatula, Cabinet-8)\n- (put_in, Potato, Cabinet-8)\n- (put_in, Spoon, Cabinet-8)\n- (put_in, Statue, Cabinet-8)\n- (put_in, ButterKnife, Cabinet-8)\n- (put_in, PepperShaker, Cabinet-8)\n- (put_in, Bottle, Cabinet-8)\n- (put_in, Egg, Cabinet-8)\n- (put_in, Knife, Cabinet-8)\n- (put_in, DishSponge, Cabinet-8)\n- (put_in, Book, Cabinet-8)\n- (put_in, Pan, Cabinet-8)\n- (put_in, Kettle, Cabinet-8)\n- (put_in, Lettuce, Cabinet-8)\n- (put_in, Fork, Cabinet-8)\n- (put_in, SaltShaker, Cabinet-8)\n- (put_in, Vase, Cabinet-8)\n- (put_in, Mug, Cabinet-8)\n- (open_obj, Cabinet-8)\n- (close_obj, Cabinet-8)\n- (put_in, Plate, Cabinet-9)\n- (put_in, CreditCard, Cabinet-9)\n- (put_in, Tomato, Cabinet-9)\n- (put_in, Pot, Cabinet-9)\n- (put_in, Apple, Cabinet-9)\n- (put_in, Cup, Cabinet-9)\n- (put_in, SoapBottle, Cabinet-9)\n- (put_in, PaperTowelRoll, Cabinet-9)\n- (put_in, WineBottle, Cabinet-9)\n- (put_in, Bread, Cabinet-9)\n- (put_in, Bowl, Cabinet-9)\n- (put_in, Spatula, Cabinet-9)\n- (put_in, Potato, Cabinet-9)\n- (put_in, Spoon, Cabinet-9)\n- (put_in, Statue, Cabinet-9)\n- (put_in, ButterKnife, Cabinet-9)\n- (put_in, PepperShaker, Cabinet-9)\n- (put_in, Bottle, Cabinet-9)\n- (put_in, Egg, Cabinet-9)\n- (put_in, Knife, Cabinet-9)\n- (put_in, DishSponge, Cabinet-9)\n- (put_in, Book, Cabinet-9)\n- (put_in, Pan, Cabinet-9)\n- (put_in, Kettle, Cabinet-9)\n- (put_in, Lettuce, Cabinet-9)\n- (put_in, Fork, Cabinet-9)\n- (put_in, SaltShaker, Cabinet-9)\n- (put_in, Vase, Cabinet-9)\n- (put_in, Mug, Cabinet-9)\n- (open_obj, Cabinet-9)\n- (close_obj, Cabinet-9)\n- (put_in, Plate, Cabinet-10)\n- (put_in, CreditCard, Cabinet-10)\n- (put_in, Tomato, Cabinet-10)\n- (put_in, Pot, Cabinet-10)\n- (put_in, Apple, Cabinet-10)\n- (put_in, Cup, Cabinet-10)\n- (put_in, SoapBottle, Cabinet-10)\n- (put_in, PaperTowelRoll, Cabinet-10)\n- (put_in, WineBottle, Cabinet-10)\n- (put_in, Bread, Cabinet-10)\n- (put_in, Bowl, Cabinet-10)\n- (put_in, Spatula, Cabinet-10)\n- (put_in, Potato, Cabinet-10)\n- (put_in, Spoon, Cabinet-10)\n- (put_in, Statue, Cabinet-10)\n- (put_in, ButterKnife, Cabinet-10)\n- (put_in, PepperShaker, Cabinet-10)\n- (put_in, Bottle, Cabinet-10)\n- (put_in, Egg, Cabinet-10)\n- (put_in, Knife, Cabinet-10)\n- (put_in, DishSponge, Cabinet-10)\n- (put_in, Book, Cabinet-10)\n- (put_in, Pan, Cabinet-10)\n- (put_in, Kettle, Cabinet-10)\n- (put_in, Lettuce, Cabinet-10)\n- (put_in, Fork, Cabinet-10)\n- (put_in, SaltShaker, Cabinet-10)\n- (put_in, Vase, Cabinet-10)\n- (put_in, Mug, Cabinet-10)\n- (open_obj, Cabinet-10)\n- (close_obj, Cabinet-10)\n- (put_in, Plate, Cabinet-11)\n- (put_in, CreditCard, Cabinet-11)\n- (put_in, Tomato, Cabinet-11)\n- (put_in, Pot, Cabinet-11)\n- (put_in, Apple, Cabinet-11)\n- (put_in, Cup, Cabinet-11)\n- (put_in, SoapBottle, Cabinet-11)\n- (put_in, PaperTowelRoll, Cabinet-11)\n- (put_in, WineBottle, Cabinet-11)\n- (put_in, Bread, Cabinet-11)\n- (put_in, Bowl, Cabinet-11)\n- (put_in, Spatula, Cabinet-11)\n- (put_in, Potato, Cabinet-11)\n- (put_in, Spoon, Cabinet-11)\n- (put_in, Statue, Cabinet-11)\n- (put_in, ButterKnife, Cabinet-11)\n- (put_in, PepperShaker, Cabinet-11)\n- (put_in, Bottle, Cabinet-11)\n- (put_in, Egg, Cabinet-11)\n- (put_in, Knife, Cabinet-11)\n- (put_in, DishSponge, Cabinet-11)\n- (put_in, Book, Cabinet-11)\n- (put_in, Pan, Cabinet-11)\n- (put_in, Kettle, Cabinet-11)\n- (put_in, Lettuce, Cabinet-11)\n- (put_in, Fork, Cabinet-11)\n- (put_in, SaltShaker, Cabinet-11)\n- (put_in, Vase, Cabinet-11)\n- (put_in, Mug, Cabinet-11)\n- (open_obj, Cabinet-11)\n- (close_obj, Cabinet-11)\n- (put_in, Plate, Cabinet-12)\n- (put_in, CreditCard, Cabinet-12)\n- (put_in, Tomato, Cabinet-12)\n- (put_in, Pot, Cabinet-12)\n- (put_in, Apple, Cabinet-12)\n- (put_in, Cup, Cabinet-12)\n- (put_in, SoapBottle, Cabinet-12)\n- (put_in, PaperTowelRoll, Cabinet-12)\n- (put_in, WineBottle, Cabinet-12)\n- (put_in, Bread, Cabinet-12)\n- (put_in, Bowl, Cabinet-12)\n- (put_in, Spatula, Cabinet-12)\n- (put_in, Potato, Cabinet-12)\n- (put_in, Spoon, Cabinet-12)\n- (put_in, Statue, Cabinet-12)\n- (put_in, ButterKnife, Cabinet-12)\n- (put_in, PepperShaker, Cabinet-12)\n- (put_in, Bottle, Cabinet-12)\n- (put_in, Egg, Cabinet-12)\n- (put_in, Knife, Cabinet-12)\n- (put_in, DishSponge, Cabinet-12)\n- (put_in, Book, Cabinet-12)\n- (put_in, Pan, Cabinet-12)\n- (put_in, Kettle, Cabinet-12)\n- (put_in, Lettuce, Cabinet-12)\n- (put_in, Fork, Cabinet-12)\n- (put_in, SaltShaker, Cabinet-12)\n- (put_in, Vase, Cabinet-12)\n- (put_in, Mug, Cabinet-12)\n- (open_obj, Cabinet-12)\n- (close_obj, Cabinet-12)\n- (toggle_on, Faucet-1)\n- (toggle_off, Faucet-1)\n- (toggle_on, Faucet-2)\n- (toggle_off, Faucet-2)\n- (put_in, Plate, Sink-1)\n- (put_in, CreditCard, Sink-1)\n- (put_in, Tomato, Sink-1)\n- (put_in, Pot, Sink-1)\n- (put_in, Apple, Sink-1)\n- (put_in, Cup, Sink-1)\n- (put_in, SoapBottle, Sink-1)\n- (put_in, PaperTowelRoll, Sink-1)\n- (put_in, WineBottle, Sink-1)\n- (put_in, Bread, Sink-1)\n- (put_in, Bowl, Sink-1)\n- (put_in, Spatula, Sink-1)\n- (put_in, Potato, Sink-1)\n- (put_in, Spoon, Sink-1)\n- (put_in, Statue, Sink-1)\n- (put_in, ButterKnife, Sink-1)\n- (put_in, PepperShaker, Sink-1)\n- (put_in, Bottle, Sink-1)\n- (put_in, Egg, Sink-1)\n- (put_in, Knife, Sink-1)\n- (put_in, DishSponge, Sink-1)\n- (put_in, Book, Sink-1)\n- (put_in, Pan, Sink-1)\n- (put_in, Kettle, Sink-1)\n- (put_in, Lettuce, Sink-1)\n- (put_in, Fork, Sink-1)\n- (put_in, SaltShaker, Sink-1)\n- (put_in, Vase, Sink-1)\n- (put_in, Mug, Sink-1)\n- (pour, Pot, Sink)\n- (pour, Cup, Sink)\n- (pour, WineBottle, Sink)\n- (pour, Bowl, Sink)\n- (pour, HousePlant, Sink)\n- (pour, Bottle, Sink)\n- (pour, Kettle, Sink)\n- (pour, Mug, Sink)\n- (put_in, Plate, Sink-2)\n- (put_in, CreditCard, Sink-2)\n- (put_in, Tomato, Sink-2)\n- (put_in, Pot, Sink-2)\n- (put_in, Apple, Sink-2)\n- (put_in, Cup, Sink-2)\n- (put_in, SoapBottle, Sink-2)\n- (put_in, PaperTowelRoll, Sink-2)\n- (put_in, WineBottle, Sink-2)\n- (put_in, Bread, Sink-2)\n- (put_in, Bowl, Sink-2)\n- (put_in, Spatula, Sink-2)\n- (put_in, Potato, Sink-2)\n- (put_in, Spoon, Sink-2)\n- (put_in, Statue, Sink-2)\n- (put_in, ButterKnife, Sink-2)\n- (put_in, PepperShaker, Sink-2)\n- (put_in, Bottle, Sink-2)\n- (put_in, Egg, Sink-2)\n- (put_in, Knife, Sink-2)\n- (put_in, DishSponge, Sink-2)\n- (put_in, Book, Sink-2)\n- (put_in, Pan, Sink-2)\n- (put_in, Kettle, Sink-2)\n- (put_in, Lettuce, Sink-2)\n- (put_in, Fork, Sink-2)\n- (put_in, SaltShaker, Sink-2)\n- (put_in, Vase, Sink-2)\n- (put_in, Mug, Sink-2)\n- (pour, Pot, Sink)\n- (pour, Cup, Sink)\n- (pour, WineBottle, Sink)\n- (pour, Bowl, Sink)\n- (pour, HousePlant, Sink)\n- (pour, Bottle, Sink)\n- (pour, Kettle, Sink)\n- (pour, Mug, Sink)\nValid object names for arguments:\n- Apple\n- Book\n- Bottle\n- Bowl\n- Bread\n- ButterKnife\n- Cabinet\n- Cabinet-1\n- Cabinet-10\n- Cabinet-11\n- Cabinet-12\n- Cabinet-2\n- Cabinet-3\n- Cabinet-4\n- Cabinet-5\n- Cabinet-6\n- Cabinet-7\n- Cabinet-8\n- Cabinet-9\n- CoffeeMachine\n- CounterTop\n- CounterTop-1\n- CounterTop-2\n- CounterTop-3\n- CounterTop-4\n- CreditCard\n- Cup\n- DishSponge\n- Drawer\n- Egg\n- Faucet\n- Faucet-1\n- Faucet-2\n- Fork\n- Fridge\n- GarbageCan\n- HousePlant\n- Kettle\n- Knife\n- Lettuce\n- LightSwitch\n- Microwave\n- Mug\n- Pan\n- PaperTowelRoll\n- PepperShaker\n- Plate\n- Pot\n- Potato\n- SaltShaker\n- Shelf\n- Sink\n- Sink-1\n- Sink-2\n- SinkBasin\n- SoapBottle\n- Spatula\n- Spoon\n- Statue\n- StoveBurner\n- StoveBurner-1\n- StoveBurner-2\n- StoveBurner-3\n- StoveBurner-4\n- StoveKnob\n- Toaster\n- Tomato\n- Vase\n- WineBottle\nOnly use action names and object names from the lists above.\nThe robot can only hold one object in its gripper, in other words, if there's object in the robot gripper, it can no longer pick up another object.\n###\nTo clean a dirty object A, the plan is\n1. (pick_up, A)\n2. (put_in, A, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pour, A, sink)\n6. (pick_up, A)\nObject A should be clean after executing these actions.\n###\nThe plan should 1) not contain any if statements 2) contain only the available actions 3) resemble the format of the initial plan.\n",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (put_on, pot, fourth stove burner)\n7. (toggle_on, fourth stove burner)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nCorrection plan:"
+    },
+    "response": [
+      {
+        "action": "pick_up",
+        "obj1": "Pot",
+        "obj2": null
+      },
+      {
+        "action": "put_in",
+        "obj1": "Pot",
+        "obj2": "Sink"
+      },
+      {
+        "action": "toggle_on",
+        "obj1": "Faucet",
+        "obj2": null
+      },
+      {
+        "action": "toggle_off",
+        "obj1": "Faucet",
+        "obj2": null
+      },
+      {
+        "action": "pour",
+        "obj1": "Pot",
+        "obj2": "Sink"
+      },
+      {
+        "action": "pick_up",
+        "obj1": "Pot",
+        "obj2": null
+      },
+      {
+        "action": "put_on",
+        "obj1": "Pot",
+        "obj2": "StoveBurner-4"
+      }
+    ]
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (put_on, pot, fourth stove burner)\n7. (toggle_on, fourth stove burner)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (none)\nAvailable actions: (pick_up, Plate), (put_in, CreditCard, Plate), (put_in, Tomato, Plate), (put_in, Pot, Plate), (put_in, Apple, Plate), (put_in, Cup, Plate), (put_in, SoapBottle, Plate), (put_in, PaperTowelRoll, Plate), (put_in, WineBottle, Plate), (put_in, Bread, Plate), (put_in, Bowl, Plate), (put_in, Spatula, Plate), (put_in, Potato, Plate), (put_in, Spoon, Plate), (put_in, Statue, Plate), (put_in, ButterKnife, Plate), (put_in, PepperShaker, Plate), (put_in, Bottle, Plate), (put_in, Egg, Plate), (put_in, Knife, Plate), (put_in, DishSponge, Plate), (put_in, Book, Plate), (put_in, Pan, Plate), (put_in, Kettle, Plate), (put_in, Lettuce, Plate), (put_in, Fork, Plate), (put_in, SaltShaker, Plate), (put_in, Vase, Plate), (put_in, Mug, Plate), (pick_up, CreditCard), (pick_up, Tomato), (slice_obj, Tomato), (pick_up, Pot), (put_in, Plate, Pot), (put_in, CreditCard, Pot), (put_in, Tomato, Pot), (put_in, Apple, Pot), (put_in, Cup, Pot), (put_in, SoapBottle, Pot), (put_in, PaperTowelRoll, Pot), (put_in, WineBottle, Pot), (put_in, Bread, Pot), (put_in, Bowl, Pot), (put_in, Spatula, Pot), (put_in, Potato, Pot), (put_in, Spoon, Pot), (put_in, Statue, Pot), (put_in, ButterKnife, Pot), (put_in, PepperShaker, Pot), (put_in, Bottle, Pot)\nAvailable objects: Apple, Book, Bottle, Bowl, Bread, ButterKnife, Cabinet, Cabinet-1, Cabinet-10, Cabinet-11, Cabinet-12, Cabinet-2, Cabinet-3, Cabinet-4, Cabinet-5, Cabinet-6, Cabinet-7, Cabinet-8, Cabinet-9, CoffeeMachine, CounterTop, CounterTop-1, CounterTop-2, CounterTop-3, CounterTop-4, CreditCard, Cup, DishSponge, Drawer, Egg, Faucet, Faucet-1, Faucet-2, Fork, Fridge, GarbageCan, HousePlant, Kettle, Knife, Lettuce, LightSwitch, Microwave, Mug, Pan, PaperTowelRoll, PepperShaker, Plate, Pot, Potato, SaltShaker\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "The pot is the task-relevant object; picking it up is a plausible correction step before trying to refill it with water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Plate",
+          "rationale": "Uses valid objects/actions to relocate the pot, creating an alternative intermediate state if the current placement on the burner is problematic."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Plate",
+          "obj2": null,
+          "rationale": "Grasping the plate could enable repositioning or clearing space for subsequent corrective manipulation."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bottle",
+          "obj2": "Pot",
+          "rationale": "Since faucet toggling is unavailable, placing a bottle into the pot is a plausible alternative interaction involving the pot and liquid container."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Bottle",
+          "obj2": null,
+          "rationale": "Picking up the bottle could prepare for using it with the pot as part of a workaround after the faucet-related failure."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 The pot is the task-relevant object; picking it up is a plausible correction step before trying to refill it with water.\nB) (put_in, Pot, Plate) \u2014 Uses valid objects/actions to relocate the pot, creating an alternative intermediate state if the current placement on the burner is problematic.\nC) (pick_up, Plate) \u2014 Grasping the plate could enable repositioning or clearing space for subsequent corrective manipulation.\nD) (put_in, Bottle, Pot) \u2014 Since faucet toggling is unavailable, placing a bottle into the pot is a plausible alternative interaction involving the pot and liquid container.\nE) (pick_up, Bottle) \u2014 Picking up the bottle could prepare for using it with the pot as part of a workaround after the faucet-related failure.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9770226300889974,
+        "B": 3.33328845239073e-13,
+        "C": 3.33328845239073e-13,
+        "D": 3.33328845239073e-13,
+        "E": 0.022977369910002637
+      },
+      "confidence": 0.9770226300889974,
+      "uncertainty": 0.022977369911002632,
+      "entropy": 0.06798062896329395,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D"
+      ],
+      "fallback_logprob": -28.729633404596658,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (put_on, pot, fourth stove burner)\n7. (toggle_on, fourth stove burner)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot)\nAvailable actions: (pick_up, Plate), (put_in, CreditCard, Plate), (put_in, Tomato, Plate), (put_in, Pot, Plate), (put_in, Apple, Plate), (put_in, Cup, Plate), (put_in, SoapBottle, Plate), (put_in, PaperTowelRoll, Plate), (put_in, WineBottle, Plate), (put_in, Bread, Plate), (put_in, Bowl, Plate), (put_in, Spatula, Plate), (put_in, Potato, Plate), (put_in, Spoon, Plate), (put_in, Statue, Plate), (put_in, ButterKnife, Plate), (put_in, PepperShaker, Plate), (put_in, Bottle, Plate), (put_in, Egg, Plate), (put_in, Knife, Plate), (put_in, DishSponge, Plate), (put_in, Book, Plate), (put_in, Pan, Plate), (put_in, Kettle, Plate), (put_in, Lettuce, Plate), (put_in, Fork, Plate), (put_in, SaltShaker, Plate), (put_in, Vase, Plate), (put_in, Mug, Plate), (pick_up, CreditCard), (pick_up, Tomato), (slice_obj, Tomato), (pick_up, Pot), (put_in, Plate, Pot), (put_in, CreditCard, Pot), (put_in, Tomato, Pot), (put_in, Apple, Pot), (put_in, Cup, Pot), (put_in, SoapBottle, Pot), (put_in, PaperTowelRoll, Pot), (put_in, WineBottle, Pot), (put_in, Bread, Pot), (put_in, Bowl, Pot), (put_in, Spatula, Pot), (put_in, Potato, Pot), (put_in, Spoon, Pot), (put_in, Statue, Pot), (put_in, ButterKnife, Pot), (put_in, PepperShaker, Pot), (put_in, Bottle, Pot)\nAvailable objects: Apple, Book, Bottle, Bowl, Bread, ButterKnife, Cabinet, Cabinet-1, Cabinet-10, Cabinet-11, Cabinet-12, Cabinet-2, Cabinet-3, Cabinet-4, Cabinet-5, Cabinet-6, Cabinet-7, Cabinet-8, Cabinet-9, CoffeeMachine, CounterTop, CounterTop-1, CounterTop-2, CounterTop-3, CounterTop-4, CreditCard, Cup, DishSponge, Drawer, Egg, Faucet, Faucet-1, Faucet-2, Fork, Fridge, GarbageCan, HousePlant, Kettle, Knife, Lettuce, LightSwitch, Microwave, Mug, Pan, PaperTowelRoll, PepperShaker, Plate, Pot, Potato, SaltShaker\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "Picking up the pot is a necessary recovery step since it is currently on the stove and must be repositioned before attempting to fill it with water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Plate",
+          "obj2": "Pot",
+          "rationale": "This is a valid available action involving the pot, though it does not directly help boiling water; it could be considered as an alternative manipulation step."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Cup",
+          "obj2": "Pot",
+          "rationale": "Adding a container into the pot is a valid next action from the available set, though it is not aligned with the goal of filling the pot with water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bottle",
+          "obj2": "Pot",
+          "rationale": "Placing the bottle into the pot is an available action and could be explored as an alternative interaction with the pot."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Tomato",
+          "obj2": "Pot",
+          "rationale": "This is another distinct valid action using available objects, though it is not helpful for correcting the failed water-filling step."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 Picking up the pot is a necessary recovery step since it is currently on the stove and must be repositioned before attempting to fill it with water.\nB) (put_in, Plate, Pot) \u2014 This is a valid available action involving the pot, though it does not directly help boiling water; it could be considered as an alternative manipulation step.\nC) (put_in, Cup, Pot) \u2014 Adding a container into the pot is a valid next action from the available set, though it is not aligned with the goal of filling the pot with water.\nD) (put_in, Bottle, Pot) \u2014 Placing the bottle into the pot is an available action and could be explored as an alternative interaction with the pot.\nE) (put_in, Pot, Sink) \u2014 From the generated correction plan.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "E",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "E",
+      "confidence_label": "E",
+      "option_probs": {
+        "A": 2.499952500448745e-13,
+        "B": 2.499952500448745e-13,
+        "C": 2.499952500448745e-13,
+        "D": 2.499952500448745e-13,
+        "E": 0.9999999999989999
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 1.86505312330362e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "fallback_logprob": -29.017315477048438,
+      "response_text": "E"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (put_on, pot, fourth stove burner)\n7. (toggle_on, fourth stove burner)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot), (put_in, Pot, Sink)\nAvailable actions: (pick_up, Plate), (put_in, CreditCard, Plate), (put_in, Tomato, Plate), (put_in, Pot, Plate), (put_in, Apple, Plate), (put_in, Cup, Plate), (put_in, SoapBottle, Plate), (put_in, PaperTowelRoll, Plate), (put_in, WineBottle, Plate), (put_in, Bread, Plate), (put_in, Bowl, Plate), (put_in, Spatula, Plate), (put_in, Potato, Plate), (put_in, Spoon, Plate), (put_in, Statue, Plate), (put_in, ButterKnife, Plate), (put_in, PepperShaker, Plate), (put_in, Bottle, Plate), (put_in, Egg, Plate), (put_in, Knife, Plate), (put_in, DishSponge, Plate), (put_in, Book, Plate), (put_in, Pan, Plate), (put_in, Kettle, Plate), (put_in, Lettuce, Plate), (put_in, Fork, Plate), (put_in, SaltShaker, Plate), (put_in, Vase, Plate), (put_in, Mug, Plate), (pick_up, CreditCard), (pick_up, Tomato), (slice_obj, Tomato), (pick_up, Pot), (put_in, Plate, Pot), (put_in, CreditCard, Pot), (put_in, Tomato, Pot), (put_in, Apple, Pot), (put_in, Cup, Pot), (put_in, SoapBottle, Pot), (put_in, PaperTowelRoll, Pot), (put_in, WineBottle, Pot), (put_in, Bread, Pot), (put_in, Bowl, Pot), (put_in, Spatula, Pot), (put_in, Potato, Pot), (put_in, Spoon, Pot), (put_in, Statue, Pot), (put_in, ButterKnife, Pot), (put_in, PepperShaker, Pot), (put_in, Bottle, Pot)\nAvailable objects: Apple, Book, Bottle, Bowl, Bread, ButterKnife, Cabinet, Cabinet-1, Cabinet-10, Cabinet-11, Cabinet-12, Cabinet-2, Cabinet-3, Cabinet-4, Cabinet-5, Cabinet-6, Cabinet-7, Cabinet-8, Cabinet-9, CoffeeMachine, CounterTop, CounterTop-1, CounterTop-2, CounterTop-3, CounterTop-4, CreditCard, Cup, DishSponge, Drawer, Egg, Faucet, Faucet-1, Faucet-2, Fork, Fridge, GarbageCan, HousePlant, Kettle, Knife, Lettuce, LightSwitch, Microwave, Mug, Pan, PaperTowelRoll, PepperShaker, Plate, Pot, Potato, SaltShaker\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "The pot is needed for any correction, and picking it up is a valid first step since it is currently on the burner and the gripper is empty."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Plate",
+          "obj2": "Pot",
+          "rationale": "This is a valid available action involving the task-relevant pot, though it does not directly help boil water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Cup",
+          "obj2": "Pot",
+          "rationale": "Since faucet toggling previously failed and direct faucet actions are unavailable now, adding a container to the pot is one possible corrective interaction using available actions."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bottle",
+          "obj2": "Pot",
+          "rationale": "A bottle could potentially serve as an alternative way to add contents to the pot, making it a plausible correction candidate from the available actions."
+        },
+        {
+          "action": "put_in",
+          "obj1": "CreditCard",
+          "obj2": "Pot",
+          "rationale": "This is another distinct valid available action with the pot, included as a candidate next step under the constrained action set."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot), (put_in, Pot, Sink)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 The pot is needed for any correction, and picking it up is a valid first step since it is currently on the burner and the gripper is empty.\nB) (put_in, Plate, Pot) \u2014 This is a valid available action involving the task-relevant pot, though it does not directly help boil water.\nC) (put_in, Cup, Pot) \u2014 Since faucet toggling previously failed and direct faucet actions are unavailable now, adding a container to the pot is one possible corrective interaction using available actions.\nD) (put_in, Bottle, Pot) \u2014 A bottle could potentially serve as an alternative way to add contents to the pot, making it a plausible correction candidate from the available actions.\nE) (toggle_on, Faucet) \u2014 From the generated correction plan.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "E",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "E",
+      "confidence_label": "E",
+      "option_probs": {
+        "A": 2.499999999997502e-13,
+        "B": 2.499999999997502e-13,
+        "C": 2.499999999997502e-13,
+        "D": 2.499999999997502e-13,
+        "E": 0.9999999999989999
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 1.865086198460692e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "fallback_logprob": -29.017315477048438,
+      "response_text": "E"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (put_on, pot, fourth stove burner)\n7. (toggle_on, fourth stove burner)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot), (put_in, Pot, Sink), (toggle_on, Faucet)\nAvailable actions: (pick_up, Plate), (put_in, CreditCard, Plate), (put_in, Tomato, Plate), (put_in, Pot, Plate), (put_in, Apple, Plate), (put_in, Cup, Plate), (put_in, SoapBottle, Plate), (put_in, PaperTowelRoll, Plate), (put_in, WineBottle, Plate), (put_in, Bread, Plate), (put_in, Bowl, Plate), (put_in, Spatula, Plate), (put_in, Potato, Plate), (put_in, Spoon, Plate), (put_in, Statue, Plate), (put_in, ButterKnife, Plate), (put_in, PepperShaker, Plate), (put_in, Bottle, Plate), (put_in, Egg, Plate), (put_in, Knife, Plate), (put_in, DishSponge, Plate), (put_in, Book, Plate), (put_in, Pan, Plate), (put_in, Kettle, Plate), (put_in, Lettuce, Plate), (put_in, Fork, Plate), (put_in, SaltShaker, Plate), (put_in, Vase, Plate), (put_in, Mug, Plate), (pick_up, CreditCard), (pick_up, Tomato), (slice_obj, Tomato), (pick_up, Pot), (put_in, Plate, Pot), (put_in, CreditCard, Pot), (put_in, Tomato, Pot), (put_in, Apple, Pot), (put_in, Cup, Pot), (put_in, SoapBottle, Pot), (put_in, PaperTowelRoll, Pot), (put_in, WineBottle, Pot), (put_in, Bread, Pot), (put_in, Bowl, Pot), (put_in, Spatula, Pot), (put_in, Potato, Pot), (put_in, Spoon, Pot), (put_in, Statue, Pot), (put_in, ButterKnife, Pot), (put_in, PepperShaker, Pot), (put_in, Bottle, Pot)\nAvailable objects: Apple, Book, Bottle, Bowl, Bread, ButterKnife, Cabinet, Cabinet-1, Cabinet-10, Cabinet-11, Cabinet-12, Cabinet-2, Cabinet-3, Cabinet-4, Cabinet-5, Cabinet-6, Cabinet-7, Cabinet-8, Cabinet-9, CoffeeMachine, CounterTop, CounterTop-1, CounterTop-2, CounterTop-3, CounterTop-4, CreditCard, Cup, DishSponge, Drawer, Egg, Faucet, Faucet-1, Faucet-2, Fork, Fridge, GarbageCan, HousePlant, Kettle, Knife, Lettuce, LightSwitch, Microwave, Mug, Pan, PaperTowelRoll, PepperShaker, Plate, Pot, Potato, SaltShaker\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "The pot is currently on the burner; picking it up is a useful correction step to move it back toward the sink for filling."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Plate",
+          "obj2": "Pot",
+          "rationale": "This is a valid available action involving the pot, though it does not directly help boil water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Cup",
+          "obj2": "Pot",
+          "rationale": "This valid action uses the pot as a container and could be a corrective interaction, though it is not directly aligned with filling the pot with water."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bottle",
+          "obj2": "Pot",
+          "rationale": "Placing a bottle into the pot is available and distinct, but only indirectly related to the boil-water goal."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Potato",
+          "obj2": "Pot",
+          "rationale": "This is another distinct available action with the pot, included as a candidate correction step even though it does not address the missing water."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot), (put_in, Pot, Sink), (toggle_on, Faucet)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 The pot is currently on the burner; picking it up is a useful correction step to move it back toward the sink for filling.\nB) (put_in, Plate, Pot) \u2014 This is a valid available action involving the pot, though it does not directly help boil water.\nC) (put_in, Cup, Pot) \u2014 This valid action uses the pot as a container and could be a corrective interaction, though it is not directly aligned with filling the pot with water.\nD) (put_in, Bottle, Pot) \u2014 Placing a bottle into the pot is available and distinct, but only indirectly related to the boil-water goal.\nE) (toggle_off, Faucet) \u2014 From the generated correction plan.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999470014044752,
+        "B": 1.3249648881191717e-05,
+        "C": 1.3249648881191717e-05,
+        "D": 1.3249648881191717e-05,
+        "E": 1.3249648881191717e-05
+      },
+      "confidence": 0.9999470014044752,
+      "uncertainty": 5.2998595524766934e-05,
+      "entropy": 0.00040278224182127944,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.231539505415862,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (put_on, pot, fourth stove burner)\n7. (toggle_on, fourth stove burner)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot), (put_in, Pot, Sink), (toggle_on, Faucet), (toggle_off, Faucet)\nAvailable actions: (pick_up, Plate), (put_in, CreditCard, Plate), (put_in, Tomato, Plate), (put_in, Pot, Plate), (put_in, Apple, Plate), (put_in, Cup, Plate), (put_in, SoapBottle, Plate), (put_in, PaperTowelRoll, Plate), (put_in, WineBottle, Plate), (put_in, Bread, Plate), (put_in, Bowl, Plate), (put_in, Spatula, Plate), (put_in, Potato, Plate), (put_in, Spoon, Plate), (put_in, Statue, Plate), (put_in, ButterKnife, Plate), (put_in, PepperShaker, Plate), (put_in, Bottle, Plate), (put_in, Egg, Plate), (put_in, Knife, Plate), (put_in, DishSponge, Plate), (put_in, Book, Plate), (put_in, Pan, Plate), (put_in, Kettle, Plate), (put_in, Lettuce, Plate), (put_in, Fork, Plate), (put_in, SaltShaker, Plate), (put_in, Vase, Plate), (put_in, Mug, Plate), (pick_up, CreditCard), (pick_up, Tomato), (slice_obj, Tomato), (pick_up, Pot), (put_in, Plate, Pot), (put_in, CreditCard, Pot), (put_in, Tomato, Pot), (put_in, Apple, Pot), (put_in, Cup, Pot), (put_in, SoapBottle, Pot), (put_in, PaperTowelRoll, Pot), (put_in, WineBottle, Pot), (put_in, Bread, Pot), (put_in, Bowl, Pot), (put_in, Spatula, Pot), (put_in, Potato, Pot), (put_in, Spoon, Pot), (put_in, Statue, Pot), (put_in, ButterKnife, Pot), (put_in, PepperShaker, Pot), (put_in, Bottle, Pot)\nAvailable objects: Apple, Book, Bottle, Bowl, Bread, ButterKnife, Cabinet, Cabinet-1, Cabinet-10, Cabinet-11, Cabinet-12, Cabinet-2, Cabinet-3, Cabinet-4, Cabinet-5, Cabinet-6, Cabinet-7, Cabinet-8, Cabinet-9, CoffeeMachine, CounterTop, CounterTop-1, CounterTop-2, CounterTop-3, CounterTop-4, CreditCard, Cup, DishSponge, Drawer, Egg, Faucet, Faucet-1, Faucet-2, Fork, Fridge, GarbageCan, HousePlant, Kettle, Knife, Lettuce, LightSwitch, Microwave, Mug, Pan, PaperTowelRoll, PepperShaker, Plate, Pot, Potato, SaltShaker\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "The pot is needed for correction, and picking it up is available so it can potentially be repositioned for refilling."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Plate",
+          "obj2": "Pot",
+          "rationale": "This is a valid available action involving the pot, offering a possible corrective interaction with the task-relevant container."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Cup",
+          "obj2": "Pot",
+          "rationale": "Putting a container into the pot is an available action and could support an alternative recovery path involving the pot."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bottle",
+          "obj2": "Pot",
+          "rationale": "Bottle-to-pot is available and is a plausible recovery-oriented action centered on getting contents into the pot."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Pot",
+          "obj2": "Plate",
+          "rationale": "This available action changes the pot's placement relationship and may help recover from the failed filling sequence."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot), (put_in, Pot, Sink), (toggle_on, Faucet), (toggle_off, Faucet)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 The pot is needed for correction, and picking it up is available so it can potentially be repositioned for refilling.\nB) (put_in, Plate, Pot) \u2014 This is a valid available action involving the pot, offering a possible corrective interaction with the task-relevant container.\nC) (put_in, Cup, Pot) \u2014 Putting a container into the pot is an available action and could support an alternative recovery path involving the pot.\nD) (put_in, Bottle, Pot) \u2014 Bottle-to-pot is available and is a plausible recovery-oriented action centered on getting contents into the pot.\nE) (pour, Pot, Sink) \u2014 From the generated correction plan.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 2.49994250065875e-13,
+        "C": 2.49994250065875e-13,
+        "D": 2.49994250065875e-13,
+        "E": 2.49994250065875e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 1.8650323637828744e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -29.017315477048438,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: boil water\nInitial plan:\n1. (pick_up, pot)\n2. (put_in, pot, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, pot)\n6. (put_on, pot, fourth stove burner)\n7. (toggle_on, fourth stove burner)\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot), (put_in, Pot, Sink), (toggle_on, Faucet), (toggle_off, Faucet), (pour, Pot, Sink)\nAvailable actions: (pick_up, Plate), (put_in, CreditCard, Plate), (put_in, Tomato, Plate), (put_in, Pot, Plate), (put_in, Apple, Plate), (put_in, Cup, Plate), (put_in, SoapBottle, Plate), (put_in, PaperTowelRoll, Plate), (put_in, WineBottle, Plate), (put_in, Bread, Plate), (put_in, Bowl, Plate), (put_in, Spatula, Plate), (put_in, Potato, Plate), (put_in, Spoon, Plate), (put_in, Statue, Plate), (put_in, ButterKnife, Plate), (put_in, PepperShaker, Plate), (put_in, Bottle, Plate), (put_in, Egg, Plate), (put_in, Knife, Plate), (put_in, DishSponge, Plate), (put_in, Book, Plate), (put_in, Pan, Plate), (put_in, Kettle, Plate), (put_in, Lettuce, Plate), (put_in, Fork, Plate), (put_in, SaltShaker, Plate), (put_in, Vase, Plate), (put_in, Mug, Plate), (pick_up, CreditCard), (pick_up, Tomato), (slice_obj, Tomato), (pick_up, Pot), (put_in, Plate, Pot), (put_in, CreditCard, Pot), (put_in, Tomato, Pot), (put_in, Apple, Pot), (put_in, Cup, Pot), (put_in, SoapBottle, Pot), (put_in, PaperTowelRoll, Pot), (put_in, WineBottle, Pot), (put_in, Bread, Pot), (put_in, Bowl, Pot), (put_in, Spatula, Pot), (put_in, Potato, Pot), (put_in, Spoon, Pot), (put_in, Statue, Pot), (put_in, ButterKnife, Pot), (put_in, PepperShaker, Pot), (put_in, Bottle, Pot)\nAvailable objects: Apple, Book, Bottle, Bowl, Bread, ButterKnife, Cabinet, Cabinet-1, Cabinet-10, Cabinet-11, Cabinet-12, Cabinet-2, Cabinet-3, Cabinet-4, Cabinet-5, Cabinet-6, Cabinet-7, Cabinet-8, Cabinet-9, CoffeeMachine, CounterTop, CounterTop-1, CounterTop-2, CounterTop-3, CounterTop-4, CreditCard, Cup, DishSponge, Drawer, Egg, Faucet, Faucet-1, Faucet-2, Fork, Fridge, GarbageCan, HousePlant, Kettle, Knife, Lettuce, LightSwitch, Microwave, Mug, Pan, PaperTowelRoll, PepperShaker, Plate, Pot, Potato, SaltShaker\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pot",
+          "obj2": null,
+          "rationale": "The pot is needed for any correction attempt, and picking it up is the only relevant available action involving the pot directly."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Cup",
+          "obj2": "Pot",
+          "rationale": "Since faucet control is unavailable in the current action set, adding liquid via another container is a plausible workaround toward filling the pot."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bottle",
+          "obj2": "Pot",
+          "rationale": "A bottle may contain liquid, so placing it into the pot is another possible recovery action aimed at getting water into the pot."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "Pot",
+          "rationale": "A mug can also serve as a water-carrying container, making this a distinct candidate for recovering the failed fill step."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Kettle",
+          "obj2": "Pot",
+          "rationale": "A kettle is commonly associated with water, so using it with the pot is a reasonable alternative candidate given the missing faucet action."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: boil water\nFailure reason: At 00:26, the robot attempted to turn on the faucet, but the observation still shows the faucet as off, so the toggle action failed. This caused the boilWater task to fail because the pot in the sink was never filled with water after being placed there at 00:25.\nCurrent state: sink, third stove burner (turned off), second stove burner (turned off), pot (empty and clean), first stove burner (turned off), fourth stove burner (turned on), faucet (turned off). pot is on top of fourth stove burner. nothing is inside robot gripper.\nSuccess state: a pot is filled with water, the pot is on top of a stove burner that is turned on.\nActions completed so far: (pick_up, Pot), (put_in, Pot, Sink), (toggle_on, Faucet), (toggle_off, Faucet), (pour, Pot, Sink)\n\nCandidate next actions:\nA) (pick_up, Pot) \u2014 The pot is needed for any correction attempt, and picking it up is the only relevant available action involving the pot directly.\nB) (put_in, Cup, Pot) \u2014 Since faucet control is unavailable in the current action set, adding liquid via another container is a plausible workaround toward filling the pot.\nC) (put_in, Bottle, Pot) \u2014 A bottle may contain liquid, so placing it into the pot is another possible recovery action aimed at getting water into the pot.\nD) (put_in, Mug, Pot) \u2014 A mug can also serve as a water-carrying container, making this a distinct candidate for recovering the failed fill step.\nE) (put_in, Kettle, Pot) \u2014 A kettle is commonly associated with water, so using it with the pot is a reasonable alternative candidate given the missing faucet action.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.985507048704924,
+        "B": 0.0036232378237690253,
+        "C": 0.0036232378237690253,
+        "D": 0.0036232378237690253,
+        "E": 0.0036232378237690253
+      },
+      "confidence": 0.985507048704924,
+      "uncertainty": 0.014492951295075995,
+      "entropy": 0.05955086244457656,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -5.620387226449914,
+      "response_text": "A"
+    }
+  }
+]

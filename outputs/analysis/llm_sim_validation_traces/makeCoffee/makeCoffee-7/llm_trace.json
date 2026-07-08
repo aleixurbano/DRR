@@ -1,0 +1,843 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (empty and dirty), faucet (turned off), sink. mug is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9998890061602721,
+        "B": 0.00011099383972790207
+      },
+      "confidence": 0.9998890061602721,
+      "uncertainty": 0.000110993839727902,
+      "entropy": 0.0016182732838217985,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.106035856138837,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put mug on sink. Here are the robot observations after execution:\nVisual observation: coffee machine (turned off), mug (empty and dirty), faucet (turned off), sink. mug is inside sink. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999120038718864,
+        "B": 8.799612811360989e-05
+      },
+      "confidence": 0.9999120038718864,
+      "uncertainty": 8.79961281136099e-05,
+      "entropy": 0.0013124474667645897,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.338217743163018,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on faucet. Here are the robot observations after execution:\nVisual observation: coffee machine (turned off), mug (empty and dirty), faucet (turned on), sink. mug is inside sink. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999850001124995,
+        "B": 1.4999887500533034e-05
+      },
+      "confidence": 0.9999850001124995,
+      "uncertainty": 1.4999887500533049e-05,
+      "entropy": 0.00026200863014916125,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -11.107467856854653,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle off faucet. Here are the robot observations after execution:\nVisual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is inside sink. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999989999,
+        "B": 9.999890000595e-13
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.130553781330152e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999350021124543,
+        "B": 6.499788754577018e-05
+      },
+      "confidence": 0.9999350021124543,
+      "uncertainty": 6.499788754565916e-05,
+      "entropy": 0.0009978407966561393,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.641155787892593,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put mug in coffee machine. Here are the robot observations after execution:\nVisual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is inside coffee machine. mug is on top of second countertop. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "available",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.8807970779778823,
+        "B": 0.11920292202211755
+      },
+      "confidence": 0.8807970779778823,
+      "uncertainty": 0.11920292202211769,
+      "entropy": 0.5270653410031618,
+      "fallback_applied": false,
+      "fallback_labels": [],
+      "fallback_logprob": null,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on coffee machine. Here are the robot observations after execution:\nVisual observation: coffee machine (turned on), mug (filled with water and clean), faucet (turned off), sink. mug is inside coffee machine. mug is on top of second countertop. nothing is inside robot gripper. Auditory observation: coffee machine turns on.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999770002635003e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.1304756432889446e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle off coffee machine. Here are the robot observations after execution:\nVisual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is inside coffee machine. mug is on top of second countertop. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.999996000008,
+        "B": 3.999991999958934e-06
+      },
+      "confidence": 0.999996000008,
+      "uncertainty": 3.9999919999589295e-06,
+      "entropy": 7.749689944602653e-05,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -12.42921819685665,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up mug. Here are the robot observations after execution:\nVisual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999660005779933,
+        "B": 3.399942200654755e-05
+      },
+      "confidence": 0.9999660005779933,
+      "uncertainty": 3.399942200665862e-05,
+      "entropy": 0.0005537418124830566,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.289167033300036,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put mug on second countertop. Here are the robot observations after execution:\nVisual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999890000604997,
+        "B": 1.0999939500266896e-05
+      },
+      "confidence": 0.9999890000604997,
+      "uncertainty": 1.0999939500266898e-05,
+      "entropy": 0.00019706206806479514,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -11.417620785156766,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-plan",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the current robot state, the goal condition, and the robot plan. Briefly explain what was wrong with the robot plan in 1-2 sentence.",
+      "user": "The robot task is to make coffee. The task is considered successful if A clean mug is filled with coffee and on top of the countertop.\nHere's the robot observation at the end of the task execution:\nmug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nThe robot plan is:\n00:17. Goal: Pick up mug.\n00:26. Goal: Put mug on sink.\n00:29. Goal: Toggle on faucet.\n00:32. Goal: Toggle off faucet.\n00:35. Goal: Pick up mug.\n00:47. Goal: Put mug in coffee machine.\n00:50. Goal: Toggle on coffee machine.\n00:53. Goal: Toggle off coffee machine.\n00:56. Goal: Pick up mug.\n00:59. Goal: Put mug on second countertop.\n\nQ: Known that all actions in the robot plan were executed successfully, what's wrong with the robot plan that caused the robot to fail?\nA:"
+    },
+    "response": "The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee."
+  },
+  {
+    "call": "reasoning-plan-steps",
+    "prompt": {
+      "system": "Given the identified failure reason, you are expected to output an earliest time step that is relevant to the failure. You must output a time step.",
+      "user": "The robot task is to make coffee. The task is considered successful if A clean mug is filled with coffee and on top of the countertop.\nHere's the robot observation at the end of the task execution:\nmug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nThe robot plan is:\n00:17. Goal: Pick up mug.\n00:26. Goal: Put mug on sink.\n00:29. Goal: Toggle on faucet.\n00:32. Goal: Toggle off faucet.\n00:35. Goal: Pick up mug.\n00:47. Goal: Put mug in coffee machine.\n00:50. Goal: Toggle on coffee machine.\n00:53. Goal: Toggle off coffee machine.\n00:56. Goal: Pick up mug.\n00:59. Goal: Put mug on second countertop.\n\nQ: Known that all actions in the robot plan were executed successfully, what's wrong with the robot plan that caused the robot to fail?\nA: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nQ: Which time step is most relevant to the above failure?\nA:"
+    },
+    "response": "00:50"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, mug)\n2. (put_on, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_in, mug, coffee machine)\n7. (toggle_on, coffee machine)\n8. (toggle_off, coffee machine)\n9. (pick_up, mug)\n10. (put_on, mug, countertop)\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (none)\nAvailable actions: (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: CoffeeMachine, CounterTop, Faucet, Mug, Sink, SinkBasin\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug must be grasped first so it can be emptied and repositioned for brewing coffee."
+        },
+        {
+          "action": "pour",
+          "obj1": "Mug",
+          "obj2": "Sink",
+          "rationale": "The mug is currently filled with water, so pouring it out is a direct correction toward making room for coffee."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "CoffeeMachine",
+          "rationale": "Placing the mug into the coffee machine is required before coffee can be dispensed into it."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "If the mug is already correctly positioned, turning on the coffee machine would start dispensing coffee."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "Once the mug has been properly filled with coffee, returning it to the countertop satisfies the goal placement condition."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug must be grasped first so it can be emptied and repositioned for brewing coffee.\nB) (pour, Mug, Sink) \u2014 The mug is currently filled with water, so pouring it out is a direct correction toward making room for coffee.\nC) (put_in, Mug, CoffeeMachine) \u2014 Placing the mug into the coffee machine is required before coffee can be dispensed into it.\nD) (toggle_on, CoffeeMachine) \u2014 If the mug is already correctly positioned, turning on the coffee machine would start dispensing coffee.\nE) (put_on, Mug, CounterTop) \u2014 Once the mug has been properly filled with coffee, returning it to the countertop satisfies the goal placement condition.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 4.749954875288287e-06,
+        "B": 0.9999810001804988,
+        "C": 4.749954875288287e-06,
+        "D": 4.749954875288287e-06,
+        "E": 4.749954875288287e-06
+      },
+      "confidence": 0.9999810001804988,
+      "uncertainty": 1.8999819501153148e-05,
+      "entropy": 0.0001565065405589306,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -12.257375439902157,
+      "response_text": "B"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, mug)\n2. (put_on, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_in, mug, coffee machine)\n7. (toggle_on, coffee machine)\n8. (toggle_off, coffee machine)\n9. (pick_up, mug)\n10. (put_on, mug, countertop)\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink)\nAvailable actions: (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: CoffeeMachine, CounterTop, Faucet, Mug, Sink, SinkBasin\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug is on the countertop and the gripper is empty; picking it up is the most direct step toward placing it in the coffee machine."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "CoffeeMachine",
+          "rationale": "If the mug is already grasped or can be immediately positioned, placing it into the coffee machine is necessary for dispensing coffee into it."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "Turning on the coffee machine is required to brew/dispense coffee once the mug is correctly positioned."
+        },
+        {
+          "action": "pour",
+          "obj1": "Mug",
+          "obj2": "Sink",
+          "rationale": "The mug currently contains water, so emptying it into the sink may be needed before brewing coffee into a clean mug."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "After correction and brewing, the mug must end up on the countertop; this action is a plausible next step if coffee has already been dispensed."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug is on the countertop and the gripper is empty; picking it up is the most direct step toward placing it in the coffee machine.\nB) (put_in, Mug, CoffeeMachine) \u2014 If the mug is already grasped or can be immediately positioned, placing it into the coffee machine is necessary for dispensing coffee into it.\nC) (toggle_on, CoffeeMachine) \u2014 Turning on the coffee machine is required to brew/dispense coffee once the mug is correctly positioned.\nD) (pour, Mug, Sink) \u2014 The mug currently contains water, so emptying it into the sink may be needed before brewing coffee into a clean mug.\nE) (put_on, Mug, CounterTop) \u2014 After correction and brewing, the mug must end up on the countertop; this action is a plausible next step if coffee has already been dispensed.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "D",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "D",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.7310585786292738,
+        "B": 3.3332610423865e-13,
+        "C": 3.3332610423865e-13,
+        "D": 0.2689414213697262,
+        "E": 3.3332610423865e-13
+      },
+      "confidence": 0.7310585786292738,
+      "uncertainty": 0.2689414213707262,
+      "entropy": 0.3617431305795734,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "E"
+      ],
+      "fallback_logprob": -28.729633404596658,
+      "response_text": "D"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, mug)\n2. (put_on, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_in, mug, coffee machine)\n7. (toggle_on, coffee machine)\n8. (toggle_off, coffee machine)\n9. (pick_up, mug)\n10. (put_on, mug, countertop)\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink), (pour, Mug, Sink)\nAvailable actions: (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: CoffeeMachine, CounterTop, Faucet, Mug, Sink, SinkBasin\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug must be manipulated to correct the mistake; picking it up is the most direct next step."
+        },
+        {
+          "action": "pour",
+          "obj1": "Mug",
+          "obj2": "Sink",
+          "rationale": "The mug currently contains water, so emptying it into the sink is a necessary correction before making coffee."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "CoffeeMachine",
+          "rationale": "Placing the mug in the coffee machine positions it to receive coffee once the machine is activated."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "If the mug is already correctly positioned, turning on the coffee machine would start dispensing coffee."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "Returning the mug to the countertop can be a useful staging action after correcting its contents or after brewing."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink), (pour, Mug, Sink)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug must be manipulated to correct the mistake; picking it up is the most direct next step.\nB) (pour, Mug, Sink) \u2014 The mug currently contains water, so emptying it into the sink is a necessary correction before making coffee.\nC) (put_in, Mug, CoffeeMachine) \u2014 Placing the mug in the coffee machine positions it to receive coffee once the machine is activated.\nD) (toggle_on, CoffeeMachine) \u2014 If the mug is already correctly positioned, turning on the coffee machine would start dispensing coffee.\nE) (put_on, Mug, CounterTop) \u2014 Returning the mug to the countertop can be a useful staging action after correcting its contents or after brewing.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 7.749879876228773e-06,
+        "B": 0.9999690004804951,
+        "C": 7.749879876228773e-06,
+        "D": 7.749879876228773e-06,
+        "E": 7.749879876228773e-06
+      },
+      "confidence": 0.9999690004804951,
+      "uncertainty": 3.0999519504915085e-05,
+      "entropy": 0.0002459220148987327,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.767833214560591,
+      "response_text": "B"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, mug)\n2. (put_on, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_in, mug, coffee machine)\n7. (toggle_on, coffee machine)\n8. (toggle_off, coffee machine)\n9. (pick_up, mug)\n10. (put_on, mug, countertop)\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink)\nAvailable actions: (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: CoffeeMachine, CounterTop, Faucet, Mug, Sink, SinkBasin\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug must be manipulated to correct the state; picking it up enables emptying the water and placing it into the coffee machine."
+        },
+        {
+          "action": "pour",
+          "obj1": "Mug",
+          "obj2": "Sink",
+          "rationale": "The mug is currently filled with water, so pouring it into the sink is a direct corrective step toward preparing it for coffee."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "CoffeeMachine",
+          "rationale": "Placing the mug in the coffee machine is necessary before dispensing coffee, assuming the mug is empty or can be corrected next."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "If the mug is already or can soon be positioned correctly, turning on the coffee machine is the action that would dispense coffee."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "Returning the mug to the countertop is relevant to the goal state after coffee is made, though it does not by itself fix the missing coffee."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug must be manipulated to correct the state; picking it up enables emptying the water and placing it into the coffee machine.\nB) (pour, Mug, Sink) \u2014 The mug is currently filled with water, so pouring it into the sink is a direct corrective step toward preparing it for coffee.\nC) (put_in, Mug, CoffeeMachine) \u2014 Placing the mug in the coffee machine is necessary before dispensing coffee, assuming the mug is empty or can be corrected next.\nD) (toggle_on, CoffeeMachine) \u2014 If the mug is already or can soon be positioned correctly, turning on the coffee machine is the action that would dispense coffee.\nE) (put_on, Mug, CounterTop) \u2014 Returning the mug to the countertop is relevant to the goal state after coffee is made, though it does not by itself fix the missing coffee.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.0006267131459722076,
+        "B": 0.9974931474161112,
+        "C": 0.0006267131459722076,
+        "D": 0.0006267131459722076,
+        "E": 0.0006267131459722076
+      },
+      "confidence": 0.9974931474161112,
+      "uncertainty": 0.00250685258388883,
+      "entropy": 0.013042938564660494,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -7.375021624454194,
+      "response_text": "B"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, mug)\n2. (put_on, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_in, mug, coffee machine)\n7. (toggle_on, coffee machine)\n8. (toggle_off, coffee machine)\n9. (pick_up, mug)\n10. (put_on, mug, countertop)\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink)\nAvailable actions: (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: CoffeeMachine, CounterTop, Faucet, Mug, Sink, SinkBasin\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug is on the countertop and emptying/refilling it requires holding it first."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "CoffeeMachine",
+          "rationale": "Placing the mug in the coffee machine is necessary before brewing coffee into it."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "If the mug is already properly positioned, turning on the machine is the direct step toward dispensing coffee."
+        },
+        {
+          "action": "pour",
+          "obj1": "Mug",
+          "obj2": "Sink",
+          "rationale": "The mug currently contains water, so dumping it into the sink corrects the wrong contents before brewing."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "After brewing, the mug must end up on the countertop to satisfy the goal state."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug is on the countertop and emptying/refilling it requires holding it first.\nB) (put_in, Mug, CoffeeMachine) \u2014 Placing the mug in the coffee machine is necessary before brewing coffee into it.\nC) (toggle_on, CoffeeMachine) \u2014 If the mug is already properly positioned, turning on the machine is the direct step toward dispensing coffee.\nD) (pour, Mug, Sink) \u2014 The mug currently contains water, so dumping it into the sink corrects the wrong contents before brewing.\nE) (put_on, Mug, CounterTop) \u2014 After brewing, the mug must end up on the countertop to satisfy the goal state.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "D",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "D",
+      "confidence_label": "D",
+      "option_probs": {
+        "A": 4.574581413033236e-05,
+        "B": 4.574581413033236e-05,
+        "C": 4.574581413033236e-05,
+        "D": 0.9998170167434787,
+        "E": 4.574581413033236e-05
+      },
+      "confidence": 0.9998170167434787,
+      "uncertainty": 0.00018298325652132963,
+      "entropy": 0.0012497594776930214,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "fallback_logprob": -9.992410264847578,
+      "response_text": "D"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, mug)\n2. (put_on, mug, sink)\n3. (toggle_on, faucet)\n4. (toggle_off, faucet)\n5. (pick_up, mug)\n6. (put_in, mug, coffee machine)\n7. (toggle_on, coffee machine)\n8. (toggle_off, coffee machine)\n9. (pick_up, mug)\n10. (put_on, mug, countertop)\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink)\nAvailable actions: (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Faucet), (put_in, Faucet), (put_on, Faucet), (toggle_on, Faucet), (toggle_off, Faucet), (open_obj, Faucet), (close_obj, Faucet), (slice_obj, Faucet), (crack_obj, Faucet), (pour, Faucet), (pick_up, Mug), (put_in, Mug), (put_on, Mug), (toggle_on, Mug), (toggle_off, Mug), (open_obj, Mug), (close_obj, Mug), (slice_obj, Mug), (crack_obj, Mug), (pour, Mug), (pick_up, Sink), (put_in, Sink), (put_on, Sink), (toggle_on, Sink), (toggle_off, Sink), (open_obj, Sink), (close_obj, Sink), (slice_obj, Sink), (crack_obj, Sink), (pour, Sink)\nAvailable objects: CoffeeMachine, CounterTop, Faucet, Mug, Sink, SinkBasin\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Mug",
+          "obj2": null,
+          "rationale": "The mug is on the countertop and must be manipulated to correct the mistake and prepare it for coffee making."
+        },
+        {
+          "action": "pour",
+          "obj1": "Mug",
+          "obj2": "Sink",
+          "rationale": "The mug currently contains water, so emptying it into the sink is a direct corrective step before brewing coffee."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Mug",
+          "obj2": "CoffeeMachine",
+          "rationale": "Placing the mug into the coffee machine is necessary before dispensing coffee, assuming it is empty or ready to be filled."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "Turning on the coffee machine is required to brew/dispense coffee once the mug is correctly positioned."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Mug",
+          "obj2": "CounterTop",
+          "rationale": "If the mug already contains coffee after correction, placing it on the countertop would satisfy the final placement requirement."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: The plan rinsed the mug with water, but never resulted in coffee being dispensed into it. So the robot ended with a clean mug full of water on the countertop instead of a clean mug filled with coffee.\nCurrent state: Visual observation: mug (filled with water and clean), coffee machine (turned off), faucet (turned off), sink. mug is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean mug is filled with coffee and on top of the countertop.\nActions completed so far: (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink), (pour, Mug, Sink)\n\nCandidate next actions:\nA) (pick_up, Mug) \u2014 The mug is on the countertop and must be manipulated to correct the mistake and prepare it for coffee making.\nB) (pour, Mug, Sink) \u2014 The mug currently contains water, so emptying it into the sink is a direct corrective step before brewing coffee.\nC) (put_in, Mug, CoffeeMachine) \u2014 Placing the mug into the coffee machine is necessary before dispensing coffee, assuming it is empty or ready to be filled.\nD) (toggle_on, CoffeeMachine) \u2014 Turning on the coffee machine is required to brew/dispense coffee once the mug is correctly positioned.\nE) (put_on, Mug, CounterTop) \u2014 If the mug already contains coffee after correction, placing it on the countertop would satisfy the final placement requirement.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 9.999979999897332e-07,
+        "B": 0.999996000008,
+        "C": 9.999979999897332e-07,
+        "D": 9.999979999897332e-07,
+        "E": 9.999979999897332e-07
+      },
+      "confidence": 0.999996000008,
+      "uncertainty": 3.9999919999589295e-06,
+      "entropy": 3.6821503488501385e-05,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -13.815512557976541,
+      "response_text": "B"
+    }
+  }
+]

@@ -1,0 +1,701 @@
+task,episode,stage,elapsed_s
+boilWater,boilWater-1,loading data,0.0
+boilWater,boilWater-1,sound detection,1.986
+boilWater,boilWater-1,scene graphs,5.27
+boilWater,boilWater-1,summaries,5.617
+boilWater,boilWater-1,reasoning (LLM),5.617
+boilWater,boilWater-1,replan+correction (sim-grounded),5.619
+boilWater,boilWater-1,done,80.922
+boilWater,boilWater-10,loading data,0.0
+boilWater,boilWater-10,sound detection,0.472
+boilWater,boilWater-10,scene graphs,0.596
+boilWater,boilWater-10,summaries,0.77
+boilWater,boilWater-10,reasoning (LLM),0.771
+boilWater,boilWater-10,replan+correction (sim-grounded),3.822
+boilWater,boilWater-10,done,63.406
+boilWater,boilWater-2,loading data,0.0
+boilWater,boilWater-2,sound detection,0.475
+boilWater,boilWater-2,scene graphs,0.594
+boilWater,boilWater-2,summaries,0.864
+boilWater,boilWater-2,reasoning (LLM),0.865
+boilWater,boilWater-2,replan+correction (sim-grounded),4.253
+boilWater,boilWater-2,done,16.501
+boilWater,boilWater-3,loading data,0.0
+boilWater,boilWater-3,sound detection,0.183
+boilWater,boilWater-3,scene graphs,0.308
+boilWater,boilWater-3,summaries,0.511
+boilWater,boilWater-3,reasoning (LLM),0.512
+boilWater,boilWater-3,replan+correction (sim-grounded),3.348
+boilWater,boilWater-3,done,15.532
+boilWater,boilWater-4,loading data,0.0
+boilWater,boilWater-4,sound detection,0.175
+boilWater,boilWater-4,scene graphs,0.29
+boilWater,boilWater-4,summaries,0.543
+boilWater,boilWater-4,reasoning (LLM),0.544
+boilWater,boilWater-4,replan+correction (sim-grounded),0.546
+boilWater,boilWater-4,done,66.347
+boilWater,boilWater-5,loading data,0.0
+boilWater,boilWater-5,sound detection,0.413
+boilWater,boilWater-5,scene graphs,0.538
+boilWater,boilWater-5,summaries,1.115
+boilWater,boilWater-5,reasoning (LLM),1.116
+boilWater,boilWater-5,replan+correction (sim-grounded),1.119
+boilWater,boilWater-5,done,69.457
+boilWater,boilWater-6,loading data,0.0
+boilWater,boilWater-6,sound detection,0.167
+boilWater,boilWater-6,scene graphs,0.279
+boilWater,boilWater-6,summaries,0.459
+boilWater,boilWater-6,reasoning (LLM),0.46
+boilWater,boilWater-6,replan+correction (sim-grounded),3.151
+boilWater,boilWater-6,done,60.305
+boilWater,boilWater-7,loading data,0.0
+boilWater,boilWater-7,sound detection,0.209
+boilWater,boilWater-7,scene graphs,0.322
+boilWater,boilWater-7,summaries,0.573
+boilWater,boilWater-7,reasoning (LLM),0.574
+boilWater,boilWater-7,replan+correction (sim-grounded),0.576
+boilWater,boilWater-7,done,32.087
+boilWater,boilWater-8,loading data,0.0
+boilWater,boilWater-8,sound detection,1.114
+boilWater,boilWater-8,scene graphs,1.249
+boilWater,boilWater-8,summaries,2.205
+boilWater,boilWater-8,reasoning (LLM),2.206
+boilWater,boilWater-8,replan+correction (sim-grounded),2.208
+boilWater,boilWater-8,done,81.76
+boilWater,boilWater-9,loading data,0.0
+boilWater,boilWater-9,sound detection,0.859
+boilWater,boilWater-9,scene graphs,0.979
+boilWater,boilWater-9,summaries,1.812
+boilWater,boilWater-9,reasoning (LLM),1.813
+boilWater,boilWater-9,replan+correction (sim-grounded),4.824
+boilWater,boilWater-9,done,23.397
+cookEgg,cookEgg-1,loading data,0.0
+cookEgg,cookEgg-1,sound detection,1.134
+cookEgg,cookEgg-1,scene graphs,1.271
+cookEgg,cookEgg-1,summaries,2.481
+cookEgg,cookEgg-1,reasoning (LLM),2.482
+cookEgg,cookEgg-1,replan+correction (sim-grounded),2.484
+cookEgg,cookEgg-1,done,104.053
+cookEgg,cookEgg-10,loading data,0.0
+cookEgg,cookEgg-10,sound detection,1.681
+cookEgg,cookEgg-10,scene graphs,1.803
+cookEgg,cookEgg-10,summaries,3.424
+cookEgg,cookEgg-10,reasoning (LLM),3.425
+cookEgg,cookEgg-10,replan+correction (sim-grounded),3.427
+cookEgg,cookEgg-10,done,16.123
+cookEgg,cookEgg-2,loading data,0.0
+cookEgg,cookEgg-2,sound detection,1.358
+cookEgg,cookEgg-2,scene graphs,1.488
+cookEgg,cookEgg-2,summaries,2.916
+cookEgg,cookEgg-2,reasoning (LLM),2.916
+cookEgg,cookEgg-2,replan+correction (sim-grounded),2.918
+cookEgg,cookEgg-2,done,80.002
+cookEgg,cookEgg-3,loading data,0.0
+cookEgg,cookEgg-3,sound detection,1.663
+cookEgg,cookEgg-3,scene graphs,1.787
+cookEgg,cookEgg-3,summaries,3.36
+cookEgg,cookEgg-3,reasoning (LLM),3.361
+cookEgg,cookEgg-3,replan+correction (sim-grounded),3.363
+cookEgg,cookEgg-3,done,15.67
+cookEgg,cookEgg-4,loading data,0.0
+cookEgg,cookEgg-4,sound detection,1.994
+cookEgg,cookEgg-4,scene graphs,2.126
+cookEgg,cookEgg-4,summaries,4.171
+cookEgg,cookEgg-4,reasoning (LLM),4.172
+cookEgg,cookEgg-4,replan+correction (sim-grounded),4.173
+cookEgg,cookEgg-4,done,112.385
+cookEgg,cookEgg-5,loading data,0.0
+cookEgg,cookEgg-5,sound detection,2.185
+cookEgg,cookEgg-5,scene graphs,2.327
+cookEgg,cookEgg-5,summaries,4.643
+cookEgg,cookEgg-5,reasoning (LLM),4.644
+cookEgg,cookEgg-5,replan+correction (sim-grounded),4.645
+cookEgg,cookEgg-5,done,130.665
+cookEgg,cookEgg-6,loading data,0.0
+cookEgg,cookEgg-6,sound detection,3.059
+cookEgg,cookEgg-6,scene graphs,3.249
+cookEgg,cookEgg-6,summaries,5.498
+cookEgg,cookEgg-6,reasoning (LLM),5.499
+cookEgg,cookEgg-6,replan+correction (sim-grounded),5.501
+cookEgg,cookEgg-6,done,63.644
+cookEgg,cookEgg-7,loading data,0.0
+cookEgg,cookEgg-7,sound detection,2.119
+cookEgg,cookEgg-7,scene graphs,2.25
+cookEgg,cookEgg-7,summaries,4.235
+cookEgg,cookEgg-7,reasoning (LLM),4.236
+cookEgg,cookEgg-7,replan+correction (sim-grounded),4.237
+cookEgg,cookEgg-7,done,97.04
+cookEgg,cookEgg-8,loading data,0.0
+cookEgg,cookEgg-8,sound detection,1.673
+cookEgg,cookEgg-8,scene graphs,1.805
+cookEgg,cookEgg-8,summaries,3.61
+cookEgg,cookEgg-8,reasoning (LLM),3.611
+cookEgg,cookEgg-8,replan+correction (sim-grounded),3.614
+cookEgg,cookEgg-8,done,17.141
+cookEgg,cookEgg-9,loading data,0.0
+cookEgg,cookEgg-9,sound detection,1.315
+cookEgg,cookEgg-9,scene graphs,1.444
+cookEgg,cookEgg-9,summaries,2.816
+cookEgg,cookEgg-9,reasoning (LLM),2.816
+cookEgg,cookEgg-9,replan+correction (sim-grounded),11.811
+cookEgg,cookEgg-9,done,43.354
+heatPotato,heatPotato-1,loading data,0.0
+heatPotato,heatPotato-1,sound detection,1.449
+heatPotato,heatPotato-1,scene graphs,1.583
+heatPotato,heatPotato-1,summaries,2.936
+heatPotato,heatPotato-1,reasoning (LLM),2.937
+heatPotato,heatPotato-1,replan+correction (sim-grounded),2.938
+heatPotato,heatPotato-1,done,129.304
+heatPotato,heatPotato-10,loading data,0.0
+heatPotato,heatPotato-10,sound detection,2.425
+heatPotato,heatPotato-10,scene graphs,2.559
+heatPotato,heatPotato-10,summaries,4.451
+heatPotato,heatPotato-10,reasoning (LLM),4.452
+heatPotato,heatPotato-10,replan+correction (sim-grounded),4.453
+heatPotato,heatPotato-10,done,38.633
+heatPotato,heatPotato-2,loading data,0.0
+heatPotato,heatPotato-2,sound detection,2.229
+heatPotato,heatPotato-2,scene graphs,2.365
+heatPotato,heatPotato-2,summaries,4.474
+heatPotato,heatPotato-2,reasoning (LLM),4.475
+heatPotato,heatPotato-2,replan+correction (sim-grounded),4.476
+heatPotato,heatPotato-2,done,96.801
+heatPotato,heatPotato-3,loading data,0.0
+heatPotato,heatPotato-3,sound detection,2.223
+heatPotato,heatPotato-3,scene graphs,2.357
+heatPotato,heatPotato-3,summaries,4.274
+heatPotato,heatPotato-3,reasoning (LLM),4.274
+heatPotato,heatPotato-3,replan+correction (sim-grounded),4.276
+heatPotato,heatPotato-3,done,107.742
+heatPotato,heatPotato-4,loading data,0.0
+heatPotato,heatPotato-4,sound detection,2.452
+heatPotato,heatPotato-4,scene graphs,2.598
+heatPotato,heatPotato-4,summaries,4.882
+heatPotato,heatPotato-4,reasoning (LLM),4.883
+heatPotato,heatPotato-4,replan+correction (sim-grounded),4.884
+heatPotato,heatPotato-4,done,40.926
+heatPotato,heatPotato-5,loading data,0.0
+heatPotato,heatPotato-5,sound detection,1.265
+heatPotato,heatPotato-5,scene graphs,1.369
+heatPotato,heatPotato-5,summaries,2.573
+heatPotato,heatPotato-5,reasoning (LLM),2.573
+heatPotato,heatPotato-5,replan+correction (sim-grounded),2.575
+heatPotato,heatPotato-5,done,96.439
+heatPotato,heatPotato-6,loading data,0.0
+heatPotato,heatPotato-6,sound detection,1.984
+heatPotato,heatPotato-6,scene graphs,2.117
+heatPotato,heatPotato-6,summaries,3.883
+heatPotato,heatPotato-6,reasoning (LLM),3.884
+heatPotato,heatPotato-6,replan+correction (sim-grounded),3.885
+heatPotato,heatPotato-6,done,100.856
+heatPotato,heatPotato-7,loading data,0.0
+heatPotato,heatPotato-7,sound detection,2.269
+heatPotato,heatPotato-7,scene graphs,2.438
+heatPotato,heatPotato-7,summaries,4.477
+heatPotato,heatPotato-7,reasoning (LLM),4.478
+heatPotato,heatPotato-7,replan+correction (sim-grounded),13.886
+heatPotato,heatPotato-7,done,27.487
+heatPotato,heatPotato-8,loading data,0.0
+heatPotato,heatPotato-8,sound detection,2.077
+heatPotato,heatPotato-8,scene graphs,2.204
+heatPotato,heatPotato-8,summaries,4.274
+heatPotato,heatPotato-8,reasoning (LLM),4.274
+heatPotato,heatPotato-8,replan+correction (sim-grounded),4.276
+heatPotato,heatPotato-8,done,117.995
+heatPotato,heatPotato-9,loading data,0.0
+heatPotato,heatPotato-9,sound detection,2.145
+heatPotato,heatPotato-9,scene graphs,2.279
+heatPotato,heatPotato-9,summaries,4.211
+heatPotato,heatPotato-9,reasoning (LLM),4.211
+heatPotato,heatPotato-9,replan+correction (sim-grounded),4.213
+heatPotato,heatPotato-9,done,68.243
+makeCoffee,makeCoffee-1,loading data,0.0
+makeCoffee,makeCoffee-1,sound detection,0.866
+makeCoffee,makeCoffee-1,scene graphs,0.98
+makeCoffee,makeCoffee-1,summaries,1.882
+makeCoffee,makeCoffee-1,reasoning (LLM),1.883
+makeCoffee,makeCoffee-1,replan+correction (sim-grounded),1.886
+makeCoffee,makeCoffee-1,done,99.886
+makeCoffee,makeCoffee-10,loading data,0.0
+makeCoffee,makeCoffee-10,sound detection,1.245
+makeCoffee,makeCoffee-10,scene graphs,1.369
+makeCoffee,makeCoffee-10,summaries,2.471
+makeCoffee,makeCoffee-10,reasoning (LLM),2.471
+makeCoffee,makeCoffee-10,replan+correction (sim-grounded),2.474
+makeCoffee,makeCoffee-10,done,40.42
+makeCoffee,makeCoffee-2,loading data,0.0
+makeCoffee,makeCoffee-2,sound detection,0.999
+makeCoffee,makeCoffee-2,scene graphs,1.12
+makeCoffee,makeCoffee-2,summaries,2.165
+makeCoffee,makeCoffee-2,reasoning (LLM),2.165
+makeCoffee,makeCoffee-2,replan+correction (sim-grounded),2.167
+makeCoffee,makeCoffee-2,done,70.708
+makeCoffee,makeCoffee-3,loading data,0.0
+makeCoffee,makeCoffee-3,sound detection,1.397
+makeCoffee,makeCoffee-3,scene graphs,1.533
+makeCoffee,makeCoffee-3,summaries,3.0
+makeCoffee,makeCoffee-3,reasoning (LLM),3.0
+makeCoffee,makeCoffee-3,replan+correction (sim-grounded),3.003
+makeCoffee,makeCoffee-3,done,130.413
+makeCoffee,makeCoffee-4,loading data,0.0
+makeCoffee,makeCoffee-4,sound detection,0.831
+makeCoffee,makeCoffee-4,scene graphs,0.947
+makeCoffee,makeCoffee-4,summaries,1.765
+makeCoffee,makeCoffee-4,reasoning (LLM),1.766
+makeCoffee,makeCoffee-4,replan+correction (sim-grounded),6.753
+makeCoffee,makeCoffee-4,done,96.877
+makeCoffee,makeCoffee-5,loading data,0.0
+makeCoffee,makeCoffee-5,sound detection,1.142
+makeCoffee,makeCoffee-5,scene graphs,1.27
+makeCoffee,makeCoffee-5,summaries,2.319
+makeCoffee,makeCoffee-5,reasoning (LLM),2.32
+makeCoffee,makeCoffee-5,replan+correction (sim-grounded),2.323
+makeCoffee,makeCoffee-5,done,108.657
+makeCoffee,makeCoffee-6,loading data,0.0
+makeCoffee,makeCoffee-6,sound detection,1.379
+makeCoffee,makeCoffee-6,scene graphs,1.506
+makeCoffee,makeCoffee-6,summaries,2.866
+makeCoffee,makeCoffee-6,reasoning (LLM),2.867
+makeCoffee,makeCoffee-6,replan+correction (sim-grounded),2.87
+makeCoffee,makeCoffee-6,done,59.315
+makeCoffee,makeCoffee-7,loading data,0.0
+makeCoffee,makeCoffee-7,sound detection,1.021
+makeCoffee,makeCoffee-7,scene graphs,1.152
+makeCoffee,makeCoffee-7,summaries,38.728
+makeCoffee,makeCoffee-7,reasoning (LLM),38.731
+makeCoffee,makeCoffee-7,replan+correction (sim-grounded),52.541
+makeCoffee,makeCoffee-7,done,96.808
+makeCoffee,makeCoffee-8,loading data,0.0
+makeCoffee,makeCoffee-8,sound detection,0.764
+makeCoffee,makeCoffee-8,scene graphs,0.883
+makeCoffee,makeCoffee-8,summaries,25.52
+makeCoffee,makeCoffee-8,reasoning (LLM),25.521
+makeCoffee,makeCoffee-8,replan+correction (sim-grounded),38.12
+makeCoffee,makeCoffee-8,done,142.522
+makeCoffee,makeCoffee-9,loading data,0.0
+makeCoffee,makeCoffee-9,sound detection,1.205
+makeCoffee,makeCoffee-9,scene graphs,1.338
+makeCoffee,makeCoffee-9,summaries,24.157
+makeCoffee,makeCoffee-9,reasoning (LLM),24.158
+makeCoffee,makeCoffee-9,replan+correction (sim-grounded),37.779
+makeCoffee,makeCoffee-9,done,116.887
+makeSalad,makeSalad-1,loading data,0.0
+makeSalad,makeSalad-1,sound detection,3.678
+makeSalad,makeSalad-1,scene graphs,3.804
+makeSalad,makeSalad-1,summaries,165.858
+makeSalad,makeSalad-1,reasoning (LLM),165.859
+makeSalad,makeSalad-1,replan+correction (sim-grounded),192.486
+makeSalad,makeSalad-1,done,287.824
+makeSalad,makeSalad-10,loading data,0.0
+makeSalad,makeSalad-10,sound detection,3.876
+makeSalad,makeSalad-10,scene graphs,4.001
+makeSalad,makeSalad-10,summaries,165.817
+makeSalad,makeSalad-10,reasoning (LLM),165.819
+makeSalad,makeSalad-10,replan+correction (sim-grounded),186.24
+makeSalad,makeSalad-10,done,201.473
+makeSalad,makeSalad-2,loading data,0.0
+makeSalad,makeSalad-2,sound detection,3.622
+makeSalad,makeSalad-2,scene graphs,3.762
+makeSalad,makeSalad-2,summaries,165.622
+makeSalad,makeSalad-2,reasoning (LLM),165.625
+makeSalad,makeSalad-2,replan+correction (sim-grounded),186.489
+makeSalad,makeSalad-2,done,303.52
+makeSalad,makeSalad-3,loading data,0.0
+makeSalad,makeSalad-3,sound detection,3.483
+makeSalad,makeSalad-3,scene graphs,3.613
+makeSalad,makeSalad-3,summaries,164.906
+makeSalad,makeSalad-3,reasoning (LLM),164.908
+makeSalad,makeSalad-3,replan+correction (sim-grounded),185.422
+makeSalad,makeSalad-3,done,224.997
+makeSalad,makeSalad-4,loading data,0.0
+makeSalad,makeSalad-4,sound detection,3.659
+makeSalad,makeSalad-4,scene graphs,3.789
+makeSalad,makeSalad-4,summaries,165.823
+makeSalad,makeSalad-4,reasoning (LLM),165.825
+makeSalad,makeSalad-4,replan+correction (sim-grounded),186.039
+makeSalad,makeSalad-4,done,242.292
+makeSalad,makeSalad-5,loading data,0.0
+makeSalad,makeSalad-5,sound detection,3.803
+makeSalad,makeSalad-5,scene graphs,3.932
+makeSalad,makeSalad-5,summaries,161.096
+makeSalad,makeSalad-5,reasoning (LLM),161.098
+makeSalad,makeSalad-5,replan+correction (sim-grounded),177.78
+makeSalad,makeSalad-5,done,272.131
+makeSalad,makeSalad-6,loading data,0.0
+makeSalad,makeSalad-6,sound detection,3.485
+makeSalad,makeSalad-6,scene graphs,3.609
+makeSalad,makeSalad-6,summaries,150.492
+makeSalad,makeSalad-6,reasoning (LLM),150.494
+makeSalad,makeSalad-6,replan+correction (sim-grounded),167.516
+makeSalad,makeSalad-6,done,237.192
+makeSalad,makeSalad-7,loading data,0.0
+makeSalad,makeSalad-7,sound detection,3.549
+makeSalad,makeSalad-7,scene graphs,3.676
+makeSalad,makeSalad-7,summaries,145.173
+makeSalad,makeSalad-7,reasoning (LLM),145.174
+makeSalad,makeSalad-7,replan+correction (sim-grounded),164.771
+makeSalad,makeSalad-7,done,228.958
+makeSalad,makeSalad-8,loading data,0.0
+makeSalad,makeSalad-8,sound detection,4.15
+makeSalad,makeSalad-8,scene graphs,4.278
+makeSalad,makeSalad-8,summaries,164.554
+makeSalad,makeSalad-8,reasoning (LLM),164.556
+makeSalad,makeSalad-8,replan+correction (sim-grounded),186.683
+makeSalad,makeSalad-8,done,221.647
+makeSalad,makeSalad-9,loading data,0.0
+makeSalad,makeSalad-9,sound detection,4.012
+makeSalad,makeSalad-9,scene graphs,4.14
+makeSalad,makeSalad-9,summaries,163.582
+makeSalad,makeSalad-9,reasoning (LLM),163.584
+makeSalad,makeSalad-9,replan+correction (sim-grounded),167.381
+makeSalad,makeSalad-9,done,279.117
+storeEgg,storeEgg-1,loading data,0.0
+storeEgg,storeEgg-1,sound detection,2.62
+storeEgg,storeEgg-1,scene graphs,2.737
+storeEgg,storeEgg-1,summaries,91.797
+storeEgg,storeEgg-1,reasoning (LLM),91.798
+storeEgg,storeEgg-1,replan+correction (sim-grounded),100.785
+storeEgg,storeEgg-1,done,141.284
+storeEgg,storeEgg-10,loading data,0.0
+storeEgg,storeEgg-10,sound detection,2.19
+storeEgg,storeEgg-10,scene graphs,2.309
+storeEgg,storeEgg-10,summaries,79.771
+storeEgg,storeEgg-10,reasoning (LLM),79.772
+storeEgg,storeEgg-10,replan+correction (sim-grounded),87.875
+storeEgg,storeEgg-10,done,98.839
+storeEgg,storeEgg-2,loading data,0.0
+storeEgg,storeEgg-2,sound detection,2.275
+storeEgg,storeEgg-2,scene graphs,2.407
+storeEgg,storeEgg-2,summaries,76.375
+storeEgg,storeEgg-2,reasoning (LLM),76.376
+storeEgg,storeEgg-2,replan+correction (sim-grounded),82.526
+storeEgg,storeEgg-2,done,95.354
+storeEgg,storeEgg-3,loading data,0.0
+storeEgg,storeEgg-3,sound detection,2.69
+storeEgg,storeEgg-3,scene graphs,2.816
+storeEgg,storeEgg-3,summaries,94.635
+storeEgg,storeEgg-3,reasoning (LLM),94.636
+storeEgg,storeEgg-3,replan+correction (sim-grounded),101.999
+storeEgg,storeEgg-3,done,196.542
+storeEgg,storeEgg-4,loading data,0.0
+storeEgg,storeEgg-4,sound detection,2.563
+storeEgg,storeEgg-4,scene graphs,2.678
+storeEgg,storeEgg-4,summaries,93.802
+storeEgg,storeEgg-4,reasoning (LLM),93.803
+storeEgg,storeEgg-4,replan+correction (sim-grounded),100.455
+storeEgg,storeEgg-4,done,137.525
+storeEgg,storeEgg-5,loading data,0.0
+storeEgg,storeEgg-5,sound detection,2.695
+storeEgg,storeEgg-5,scene graphs,2.811
+storeEgg,storeEgg-5,summaries,92.567
+storeEgg,storeEgg-5,reasoning (LLM),92.568
+storeEgg,storeEgg-5,replan+correction (sim-grounded),97.799
+storeEgg,storeEgg-5,done,152.097
+storeEgg,storeEgg-6,loading data,0.0
+storeEgg,storeEgg-6,sound detection,2.573
+storeEgg,storeEgg-6,scene graphs,2.688
+storeEgg,storeEgg-6,summaries,93.218
+storeEgg,storeEgg-6,reasoning (LLM),93.219
+storeEgg,storeEgg-6,replan+correction (sim-grounded),99.928
+storeEgg,storeEgg-6,done,189.032
+storeEgg,storeEgg-7,loading data,0.0
+storeEgg,storeEgg-7,sound detection,1.304
+storeEgg,storeEgg-7,scene graphs,1.416
+storeEgg,storeEgg-7,summaries,35.022
+storeEgg,storeEgg-7,reasoning (LLM),35.023
+storeEgg,storeEgg-7,replan+correction (sim-grounded),39.367
+storeEgg,storeEgg-7,done,50.034
+storeEgg,storeEgg-8,loading data,0.0
+storeEgg,storeEgg-8,sound detection,2.83
+storeEgg,storeEgg-8,scene graphs,2.966
+storeEgg,storeEgg-8,summaries,97.611
+storeEgg,storeEgg-8,reasoning (LLM),97.612
+storeEgg,storeEgg-8,replan+correction (sim-grounded),104.98
+storeEgg,storeEgg-8,done,164.983
+storeEgg,storeEgg-9,loading data,0.0
+storeEgg,storeEgg-9,sound detection,2.888
+storeEgg,storeEgg-9,scene graphs,3.007
+storeEgg,storeEgg-9,summaries,75.683
+storeEgg,storeEgg-9,reasoning (LLM),75.684
+storeEgg,storeEgg-9,replan+correction (sim-grounded),80.916
+storeEgg,storeEgg-9,done,91.1
+switchDevices,switchDevices-1,loading data,0.0
+switchDevices,switchDevices-1,sound detection,1.218
+switchDevices,switchDevices-1,scene graphs,1.315
+switchDevices,switchDevices-1,summaries,41.689
+switchDevices,switchDevices-1,reasoning (LLM),41.69
+switchDevices,switchDevices-1,replan+correction (sim-grounded),52.879
+switchDevices,switchDevices-1,done,75.106
+switchDevices,switchDevices-10,loading data,0.0
+switchDevices,switchDevices-10,sound detection,1.114
+switchDevices,switchDevices-10,scene graphs,1.256
+switchDevices,switchDevices-10,summaries,35.958
+switchDevices,switchDevices-10,reasoning (LLM),35.959
+switchDevices,switchDevices-10,replan+correction (sim-grounded),43.574
+switchDevices,switchDevices-10,done,73.406
+switchDevices,switchDevices-2,loading data,0.0
+switchDevices,switchDevices-2,sound detection,1.109
+switchDevices,switchDevices-2,scene graphs,1.252
+switchDevices,switchDevices-2,summaries,42.937
+switchDevices,switchDevices-2,reasoning (LLM),42.938
+switchDevices,switchDevices-2,replan+correction (sim-grounded),51.435
+switchDevices,switchDevices-2,done,76.035
+switchDevices,switchDevices-3,loading data,0.0
+switchDevices,switchDevices-3,sound detection,1.295
+switchDevices,switchDevices-3,scene graphs,1.435
+switchDevices,switchDevices-3,summaries,43.425
+switchDevices,switchDevices-3,reasoning (LLM),43.426
+switchDevices,switchDevices-3,replan+correction (sim-grounded),53.322
+switchDevices,switchDevices-3,done,68.146
+switchDevices,switchDevices-4,loading data,0.0
+switchDevices,switchDevices-4,sound detection,1.685
+switchDevices,switchDevices-4,scene graphs,1.817
+switchDevices,switchDevices-4,summaries,47.873
+switchDevices,switchDevices-4,reasoning (LLM),47.874
+switchDevices,switchDevices-4,replan+correction (sim-grounded),55.806
+switchDevices,switchDevices-4,done,79.952
+switchDevices,switchDevices-5,loading data,0.0
+switchDevices,switchDevices-5,sound detection,1.332
+switchDevices,switchDevices-5,scene graphs,1.479
+switchDevices,switchDevices-5,summaries,43.977
+switchDevices,switchDevices-5,reasoning (LLM),43.978
+switchDevices,switchDevices-5,replan+correction (sim-grounded),50.51
+switchDevices,switchDevices-5,done,77.957
+switchDevices,switchDevices-6,loading data,0.0
+switchDevices,switchDevices-6,sound detection,1.132
+switchDevices,switchDevices-6,scene graphs,1.267
+switchDevices,switchDevices-6,summaries,35.496
+switchDevices,switchDevices-6,reasoning (LLM),35.497
+switchDevices,switchDevices-6,replan+correction (sim-grounded),44.588
+switchDevices,switchDevices-6,done,86.373
+switchDevices,switchDevices-7,loading data,0.0
+switchDevices,switchDevices-7,sound detection,1.431
+switchDevices,switchDevices-7,scene graphs,1.565
+switchDevices,switchDevices-7,summaries,40.681
+switchDevices,switchDevices-7,reasoning (LLM),40.682
+switchDevices,switchDevices-7,replan+correction (sim-grounded),47.053
+switchDevices,switchDevices-7,done,62.739
+switchDevices,switchDevices-8,loading data,0.0
+switchDevices,switchDevices-8,sound detection,1.237
+switchDevices,switchDevices-8,scene graphs,1.38
+switchDevices,switchDevices-8,summaries,37.45
+switchDevices,switchDevices-8,reasoning (LLM),37.451
+switchDevices,switchDevices-8,replan+correction (sim-grounded),43.098
+switchDevices,switchDevices-8,done,74.412
+switchDevices,switchDevices-9,loading data,0.0
+switchDevices,switchDevices-9,sound detection,1.144
+switchDevices,switchDevices-9,scene graphs,1.272
+switchDevices,switchDevices-9,summaries,35.833
+switchDevices,switchDevices-9,reasoning (LLM),35.834
+switchDevices,switchDevices-9,replan+correction (sim-grounded),44.715
+switchDevices,switchDevices-9,done,68.42
+toastBread,toastBread-1,loading data,0.0
+toastBread,toastBread-1,sound detection,0.868
+toastBread,toastBread-1,scene graphs,0.981
+toastBread,toastBread-1,summaries,22.331
+toastBread,toastBread-1,reasoning (LLM),22.332
+toastBread,toastBread-1,replan+correction (sim-grounded),32.053
+toastBread,toastBread-1,done,70.778
+toastBread,toastBread-10,loading data,0.0
+toastBread,toastBread-10,sound detection,0.852
+toastBread,toastBread-10,scene graphs,0.964
+toastBread,toastBread-10,summaries,21.424
+toastBread,toastBread-10,reasoning (LLM),21.425
+toastBread,toastBread-10,replan+correction (sim-grounded),22.408
+toastBread,toastBread-10,done,62.487
+toastBread,toastBread-2,loading data,0.0
+toastBread,toastBread-2,sound detection,0.884
+toastBread,toastBread-2,scene graphs,0.999
+toastBread,toastBread-2,summaries,1.792
+toastBread,toastBread-2,reasoning (LLM),1.793
+toastBread,toastBread-2,replan+correction (sim-grounded),1.794
+toastBread,toastBread-2,done,95.466
+toastBread,toastBread-3,loading data,0.0
+toastBread,toastBread-3,sound detection,1.095
+toastBread,toastBread-3,scene graphs,1.203
+toastBread,toastBread-3,summaries,50.209
+toastBread,toastBread-3,reasoning (LLM),50.21
+toastBread,toastBread-3,replan+correction (sim-grounded),52.549
+toastBread,toastBread-3,done,83.408
+toastBread,toastBread-4,loading data,0.0
+toastBread,toastBread-4,sound detection,1.475
+toastBread,toastBread-4,scene graphs,1.591
+toastBread,toastBread-4,summaries,21.163
+toastBread,toastBread-4,reasoning (LLM),21.164
+toastBread,toastBread-4,replan+correction (sim-grounded),28.94
+toastBread,toastBread-4,done,131.542
+toastBread,toastBread-5,loading data,0.0
+toastBread,toastBread-5,sound detection,0.88
+toastBread,toastBread-5,scene graphs,0.995
+toastBread,toastBread-5,summaries,42.56
+toastBread,toastBread-5,reasoning (LLM),42.561
+toastBread,toastBread-5,replan+correction (sim-grounded),44.627
+toastBread,toastBread-5,done,67.242
+toastBread,toastBread-6,loading data,0.0
+toastBread,toastBread-6,sound detection,0.928
+toastBread,toastBread-6,scene graphs,1.041
+toastBread,toastBread-6,summaries,1.767
+toastBread,toastBread-6,reasoning (LLM),1.768
+toastBread,toastBread-6,replan+correction (sim-grounded),1.769
+toastBread,toastBread-6,done,38.82
+toastBread,toastBread-7,loading data,0.0
+toastBread,toastBread-7,sound detection,0.565
+toastBread,toastBread-7,scene graphs,0.671
+toastBread,toastBread-7,summaries,1.554
+toastBread,toastBread-7,reasoning (LLM),1.554
+toastBread,toastBread-7,replan+correction (sim-grounded),1.555
+toastBread,toastBread-7,done,99.908
+toastBread,toastBread-8,loading data,0.0
+toastBread,toastBread-8,sound detection,1.262
+toastBread,toastBread-8,scene graphs,1.385
+toastBread,toastBread-8,summaries,29.273
+toastBread,toastBread-8,reasoning (LLM),29.274
+toastBread,toastBread-8,replan+correction (sim-grounded),32.318
+toastBread,toastBread-8,done,65.987
+toastBread,toastBread-9,loading data,0.0
+toastBread,toastBread-9,sound detection,0.864
+toastBread,toastBread-9,scene graphs,0.979
+toastBread,toastBread-9,summaries,49.285
+toastBread,toastBread-9,reasoning (LLM),49.286
+toastBread,toastBread-9,replan+correction (sim-grounded),50.573
+toastBread,toastBread-9,done,80.815
+warmWater,warmWater-1,loading data,0.0
+warmWater,warmWater-1,sound detection,2.031
+warmWater,warmWater-1,scene graphs,2.151
+warmWater,warmWater-1,summaries,62.319
+warmWater,warmWater-1,reasoning (LLM),62.32
+warmWater,warmWater-1,replan+correction (sim-grounded),83.08
+warmWater,warmWater-1,done,95.68
+warmWater,warmWater-10,loading data,0.0
+warmWater,warmWater-10,sound detection,2.309
+warmWater,warmWater-10,scene graphs,2.438
+warmWater,warmWater-10,summaries,61.794
+warmWater,warmWater-10,reasoning (LLM),61.795
+warmWater,warmWater-10,replan+correction (sim-grounded),75.353
+warmWater,warmWater-10,done,184.787
+warmWater,warmWater-2,loading data,0.0
+warmWater,warmWater-2,sound detection,1.552
+warmWater,warmWater-2,scene graphs,1.672
+warmWater,warmWater-2,summaries,50.612
+warmWater,warmWater-2,reasoning (LLM),50.613
+warmWater,warmWater-2,replan+correction (sim-grounded),54.15
+warmWater,warmWater-2,done,144.96
+warmWater,warmWater-3,loading data,0.0
+warmWater,warmWater-3,sound detection,1.247
+warmWater,warmWater-3,scene graphs,1.37
+warmWater,warmWater-3,summaries,41.055
+warmWater,warmWater-3,reasoning (LLM),41.056
+warmWater,warmWater-3,replan+correction (sim-grounded),43.984
+warmWater,warmWater-3,done,88.626
+warmWater,warmWater-4,loading data,0.0
+warmWater,warmWater-4,sound detection,2.28
+warmWater,warmWater-4,scene graphs,2.401
+warmWater,warmWater-4,summaries,71.44
+warmWater,warmWater-4,reasoning (LLM),71.441
+warmWater,warmWater-4,replan+correction (sim-grounded),76.844
+warmWater,warmWater-4,done,140.496
+warmWater,warmWater-5,loading data,0.0
+warmWater,warmWater-5,sound detection,2.692
+warmWater,warmWater-5,scene graphs,2.816
+warmWater,warmWater-5,summaries,89.849
+warmWater,warmWater-5,reasoning (LLM),89.85
+warmWater,warmWater-5,replan+correction (sim-grounded),106.8
+warmWater,warmWater-5,done,150.954
+warmWater,warmWater-6,loading data,0.0
+warmWater,warmWater-6,sound detection,2.321
+warmWater,warmWater-6,scene graphs,2.443
+warmWater,warmWater-6,summaries,69.016
+warmWater,warmWater-6,reasoning (LLM),69.017
+warmWater,warmWater-6,replan+correction (sim-grounded),76.62
+warmWater,warmWater-6,done,88.316
+warmWater,warmWater-7,loading data,0.0
+warmWater,warmWater-7,sound detection,3.286
+warmWater,warmWater-7,scene graphs,3.418
+warmWater,warmWater-7,summaries,101.277
+warmWater,warmWater-7,reasoning (LLM),101.278
+warmWater,warmWater-7,replan+correction (sim-grounded),107.736
+warmWater,warmWater-7,done,212.448
+warmWater,warmWater-8,loading data,0.0
+warmWater,warmWater-8,sound detection,2.025
+warmWater,warmWater-8,scene graphs,2.139
+warmWater,warmWater-8,summaries,60.59
+warmWater,warmWater-8,reasoning (LLM),60.591
+warmWater,warmWater-8,replan+correction (sim-grounded),74.766
+warmWater,warmWater-8,done,164.161
+warmWater,warmWater-9,loading data,0.0
+warmWater,warmWater-9,sound detection,2.382
+warmWater,warmWater-9,scene graphs,2.501
+warmWater,warmWater-9,summaries,66.475
+warmWater,warmWater-9,reasoning (LLM),66.476
+warmWater,warmWater-9,replan+correction (sim-grounded),72.194
+warmWater,warmWater-9,done,162.583
+waterPlant,waterPlant-1,loading data,0.0
+waterPlant,waterPlant-1,sound detection,0.715
+waterPlant,waterPlant-1,scene graphs,0.826
+waterPlant,waterPlant-1,summaries,11.254
+waterPlant,waterPlant-1,reasoning (LLM),11.255
+waterPlant,waterPlant-1,replan+correction (sim-grounded),20.258
+waterPlant,waterPlant-1,done,102.941
+waterPlant,waterPlant-10,loading data,0.0
+waterPlant,waterPlant-10,sound detection,0.668
+waterPlant,waterPlant-10,scene graphs,0.779
+waterPlant,waterPlant-10,summaries,10.468
+waterPlant,waterPlant-10,reasoning (LLM),10.469
+waterPlant,waterPlant-10,replan+correction (sim-grounded),17.184
+waterPlant,waterPlant-10,done,43.051
+waterPlant,waterPlant-2,loading data,0.0
+waterPlant,waterPlant-2,sound detection,0.806
+waterPlant,waterPlant-2,scene graphs,0.922
+waterPlant,waterPlant-2,summaries,10.771
+waterPlant,waterPlant-2,reasoning (LLM),10.772
+waterPlant,waterPlant-2,replan+correction (sim-grounded),20.118
+waterPlant,waterPlant-2,done,60.069
+waterPlant,waterPlant-3,loading data,0.0
+waterPlant,waterPlant-3,sound detection,0.747
+waterPlant,waterPlant-3,scene graphs,0.861
+waterPlant,waterPlant-3,summaries,12.783
+waterPlant,waterPlant-3,reasoning (LLM),12.784
+waterPlant,waterPlant-3,replan+correction (sim-grounded),18.809
+waterPlant,waterPlant-3,done,87.578
+waterPlant,waterPlant-4,loading data,0.0
+waterPlant,waterPlant-4,sound detection,0.726
+waterPlant,waterPlant-4,scene graphs,0.84
+waterPlant,waterPlant-4,summaries,11.014
+waterPlant,waterPlant-4,reasoning (LLM),11.014
+waterPlant,waterPlant-4,replan+correction (sim-grounded),17.631
+waterPlant,waterPlant-4,done,55.6
+waterPlant,waterPlant-5,loading data,0.0
+waterPlant,waterPlant-5,sound detection,0.703
+waterPlant,waterPlant-5,scene graphs,0.816
+waterPlant,waterPlant-5,summaries,11.668
+waterPlant,waterPlant-5,reasoning (LLM),11.669
+waterPlant,waterPlant-5,replan+correction (sim-grounded),24.934
+waterPlant,waterPlant-5,done,85.468
+waterPlant,waterPlant-6,loading data,0.0
+waterPlant,waterPlant-6,sound detection,0.993
+waterPlant,waterPlant-6,scene graphs,1.121
+waterPlant,waterPlant-6,summaries,18.97
+waterPlant,waterPlant-6,reasoning (LLM),18.971
+waterPlant,waterPlant-6,replan+correction (sim-grounded),25.733
+waterPlant,waterPlant-6,done,73.964
+waterPlant,waterPlant-7,loading data,0.0
+waterPlant,waterPlant-7,sound detection,0.638
+waterPlant,waterPlant-7,scene graphs,0.75
+waterPlant,waterPlant-7,summaries,9.993
+waterPlant,waterPlant-7,reasoning (LLM),9.994
+waterPlant,waterPlant-7,replan+correction (sim-grounded),17.276
+waterPlant,waterPlant-7,done,93.806
+waterPlant,waterPlant-8,loading data,0.0
+waterPlant,waterPlant-8,sound detection,0.665
+waterPlant,waterPlant-8,scene graphs,0.756
+waterPlant,waterPlant-8,summaries,10.923
+waterPlant,waterPlant-8,reasoning (LLM),10.924
+waterPlant,waterPlant-8,replan+correction (sim-grounded),14.604
+waterPlant,waterPlant-8,done,54.361
+waterPlant,waterPlant-9,loading data,0.0
+waterPlant,waterPlant-9,sound detection,0.681
+waterPlant,waterPlant-9,scene graphs,0.794
+waterPlant,waterPlant-9,summaries,11.392
+waterPlant,waterPlant-9,reasoning (LLM),11.393
+waterPlant,waterPlant-9,replan+correction (sim-grounded),18.274
+waterPlant,waterPlant-9,done,69.522

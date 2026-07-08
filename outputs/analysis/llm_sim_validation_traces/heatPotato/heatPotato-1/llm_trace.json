@@ -1,0 +1,809 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up potato. Here are the robot observations after execution:\nVisual observation: potato. potato is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999690004794962e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.1304449077339705e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put potato on plate. Here are the robot observations after execution:\nVisual observation: potato, plate (clean). potato is on top of dining table. potato is on top of plate. plate is on top of dining table. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999770002644979,
+        "B": 2.29997355020162e-05
+      },
+      "confidence": 0.9999770002644979,
+      "uncertainty": 2.2999735502127194e-05,
+      "entropy": 0.000387561681069886,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.680027842013589,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up plate. Here are the robot observations after execution:\nVisual observation: potato, plate (clean). potato is on top of plate. plate is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "available",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.37754066879814546,
+        "B": 0.6224593312018546
+      },
+      "confidence": 0.6224593312018546,
+      "uncertainty": 0.3775406687981454,
+      "entropy": 0.956286539380729,
+      "fallback_applied": false,
+      "fallback_labels": [],
+      "fallback_logprob": null,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put plate on countertop. Here are the robot observations after execution:\nVisual observation: microwave (closed and turned off). nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 3.399942200654755e-05,
+        "B": 0.9999660005779933
+      },
+      "confidence": 0.9999660005779933,
+      "uncertainty": 3.399942200665862e-05,
+      "entropy": 0.0005537418124830566,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -10.289167033300036,
+      "response_text": "B"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to open microwave. Here are the robot observations after execution:\nVisual observation: microwave (open and turned off). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9914834728463426,
+        "B": 0.00851652715365725
+      },
+      "confidence": 0.9914834728463426,
+      "uncertainty": 0.00851652715365736,
+      "entropy": 0.07078982663557104,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -4.76574663230998,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up plate. Here are the robot observations after execution:\nVisual observation: microwave (open and turned off). nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 1.899981950115315e-05,
+        "B": 0.9999810001804988
+      },
+      "confidence": 0.9999810001804988,
+      "uncertainty": 1.8999819501153148e-05,
+      "entropy": 0.0003253972945551032,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -10.871081078782266,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put plate in microwave. Here are the robot observations after execution:\nVisual observation: microwave (open and turned off). nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 3.799927800918199e-05,
+        "B": 0.9999620007219909
+      },
+      "confidence": 0.9999620007219909,
+      "uncertainty": 3.799927800907099e-05,
+      "entropy": 0.0006127891286137383,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -10.177943398176755,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to close microwave. Here are the robot observations after execution:\nVisual observation: microwave (closed and turned off). nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9914418314149593,
+        "B": 0.008558168585040661
+      },
+      "confidence": 0.9914418314149593,
+      "uncertainty": 0.00855816858504066,
+      "entropy": 0.07107547136766616,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -4.7608690620648435,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on microwave. Here are the robot observations after execution:\nVisual observation: microwave (closed and turned on). nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9997600287976962,
+        "B": 0.0002399712023039011
+      },
+      "confidence": 0.9997600287976962,
+      "uncertainty": 0.00023997120230379032,
+      "entropy": 0.0032317816950204596,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -8.334991632222119,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to heat potato. At 01:10, a failure was identified.\n\n[Robot actions and observations before 01:10]\n00:01. Action: Move to potato. Visual observation: nothing is inside robot gripper.\n00:16. Action: Move to potato. Visual observation: potato. potato is on top of second countertop. nothing is inside robot gripper.\n00:19. Action: Pick up potato. Visual observation: potato. potato is inside robot gripper.\n00:33. Action: Move to plate. Visual observation: potato, plate (clean). plate is on top of dining table. potato is inside robot gripper.\n00:34. Action: Move to plate. Visual observation: potato, plate (clean). plate is on top of dining table. potato is inside robot gripper.\n00:39. Action: Put potato on plate. Visual observation: potato, plate (clean). potato is on top of dining table. potato is on top of plate. plate is on top of dining table. nothing is inside robot gripper.\n00:42. Action: Pick up plate. Visual observation: potato, plate (clean). potato is on top of plate. plate is inside robot gripper.\n00:44. Action: Move to microwave. Visual observation: potato, plate (clean). potato is on the left of apple. potato is on top of plate. plate is on the right of chair. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n00:46. Action: Move to microwave. Visual observation: potato, plate (clean). potato is on the left of dining table. potato is on the left of plate. potato is below chair. plate is on the right of chair. nothing is inside robot gripper.\n00:56. Action: Move to microwave. Visual observation: plate (clean). plate is on the right of chair. nothing is inside robot gripper.\n01:00. Action: Move to microwave. Visual observation: nothing is inside robot gripper.\n01:09. Action: Move to microwave. Visual observation: microwave (closed and turned off). nothing is inside robot gripper.\n\n[Observation at the end of 01:10]\nAction: Put plate on countertop. Visual observation: microwave (closed and turned off). nothing is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 01:10] or [Observation at the end of 01:10], briefly explain what happened at 01:10 and what caused the failure.\nA:"
+    },
+    "response": "The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty)."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "01:10, 00:44"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: heat potato\nInitial plan:\n1. (pick_up, potato)\n2. (put_on, potato, plate)\n3. (pick_up, plate)\n4. (put_on, plate, countertop)\n5. (open_obj, microwave)\n6. (pick_up, plate)\n7. (put_in, plate, microwave)\n8. (close_obj, microwave)\n9. (toggle_on, microwave)\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (none)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Plate), (put_in, Plate), (put_on, Plate), (toggle_on, Plate), (toggle_off, Plate), (open_obj, Plate), (close_obj, Plate), (slice_obj, Plate), (crack_obj, Plate), (pour, Plate), (pick_up, Potato), (put_in, Potato), (put_on, Potato), (toggle_on, Potato), (toggle_off, Potato), (open_obj, Potato), (close_obj, Potato), (slice_obj, Potato), (crack_obj, Potato), (pour, Potato)\nAvailable objects: CounterTop, Microwave, Plate, Potato\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "toggle_off",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "Turn off the microwave before correcting the scene, since it is currently on and likely empty."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "Open the microwave to inspect or prepare it for placing the plate and potato inside."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Plate",
+          "obj2": null,
+          "rationale": "The plate was likely dropped and must be recovered to rebuild the desired plate-with-potato arrangement."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "The potato was likely dropped and needs to be retrieved so it can be placed on the plate."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Potato",
+          "obj2": "Plate",
+          "rationale": "If the potato is already in hand and the plate is accessible, placing it on the plate directly advances toward the goal state."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: heat potato\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (toggle_off, Microwave) \u2014 Turn off the microwave before correcting the scene, since it is currently on and likely empty.\nB) (open_obj, Microwave) \u2014 Open the microwave to inspect or prepare it for placing the plate and potato inside.\nC) (pick_up, Plate) \u2014 The plate was likely dropped and must be recovered to rebuild the desired plate-with-potato arrangement.\nD) (pick_up, Potato) \u2014 The potato was likely dropped and needs to be retrieved so it can be placed on the plate.\nE) (put_on, Potato, Plate) \u2014 If the potato is already in hand and the plate is accessible, placing it on the plate directly advances toward the goal state.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "C",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "C",
+      "confidence_label": "C",
+      "option_probs": {
+        "A": 0.0016738711713769892,
+        "B": 0.0016738711713769892,
+        "C": 0.993304515314492,
+        "D": 0.0016738711713769892,
+        "E": 0.0016738711713769892
+      },
+      "confidence": 0.993304515314492,
+      "uncertainty": 0.0066954846855079575,
+      "entropy": 0.030740349582467755,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -6.392616268432475,
+      "response_text": "C"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: heat potato\nInitial plan:\n1. (pick_up, potato)\n2. (put_on, potato, plate)\n3. (pick_up, plate)\n4. (put_on, plate, countertop)\n5. (open_obj, microwave)\n6. (pick_up, plate)\n7. (put_in, plate, microwave)\n8. (close_obj, microwave)\n9. (toggle_on, microwave)\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Plate), (put_in, Plate), (put_on, Plate), (toggle_on, Plate), (toggle_off, Plate), (open_obj, Plate), (close_obj, Plate), (slice_obj, Plate), (crack_obj, Plate), (pour, Plate), (pick_up, Potato), (put_in, Potato), (put_on, Potato), (toggle_on, Potato), (toggle_off, Potato), (open_obj, Potato), (close_obj, Potato), (slice_obj, Potato), (crack_obj, Potato), (pour, Potato)\nAvailable objects: CounterTop, Microwave, Plate, Potato\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "toggle_off",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "The microwave is currently on; turning it off is a safe prerequisite before opening and fixing the dropped items."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "Opening the microwave is a plausible corrective step if the robot plans to place the plate and potato inside afterward."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Plate",
+          "obj2": null,
+          "rationale": "The plate was reportedly dropped and the gripper is empty, so recovering the plate is a likely next step."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "The potato was also reportedly dropped, so picking it up is another plausible correction toward restoring the goal state."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "Since the success state requires the microwave to be on, maintaining or reasserting that state is a possible next action, though other recovery steps may be needed first."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: heat potato\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate)\n\nCandidate next actions:\nA) (toggle_off, Microwave) \u2014 The microwave is currently on; turning it off is a safe prerequisite before opening and fixing the dropped items.\nB) (open_obj, Microwave) \u2014 Opening the microwave is a plausible corrective step if the robot plans to place the plate and potato inside afterward.\nC) (pick_up, Plate) \u2014 The plate was reportedly dropped and the gripper is empty, so recovering the plate is a likely next step.\nD) (pick_up, Potato) \u2014 The potato was also reportedly dropped, so picking it up is another plausible correction toward restoring the goal state.\nE) (toggle_on, Microwave) \u2014 Since the success state requires the microwave to be on, maintaining or reasserting that state is a possible next action, though other recovery steps may be needed first.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9995461030424057,
+        "B": 0.00011347423939858663,
+        "C": 0.00011347423939858663,
+        "D": 0.00011347423939858663,
+        "E": 0.00011347423939858663
+      },
+      "confidence": 0.9995461030424057,
+      "uncertainty": 0.00045389695759434634,
+      "entropy": 0.002843827788813506,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -9.083934712454637,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: heat potato\nInitial plan:\n1. (pick_up, potato)\n2. (put_on, potato, plate)\n3. (pick_up, plate)\n4. (put_on, plate, countertop)\n5. (open_obj, microwave)\n6. (pick_up, plate)\n7. (put_in, plate, microwave)\n8. (close_obj, microwave)\n9. (toggle_on, microwave)\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate), (toggle_off, Microwave)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Plate), (put_in, Plate), (put_on, Plate), (toggle_on, Plate), (toggle_off, Plate), (open_obj, Plate), (close_obj, Plate), (slice_obj, Plate), (crack_obj, Plate), (pour, Plate), (pick_up, Potato), (put_in, Potato), (put_on, Potato), (toggle_on, Potato), (toggle_off, Potato), (open_obj, Potato), (close_obj, Potato), (slice_obj, Potato), (crack_obj, Potato), (pour, Potato)\nAvailable objects: CounterTop, Microwave, Plate, Potato\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "The potato was reported on the floor and the gripper is empty; recovering the potato is necessary to rebuild the goal state."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Plate",
+          "obj2": null,
+          "rationale": "The plate was also likely dropped and must be recovered so the potato can be placed on it before microwaving."
+        },
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "The microwave is currently closed; opening it is a needed preparatory step before placing items inside."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Potato",
+          "obj2": "Plate",
+          "rationale": "If the robot is already holding the potato and the plate is accessible, this directly restores the required potato-on-plate relation."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Plate",
+          "obj2": "Microwave",
+          "rationale": "If the plate with the potato has been recovered, placing it into the microwave advances directly toward the success state."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: heat potato\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate), (toggle_off, Microwave)\n\nCandidate next actions:\nA) (pick_up, Potato) \u2014 The potato was reported on the floor and the gripper is empty; recovering the potato is necessary to rebuild the goal state.\nB) (pick_up, Plate) \u2014 The plate was also likely dropped and must be recovered so the potato can be placed on it before microwaving.\nC) (open_obj, Microwave) \u2014 The microwave is currently closed; opening it is a needed preparatory step before placing items inside.\nD) (put_on, Potato, Plate) \u2014 If the robot is already holding the potato and the plate is accessible, this directly restores the required potato-on-plate relation.\nE) (put_in, Plate, Microwave) \u2014 If the plate with the potato has been recovered, placing it into the microwave advances directly toward the success state.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9770064745412024,
+        "B": 0.02297698996793543,
+        "C": 5.511830287407989e-06,
+        "D": 5.511830287407989e-06,
+        "E": 5.511830287407989e-06
+      },
+      "confidence": 0.9770064745412024,
+      "uncertainty": 0.022993525458797626,
+      "entropy": 0.06811418368941899,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -12.108613814384405,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: heat potato\nInitial plan:\n1. (pick_up, potato)\n2. (put_on, potato, plate)\n3. (pick_up, plate)\n4. (put_on, plate, countertop)\n5. (open_obj, microwave)\n6. (pick_up, plate)\n7. (put_in, plate, microwave)\n8. (close_obj, microwave)\n9. (toggle_on, microwave)\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate), (toggle_off, Microwave), (pick_up, Potato)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Plate), (put_in, Plate), (put_on, Plate), (toggle_on, Plate), (toggle_off, Plate), (open_obj, Plate), (close_obj, Plate), (slice_obj, Plate), (crack_obj, Plate), (pour, Plate), (pick_up, Potato), (put_in, Potato), (put_on, Potato), (toggle_on, Potato), (toggle_off, Potato), (open_obj, Potato), (close_obj, Potato), (slice_obj, Potato), (crack_obj, Potato), (pour, Potato)\nAvailable objects: CounterTop, Microwave, Plate, Potato\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "The microwave is currently closed, and opening it is a necessary recovery step before placing the plate and potato inside."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Plate",
+          "obj2": null,
+          "rationale": "The robot is not holding anything, and the plate likely needs to be recovered from the floor before reassembling the goal state."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "The potato was previously dropped, so picking it up is a plausible corrective step toward placing it on the plate."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "If the microwave is still on, turning it off first can be a safe prerequisite before opening and loading it."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Potato",
+          "obj2": "Plate",
+          "rationale": "If the robot is currently holding the potato and the plate is accessible, placing the potato onto the plate directly advances toward the success state."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: heat potato\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate), (toggle_off, Microwave), (pick_up, Potato)\n\nCandidate next actions:\nA) (open_obj, Microwave) \u2014 The microwave is currently closed, and opening it is a necessary recovery step before placing the plate and potato inside.\nB) (pick_up, Plate) \u2014 The robot is not holding anything, and the plate likely needs to be recovered from the floor before reassembling the goal state.\nC) (pick_up, Potato) \u2014 The potato was previously dropped, so picking it up is a plausible corrective step toward placing it on the plate.\nD) (toggle_off, Microwave) \u2014 If the microwave is still on, turning it off first can be a safe prerequisite before opening and loading it.\nE) (put_on, Potato, Plate) \u2014 If the robot is currently holding the potato and the plate is accessible, placing the potato onto the plate directly advances toward the success state.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "D",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "D",
+      "confidence_label": "D",
+      "option_probs": {
+        "A": 0.00022315034854011862,
+        "B": 0.00022315034854011862,
+        "C": 0.00022315034854011862,
+        "D": 0.9991073986058396,
+        "E": 0.00022315034854011862
+      },
+      "confidence": 0.9991073986058396,
+      "uncertainty": 0.0008926013941603639,
+      "entropy": 0.005217284971754622,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "fallback_logprob": -8.407664804980653,
+      "response_text": "D"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: heat potato\nInitial plan:\n1. (pick_up, potato)\n2. (put_on, potato, plate)\n3. (pick_up, plate)\n4. (put_on, plate, countertop)\n5. (open_obj, microwave)\n6. (pick_up, plate)\n7. (put_in, plate, microwave)\n8. (close_obj, microwave)\n9. (toggle_on, microwave)\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate), (toggle_off, Microwave), (pick_up, Potato), (toggle_off, Microwave)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Plate), (put_in, Plate), (put_on, Plate), (toggle_on, Plate), (toggle_off, Plate), (open_obj, Plate), (close_obj, Plate), (slice_obj, Plate), (crack_obj, Plate), (pour, Plate), (pick_up, Potato), (put_in, Potato), (put_on, Potato), (toggle_on, Potato), (toggle_off, Potato), (open_obj, Potato), (close_obj, Potato), (slice_obj, Potato), (crack_obj, Potato), (pour, Potato)\nAvailable objects: CounterTop, Microwave, Plate, Potato\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "The microwave is currently closed, so opening it is a sensible recovery step before placing anything inside."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Plate",
+          "obj2": null,
+          "rationale": "The plate was reportedly dropped and the gripper is empty, so re-grasping the plate is a likely needed correction."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "The potato was also reportedly dropped and is needed for the goal, so retrieving it is a plausible next correction."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "If the microwave is still on, turning it off first can make recovery safer before opening or loading it."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Potato",
+          "obj2": "Plate",
+          "rationale": "The success condition requires the potato to be on the plate, so this is a goal-directed correction once both are accessible."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: heat potato\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate), (toggle_off, Microwave), (pick_up, Potato), (toggle_off, Microwave)\n\nCandidate next actions:\nA) (open_obj, Microwave) \u2014 The microwave is currently closed, so opening it is a sensible recovery step before placing anything inside.\nB) (pick_up, Plate) \u2014 The plate was reportedly dropped and the gripper is empty, so re-grasping the plate is a likely needed correction.\nC) (pick_up, Potato) \u2014 The potato was also reportedly dropped and is needed for the goal, so retrieving it is a plausible next correction.\nD) (toggle_off, Microwave) \u2014 If the microwave is still on, turning it off first can make recovery safer before opening or loading it.\nE) (put_on, Potato, Plate) \u2014 The success condition requires the potato to be on the plate, so this is a goal-directed correction once both are accessible.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 3.3192256427949624e-05,
+        "B": 0.9705911112965986,
+        "C": 3.3192256427949624e-05,
+        "D": 0.029309311934117597,
+        "E": 3.3192256427949624e-05
+      },
+      "confidence": 0.9705911112965986,
+      "uncertainty": 0.029408888703401415,
+      "entropy": 0.08292123163389743,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "E"
+      ],
+      "fallback_logprob": -10.313193949368538,
+      "response_text": "B"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: heat potato\nInitial plan:\n1. (pick_up, potato)\n2. (put_on, potato, plate)\n3. (pick_up, plate)\n4. (put_on, plate, countertop)\n5. (open_obj, microwave)\n6. (pick_up, plate)\n7. (put_in, plate, microwave)\n8. (close_obj, microwave)\n9. (toggle_on, microwave)\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate), (toggle_off, Microwave), (pick_up, Potato), (toggle_off, Microwave), (pick_up, Plate)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Microwave), (put_in, Microwave), (put_on, Microwave), (toggle_on, Microwave), (toggle_off, Microwave), (open_obj, Microwave), (close_obj, Microwave), (slice_obj, Microwave), (crack_obj, Microwave), (pour, Microwave), (pick_up, Plate), (put_in, Plate), (put_on, Plate), (toggle_on, Plate), (toggle_off, Plate), (open_obj, Plate), (close_obj, Plate), (slice_obj, Plate), (crack_obj, Plate), (pour, Plate), (pick_up, Potato), (put_in, Potato), (put_on, Potato), (toggle_on, Potato), (toggle_off, Potato), (open_obj, Potato), (close_obj, Potato), (slice_obj, Potato), (crack_obj, Potato), (pour, Potato)\nAvailable objects: CounterTop, Microwave, Plate, Potato\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "open_obj",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "The microwave is currently closed, so opening it is a plausible recovery step before placing the plate and potato inside."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Plate",
+          "obj2": null,
+          "rationale": "The plate was likely dropped and the gripper is empty, so re-grasping the plate is a reasonable next correction step."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Potato",
+          "obj2": null,
+          "rationale": "The potato was likely dropped onto the floor, so picking it up is another plausible recovery action."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "Microwave",
+          "obj2": null,
+          "rationale": "If the robot needs to manipulate items into the microwave safely, turning the microwave off first is a sensible corrective action."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Potato",
+          "obj2": "Plate",
+          "rationale": "Since success requires the potato to be on the plate, placing the potato onto the plate is a relevant recovery step once both are accessible."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: heat potato\nFailure reason: The failure at 01:10 happened because the robot tried to put the plate on the countertop while it was no longer holding anything. The likely cause occurred at 00:44, when the plate/potato were dropped during the move to the microwave (supported by the drop sound and later observations showing both on the floor and the gripper empty).\nCurrent state: Visual observation: microwave (closed and turned on). nothing is inside robot gripper.\nSuccess state: a potato is on a plate and inside a microwave that is turned on.\nActions completed so far: (pick_up, Plate), (toggle_off, Microwave), (pick_up, Potato), (toggle_off, Microwave), (pick_up, Plate)\n\nCandidate next actions:\nA) (open_obj, Microwave) \u2014 The microwave is currently closed, so opening it is a plausible recovery step before placing the plate and potato inside.\nB) (pick_up, Plate) \u2014 The plate was likely dropped and the gripper is empty, so re-grasping the plate is a reasonable next correction step.\nC) (pick_up, Potato) \u2014 The potato was likely dropped onto the floor, so picking it up is another plausible recovery action.\nD) (toggle_off, Microwave) \u2014 If the robot needs to manipulate items into the microwave safely, turning the microwave off first is a sensible corrective action.\nE) (put_on, Potato, Plate) \u2014 Since success requires the potato to be on the plate, placing the potato onto the plate is a relevant recovery step once both are accessible.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.00014870575565056895,
+        "B": 0.9994051769773977,
+        "C": 0.00014870575565056895,
+        "D": 0.00014870575565056895,
+        "E": 0.00014870575565056895
+      },
+      "confidence": 0.9994051769773977,
+      "uncertainty": 0.0005948230226022755,
+      "entropy": 0.003626820973914653,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -8.813540998787463,
+      "response_text": "B"
+    }
+  }
+]

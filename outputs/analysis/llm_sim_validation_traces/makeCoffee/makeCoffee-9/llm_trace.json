@@ -1,0 +1,711 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up bowl. Here are the robot observations after execution:\nVisual observation: bowl. bowl is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999730003644967,
+        "B": 2.6999635503233113e-05
+      },
+      "confidence": 0.9999730003644967,
+      "uncertainty": 2.6999635503344166e-05,
+      "entropy": 0.0004487170972098937,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.519687191931324,
+      "response_text": "A"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put bowl in coffee machine. Here are the robot observations after execution:\nVisual observation: bowl, coffee machine (turned off). bowl is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 3.399942200654755e-05,
+        "B": 0.9999660005779933
+      },
+      "confidence": 0.9999660005779933,
+      "uncertainty": 3.399942200665862e-05,
+      "entropy": 0.0005537418124830566,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -10.289167033300036,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on coffee machine. Here are the robot observations after execution:\nVisual observation: bowl, coffee machine (turned on). bowl is inside robot gripper. Auditory observation: coffee machine turns on.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999920000320001,
+        "B": 7.999968000049759e-06
+      },
+      "confidence": 0.9999920000320001,
+      "uncertainty": 7.99996799993874e-06,
+      "entropy": 0.0001469935209061058,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -11.736073016286218,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle off coffee machine. Here are the robot observations after execution:\nVisual observation: bowl, coffee machine (turned off). bowl is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999730003644967,
+        "B": 2.6999635503233113e-05
+      },
+      "confidence": 0.9999730003644967,
+      "uncertainty": 2.6999635503344166e-05,
+      "entropy": 0.0004487170972098937,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.519687191931324,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up bowl. Here are the robot observations after execution:\nVisual observation: bowl, coffee machine (turned off). bowl is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999770002644979,
+        "B": 2.29997355020162e-05
+      },
+      "confidence": 0.9999770002644979,
+      "uncertainty": 2.2999735502127194e-05,
+      "entropy": 0.000387561681069886,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.680027842013589,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put bowl on second countertop. Here are the robot observations after execution:\nVisual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9996950465077715,
+        "B": 0.000304953492228366
+      },
+      "confidence": 0.9996950465077715,
+      "uncertainty": 0.0003049534922284769,
+      "entropy": 0.0040014771896316635,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -8.095351277480967,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to make coffee. At 00:50, a failure was identified.\n\n[Robot actions and observations before 00:50]\n00:01. Action: Move to bowl. Visual observation: nothing is inside robot gripper.\n00:15. Action: Move to bowl. Visual observation: bowl. nothing is inside robot gripper.\n00:17. Action: Move to bowl. Visual observation: nothing is inside robot gripper.\n00:20. Action: Move to bowl. Visual observation: bowl. bowl is on top of dining table. bowl is on the right of apple. nothing is inside robot gripper.\n00:23. Action: Pick up bowl. Visual observation: bowl. bowl is inside robot gripper.\n00:47. Action: Move to coffee machine. Visual observation: bowl, coffee machine (turned off). bowl is inside robot gripper.\n\n[Observation at the end of 00:50]\nAction: Put bowl in coffee machine. Visual observation: bowl, coffee machine (turned off). bowl is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:50] or [Observation at the end of 00:50], briefly explain what happened at 00:50 and what caused the failure.\nA:"
+    },
+    "response": "At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "00:50, 00:47\u201300:50"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, bowl)\n2. (put_in, bowl, coffee machine)\n3. (toggle_on, coffee machine)\n4. (toggle_off, coffee machine)\n5. (pick_up, bowl)\n6. (put_on, bowl, countertop)\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (none)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop)\nAvailable objects: Bowl, CoffeeMachine, CounterTop\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "If the bowl is misplaced in or at the coffee machine, picking it up is a sensible correction to regain control of the container."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bowl",
+          "obj2": "CounterTop",
+          "rationale": "Placing the bowl on the countertop moves it away from the coffee machine and aligns with the success condition that the container end on the countertop."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "The coffee machine is currently off, so turning it on is a plausible corrective step toward making coffee."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "Explicitly toggling the machine off could reset its state before attempting a corrected sequence if its status is uncertain."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bowl",
+          "obj2": "CoffeeMachine",
+          "rationale": "Retrying the placement is another possible correction if the goal is to position the bowl properly relative to the coffee machine despite the earlier failed attempt."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (pick_up, Bowl) \u2014 If the bowl is misplaced in or at the coffee machine, picking it up is a sensible correction to regain control of the container.\nB) (put_on, Bowl, CounterTop) \u2014 Placing the bowl on the countertop moves it away from the coffee machine and aligns with the success condition that the container end on the countertop.\nC) (toggle_on, CoffeeMachine) \u2014 The coffee machine is currently off, so turning it on is a plausible corrective step toward making coffee.\nD) (toggle_off, CoffeeMachine) \u2014 Explicitly toggling the machine off could reset its state before attempting a corrected sequence if its status is uncertain.\nE) (put_in, Bowl, CoffeeMachine) \u2014 Retrying the placement is another possible correction if the goal is to position the bowl properly relative to the coffee machine despite the earlier failed attempt.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "C",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "C",
+      "confidence_label": "C",
+      "option_probs": {
+        "A": 0.002179196647072112,
+        "B": 0.002179196647072112,
+        "C": 0.9912832134117116,
+        "D": 0.002179196647072112,
+        "E": 0.002179196647072112
+      },
+      "confidence": 0.9912832134117116,
+      "uncertainty": 0.00871678658828845,
+      "entropy": 0.03858621498237195,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -6.128798980615206,
+      "response_text": "C"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, bowl)\n2. (put_in, bowl, coffee machine)\n3. (toggle_on, coffee machine)\n4. (toggle_off, coffee machine)\n5. (pick_up, bowl)\n6. (put_on, bowl, countertop)\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop)\nAvailable objects: Bowl, CoffeeMachine, CounterTop\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Recover the bowl so it can be repositioned as the intended coffee container instead of being left in/at the coffee machine."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bowl",
+          "obj2": "CounterTop",
+          "rationale": "Place the bowl on the countertop to satisfy the final requirement that the container ends up on top of the countertop."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "Ensure the coffee machine is powered on before any coffee-making step proceeds."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bowl",
+          "obj2": "CoffeeMachine",
+          "rationale": "Try positioning the bowl in the coffee machine as the receiving container for coffee, if the machine supports dispensing into it."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "If the machine state is uncertain after the failed sequence, toggling it off could reset it before a corrected retry."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine)\n\nCandidate next actions:\nA) (pick_up, Bowl) \u2014 Recover the bowl so it can be repositioned as the intended coffee container instead of being left in/at the coffee machine.\nB) (put_on, Bowl, CounterTop) \u2014 Place the bowl on the countertop to satisfy the final requirement that the container ends up on top of the countertop.\nC) (toggle_on, CoffeeMachine) \u2014 Ensure the coffee machine is powered on before any coffee-making step proceeds.\nD) (put_in, Bowl, CoffeeMachine) \u2014 Try positioning the bowl in the coffee machine as the receiving container for coffee, if the machine supports dispensing into it.\nE) (toggle_off, CoffeeMachine) \u2014 If the machine state is uncertain after the failed sequence, toggling it off could reset it before a corrected retry.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "C",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "C",
+      "confidence_label": "C",
+      "option_probs": {
+        "A": 0.0004346217694055629,
+        "B": 0.0004346217694055629,
+        "C": 0.9982615129223777,
+        "D": 0.0004346217694055629,
+        "E": 0.0004346217694055629
+      },
+      "confidence": 0.9982615129223777,
+      "uncertainty": 0.0017384870776222527,
+      "entropy": 0.009440975130625208,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -7.741034400725564,
+      "response_text": "C"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, bowl)\n2. (put_in, bowl, coffee machine)\n3. (toggle_on, coffee machine)\n4. (toggle_off, coffee machine)\n5. (pick_up, bowl)\n6. (put_on, bowl, countertop)\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop)\nAvailable objects: Bowl, CoffeeMachine, CounterTop\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Grasp the bowl so it can be repositioned as the intended coffee container."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bowl",
+          "obj2": "CounterTop",
+          "rationale": "Place the bowl securely on the countertop to satisfy the requirement that the container end up on top of the countertop."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bowl",
+          "obj2": "CoffeeMachine",
+          "rationale": "Try positioning the bowl in the coffee machine as the receiving container for coffee."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "Ensure the coffee machine is powered on so it can dispense coffee into the container."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "If brewing has already occurred or the machine state is uncertain, toggling it off could complete the cycle before placing the container on the countertop."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine)\n\nCandidate next actions:\nA) (pick_up, Bowl) \u2014 Grasp the bowl so it can be repositioned as the intended coffee container.\nB) (put_on, Bowl, CounterTop) \u2014 Place the bowl securely on the countertop to satisfy the requirement that the container end up on top of the countertop.\nC) (put_in, Bowl, CoffeeMachine) \u2014 Try positioning the bowl in the coffee machine as the receiving container for coffee.\nD) (toggle_on, CoffeeMachine) \u2014 Ensure the coffee machine is powered on so it can dispense coffee into the container.\nE) (toggle_off, CoffeeMachine) \u2014 If brewing has already occurred or the machine state is uncertain, toggling it off could complete the cycle before placing the container on the countertop.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "D",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "D",
+      "confidence_label": "D",
+      "option_probs": {
+        "A": 0.029065917824086115,
+        "B": 0.0028010256123638384,
+        "C": 0.0028010256123638384,
+        "D": 0.9625310053388224,
+        "E": 0.0028010256123638384
+      },
+      "confidence": 0.9625310053388224,
+      "uncertainty": 0.03746899466117759,
+      "entropy": 0.11742618694882681,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "E"
+      ],
+      "fallback_logprob": -5.877769638738889,
+      "response_text": "D"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, bowl)\n2. (put_in, bowl, coffee machine)\n3. (toggle_on, coffee machine)\n4. (toggle_off, coffee machine)\n5. (pick_up, bowl)\n6. (put_on, bowl, countertop)\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop)\nAvailable objects: Bowl, CoffeeMachine, CounterTop\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Grab the bowl so it can be repositioned as the intended coffee container."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bowl",
+          "obj2": "CounterTop",
+          "rationale": "Place the bowl on the countertop to satisfy the final requirement that the container end up on the countertop."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "Ensure the coffee machine is on before attempting any coffee-making step."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bowl",
+          "obj2": "CoffeeMachine",
+          "rationale": "Try positioning the bowl at the coffee machine as the receiving container for coffee."
+        },
+        {
+          "action": "pour",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "If the machine has prepared coffee, pouring from it could transfer coffee into the available container."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine)\n\nCandidate next actions:\nA) (pick_up, Bowl) \u2014 Grab the bowl so it can be repositioned as the intended coffee container.\nB) (put_on, Bowl, CounterTop) \u2014 Place the bowl on the countertop to satisfy the final requirement that the container end up on the countertop.\nC) (toggle_on, CoffeeMachine) \u2014 Ensure the coffee machine is on before attempting any coffee-making step.\nD) (put_in, Bowl, CoffeeMachine) \u2014 Try positioning the bowl at the coffee machine as the receiving container for coffee.\nE) (pour, CoffeeMachine) \u2014 If the machine has prepared coffee, pouring from it could transfer coffee into the available container.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9908263371683943,
+        "B": 0.0022934157079014536,
+        "C": 0.0022934157079014536,
+        "D": 0.0022934157079014536,
+        "E": 0.0022934157079014536
+      },
+      "confidence": 0.9908263371683943,
+      "uncertainty": 0.0091736628316057,
+      "entropy": 0.04031615313998392,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -6.077712997206996,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, bowl)\n2. (put_in, bowl, coffee machine)\n3. (toggle_on, coffee machine)\n4. (toggle_off, coffee machine)\n5. (pick_up, bowl)\n6. (put_on, bowl, countertop)\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (pick_up, Bowl)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop)\nAvailable objects: Bowl, CoffeeMachine, CounterTop\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Pick up the bowl so it can be repositioned as the coffee container for subsequent steps."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bowl",
+          "obj2": "CounterTop",
+          "rationale": "Place the bowl on the countertop to satisfy the final location requirement if it already contains coffee or after brewing completes."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bowl",
+          "obj2": "CoffeeMachine",
+          "rationale": "Re-attempt placing the bowl into the coffee machine so it can act as the container to receive coffee."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "Ensure the coffee machine is on so brewing can occur once the bowl is correctly positioned."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "If brewing has already completed, turning the machine off could be an appropriate cleanup step before placing the bowl on the countertop."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (pick_up, Bowl)\n\nCandidate next actions:\nA) (pick_up, Bowl) \u2014 Pick up the bowl so it can be repositioned as the coffee container for subsequent steps.\nB) (put_on, Bowl, CounterTop) \u2014 Place the bowl on the countertop to satisfy the final location requirement if it already contains coffee or after brewing completes.\nC) (put_in, Bowl, CoffeeMachine) \u2014 Re-attempt placing the bowl into the coffee machine so it can act as the container to receive coffee.\nD) (toggle_on, CoffeeMachine) \u2014 Ensure the coffee machine is on so brewing can occur once the bowl is correctly positioned.\nE) (toggle_off, CoffeeMachine) \u2014 If brewing has already completed, turning the machine off could be an appropriate cleanup step before placing the bowl on the countertop.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.5570362279316555,
+        "B": 0.003047840518676532,
+        "C": 0.003047840518676532,
+        "D": 0.4338202505123149,
+        "E": 0.003047840518676532
+      },
+      "confidence": 0.5570362279316555,
+      "uncertainty": 0.4429637720683445,
+      "entropy": 0.4605342760516256,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "E"
+      ],
+      "fallback_logprob": -5.793321965795501,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: make coffee\nInitial plan:\n1. (pick_up, bowl)\n2. (put_in, bowl, coffee machine)\n3. (toggle_on, coffee machine)\n4. (toggle_off, coffee machine)\n5. (pick_up, bowl)\n6. (put_on, bowl, countertop)\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (pick_up, Bowl), (pick_up, Bowl)\nAvailable actions: (pick_up, Bowl), (put_in, Bowl), (put_on, Bowl), (toggle_on, Bowl), (toggle_off, Bowl), (open_obj, Bowl), (close_obj, Bowl), (slice_obj, Bowl), (crack_obj, Bowl), (pour, Bowl), (pick_up, CoffeeMachine), (put_in, CoffeeMachine), (put_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_off, CoffeeMachine), (open_obj, CoffeeMachine), (close_obj, CoffeeMachine), (slice_obj, CoffeeMachine), (crack_obj, CoffeeMachine), (pour, CoffeeMachine), (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop)\nAvailable objects: Bowl, CoffeeMachine, CounterTop\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Bowl",
+          "obj2": null,
+          "rationale": "Pick up the bowl so it can be repositioned as the serving container for coffee."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Bowl",
+          "obj2": "CounterTop",
+          "rationale": "Place the bowl on the countertop, matching the goal that the filled container ends up on the countertop."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Bowl",
+          "obj2": "CoffeeMachine",
+          "rationale": "Try seating the bowl in the coffee machine again as a possible way to position it for dispensing coffee."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "Ensure the coffee machine is on before attempting any brewing-related step."
+        },
+        {
+          "action": "toggle_off",
+          "obj1": "CoffeeMachine",
+          "obj2": null,
+          "rationale": "Reset the coffee machine state if it is in an inconsistent mode after repeated toggle actions."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: make coffee\nFailure reason: At 00:50, the robot failed to place the bowl into the coffee machine\u2014the observation still shows the bowl inside the gripper after the \u201cPut bowl in coffee machine\u201d action. The failure was likely caused by trying to put an inappropriate object (a bowl) into the coffee machine, which was also still turned off as seen at 00:47\u201300:50.\nCurrent state: Visual observation: bowl, coffee machine (turned off). bowl is inside coffee machine. bowl is on top of second countertop. nothing is inside robot gripper.\nSuccess state: A clean container is filled with coffee and on top of the countertop.\nActions completed so far: (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (toggle_on, CoffeeMachine), (pick_up, Bowl), (pick_up, Bowl)\n\nCandidate next actions:\nA) (pick_up, Bowl) \u2014 Pick up the bowl so it can be repositioned as the serving container for coffee.\nB) (put_on, Bowl, CounterTop) \u2014 Place the bowl on the countertop, matching the goal that the filled container ends up on the countertop.\nC) (put_in, Bowl, CoffeeMachine) \u2014 Try seating the bowl in the coffee machine again as a possible way to position it for dispensing coffee.\nD) (toggle_on, CoffeeMachine) \u2014 Ensure the coffee machine is on before attempting any brewing-related step.\nE) (toggle_off, CoffeeMachine) \u2014 Reset the coffee machine state if it is in an inconsistent mode after repeated toggle actions.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "D",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "D",
+      "confidence_label": "D",
+      "option_probs": {
+        "A": 0.03720794370658376,
+        "B": 0.0010621801602789251,
+        "C": 0.0010621801602789251,
+        "D": 0.9596055158125795,
+        "E": 0.0010621801602789251
+      },
+      "confidence": 0.9596055158125795,
+      "uncertainty": 0.04039448418742053,
+      "entropy": 0.11423059155855723,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "E"
+      ],
+      "fallback_logprob": -6.847431728102844,
+      "response_text": "D"
+    }
+  }
+]

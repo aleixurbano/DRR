@@ -1,0 +1,680 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to close laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.989032585475271,
+        "B": 0.010967414524729045
+      },
+      "confidence": 0.989032585475271,
+      "uncertainty": 0.010967414524729047,
+      "entropy": 0.08714035683366401,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -4.512826718459718,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up laptop. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9998740079376667,
+        "B": 0.00012599206233343535
+      },
+      "confidence": 0.9998740079376667,
+      "uncertainty": 0.00012599206233332438,
+      "entropy": 0.0018139056661898318,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -8.9792916503509,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put laptop on tv stand. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off), television (turned off), tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 9.999850001114991e-13,
+        "B": 0.9999999999989999
+      },
+      "confidence": 0.9999999999989999,
+      "uncertainty": 1.000088900582341e-12,
+      "entropy": 4.130538413345594e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "B"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up remote control. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off). laptop is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 4.1999118012392436e-05,
+        "B": 0.9999580008819876
+      },
+      "confidence": 0.9999580008819876,
+      "uncertainty": 4.199911801239242e-05,
+      "entropy": 0.000671227643998151,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -10.077861939606345,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on television. Here are the robot observations after execution:\nVisual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 3.399942200654755e-05,
+        "B": 0.9999660005779933
+      },
+      "confidence": 0.9999660005779933,
+      "uncertainty": 3.399942200665862e-05,
+      "entropy": 0.0005537418124830566,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A"
+      ],
+      "fallback_logprob": -10.289167033300036,
+      "response_text": "B"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to Close the laptop and put it on the TV stand and switch on television. At 00:40, a failure was identified.\n\n[Robot actions and observations before 00:40]\n00:01. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:07. Action: Move to laptop. Visual observation: nothing is inside robot gripper.\n00:16. Action: Move to laptop. Visual observation: laptop (open and turned off). laptop is inside armchair. nothing is inside robot gripper.\n00:19. Action: Close laptop. Visual observation: laptop (closed and turned off). laptop is inside armchair. nothing is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n00:22. Action: Pick up laptop. Visual observation: laptop (closed and turned off). laptop is inside robot gripper.\n00:36. Action: Move to tv stand. Visual observation: laptop (closed and turned off), remote control. remote control is on top of coffee table. laptop is inside robot gripper.\n00:38. Action: Move to tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n00:39. Action: Move to tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n\n[Observation at the end of 00:40]\nAction: Put laptop on tv stand. Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is on the left of garbage can. television is on top of tv stand. tv stand is on the left of garbage can. watch is on top of tv stand. keychain is on top of tv stand. book is on top of tv stand. laptop is inside robot gripper.\n\nQ: Infer from [Robot actions and observations before 00:40] or [Observation at the end of 00:40], briefly explain what happened at 00:40 and what caused the failure.\nA:"
+    },
+    "response": "At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "00:40, 00:38, 00:39"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, television)\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (none)\nAvailable actions: (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand), (pick_up, Television), (put_in, Television), (put_on, Television), (toggle_on, Television), (toggle_off, Television), (open_obj, Television), (close_obj, Television), (slice_obj, Television), (crack_obj, Television), (pour, Television)\nAvailable objects: Laptop, RemoteControl, TVStand, Television\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Retry the placement since the laptop is already in the gripper and this directly advances the goal if there is enough space."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "Acquire the remote so the robot can use it to turn on the television after handling the laptop placement issue."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Television",
+          "obj2": null,
+          "rationale": "Turn on the television now, since it is currently off and this is part of the success condition."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "Attempt to activate the remote control in preparation for using it to switch on the television."
+        },
+        {
+          "action": "put_on",
+          "obj1": "RemoteControl",
+          "obj2": "TVStand",
+          "rationale": "Place the remote on the TV stand as a possible way to reorganize the stand area while keeping needed objects near the television."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (put_on, Laptop, TVStand) \u2014 Retry the placement since the laptop is already in the gripper and this directly advances the goal if there is enough space.\nB) (pick_up, RemoteControl) \u2014 Acquire the remote so the robot can use it to turn on the television after handling the laptop placement issue.\nC) (toggle_on, Television) \u2014 Turn on the television now, since it is currently off and this is part of the success condition.\nD) (toggle_on, RemoteControl) \u2014 Attempt to activate the remote control in preparation for using it to switch on the television.\nE) (put_on, RemoteControl, TVStand) \u2014 Place the remote on the TV stand as a possible way to reorganize the stand area while keeping needed objects near the television.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999660005779933,
+        "B": 8.499855501636901e-06,
+        "C": 8.499855501636901e-06,
+        "D": 8.499855501636901e-06,
+        "E": 8.499855501636901e-06
+      },
+      "confidence": 0.9999660005779933,
+      "uncertainty": 3.399942200665862e-05,
+      "entropy": 0.00026776912595405475,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.675461394419925,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, television)\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand)\nAvailable actions: (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand), (pick_up, Television), (put_in, Television), (put_on, Television), (toggle_on, Television), (toggle_off, Television), (open_obj, Television), (close_obj, Television), (slice_obj, Television), (crack_obj, Television), (pour, Television)\nAvailable objects: Laptop, RemoteControl, TVStand, Television\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Retry placing the closed laptop on the TV stand, as it is already in the gripper and this directly advances the main goal if a clear spot is available."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "If the laptop cannot be placed immediately, switching to the remote control could enable turning on the television first."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Television",
+          "obj2": null,
+          "rationale": "Attempt to turn on the television directly in case the robot is close enough and no remote is required."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "A placement-style action with the laptop may help release it from the gripper if putting it on the TV stand keeps failing."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "Interacting with the remote control may be useful for powering it or preparing it for use in turning on the television."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand)\n\nCandidate next actions:\nA) (put_on, Laptop, TVStand) \u2014 Retry placing the closed laptop on the TV stand, as it is already in the gripper and this directly advances the main goal if a clear spot is available.\nB) (pick_up, RemoteControl) \u2014 If the laptop cannot be placed immediately, switching to the remote control could enable turning on the television first.\nC) (toggle_on, Television) \u2014 Attempt to turn on the television directly in case the robot is close enough and no remote is required.\nD) (put_in, Laptop) \u2014 A placement-style action with the laptop may help release it from the gripper if putting it on the TV stand keeps failing.\nE) (toggle_on, RemoteControl) \u2014 Interacting with the remote control may be useful for powering it or preparing it for use in turning on the television.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999850001124995,
+        "B": 3.7499718751332576e-06,
+        "C": 3.7499718751332576e-06,
+        "D": 3.7499718751332576e-06,
+        "E": 3.7499718751332576e-06
+      },
+      "confidence": 0.9999850001124995,
+      "uncertainty": 1.4999887500533049e-05,
+      "entropy": 0.00012576117485860072,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -12.493762217974544,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, television)\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand), (put_on, Laptop, TVStand)\nAvailable actions: (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand), (pick_up, Television), (put_in, Television), (put_on, Television), (toggle_on, Television), (toggle_off, Television), (open_obj, Television), (close_obj, Television), (slice_obj, Television), (crack_obj, Television), (pour, Television)\nAvailable objects: Laptop, RemoteControl, TVStand, Television\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Retry placing the closed laptop on the TV stand in case a slightly different placement succeeds despite the earlier failed attempt."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "Prepare to use the remote to turn on the television after resolving or pausing the laptop placement issue."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Television",
+          "obj2": null,
+          "rationale": "Attempt to switch on the television directly now, since it is one of the required goal conditions."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Try an alternative placement-related action for the laptop to release it from the gripper if the stand surface remains difficult for put_on."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Ensure the laptop is definitely closed before any further placement attempt, preserving the required final state."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand), (put_on, Laptop, TVStand)\n\nCandidate next actions:\nA) (put_on, Laptop, TVStand) \u2014 Retry placing the closed laptop on the TV stand in case a slightly different placement succeeds despite the earlier failed attempt.\nB) (pick_up, RemoteControl) \u2014 Prepare to use the remote to turn on the television after resolving or pausing the laptop placement issue.\nC) (toggle_on, Television) \u2014 Attempt to switch on the television directly now, since it is one of the required goal conditions.\nD) (put_in, Laptop) \u2014 Try an alternative placement-related action for the laptop to release it from the gripper if the stand surface remains difficult for put_on.\nE) (close_obj, Laptop) \u2014 Ensure the laptop is definitely closed before any further placement attempt, preserving the required final state.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999160035279013,
+        "B": 2.099911802469489e-05,
+        "C": 2.099911802469489e-05,
+        "D": 2.099911802469489e-05,
+        "E": 2.099911802469489e-05
+      },
+      "confidence": 0.9999160035279013,
+      "uncertainty": 8.399647209866856e-05,
+      "entropy": 0.0006143271931168371,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -10.771030119946879,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, television)\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand)\nAvailable actions: (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand), (pick_up, Television), (put_in, Television), (put_on, Television), (toggle_on, Television), (toggle_off, Television), (open_obj, Television), (close_obj, Television), (slice_obj, Television), (crack_obj, Television), (pour, Television)\nAvailable objects: Laptop, RemoteControl, TVStand, Television\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Retry placing the closed laptop on the TV stand in case a slightly different placement succeeds despite the earlier failed attempt."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "Prepare to use the remote control to turn on the television after resolving or reattempting the laptop placement."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Television",
+          "obj2": null,
+          "rationale": "Attempt to switch on the television directly, since this is part of the goal and may be possible independently of the laptop placement."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "Activate the remote control as a possible prerequisite for using it to turn on the television."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Ensure the laptop is definitely closed before another placement attempt, even though it appears closed already."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand)\n\nCandidate next actions:\nA) (put_on, Laptop, TVStand) \u2014 Retry placing the closed laptop on the TV stand in case a slightly different placement succeeds despite the earlier failed attempt.\nB) (pick_up, RemoteControl) \u2014 Prepare to use the remote control to turn on the television after resolving or reattempting the laptop placement.\nC) (toggle_on, Television) \u2014 Attempt to switch on the television directly, since this is part of the goal and may be possible independently of the laptop placement.\nD) (toggle_on, RemoteControl) \u2014 Activate the remote control as a possible prerequisite for using it to turn on the television.\nE) (close_obj, Laptop) \u2014 Ensure the laptop is definitely closed before another placement attempt, even though it appears closed already.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9046505350999858,
+        "B": 3.3332881372472503e-13,
+        "C": 0.09534946489901414,
+        "D": 3.3332881372472503e-13,
+        "E": 3.3332881372472503e-13
+      },
+      "confidence": 0.9046505350999858,
+      "uncertainty": 0.09534946490001417,
+      "entropy": 0.19556073119536727,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -28.729633404596658,
+      "response_text": "A"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, television)\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand)\nAvailable actions: (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand), (pick_up, Television), (put_in, Television), (put_on, Television), (toggle_on, Television), (toggle_off, Television), (open_obj, Television), (close_obj, Television), (slice_obj, Television), (crack_obj, Television), (pour, Television)\nAvailable objects: Laptop, RemoteControl, TVStand, Television\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Retry placing the closed laptop on the TV stand in case a slightly different placement pose succeeds despite the earlier failed attempt."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "Acquire the remote control as preparation for turning on the television if direct interaction with the TV is not feasible."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Television",
+          "obj2": null,
+          "rationale": "Turn on the television directly now, since this is one of the required goal conditions and may be achievable independently of the laptop placement."
+        },
+        {
+          "action": "put_on",
+          "obj1": "RemoteControl",
+          "obj2": "TVStand",
+          "rationale": "Place the remote control on the TV stand to potentially reposition items there and create a more favorable arrangement for later steps."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "Attempt to use the remote control to switch on the television if the remote is already accessible for activation."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand)\n\nCandidate next actions:\nA) (put_on, Laptop, TVStand) \u2014 Retry placing the closed laptop on the TV stand in case a slightly different placement pose succeeds despite the earlier failed attempt.\nB) (pick_up, RemoteControl) \u2014 Acquire the remote control as preparation for turning on the television if direct interaction with the TV is not feasible.\nC) (toggle_on, Television) \u2014 Turn on the television directly now, since this is one of the required goal conditions and may be achievable independently of the laptop placement.\nD) (put_on, RemoteControl, TVStand) \u2014 Place the remote control on the TV stand to potentially reposition items there and create a more favorable arrangement for later steps.\nE) (toggle_on, RemoteControl) \u2014 Attempt to use the remote control to switch on the television if the remote is already accessible for activation.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "C",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "C",
+      "confidence_label": "C",
+      "option_probs": {
+        "A": 0.0021546611730542406,
+        "B": 0.0021546611730542406,
+        "C": 0.9913813553077829,
+        "D": 0.0021546611730542406,
+        "E": 0.0021546611730542406
+      },
+      "confidence": 0.9913813553077829,
+      "uncertainty": 0.00861864469221707,
+      "entropy": 0.038212673296472904,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -6.140121796069183,
+      "response_text": "C"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nInitial plan:\n1. (close_obj, laptop)\n2. (pick_up, laptop)\n3. (put_on, laptop, tv stand)\n4. (pick_up, remote control)\n5. (toggle_on, television)\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (toggle_on, Television)\nAvailable actions: (pick_up, Laptop), (put_in, Laptop), (put_on, Laptop), (toggle_on, Laptop), (toggle_off, Laptop), (open_obj, Laptop), (close_obj, Laptop), (slice_obj, Laptop), (crack_obj, Laptop), (pour, Laptop), (pick_up, RemoteControl), (put_in, RemoteControl), (put_on, RemoteControl), (toggle_on, RemoteControl), (toggle_off, RemoteControl), (open_obj, RemoteControl), (close_obj, RemoteControl), (slice_obj, RemoteControl), (crack_obj, RemoteControl), (pour, RemoteControl), (pick_up, TVStand), (put_in, TVStand), (put_on, TVStand), (toggle_on, TVStand), (toggle_off, TVStand), (open_obj, TVStand), (close_obj, TVStand), (slice_obj, TVStand), (crack_obj, TVStand), (pour, TVStand), (pick_up, Television), (put_in, Television), (put_on, Television), (toggle_on, Television), (toggle_off, Television), (open_obj, Television), (close_obj, Television), (slice_obj, Television), (crack_obj, Television), (pour, Television)\nAvailable objects: Laptop, RemoteControl, TVStand, Television\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "put_on",
+          "obj1": "Laptop",
+          "obj2": "TVStand",
+          "rationale": "Retry placing the closed laptop on the TV stand since it is already in the gripper and this directly advances the goal if a clear spot is available."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "Television",
+          "obj2": null,
+          "rationale": "Turn on the television now, since it is part of the goal and does not require moving the laptop first."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "RemoteControl",
+          "obj2": null,
+          "rationale": "Prepare to use the remote control as an alternative way to turn on the television if direct toggling is unreliable."
+        },
+        {
+          "action": "put_in",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Temporarily place the laptop into a container-like receptacle if available to free the gripper and recover from the failed placement attempt."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Laptop",
+          "obj2": null,
+          "rationale": "Ensure the laptop remains closed before any further placement attempts, preserving the required final state."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: Close the laptop and put it on the TV stand and switch on television\nFailure reason: At 00:40, the robot\u2019s attempt to put the laptop on the TV stand failed because the laptop was still in its gripper afterward, so the placement did not complete. A likely cause is that the TV stand surface was cluttered (book, keychain, and watch seen at 00:38\u201300:39), leaving no clear space to place the laptop.\nCurrent state: Visual observation: laptop (closed and turned off), television (turned off), tv stand. television is above tv stand. book is on top of tv stand. laptop is inside robot gripper.\nSuccess state: A closed Laptop is on the TVStand and television is turned on.\nActions completed so far: (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (put_on, Laptop, TVStand), (toggle_on, Television)\n\nCandidate next actions:\nA) (put_on, Laptop, TVStand) \u2014 Retry placing the closed laptop on the TV stand since it is already in the gripper and this directly advances the goal if a clear spot is available.\nB) (toggle_on, Television) \u2014 Turn on the television now, since it is part of the goal and does not require moving the laptop first.\nC) (pick_up, RemoteControl) \u2014 Prepare to use the remote control as an alternative way to turn on the television if direct toggling is unreliable.\nD) (put_in, Laptop) \u2014 Temporarily place the laptop into a container-like receptacle if available to free the gripper and recover from the failed placement attempt.\nE) (close_obj, Laptop) \u2014 Ensure the laptop remains closed before any further placement attempts, preserving the required final state.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9990654369762983,
+        "B": 0.00023364075592538497,
+        "C": 0.00023364075592538497,
+        "D": 0.00023364075592538497,
+        "E": 0.00023364075592538497
+      },
+      "confidence": 0.9990654369762983,
+      "uncertainty": 0.0009345630237016511,
+      "entropy": 0.0054358642311524725,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -8.361725853369455,
+      "response_text": "A"
+    }
+  }
+]

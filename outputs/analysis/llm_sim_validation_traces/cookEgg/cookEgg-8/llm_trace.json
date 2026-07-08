@@ -1,0 +1,842 @@
+[
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to open fridge. Here are the robot observations after execution:\nVisual observation: egg (not sliced and not cracked), fridge (open). egg is inside fridge. nothing is inside robot gripper. Auditory observation: stove burner turns on.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9995770894518868,
+        "B": 0.0004229105481131643
+      },
+      "confidence": 0.9995770894518868,
+      "uncertainty": 0.00042291054811316453,
+      "entropy": 0.0053497126078153965,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -7.768349871462612,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up egg. Here are the robot observations after execution:\nVisual observation: egg (not sliced and not cracked), fridge (open). egg is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9998700084496339,
+        "B": 0.000129991550366193
+      },
+      "confidence": 0.9998700084496339,
+      "uncertainty": 0.000129991550366082,
+      "entropy": 0.0018656251855019295,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -8.948041106804231,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to close fridge. Here are the robot observations after execution:\nVisual observation: fridge (closed), egg (not sliced and not cracked). egg is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "available",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 0.2689414213699951,
+        "B": 0.7310585786300049
+      },
+      "confidence": 0.7310585786300049,
+      "uncertainty": 0.2689414213699951,
+      "entropy": 0.8399415379831692,
+      "fallback_applied": false,
+      "fallback_labels": [],
+      "fallback_logprob": null,
+      "response_text": "B"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to toggle on first stove burner. Here are the robot observations after execution:\nVisual observation: fourth stove burner (turned off), first stove burner (turned on), egg (not sliced and not cracked), second stove burner (turned off), third stove burner (turned off). egg is inside robot gripper. Auditory observation: egg cracks.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9932935890249183,
+        "B": 0.006706410975081732
+      },
+      "confidence": 0.9932935890249183,
+      "uncertainty": 0.0067064109750817336,
+      "entropy": 0.058064709304672245,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -5.0046913481332975,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put egg on first countertop. Here are the robot observations after execution:\nVisual observation: pan (dirty), egg (not sliced and not cracked). egg is on the left of pan. egg is on top of first countertop. pan is on top of first countertop. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999500012499791,
+        "B": 4.99987500208743e-05
+      },
+      "confidence": 0.9999500012499791,
+      "uncertainty": 4.999875002087428e-05,
+      "entropy": 0.0007865007083484608,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -9.903512552431136,
+      "response_text": "A"
+    },
+    "oracle_success": true,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up pan. Here are the robot observations after execution:\nVisual observation: pan (dirty), egg (not sliced and not cracked). egg is on top of first countertop. pan is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9997520307494581,
+        "B": 0.0002479692505420459
+      },
+      "confidence": 0.9997520307494581,
+      "uncertainty": 0.0002479692505419351,
+      "entropy": 0.0033277640314782996,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -8.30220580923647,
+      "response_text": "A"
+    },
+    "oracle_success": false,
+    "evaluation_active": true
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put pan on first stove burner. Here are the robot observations after execution:\nVisual observation: fourth stove burner (turned off), first stove burner (turned on), second stove burner (turned off), pan (dirty), third stove burner (turned off). pan is on top of first stove burner. pan is above stove knob. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999999999990001,
+        "B": 9.999730003634986e-13
+      },
+      "confidence": 0.9999999999990001,
+      "uncertainty": 9.99866855977416e-13,
+      "entropy": 4.1304602754818765e-11,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -27.631021115928547,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to pick up egg. Here are the robot observations after execution:\nVisual observation: egg (not sliced and not cracked). egg is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9999620007219909,
+        "B": 3.799927800918199e-05
+      },
+      "confidence": 0.9999620007219909,
+      "uncertainty": 3.799927800907099e-05,
+      "entropy": 0.0006127891286137383,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -10.177943398176755,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to crack egg. Here are the robot observations after execution:\nVisual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. pan is on top of first stove burner. pan is above cracked egg. pan is on the right of stove knob. cracked egg is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9988486632972695,
+        "B": 0.0011513367027305996
+      },
+      "confidence": 0.9988486632972695,
+      "uncertainty": 0.0011513367027304877,
+      "entropy": 0.012899966361947386,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -6.76683166141244,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "subgoal-verifier",
+    "prompt": {
+      "system": "You are a binary classifier. Output ONLY the single letter A or B. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character: A or B.",
+      "user": "The robot goal is to put cracked egg in pan. Here are the robot observations after execution:\nVisual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\n\nQ: Based on the observations, is the goal satisfied?\nA = Yes\nB = No\nLabel:"
+    },
+    "response": "A",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "predicted_label": "A",
+      "confidence_label": "A",
+      "option_probs": {
+        "A": 0.9996110756506904,
+        "B": 0.00038892434930970515
+      },
+      "confidence": 0.9996110756506904,
+      "uncertainty": 0.00038892434930959396,
+      "entropy": 0.004966811792186236,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "B"
+      ],
+      "fallback_logprob": -7.85212570804075,
+      "response_text": "A"
+    },
+    "oracle_success": null,
+    "evaluation_active": false
+  },
+  {
+    "call": "reasoning-execution",
+    "prompt": {
+      "system": "You are expected to provide explanation for a robot failure. You are given the robot actions and observations so far. Briefly explain the failure in 1-2 sentence. Mention relevant time steps if possible.",
+      "user": "The robot task is to cook egg. At 00:13, a failure was identified.\n\n[Robot actions and observations before 00:13]\n00:01. Action: Move to fridge. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:04. Action: Move to fridge. Visual observation: fridge (closed). nothing is inside robot gripper.\n00:07. Action: Open fridge. Visual observation: egg (not sliced and not cracked), fridge (open). egg is inside fridge. nothing is inside robot gripper. Auditory observation: stove burner turns on.\n00:10. Action: Pick up egg. Visual observation: egg (not sliced and not cracked), fridge (open). egg is inside robot gripper.\n\n[Observation at the end of 00:13]\nAction: Close fridge. Visual observation: fridge (closed), egg (not sliced and not cracked). egg is inside robot gripper. Auditory observation: object drops or cracks on hard surface.\n\nQ: Infer from [Robot actions and observations before 00:13] or [Observation at the end of 00:13], briefly explain what happened at 00:13 and what caused the failure.\nA:"
+    },
+    "response": "At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped."
+  },
+  {
+    "call": "reasoning-execution-steps",
+    "prompt": {
+      "system": "",
+      "user": "At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nQ: Extract time steps from the above sentence (separated by comma).\n A:"
+    },
+    "response": "00:13"
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: cook egg\nInitial plan:\n1. (open_obj, fridge)\n2. (pick_up, egg)\n3. (close_obj, fridge)\n4. (toggle_on, first stove burner)\n5. (put_on, egg, countertop)\n6. (pick_up, pan)\n7. (put_on, pan, first stove burner)\n8. (pick_up, egg)\n9. (crack_obj, egg)\n10. (put_in, cracked egg, pan)\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (none)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, EggCracked), (put_in, EggCracked), (put_on, EggCracked), (toggle_on, EggCracked), (toggle_off, EggCracked), (open_obj, EggCracked), (close_obj, EggCracked), (slice_obj, EggCracked), (crack_obj, EggCracked), (pour, EggCracked), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Pan), (put_in, Pan), (put_on, Pan), (toggle_on, Pan), (toggle_off, Pan), (open_obj, Pan), (close_obj, Pan), (slice_obj, Pan), (crack_obj, Pan), (pour, Pan)\nAvailable objects: CounterTop, Egg, EggCracked, Fridge, Pan, StoveBurner, StoveBurner-1\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "EggCracked",
+          "obj2": null,
+          "rationale": "The cracked egg is already present and reachable; picking it up enables correcting its placement if needed."
+        },
+        {
+          "action": "put_in",
+          "obj1": "EggCracked",
+          "obj2": "Pan",
+          "rationale": "Directly ensures the cracked egg is in the pan, matching the goal state if any portion is not properly inside."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Pan",
+          "obj2": null,
+          "rationale": "Picking up the pan would allow repositioning it securely on the active burner if its current placement is unstable."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pan",
+          "obj2": "StoveBurner",
+          "rationale": "Reaffirming the pan onto the stove burner helps satisfy the success condition that the pan be on a turned-on burner."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "StoveBurner",
+          "obj2": null,
+          "rationale": "If burner state is uncertain during recovery, toggling on the target burner preserves progress toward the cooking goal."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 0,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: cook egg\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (none)\n\nCandidate next actions:\nA) (pick_up, EggCracked) \u2014 The cracked egg is already present and reachable; picking it up enables correcting its placement if needed.\nB) (put_in, EggCracked, Pan) \u2014 Directly ensures the cracked egg is in the pan, matching the goal state if any portion is not properly inside.\nC) (pick_up, Pan) \u2014 Picking up the pan would allow repositioning it securely on the active burner if its current placement is unstable.\nD) (put_on, Pan, StoveBurner) \u2014 Reaffirming the pan onto the stove burner helps satisfy the success condition that the pan be on a turned-on burner.\nE) (toggle_on, StoveBurner) \u2014 If burner state is uncertain during recovery, toggling on the target burner preserves progress toward the cooking goal.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 1.7249404888675095e-05,
+        "B": 0.9999310023804453,
+        "C": 1.7249404888675095e-05,
+        "D": 1.7249404888675095e-05,
+        "E": 1.7249404888675095e-05
+      },
+      "confidence": 0.9999310023804453,
+      "uncertainty": 6.89976195547004e-05,
+      "entropy": 0.0005130627878108387,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -10.967732914289257,
+      "response_text": "B"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: cook egg\nInitial plan:\n1. (open_obj, fridge)\n2. (pick_up, egg)\n3. (close_obj, fridge)\n4. (toggle_on, first stove burner)\n5. (put_on, egg, countertop)\n6. (pick_up, pan)\n7. (put_on, pan, first stove burner)\n8. (pick_up, egg)\n9. (crack_obj, egg)\n10. (put_in, cracked egg, pan)\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, EggCracked), (put_in, EggCracked), (put_on, EggCracked), (toggle_on, EggCracked), (toggle_off, EggCracked), (open_obj, EggCracked), (close_obj, EggCracked), (slice_obj, EggCracked), (crack_obj, EggCracked), (pour, EggCracked), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Pan), (put_in, Pan), (put_on, Pan), (toggle_on, Pan), (toggle_off, Pan), (open_obj, Pan), (close_obj, Pan), (slice_obj, Pan), (crack_obj, Pan), (pour, Pan)\nAvailable objects: CounterTop, Egg, EggCracked, Fridge, Pan, StoveBurner, StoveBurner-1\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "EggCracked",
+          "obj2": null,
+          "rationale": "Secure the cracked egg if it is partially spilled or misplaced so the robot can correct its position relative to the pan."
+        },
+        {
+          "action": "put_in",
+          "obj1": "EggCracked",
+          "obj2": "Pan",
+          "rationale": "Reinforce the goal state by ensuring the cracked egg is inside the pan if its current placement is ambiguous after the drop."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Pan",
+          "obj2": null,
+          "rationale": "Check or reposition the pan if needed, since the noisy failure may have disturbed cookware placement."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pan",
+          "obj2": "StoveBurner",
+          "rationale": "Ensure the pan is properly placed on the active burner, directly supporting the cooking goal."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "StoveBurner",
+          "obj2": null,
+          "rationale": "Confirm the cooking surface is on in case the burner state is uncertain and needs correction for success."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 1,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: cook egg\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan)\n\nCandidate next actions:\nA) (pick_up, EggCracked) \u2014 Secure the cracked egg if it is partially spilled or misplaced so the robot can correct its position relative to the pan.\nB) (put_in, EggCracked, Pan) \u2014 Reinforce the goal state by ensuring the cracked egg is inside the pan if its current placement is ambiguous after the drop.\nC) (pick_up, Pan) \u2014 Check or reposition the pan if needed, since the noisy failure may have disturbed cookware placement.\nD) (put_on, Pan, StoveBurner) \u2014 Ensure the pan is properly placed on the active burner, directly supporting the cooking goal.\nE) (toggle_on, StoveBurner) \u2014 Confirm the cooking surface is on in case the burner state is uncertain and needs correction for success.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 1.6249471886442542e-05,
+        "B": 0.9999350021124543,
+        "C": 1.6249471886442542e-05,
+        "D": 1.6249471886442542e-05,
+        "E": 1.6249471886442542e-05
+      },
+      "confidence": 0.9999350021124543,
+      "uncertainty": 6.499788754565916e-05,
+      "entropy": 0.00048573277278958607,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -11.027450149012484,
+      "response_text": "B"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: cook egg\nInitial plan:\n1. (open_obj, fridge)\n2. (pick_up, egg)\n3. (close_obj, fridge)\n4. (toggle_on, first stove burner)\n5. (put_on, egg, countertop)\n6. (pick_up, pan)\n7. (put_on, pan, first stove burner)\n8. (pick_up, egg)\n9. (crack_obj, egg)\n10. (put_in, cracked egg, pan)\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan), (put_in, EggCracked, Pan)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, EggCracked), (put_in, EggCracked), (put_on, EggCracked), (toggle_on, EggCracked), (toggle_off, EggCracked), (open_obj, EggCracked), (close_obj, EggCracked), (slice_obj, EggCracked), (crack_obj, EggCracked), (pour, EggCracked), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Pan), (put_in, Pan), (put_on, Pan), (toggle_on, Pan), (toggle_off, Pan), (open_obj, Pan), (close_obj, Pan), (slice_obj, Pan), (crack_obj, Pan), (pour, Pan)\nAvailable objects: CounterTop, Egg, EggCracked, Fridge, Pan, StoveBurner, StoveBurner-1\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "EggCracked",
+          "obj2": null,
+          "rationale": "The cracked egg is already present and may need to be stabilized or repositioned after the failure."
+        },
+        {
+          "action": "put_in",
+          "obj1": "EggCracked",
+          "obj2": "Pan",
+          "rationale": "Reinforces the goal state if some of the cracked egg ended up out of place during the drop event."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "Pan",
+          "obj2": null,
+          "rationale": "Allows checking or correcting the pan placement if the scene is inconsistent after the failure."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pan",
+          "obj2": "StoveBurner",
+          "rationale": "Ensures the pan is on a burner, which is required for the cooking goal."
+        },
+        {
+          "action": "toggle_on",
+          "obj1": "StoveBurner",
+          "obj2": null,
+          "rationale": "Ensures the burner under the pan is on, directly supporting the success condition."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 2,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: cook egg\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan), (put_in, EggCracked, Pan)\n\nCandidate next actions:\nA) (pick_up, EggCracked) \u2014 The cracked egg is already present and may need to be stabilized or repositioned after the failure.\nB) (put_in, EggCracked, Pan) \u2014 Reinforces the goal state if some of the cracked egg ended up out of place during the drop event.\nC) (pick_up, Pan) \u2014 Allows checking or correcting the pan placement if the scene is inconsistent after the failure.\nD) (put_on, Pan, StoveBurner) \u2014 Ensures the pan is on a burner, which is required for the cooking goal.\nE) (toggle_on, StoveBurner) \u2014 Ensures the burner under the pan is on, directly supporting the success condition.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "E",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "E",
+      "confidence_label": "E",
+      "option_probs": {
+        "A": 1.0499779503098107e-05,
+        "B": 1.0499779503098107e-05,
+        "C": 1.0499779503098107e-05,
+        "D": 1.0499779503098107e-05,
+        "E": 0.9999580008819876
+      },
+      "confidence": 0.9999580008819876,
+      "uncertainty": 4.199911801239242e-05,
+      "entropy": 0.0003252580825762273,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "fallback_logprob": -11.464156300726236,
+      "response_text": "E"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: cook egg\nInitial plan:\n1. (open_obj, fridge)\n2. (pick_up, egg)\n3. (close_obj, fridge)\n4. (toggle_on, first stove burner)\n5. (put_on, egg, countertop)\n6. (pick_up, pan)\n7. (put_on, pan, first stove burner)\n8. (pick_up, egg)\n9. (crack_obj, egg)\n10. (put_in, cracked egg, pan)\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan), (put_in, EggCracked, Pan), (toggle_on, StoveBurner)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, EggCracked), (put_in, EggCracked), (put_on, EggCracked), (toggle_on, EggCracked), (toggle_off, EggCracked), (open_obj, EggCracked), (close_obj, EggCracked), (slice_obj, EggCracked), (crack_obj, EggCracked), (pour, EggCracked), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Pan), (put_in, Pan), (put_on, Pan), (toggle_on, Pan), (toggle_off, Pan), (open_obj, Pan), (close_obj, Pan), (slice_obj, Pan), (crack_obj, Pan), (pour, Pan)\nAvailable objects: CounterTop, Egg, EggCracked, Fridge, Pan, StoveBurner, StoveBurner-1\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pan",
+          "obj2": null,
+          "rationale": "The goal already appears satisfied, but picking up the pan is a safe corrective move if the pan placement is unstable or needs repositioning on the active burner."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pan",
+          "obj2": "StoveBurner",
+          "rationale": "Reaffirming the pan on the first stove burner preserves the success condition in case the pan shifted during the failure."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "EggCracked",
+          "obj2": null,
+          "rationale": "If part of the cracked egg is spilled on the burner instead of fully in the pan, picking it up is a reasonable correction before repositioning it."
+        },
+        {
+          "action": "put_in",
+          "obj1": "EggCracked",
+          "obj2": "Pan",
+          "rationale": "Since the cracked egg was dropped during failure and may be partly outside the pan, putting EggCracked into the pan directly restores the intended cooking setup."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "If the fridge was left open after the failed manipulation, closing it now is sensible because the gripper is empty and the egg is already cracked into the pan."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 3,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: cook egg\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan), (put_in, EggCracked, Pan), (toggle_on, StoveBurner)\n\nCandidate next actions:\nA) (pick_up, Pan) \u2014 The goal already appears satisfied, but picking up the pan is a safe corrective move if the pan placement is unstable or needs repositioning on the active burner.\nB) (put_on, Pan, StoveBurner) \u2014 Reaffirming the pan on the first stove burner preserves the success condition in case the pan shifted during the failure.\nC) (pick_up, EggCracked) \u2014 If part of the cracked egg is spilled on the burner instead of fully in the pan, picking it up is a reasonable correction before repositioning it.\nD) (put_in, EggCracked, Pan) \u2014 Since the cracked egg was dropped during failure and may be partly outside the pan, putting EggCracked into the pan directly restores the intended cooking setup.\nE) (close_obj, Fridge) \u2014 If the fridge was left open after the failed manipulation, closing it now is sensible because the gripper is empty and the egg is already cracked into the pan.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "D",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "D",
+      "confidence_label": "D",
+      "option_probs": {
+        "A": 0.0012252230706587166,
+        "B": 0.09499899180660143,
+        "C": 0.0012252230706587166,
+        "D": 0.9013253389814223,
+        "E": 0.0012252230706587166
+      },
+      "confidence": 0.9013253389814223,
+      "uncertainty": 0.09867466101857769,
+      "entropy": 0.21243371865572055,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "E"
+      ],
+      "fallback_logprob": -6.7046323530664536,
+      "response_text": "D"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: cook egg\nInitial plan:\n1. (open_obj, fridge)\n2. (pick_up, egg)\n3. (close_obj, fridge)\n4. (toggle_on, first stove burner)\n5. (put_on, egg, countertop)\n6. (pick_up, pan)\n7. (put_on, pan, first stove burner)\n8. (pick_up, egg)\n9. (crack_obj, egg)\n10. (put_in, cracked egg, pan)\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan), (put_in, EggCracked, Pan), (toggle_on, StoveBurner), (put_in, EggCracked, Pan)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, EggCracked), (put_in, EggCracked), (put_on, EggCracked), (toggle_on, EggCracked), (toggle_off, EggCracked), (open_obj, EggCracked), (close_obj, EggCracked), (slice_obj, EggCracked), (crack_obj, EggCracked), (pour, EggCracked), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Pan), (put_in, Pan), (put_on, Pan), (toggle_on, Pan), (toggle_off, Pan), (open_obj, Pan), (close_obj, Pan), (slice_obj, Pan), (crack_obj, Pan), (pour, Pan)\nAvailable objects: CounterTop, Egg, EggCracked, Fridge, Pan, StoveBurner, StoveBurner-1\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pan",
+          "obj2": null,
+          "rationale": "Pan is already on the on burner with cracked egg inside, so lifting it is a safe corrective action if the robot needs to stabilize or inspect the current success configuration."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pan",
+          "obj2": "StoveBurner",
+          "rationale": "Re-placing the pan onto the first stove burner preserves the goal state if the pan placement is uncertain after the failure."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "EggCracked",
+          "obj2": null,
+          "rationale": "The cracked egg is also observed on top of the burner, so picking it up could correct any spilled or duplicated egg state before repositioning it."
+        },
+        {
+          "action": "put_in",
+          "obj1": "EggCracked",
+          "obj2": "Pan",
+          "rationale": "Putting the cracked egg into the pan directly reinforces the success condition that the egg be cracked and in the pan."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "Since the earlier failure came from closing the fridge while holding the egg, and the gripper is now empty, closing the fridge is now a safe cleanup action."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 4,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: cook egg\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan), (put_in, EggCracked, Pan), (toggle_on, StoveBurner), (put_in, EggCracked, Pan)\n\nCandidate next actions:\nA) (pick_up, Pan) \u2014 Pan is already on the on burner with cracked egg inside, so lifting it is a safe corrective action if the robot needs to stabilize or inspect the current success configuration.\nB) (put_on, Pan, StoveBurner) \u2014 Re-placing the pan onto the first stove burner preserves the goal state if the pan placement is uncertain after the failure.\nC) (pick_up, EggCracked) \u2014 The cracked egg is also observed on top of the burner, so picking it up could correct any spilled or duplicated egg state before repositioning it.\nD) (put_in, EggCracked, Pan) \u2014 Putting the cracked egg into the pan directly reinforces the success condition that the egg be cracked and in the pan.\nE) (close_obj, Fridge) \u2014 Since the earlier failure came from closing the fridge while holding the egg, and the gripper is now empty, closing the fridge is now a safe cleanup action.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "D",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "D",
+      "confidence_label": "D",
+      "option_probs": {
+        "A": 0.003475557473774038,
+        "B": 0.003475557473774038,
+        "C": 0.003475557473774038,
+        "D": 0.9301131812229293,
+        "E": 0.05946014635574867
+      },
+      "confidence": 0.9301131812229293,
+      "uncertainty": 0.0698868187770707,
+      "entropy": 0.18282458833448875,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "fallback_logprob": -5.662000388724316,
+      "response_text": "D"
+    }
+  },
+  {
+    "call": "plan-propose",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a robot action planner. Given the task context, propose exactly 5 distinct candidate actions for the next correction step. Each candidate must use one of the available actions and objects. Return a JSON object with a 'candidates' array of 5 objects, each with keys: action, obj1, obj2 (null if not needed), rationale.",
+      "user": "Task: cook egg\nInitial plan:\n1. (open_obj, fridge)\n2. (pick_up, egg)\n3. (close_obj, fridge)\n4. (toggle_on, first stove burner)\n5. (put_on, egg, countertop)\n6. (pick_up, pan)\n7. (put_on, pan, first stove burner)\n8. (pick_up, egg)\n9. (crack_obj, egg)\n10. (put_in, cracked egg, pan)\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan), (put_in, EggCracked, Pan), (toggle_on, StoveBurner), (put_in, EggCracked, Pan), (put_in, EggCracked, Pan)\nAvailable actions: (pick_up, CounterTop), (put_in, CounterTop), (put_on, CounterTop), (toggle_on, CounterTop), (toggle_off, CounterTop), (open_obj, CounterTop), (close_obj, CounterTop), (slice_obj, CounterTop), (crack_obj, CounterTop), (pour, CounterTop), (pick_up, Egg), (put_in, Egg), (put_on, Egg), (toggle_on, Egg), (toggle_off, Egg), (open_obj, Egg), (close_obj, Egg), (slice_obj, Egg), (crack_obj, Egg), (pour, Egg), (pick_up, EggCracked), (put_in, EggCracked), (put_on, EggCracked), (toggle_on, EggCracked), (toggle_off, EggCracked), (open_obj, EggCracked), (close_obj, EggCracked), (slice_obj, EggCracked), (crack_obj, EggCracked), (pour, EggCracked), (pick_up, Fridge), (put_in, Fridge), (put_on, Fridge), (toggle_on, Fridge), (toggle_off, Fridge), (open_obj, Fridge), (close_obj, Fridge), (slice_obj, Fridge), (crack_obj, Fridge), (pour, Fridge), (pick_up, Pan), (put_in, Pan), (put_on, Pan), (toggle_on, Pan), (toggle_off, Pan), (open_obj, Pan), (close_obj, Pan), (slice_obj, Pan), (crack_obj, Pan), (pour, Pan)\nAvailable objects: CounterTop, Egg, EggCracked, Fridge, Pan, StoveBurner, StoveBurner-1\n\nPropose 5 candidate next actions:"
+    },
+    "response": {
+      "candidates": [
+        {
+          "action": "pick_up",
+          "obj1": "Pan",
+          "obj2": null,
+          "rationale": "Pan already contains the cracked egg and is on the active burner; picking it up is a safe corrective move if repositioning is needed."
+        },
+        {
+          "action": "put_on",
+          "obj1": "Pan",
+          "obj2": "StoveBurner",
+          "rationale": "Reassert placing the pan on the turned-on first stove burner to satisfy the goal in case its placement is uncertain after the failure."
+        },
+        {
+          "action": "pick_up",
+          "obj1": "EggCracked",
+          "obj2": null,
+          "rationale": "If any cracked egg remains outside the pan despite the observation, picking it up would allow recovering spilled contents."
+        },
+        {
+          "action": "put_in",
+          "obj1": "EggCracked",
+          "obj2": "Pan",
+          "rationale": "This directly reinforces the goal condition by ensuring the cracked egg is in the pan."
+        },
+        {
+          "action": "close_obj",
+          "obj1": "Fridge",
+          "obj2": null,
+          "rationale": "If the fridge was left open during the failed close attempt, closing it now is safer because the gripper is empty."
+        }
+      ]
+    }
+  },
+  {
+    "call": "plan-select",
+    "step_index": 5,
+    "prompt": {
+      "system": "You are a decision maker. Output ONLY the single letter A, B, C, D, or E. No words, no punctuation, no explanation, no reasoning. Your entire response must be exactly one character.",
+      "user": "Task: cook egg\nFailure reason: At 00:13, while closing the fridge with the egg still in its gripper, the robot likely hit or dropped the egg, as indicated by the \u201cobject drops or cracks on hard surface\u201d sound. The failure was caused by trying to manipulate the fridge door and hold the egg at the same time, leading to the egg being cracked or dropped.\nCurrent state: Visual observation: fourth stove burner (turned off), first stove burner (turned on), third stove burner (turned off), second stove burner (turned off), pan (dirty), cracked egg. cracked egg is above stove knob. cracked egg is on top of first stove burner. cracked egg is inside pan. pan is on top of first stove burner. pan is on the right of stove knob. nothing is inside robot gripper.\nSuccess state: an egg is cracked and in a pan, the pan is on top a stove burner that is turned on.\nActions completed so far: (put_in, EggCracked, Pan), (put_in, EggCracked, Pan), (toggle_on, StoveBurner), (put_in, EggCracked, Pan), (put_in, EggCracked, Pan)\n\nCandidate next actions:\nA) (pick_up, Pan) \u2014 Pan already contains the cracked egg and is on the active burner; picking it up is a safe corrective move if repositioning is needed.\nB) (put_on, Pan, StoveBurner) \u2014 Reassert placing the pan on the turned-on first stove burner to satisfy the goal in case its placement is uncertain after the failure.\nC) (pick_up, EggCracked) \u2014 If any cracked egg remains outside the pan despite the observation, picking it up would allow recovering spilled contents.\nD) (put_in, EggCracked, Pan) \u2014 This directly reinforces the goal condition by ensuring the cracked egg is in the pan.\nE) (close_obj, Fridge) \u2014 If the fridge was left open during the failed close attempt, closing it now is safer because the gripper is empty.\n\nWhich candidate is the best next action?\nLabel:"
+    },
+    "response": "B",
+    "score": {
+      "score_status": "available",
+      "raw_score_status": "partial",
+      "choice_spec": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "predicted_label": "B",
+      "confidence_label": "B",
+      "option_probs": {
+        "A": 3.524751499178746e-05,
+        "B": 0.999859009940033,
+        "C": 3.524751499178746e-05,
+        "D": 3.524751499178746e-05,
+        "E": 3.524751499178746e-05
+      },
+      "confidence": 0.999859009940033,
+      "uncertainty": 0.00014099005996703884,
+      "entropy": 0.000985789809765015,
+      "fallback_applied": true,
+      "fallback_labels": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "fallback_logprob": -10.253115527877885,
+      "response_text": "B"
+    }
+  }
+]
